@@ -356,31 +356,40 @@ export function WordEdit({ navigation }: IWordEditScreenProps): JSX.Element {
             }
           />
 
-          {(data.context as TContext[] | undefined)?.map((ctx: TContext, contextIndex: number) => (
-            <React.Fragment key={`context-${index}-${contextIndex}`}>
-              <Input
-                style={[styles.mb]}
-                label="Контекст"
-                placeholder="Добавьте контекст"
-                value={ctx.value}
-                onChangeText={text => updateContextValue(text, index, contextIndex)}
-                multiline={true}
-                icon={{
-                  type: IconsStrings.cancel,
-                  style: { position: 'absolute', right: -2, padding: 10 },
-                  onPress: () => removeContext(index, contextIndex),
-                }}
-              />
-              <Input
-                style={[styles.mb]}
-                label="Пример использования"
-                placeholder="Добавьте пример"
-                value={ctx.example || ''}
-                onChangeText={text => updateContextExample(text, index, contextIndex)}
-                multiline={true}
-              />
-            </React.Fragment>
-          ))}
+          {(data.context as TContext[] | undefined)?.map(
+            (ctx: TContext, contextIndex: number, arr) => {
+              const isLast = contextIndex === arr.length - 1;
+
+              return (
+                <React.Fragment key={`context-${index}-${contextIndex}`}>
+                  <Input
+                    style={[styles.mb]}
+                    label="Контекст"
+                    placeholder="Добавьте контекст"
+                    value={ctx.value}
+                    onChangeText={text => updateContextValue(text, index, contextIndex)}
+                    multiline
+                    icon={{
+                      type: IconsStrings.cancel,
+                      style: { position: 'absolute', right: -2, padding: 10 },
+                      onPress: () => removeContext(index, contextIndex),
+                    }}
+                  />
+
+                  <Input
+                    style={[styles.mb]}
+                    label="Пример использования"
+                    placeholder="Добавьте пример"
+                    value={ctx.example || ''}
+                    onChangeText={text => updateContextExample(text, index, contextIndex)}
+                    multiline
+                  />
+
+                  {!isLast && <View style={styles.divider} />}
+                </React.Fragment>
+              );
+            },
+          )}
 
           <Button
             style={styles.inlineActionButton}
@@ -616,5 +625,10 @@ const styles = StyleSheet.create({
   dropdown1DropdownStyle: { backgroundColor: theme.colors.surface },
   dropdown1RowStyle: { backgroundColor: theme.colors.surface, borderBottomColor: theme.colors.border },
   dropdown1RowTxtStyle: { color: theme.colors.text, textAlign: 'left', fontSize: 15 },
+  divider: {
+    height: 1,
+    backgroundColor: '#E0E0E0',
+    marginVertical: 8,
+  },
 });
 

@@ -113,33 +113,45 @@ export function WordData({ navigation }: IWordDataScreenProps): JSX.Element {
         >
           <View style={styles.section}>
             <Text style={styles.wordTitle}>{wordName}</Text>
-            {wordData.map((data, index) => {
-              return (
-                <React.Fragment key={`group-${index}`}>
-                  <View style={styles.groupWord}>
-                    <View key={`translate-${index}`}>
-                      <Text style={styles.label}>Перевод</Text>
-                      <Text style={styles.value}>{data.value}</Text>
+              {wordData.map((data, index) => {
+                const isLast = index === wordData.length - 1;
+
+                return (
+                  <React.Fragment key={`group-${index}`}>
+                    <View style={styles.groupWord}>
+                      <View>
+                        <Text style={styles.label}>Перевод</Text>
+                        <Text style={styles.value}>{data.value}</Text>
+                      </View>
+
+                      {(data.context as TContext[] | undefined)?.map(
+                        (ctx: TContext, contextIndex: number) => {
+                          const isLastContext =
+                            contextIndex === (data.context?.length || 0) - 1;
+
+                          return (
+                            <View key={`context-${index}-${contextIndex}`}>
+                              <Text style={styles.label}>Контекст</Text>
+                              <Text style={styles.contextValue}>{ctx.value}</Text>
+
+                              {ctx.example ? (
+                                <>
+                                  <Text style={styles.label}>Пример использования</Text>
+                                  <Text style={styles.contextValue}>{ctx.example}</Text>
+                                </>
+                              ) : null}
+
+                              {!isLastContext && <View style={styles.divider} />}
+                            </View>
+                          );
+                        },
+                      )}
                     </View>
 
-                    {(data.context as TContext[] | undefined)?.map(
-                      (ctx: TContext, contextIndex: number) => (
-                        <View key={`context-${index}-${contextIndex}`}>
-                          <Text style={styles.label}>Контекст</Text>
-                          <Text style={styles.contextValue}>{ctx.value}</Text>
-                          {ctx.example ? (
-                            <>
-                              <Text style={styles.label}>Пример использования</Text>
-                              <Text style={styles.contextValue}>{ctx.example}</Text>
-                            </>
-                          ) : null}
-                        </View>
-                      ),
-                    )}
-                  </View>
-                </React.Fragment>
-              );
-            })}
+                    {!isLast && <View style={styles.divider} />}
+                  </React.Fragment>
+                );
+              })}
           </View>
         </ScrollView>
         <Button
@@ -217,6 +229,11 @@ const styles = StyleSheet.create({
     color: theme.colors.text,
     fontSize: 15,
     lineHeight: 21,
+  },
+  divider: {
+    height: 1,
+    backgroundColor: '#E0E0E0',
+    marginVertical: 12,
   },
 });
 
