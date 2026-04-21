@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { RouteProp, useRoute } from '@react-navigation/native';
 import { StackNavigationProp } from '@react-navigation/stack';
 import { Button } from '../../components/Button';
@@ -7,6 +7,7 @@ import { Alert, TAlertButton } from '../../modules/Alert';
 import SWords from '../../storage/words/words.service';
 import { TTranslate, TWord } from '../../storage/words/words.types';
 import shuffle from '../../helpers/shuffleArray';
+import ShuffledCycle from '../../helpers/shuffledCycle';
 
 import containerStyles from '../../styles/container';
 import buttonBottomFreeze, { buttonBottomFreezeText } from '../../styles/buttonBottomFreeze';
@@ -47,10 +48,11 @@ export function TestMode({ navigation }: ITestModeScreenProps): JSX.Element {
 	const [activeAnswers, setActiveAnswers] = useState<TAnswer[]>([]);
 	const [isAnyAnswerSelected, setIsAnyAnswerSelected] = useState(false);
 	const [checked, setChecked] = useState(false);
+	const wordCycleRef = useRef(new ShuffledCycle<TWord>());
 
 	useEffect(() => {
-		fetchWord();
-	}, []);
+		loadWordCycle();
+	}, [groupID]);
 
 	useEffect(() => {
 		if (activeWord) {
@@ -63,8 +65,23 @@ export function TestMode({ navigation }: ITestModeScreenProps): JSX.Element {
 		if (correctAnswers && inCorrectAnswers) getAnswers();
 	}, [correctAnswers, inCorrectAnswers]);
 
-	useEffect(() => {
-	}, [activeAnswers]);
+	const loadWordCycle = async () => {
+		reset();
+		const words = await SWords.getWordsList(groupID === 0 ? undefined : groupID);
+		wordCycleRef.current.setItems(words.filter((word): word is TWord => Boolean(word.id)));
+		await fetchNextWord();
+	}
+
+	const fetchNextWord = async () => {
+		const word = wordCycleRef.current.next();
+		if (!word?.id) {
+			setActiveWord(null);
+			return;
+		}
+
+		const wordData = await SWords.getByID(word.id, groupID);
+		if (wordData) setActiveWord(wordData);
+	}
 
 	const getAnswers = () => {
 		const answers: TAnswer[] = [
@@ -72,11 +89,6 @@ export function TestMode({ navigation }: ITestModeScreenProps): JSX.Element {
 			...inCorrectAnswers.slice(0, 6 - correctAnswers.length)
 		];
 		setActiveAnswers(shuffle(answers));
-	}
-
-	const fetchWord = async () => {
-		const word = await SWords.getRandom(groupID);
-		if (word) setActiveWord(word);
 	}
 
 	const getCorrectAnswer = async () => {
@@ -104,7 +116,7 @@ export function TestMode({ navigation }: ITestModeScreenProps): JSX.Element {
 	function getRandomFromArr<T>(array: T[]): T[] {
 		const count = Math.floor(Math.random() * array.length) + 1;
 		const shuffledArray = shuffle(array);
-    const toSlice = Math.min(count, shuffledArray.length);
+		const toSlice = Math.min(count, shuffledArray.length);
 		return shuffledArray.slice(0, toSlice);
 	}
 
@@ -189,7 +201,7 @@ export function TestMode({ navigation }: ITestModeScreenProps): JSX.Element {
 				onPress={() => {
 					if (checked) {
 						reset();
-						fetchWord();
+						fetchNextWord();
 					} else setChecked(true);
 				}}
 			/>

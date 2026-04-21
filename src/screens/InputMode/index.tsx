@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { RouteProp, useRoute, useFocusEffect } from '@react-navigation/native';
+import { RouteProp, useRoute } from '@react-navigation/native';
 import { StackNavigationProp } from '@react-navigation/stack';
 import { Button } from '../../components/Button';
 import { Input } from '../../components/Input';
@@ -9,6 +9,7 @@ import SWords from '../../storage/words/words.service';
 import { TTranslate, TWord } from '../../storage/words/words.types';
 import IconsStrings from '../../assets/awesomeIcons';
 import shuffle from '../../helpers/shuffleArray';
+import ShuffledCycle from '../../helpers/shuffledCycle';
 
 import containerStyles from '../../styles/container';
 import buttonBottomFreeze, { buttonBottomFreezeText } from '../../styles/buttonBottomFreeze';
@@ -62,6 +63,8 @@ export function InputMode({ navigation }: IInputModeScreenProps): JSX.Element {
   const [inputsGroups, setInputsGroups] = useState<TAnswer[]>([emptyAnswer]);
   const [scrollBottom, setScrollBottom] = useState(false);
   const scrollViewRef = useRef<ScrollView | null>(null);
+  const wordCycleRef = useRef(new ShuffledCycle<TWord>());
+  const modeCycleRef = useRef(new ShuffledCycle<TMode>(modes));
 
   useEffect(() => {
     if (scrollBottom && scrollViewRef && scrollViewRef.current) {
@@ -70,28 +73,38 @@ export function InputMode({ navigation }: IInputModeScreenProps): JSX.Element {
     }
   }, [scrollBottom]);
 
-
   useEffect(() => {
-    fetchWord();
-  }, []);
+    loadWordCycle();
+  }, [groupID]);
 
   useEffect(() => {
     if (isRandomMode) {
-      const shuffledModes = shuffle(modes);
-      setActiveMode(shuffledModes[0]);
+      const nextMode = modeCycleRef.current.next();
+      if (nextMode) setActiveMode(nextMode);
     }
-  }, [activeWord])
+  }, [activeWord, isRandomMode])
 
-  useEffect(() => {
-  }, [inputsGroups]);
+  const loadWordCycle = async () => {
+    reset();
+    const words = await SWords.getWordsList(groupID === 0 ? undefined : groupID);
+    wordCycleRef.current.setItems(words.filter((word): word is TWord => Boolean(word.id)));
+    modeCycleRef.current.setItems(modes);
+    await fetchWord();
+  };
 
   const fetchWord = async () => {
-    const word = await SWords.getRandom(groupID);
+    const nextWord = wordCycleRef.current.next();
+    if (!nextWord?.id) {
+      setActiveWord(null);
+      setActiveTranslate(null);
+      return;
+    }
+
+    const word = await SWords.getByID(nextWord.id, groupID);
     if (word) {
       setActiveWord(word);
-      const ind = Math.floor(Math.random() * (word.translate.length - 1));
       const shuffledTranslates = shuffle(word.translate);
-      const value = shuffledTranslates[ind].value;
+      const value = shuffledTranslates[0]?.value ?? null;
       setActiveTranslate(value);
     };
   }
@@ -141,13 +154,14 @@ export function InputMode({ navigation }: IInputModeScreenProps): JSX.Element {
     setInputsGroups([emptyAnswer]);
     setCheckButtonDisabled(true);
     setActiveWord(null);
+    setActiveTranslate(null);
     setChecked(false);
     setShowCorrectAnswer(false);
   }
 
-  const next = () => {
+  const next = async () => {
     reset();
-    fetchWord();
+    await fetchWord();
     // if (isRandomMode) {
     //   const shuffledModes = shuffle(modes);
     //   setActiveMode(shuffledModes[0]);
@@ -241,12 +255,13 @@ export function InputMode({ navigation }: IInputModeScreenProps): JSX.Element {
   const changeMode = (mode: TMode) => {
     setRandomMode(false);
     setActiveMode(mode);
-    next();
+    void next();
   }
 
   const changeModeToRandom = () => {
     setRandomMode(true);
-    next();
+    modeCycleRef.current.setItems(modes);
+    void next();
   }
 
   const getTitle = (): string => {
@@ -353,12 +368,12 @@ export function InputMode({ navigation }: IInputModeScreenProps): JSX.Element {
         style={buttonBottomFreeze}
         textStyle={buttonBottomFreezeText}
         disabled={checkButtonDisabled}
-        title={checked ? "Следующее слово" : "Проверить"}
-        onPress={() => {
-          if (checked) next();
+      title={checked ? "Следующее слово" : "Проверить"}
+      onPress={() => {
+          if (checked) void next();
           else check();
-        }}
-      />
+      }}
+    />
       <Alert
         isVisible={isAlertVisible}
         message="Прервать тренировку?"
