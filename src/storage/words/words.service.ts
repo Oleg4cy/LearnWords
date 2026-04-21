@@ -493,12 +493,70 @@ export default class SWords implements ISwords {
 
   static async removeByID(id: number) {
     try {
+      await SWords.execute('DELETE FROM word_translate WHERE word_id = ?', [id]);
+      await SWords.execute('DELETE FROM word_group WHERE word_id = ?', [id]);
       await SWords.execute('DELETE FROM words WHERE id = ?', [id]);
       console.log(`Word with ID ${id} has been deleted.`);
     } catch (error) {
       console.log(error);
       throw error;
     }
+  }
+
+  static async removeGroups(groupIDs: number[], deleteWords: boolean = false): Promise<void> {
+    if (groupIDs.length === 0) return;
+
+    const groupPlaceholders = SWords.createPlaceholders(groupIDs.length);
+
+    try {
+      let wordIDs: number[] = [];
+
+      if (deleteWords) {
+        const wordsResult = await SWords.execute(
+          `SELECT DISTINCT word_id FROM word_group WHERE group_id IN (${groupPlaceholders})`,
+          groupIDs,
+        );
+
+        for (let i = 0; i < wordsResult.rows.length; i++) {
+          const row = wordsResult.rows.item(i);
+          if (row.word_id) {
+            wordIDs.push(row.word_id);
+          }
+        }
+      }
+
+      await SWords.execute(
+        `DELETE FROM word_group WHERE group_id IN (${groupPlaceholders})`,
+        groupIDs,
+      );
+      await SWords.execute(
+        `DELETE FROM groups WHERE id IN (${groupPlaceholders})`,
+        groupIDs,
+      );
+
+      if (deleteWords && wordIDs.length > 0) {
+        const wordPlaceholders = SWords.createPlaceholders(wordIDs.length);
+        await SWords.execute(
+          `DELETE FROM word_translate WHERE word_id IN (${wordPlaceholders})`,
+          wordIDs,
+        );
+        await SWords.execute(
+          `DELETE FROM word_group WHERE word_id IN (${wordPlaceholders})`,
+          wordIDs,
+        );
+        await SWords.execute(
+          `DELETE FROM words WHERE id IN (${wordPlaceholders})`,
+          wordIDs,
+        );
+      }
+    } catch (error) {
+      console.log(error);
+      throw error;
+    }
+  }
+
+  private static createPlaceholders(count: number): string {
+    return Array.from({ length: count }, () => '?').join(', ');
   }
 
   static async getGroups(wordID: number | null = null): Promise<TGroup[]> {
@@ -624,4 +682,3 @@ export default class SWords implements ISwords {
     }
   }
 }
-
