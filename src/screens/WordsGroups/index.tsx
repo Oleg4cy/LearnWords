@@ -84,7 +84,7 @@ export function WordsGroups({ navigation }: IWordsGroupsScreenProps): JSX.Elemen
 		});
 	}
 
-	const openGroup = (id?: number) => {
+	const openGroup = (id?: number, name?: string) => {
 		const listMode = id === 0
 			? 'all'
 			: id
@@ -96,11 +96,12 @@ export function WordsGroups({ navigation }: IWordsGroupsScreenProps): JSX.Elemen
 			{
 				groupID: id ?? null,
 				listMode,
+				groupName: name,
 			}
 		);
 	}
 
-	const handleRowPress = (id?: number) => {
+	const handleRowPress = (id?: number, name?: string) => {
 		if (isLongPressRef.current) {
 			isLongPressRef.current = false;
 			return;
@@ -110,7 +111,7 @@ export function WordsGroups({ navigation }: IWordsGroupsScreenProps): JSX.Elemen
 			return;
 		}
 		if (isSelectionMode) return;
-		openGroup(id);
+		openGroup(id, name);
 	}
 
 	const removeSelectedGroups = async (deleteWords: boolean) => {
@@ -151,7 +152,7 @@ export function WordsGroups({ navigation }: IWordsGroupsScreenProps): JSX.Elemen
 					styles.rowContainer,
 					isSelected && styles.rowContainerSelected,
 				]}
-				onPress={() => handleRowPress(id)}
+				onPress={() => handleRowPress(id, name)}
 				onLongPress={() => {
 					isLongPressRef.current = true;
 					if (isSelectable) {
@@ -320,4 +321,3 @@ const styles = StyleSheet.create({
 		fontWeight: '700',
 	},
 });
-

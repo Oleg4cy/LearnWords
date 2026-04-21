@@ -30,6 +30,7 @@ type RootStackParamList = {
 	WordsList: {
 		groupID?: number | null,
 		listMode?: 'group' | 'withoutGroup' | 'all',
+		groupName?: string,
 		refreshKey?: number,
 	};
 };
@@ -49,6 +50,12 @@ export function WordsList({ navigation }: IWordsListScreenProps): JSX.Element {
 			? null
 			: route.params?.groupID ?? null;
 	const refreshKey = route.params?.refreshKey ?? 0;
+	const title = route.params?.groupName
+		?? (listMode === 'all'
+			? 'Все слова'
+			: listMode === 'withoutGroup'
+				? 'Слова без групп'
+				: 'Группа');
 
 	const startArr: TWord[] = [];
 	const [words, setWords] = useState<TWord[]>(startArr);
@@ -163,6 +170,7 @@ export function WordsList({ navigation }: IWordsListScreenProps): JSX.Element {
 					</View>
 				)}
 				<ScrollView contentContainerStyle={[styles.scrollViewContent, containerStyles]}>
+					<Text style={styles.title}>{title}</Text>
 					{words.map((word: TWord) => {
 						const isSelected = Boolean(word.id && selectedWordIDs.includes(word.id));
 						return (
@@ -259,6 +267,13 @@ const styles = StyleSheet.create({
     paddingTop: 10,
     paddingBottom: 76,
 		flexGrow: 1,
+	},
+
+	title: {
+		marginBottom: 14,
+		color: theme.colors.text,
+		fontSize: 20,
+		fontWeight: '700',
 	},
 
 	rowContainer: {
