@@ -279,12 +279,16 @@ export function WordEdit({ navigation }: IWordEditScreenProps): JSX.Element {
     setInputWord('');
   };
 
+  const closeAlert = () => {
+    setAlertVisible(false);
+    setStart(true);
+  };
+
   const getAlertButtons = (): TAlertButton[] => {
     const buttons: TAlertButton[] = [{
       title: 'Закрыть',
       onPress: () => {
-        setAlertVisible(!isAlertVisible);
-        setStart(true);
+        closeAlert();
       },
     }];
 
@@ -294,11 +298,11 @@ export function WordEdit({ navigation }: IWordEditScreenProps): JSX.Element {
       buttons.push({
         title: 'Добавить новое слово',
         onPress: () => {
-          setAlertVisible(!isAlertVisible);
+          closeAlert();
           resetForm();
-          setStart(true);
           navigation.push('WordEdit', {
             isNewWord: true,
+            groupID: selectedGroupID,
           });
         },
       });
@@ -306,8 +310,7 @@ export function WordEdit({ navigation }: IWordEditScreenProps): JSX.Element {
     buttons.push({
       title: 'Назад',
       onPress: () => {
-        setAlertVisible(!isAlertVisible);
-        setStart(true);
+        closeAlert();
         navigation.goBack();
       },
     });
@@ -315,9 +318,8 @@ export function WordEdit({ navigation }: IWordEditScreenProps): JSX.Element {
     buttons.push({
       title: 'К списку слов',
       onPress: () => {
-        setAlertVisible(!isAlertVisible);
-        setStart(true);
-        navigation.navigate('WordsList', { groupID: routeGroupID});
+        closeAlert();
+        navigation.navigate('WordsList', { groupID: selectedGroupID });
       },
     });
 
@@ -477,6 +479,7 @@ export function WordEdit({ navigation }: IWordEditScreenProps): JSX.Element {
         onClose={() => setGroupFormVisible(false)}
         isVisible={isGroupFormVisible}
         onCreate={handleGroupCreated}
+        showAddWordsButton={false}
       />
       <Alert
         isVisible={isAlertVisible}

@@ -21,6 +21,7 @@ interface IGroupFormScreenProps {
 	isVisible: boolean,
 	onClose: () => void,
 	onCreate: (groupID?: number | null) => void,
+	showAddWordsButton?: boolean,
 }
 
 export function GroupForm({
@@ -28,6 +29,7 @@ export function GroupForm({
 	isVisible,
 	onClose,
 	onCreate,
+	showAddWordsButton = true,
 }: IGroupFormScreenProps): JSX.Element {
 	const animationFormDuration: number = 250;
 
@@ -117,7 +119,7 @@ export function GroupForm({
 				}
 			});
 		}
-		if (!isError && !isCancel) {
+		if (!isError && !isCancel && showAddWordsButton) {
 			buttons.push({
 				title: 'Добавить слова в группу',
 				onPress: () => {

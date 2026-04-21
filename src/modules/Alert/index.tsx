@@ -32,6 +32,9 @@ export function Alert({
 	style,
 	onOverlayPress,
 }: IAlertProps): JSX.Element {
+	const maxTitleLength = Math.max(...buttons.map(button => button.title.length), 0);
+	const buttonWidth = Math.min(Math.max(150, maxTitleLength * 10 + 44), 280);
+
 	return (
 		<ModalWithOverlay
 			style={style ?? {}}
@@ -47,6 +50,7 @@ export function Alert({
 						key={index}
 						style={[
 							styles.button,
+							{ width: buttonWidth },
 							(buttons.length - 1 != index) ? styles.marginBottom : {},
 							button.style
 						]}
@@ -82,7 +86,7 @@ const styles = StyleSheet.create({
 	},
 
 	button: {
-		width: 150,
+		alignSelf: 'center',
 	},
 
 
