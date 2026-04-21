@@ -458,6 +458,9 @@ export default class SWords implements ISwords {
 
     try {
       await SWords.updateWord(word);
+      if (word.id && word.groups) {
+        await SWords.updateWordGroups(word.id, word.groups as number[]);
+      }
 
       if (word.translate && Array.isArray(word.translate)) {
         const promises = word.translate.map(async (translateData: TTranslate) => {
@@ -478,6 +481,14 @@ export default class SWords implements ISwords {
       console.error(error);
       return false;
     }
+  }
+
+  private static async updateWordGroups(wordID: number, groups: number[]): Promise<void> {
+    await SWords.execute('DELETE FROM word_group WHERE word_id = ?', [wordID]);
+    const insertGroupPromises = groups.map(async (groupID: number) => {
+      await SWords.insertGroup(groupID, wordID);
+    });
+    await Promise.all(insertGroupPromises);
   }
 
   static async removeByID(id: number) {
@@ -613,5 +624,4 @@ export default class SWords implements ISwords {
     }
   }
 }
-
 

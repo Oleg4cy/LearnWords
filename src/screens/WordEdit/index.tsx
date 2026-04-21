@@ -6,11 +6,12 @@ import { Input } from '../../components/Input';
 import { Header } from '../../modules/Header';
 import { Alert, TAlertButton } from '../../modules/Alert';
 import SWords from '../../storage/words/words.service';
-import { TTranslate, TWord } from '../../storage/words/words.types';
+import { TGroup, TTranslate, TWord } from '../../storage/words/words.types';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import IconsStrings from '../../assets/awesomeIcons';
 import SelectDropdown from 'react-native-select-dropdown';
 import { BottomModalWindow } from '../../modules/BottomModalWindow';
+import { GroupForm } from '../../modules/GroupForm';
 import { getStatusBarHeight } from 'react-native-iphone-x-helper';
 
 import containerStyles from '../../styles/container';
@@ -20,6 +21,7 @@ import theme from '../../styles/theme';
 import {
   SafeAreaView,
   View,
+  Text,
   ScrollView,
   KeyboardAvoidingView,
   StyleSheet,
@@ -38,11 +40,16 @@ type RootStackParamList = {
   };
 };
 
+type TGroupOption = {
+  id: number | null;
+  name: string;
+};
+
 export function WordEdit({ navigation }: IWordEditScreenProps): JSX.Element {
   const route = useRoute<RouteProp<RootStackParamList, 'WordEdit'>>();
   const isNewWord = route.params?.isNewWord ?? false;
   const wordID = route.params?.wordID ?? null;
-  const groupID = route.params?.groupID ?? null;
+  const routeGroupID = route.params?.groupID ?? null;
 
   const inputDataGroup: TTranslate = {
     value: '',
@@ -51,6 +58,11 @@ export function WordEdit({ navigation }: IWordEditScreenProps): JSX.Element {
   };
 
   const [isGroupListVisible, setGroupListVisible] = useState(false);
+  const [isGroupFormVisible, setGroupFormVisible] = useState(false);
+  const [groups, setGroups] = useState<TGroup[]>([]);
+  const [selectedGroupID, setSelectedGroupID] = useState<number | null>(
+    routeGroupID && routeGroupID > 0 ? routeGroupID : null,
+  );
   const [start, setStart] = useState(true);
   const [isAlertVisible, setAlertVisible] = useState(false);
   const [alertMessage, setAlertMessage] = useState('');
@@ -67,6 +79,10 @@ export function WordEdit({ navigation }: IWordEditScreenProps): JSX.Element {
     }
   }, [scrollBottom]);
 
+  useEffect(() => {
+    fetchGroups();
+  }, []);
+
   useFocusEffect(() => {
     if (start) {
       fetchWord();
@@ -80,6 +96,39 @@ export function WordEdit({ navigation }: IWordEditScreenProps): JSX.Element {
     if (word) {
       setInputWord(word.word);
       setInputsGroup(word.translate);
+      const wordGroups = await SWords.getGroups(wordID);
+      setSelectedGroupID(wordGroups[0]?.id ?? null);
+    }
+  };
+
+  const fetchGroups = async () => {
+    try {
+      const fetchedGroups = await SWords.getGroups();
+      setGroups(fetchedGroups);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  const groupOptions = (): TGroupOption[] => [
+    { id: null, name: 'Без группы' },
+    ...groups
+      .filter((group: TGroup) => group.id !== undefined)
+      .map((group: TGroup) => ({
+        id: group.id ?? null,
+        name: group.name,
+      })),
+  ];
+
+  const selectedGroupName = (): string => {
+    if (!selectedGroupID) return 'Без группы';
+    return groups.find((group: TGroup) => group.id === selectedGroupID)?.name ?? 'Без группы';
+  };
+
+  const handleGroupCreated = async (createdGroupID?: number | null) => {
+    await fetchGroups();
+    if (createdGroupID) {
+      setSelectedGroupID(createdGroupID);
     }
   };
 
@@ -207,6 +256,7 @@ export function WordEdit({ navigation }: IWordEditScreenProps): JSX.Element {
     const word: TWord = {
       word: inputWord,
       translate: inputsData,
+      groups: selectedGroupID ? [selectedGroupID] : [],
     };
 
     setSaveWordError(false);
@@ -267,7 +317,7 @@ export function WordEdit({ navigation }: IWordEditScreenProps): JSX.Element {
       onPress: () => {
         setAlertVisible(!isAlertVisible);
         setStart(true);
-        navigation.navigate('WordsList', { groupID: groupID});
+        navigation.navigate('WordsList', { groupID: routeGroupID});
       },
     });
 
@@ -357,7 +407,7 @@ export function WordEdit({ navigation }: IWordEditScreenProps): JSX.Element {
             <View style={styles.section}>
               <Button
                 style={styles.topActionButton}
-                title="Показать список групп"
+                title={`Группа: ${selectedGroupName()}`}
                 onPress={() => setGroupListVisible(true)}
               />
               <Input
@@ -386,19 +436,19 @@ export function WordEdit({ navigation }: IWordEditScreenProps): JSX.Element {
       <BottomModalWindow
         isVisible={isGroupListVisible}
         onOverlayPress={() => setGroupListVisible(false)}>
+        <Text style={styles.modalTitle}>Группа слова</Text>
         <SelectDropdown
-          data={['Egypt', 'Canada', 'Australia', 'Ireland']}
-          onSelect={(selectedItem, index) => {
-            console.log(selectedItem, index);
+          data={groupOptions()}
+          onSelect={(selectedItem: TGroupOption) => {
+            setSelectedGroupID(selectedItem.id);
+            setGroupListVisible(false);
           }}
-          rowTextForSelection={(item, index) => {
-            // text represented for each item in dropdown
-            // if data array is an array of objects then return item.property to represent item in dropdown
-            return item;
+          rowTextForSelection={(item: TGroupOption) => {
+            return item.name;
           }}
-          defaultButtonText={'Select country'}
-          buttonTextAfterSelection={(selectedItem, index) => {
-            return selectedItem;
+          defaultButtonText={selectedGroupName()}
+          buttonTextAfterSelection={(selectedItem: TGroupOption) => {
+            return selectedItem.name;
           }}
           buttonStyle={styles.dropdown1BtnStyle}
           buttonTextStyle={styles.dropdown1BtnTxtStyle}
@@ -416,7 +466,18 @@ export function WordEdit({ navigation }: IWordEditScreenProps): JSX.Element {
           rowStyle={styles.dropdown1RowStyle}
           rowTextStyle={styles.dropdown1RowTxtStyle}
         />
+        <Button
+          style={styles.addGroupButton}
+          title="Добавить группу"
+          onPress={() => setGroupFormVisible(true)}
+        />
       </BottomModalWindow>
+      <GroupForm
+        navigation={navigation}
+        onClose={() => setGroupFormVisible(false)}
+        isVisible={isGroupFormVisible}
+        onCreate={handleGroupCreated}
+      />
       <Alert
         isVisible={isAlertVisible}
         message={alertMessage}
@@ -497,6 +558,18 @@ const styles = StyleSheet.create({
     paddingBottom: 50,
     backgroundColor: theme.colors.surface,
     zIndex: 100,
+  },
+
+  modalTitle: {
+    marginBottom: 12,
+    color: theme.colors.text,
+    fontSize: 18,
+    fontWeight: '700',
+  },
+
+  addGroupButton: {
+    marginTop: 14,
+    backgroundColor: theme.colors.text,
   },
 
   dropdown1BtnStyle: {

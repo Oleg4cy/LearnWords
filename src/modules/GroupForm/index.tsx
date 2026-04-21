@@ -17,10 +17,10 @@ import {
 } from 'react-native';
 
 interface IGroupFormScreenProps {
-	navigation: NavigationProp<any>,
+	navigation: any,
 	isVisible: boolean,
 	onClose: () => void,
-	onCreate: () => void,
+	onCreate: (groupID?: number | null) => void,
 }
 
 export function GroupForm({
@@ -48,7 +48,7 @@ export function GroupForm({
 	const [isCancel, setCancel] = useState<boolean>(false);
 
 	useEffect(() => {
-		onCreate();
+		onCreate(groupID);
 	}, [groupID])
 
 	useEffect(() => {
@@ -241,4 +241,3 @@ const styles = StyleSheet.create({
 		zIndex: 100,
 	},
 });
-
