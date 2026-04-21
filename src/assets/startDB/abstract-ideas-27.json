@@ -1,0 +1,282 @@
+[
+  {
+    "word": "humour",
+    "translate": [
+      {
+        "value": "настроение",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "His humour made everyone laugh."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "hunting",
+    "translate": [
+      {
+        "value": "охота",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is hunting."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "ice",
+    "translate": [
+      {
+        "value": "лёд",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The lake was covered with ice."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "ice cream",
+    "translate": [
+      {
+        "value": "мороженое",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She loves chocolate ice cream."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "idea",
+    "translate": [
+      {
+        "value": "мысль",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She had a great idea for the project."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "ideal",
+    "translate": [
+      {
+        "value": "идеальный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He is the ideal candidate for the job."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "identity",
+    "translate": [
+      {
+        "value": "личность",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She struggled with her identity."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "image",
+    "translate": [
+      {
+        "value": "образ",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The artist created a beautiful image."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "imaginary",
+    "translate": [
+      {
+        "value": "небывалый",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is imaginary."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "imagination",
+    "translate": [
+      {
+        "value": "воображение",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is imagination."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "immigrant",
+    "translate": [
+      {
+        "value": "иммигрант",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is immigrant."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "impatient",
+    "translate": [
+      {
+        "value": "нетерпеливый",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is impatient."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "importance",
+    "translate": [
+      {
+        "value": "важность",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She understands the importance of education."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "important",
+    "translate": [
+      {
+        "value": "большой",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is an important decision."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "impossible",
+    "translate": [
+      {
+        "value": "невозможный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "It is impossible to solve this problem."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "impressive",
+    "translate": [
+      {
+        "value": "сильный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The view was impressive."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "improvement",
+    "translate": [
+      {
+        "value": "улучшение",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "There has been a significant improvement in her work."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "inch",
+    "translate": [
+      {
+        "value": "вершок",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The screen measures 15 inches."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "incident",
+    "translate": [
+      {
+        "value": "случай",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The incident was reported to the police."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "included",
+    "translate": [
+      {
+        "value": "включая",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is included."
+          }
+        ]
+      }
+    ]
+  }
+]

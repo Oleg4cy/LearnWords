@@ -1,0 +1,142 @@
+[
+  {
+    "word": "worried",
+    "translate": [
+      {
+        "value": "тревожный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She is worried about her exams."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "worth",
+    "translate": [
+      {
+        "value": "цена",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The painting is worth a lot of money."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "writer",
+    "translate": [
+      {
+        "value": "писатель",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The writer received an award for his novel."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "writing",
+    "translate": [
+      {
+        "value": "письмо",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "Her writing is very neat."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "written",
+    "translate": [
+      {
+        "value": "письменный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The instructions were written clearly."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "yard",
+    "translate": [
+      {
+        "value": "двор",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The kids are playing in the yard."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "yellow",
+    "translate": [
+      {
+        "value": "жёлтый",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She wore a bright yellow dress."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "young",
+    "translate": [
+      {
+        "value": "маленький",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He is a young man."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "youth",
+    "translate": [
+      {
+        "value": "юноша",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He spent his youth in the countryside."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "zone",
+    "translate": [
+      {
+        "value": "участок",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is a no-parking zone."
+          }
+        ]
+      }
+    ]
+  }
+]

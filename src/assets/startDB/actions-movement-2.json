@@ -1,0 +1,282 @@
+[
+  {
+    "word": "again",
+    "translate": [
+      {
+        "value": "перекладывать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She sang the song again."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "age",
+    "translate": [
+      {
+        "value": "стареть",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She is 30 years of age."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "ago",
+    "translate": [
+      {
+        "value": "назад",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "It happened a long time ago."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "agree",
+    "translate": [
+      {
+        "value": "согласиться",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "I agree with your opinion."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "aid",
+    "translate": [
+      {
+        "value": "помочь",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "They provided aid to the refugees."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "aim",
+    "translate": [
+      {
+        "value": "направить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He aimed at the target."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "allow",
+    "translate": [
+      {
+        "value": "позволить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She allowed him to leave."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "almost",
+    "translate": [
+      {
+        "value": "почти",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She almost missed the bus."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "alone",
+    "translate": [
+      {
+        "value": "одиночка",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He lives alone."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "already",
+    "translate": [
+      {
+        "value": "уже",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She has already finished her homework."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "also",
+    "translate": [
+      {
+        "value": "тоже",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She is talented and also very hardworking."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "alter",
+    "translate": [
+      {
+        "value": "изменить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He altered his appearance."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "always",
+    "translate": [
+      {
+        "value": "век",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She always arrives on time."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "amount",
+    "translate": [
+      {
+        "value": "дойти",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The amount of water needed is 2 liters."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "analyse",
+    "translate": [
+      {
+        "value": "разобрать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "They analyzed the data."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "announce",
+    "translate": [
+      {
+        "value": "заявить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "They announced their engagement."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "annoy",
+    "translate": [
+      {
+        "value": "достать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "His comments annoyed her."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "answer",
+    "translate": [
+      {
+        "value": "ответить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She gave the right answer."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "any more",
+    "translate": [
+      {
+        "value": "больше, уже",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "This is any more."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "anyway",
+    "translate": [
+      {
+        "value": "в любом случае",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "It's cold outside, but I'm going anyway."
+          }
+        ]
+      }
+    ]
+  }
+]

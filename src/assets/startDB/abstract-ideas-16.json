@@ -1,0 +1,282 @@
+[
+  {
+    "word": "diamond",
+    "translate": [
+      {
+        "value": "алмаз",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She received a diamond ring."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "diary",
+    "translate": [
+      {
+        "value": "журнал",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She writes in her diary every day."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "dictionary",
+    "translate": [
+      {
+        "value": "словарь",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "You can find the meaning of words in a dictionary."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "diet",
+    "translate": [
+      {
+        "value": "стол",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He is on a strict diet."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "difference",
+    "translate": [
+      {
+        "value": "разница",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "There is a big difference between them."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "different",
+    "translate": [
+      {
+        "value": "другой",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "They have different opinions."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "difficult",
+    "translate": [
+      {
+        "value": "тяжёлый",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is a difficult problem to solve."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "difficulty",
+    "translate": [
+      {
+        "value": "труд",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He had difficulty understanding the instructions."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "digital",
+    "translate": [
+      {
+        "value": "цифровой",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She bought a new digital camera."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "direction",
+    "translate": [
+      {
+        "value": "управление",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "They headed in the same direction."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "director",
+    "translate": [
+      {
+        "value": "директор",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The film director was praised for his work."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "dirt",
+    "translate": [
+      {
+        "value": "грязь",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "His shoes were covered in dirt."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "dirty",
+    "translate": [
+      {
+        "value": "грязный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The floor was dirty."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "disaster",
+    "translate": [
+      {
+        "value": "бедствие",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The earthquake was a disaster."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "disc",
+    "translate": [
+      {
+        "value": "тарелка",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She inserted the disc into the computer."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "discipline",
+    "translate": [
+      {
+        "value": "дисциплина",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The school enforces strict discipline."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "discovery",
+    "translate": [
+      {
+        "value": "открытие",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The discovery of the new element was groundbreaking."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "discussion",
+    "translate": [
+      {
+        "value": "беседа",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The discussion lasted for hours."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "dish",
+    "translate": [
+      {
+        "value": "блюдо",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She served the pasta in a large dish."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "distance",
+    "translate": [
+      {
+        "value": "даль",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The distance between the two cities is 200 miles."
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,282 @@
+[
+  {
+    "word": "numerous",
+    "translate": [
+      {
+        "value": "многочисленный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He has numerous friends."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "nurse",
+    "translate": [
+      {
+        "value": "сестра",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The nurse took my temperature."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "nut",
+    "translate": [
+      {
+        "value": "орех",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She cracked a nut open."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "objective",
+    "translate": [
+      {
+        "value": "объективный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "Her main objective is to improve her skills."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "obligation",
+    "translate": [
+      {
+        "value": "обязательство",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is obligation."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "observation",
+    "translate": [
+      {
+        "value": "наблюдение",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The observation was noted in the report."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "obvious",
+    "translate": [
+      {
+        "value": "видимый",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "It was obvious that he was lying."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "occasion",
+    "translate": [
+      {
+        "value": "случай",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "They met on the occasion of her birthday."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "odd",
+    "translate": [
+      {
+        "value": "странный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He has some odd habits."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "offence",
+    "translate": [
+      {
+        "value": "преступление",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He was charged with a serious offence."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "offensive",
+    "translate": [
+      {
+        "value": "обидный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The comment was highly offensive."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "official",
+    "translate": [
+      {
+        "value": "официальный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She holds an official position."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "oil",
+    "translate": [
+      {
+        "value": "масло",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The engine needs oil."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "old",
+    "translate": [
+      {
+        "value": "старый",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He is an old man."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "old-fashioned",
+    "translate": [
+      {
+        "value": "старинный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is old-fashioned."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "onion",
+    "translate": [
+      {
+        "value": "лук",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "Chop the onion finely."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "opening",
+    "translate": [
+      {
+        "value": "окно",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is opening."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "operation",
+    "translate": [
+      {
+        "value": "действие",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The operation was successful."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "opinion",
+    "translate": [
+      {
+        "value": "взгляд",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "In my opinion, it's too expensive."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "opponent",
+    "translate": [
+      {
+        "value": "враг",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is opponent."
+          }
+        ]
+      }
+    ]
+  }
+]

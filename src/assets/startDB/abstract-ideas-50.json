@@ -1,0 +1,282 @@
+[
+  {
+    "word": "senior",
+    "translate": [
+      {
+        "value": "старший",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The senior members of the team took charge."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "sensible",
+    "translate": [
+      {
+        "value": "умный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "It was a sensible decision."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "sensitive",
+    "translate": [
+      {
+        "value": "чувствительный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She is very sensitive to criticism."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "sequence",
+    "translate": [
+      {
+        "value": "порядок",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is sequence."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "series",
+    "translate": [
+      {
+        "value": "ряд",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is series."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "serious",
+    "translate": [
+      {
+        "value": "серьёзный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He is a serious student."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "servant",
+    "translate": [
+      {
+        "value": "слуга",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is servant."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "service",
+    "translate": [
+      {
+        "value": "служба",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The restaurant has excellent service."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "session",
+    "translate": [
+      {
+        "value": "смена",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The committee held a special session."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "set",
+    "translate": [
+      {
+        "value": "набор",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He set the book on the table."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "setting",
+    "translate": [
+      {
+        "value": "население",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is setting."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "severe",
+    "translate": [
+      {
+        "value": "тяжёлый",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The storm caused severe damage."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "sex",
+    "translate": [
+      {
+        "value": "пол",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "They discussed the differences between sex and gender."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "sexual",
+    "translate": [
+      {
+        "value": "половой",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The film explores sexual relationships."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "shade",
+    "translate": [
+      {
+        "value": "тень",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "We sat in the shade of a large tree."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "shadow",
+    "translate": [
+      {
+        "value": "тень",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "His shadow followed him closely."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "shallow",
+    "translate": [
+      {
+        "value": "мелкий",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The water was too shallow for diving."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "sharp",
+    "translate": [
+      {
+        "value": "острый",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The knife was very sharp."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "sheep",
+    "translate": [
+      {
+        "value": "баран",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is sheep."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "sheet",
+    "translate": [
+      {
+        "value": "простыня",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He pulled the sheet over the bed."
+          }
+        ]
+      }
+    ]
+  }
+]

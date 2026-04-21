@@ -1,0 +1,282 @@
+[
+  {
+    "word": "institution",
+    "translate": [
+      {
+        "value": "институт",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The institution provides care for the elderly."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "instruction",
+    "translate": [
+      {
+        "value": "распоряжение",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "Follow the instructions carefully."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "instructor",
+    "translate": [
+      {
+        "value": "руководитель",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is instructor."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "instrument",
+    "translate": [
+      {
+        "value": "документ",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He played a musical instrument."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "insurance",
+    "translate": [
+      {
+        "value": "страховка",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She has health insurance."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "intelligence",
+    "translate": [
+      {
+        "value": "сведение",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She has a high level of intelligence."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "intelligent",
+    "translate": [
+      {
+        "value": "умный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He is very intelligent."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "intended",
+    "translate": [
+      {
+        "value": "предназначенный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The intended outcome was not achieved."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "intense",
+    "translate": [
+      {
+        "value": "сильный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is intense."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "intention",
+    "translate": [
+      {
+        "value": "намерение",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "Her intention is to become a doctor."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "interesting",
+    "translate": [
+      {
+        "value": "интересный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The book was very interesting."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "internal",
+    "translate": [
+      {
+        "value": "внутренний",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She has an internal injury."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "international",
+    "translate": [
+      {
+        "value": "международный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "They are attending an international conference."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "introduction",
+    "translate": [
+      {
+        "value": "введение",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The introduction of the new policy was well received."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "invention",
+    "translate": [
+      {
+        "value": "изобретение",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The invention of the telephone changed the world."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "investigation",
+    "translate": [
+      {
+        "value": "исследование",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is investigation."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "investment",
+    "translate": [
+      {
+        "value": "инвестиция",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "His investment in the company paid off."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "invitation",
+    "translate": [
+      {
+        "value": "приглашение",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is invitation."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "involved",
+    "translate": [
+      {
+        "value": "хитрый",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He is involved in many activities."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "island",
+    "translate": [
+      {
+        "value": "остров",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "They visited a tropical island."
+          }
+        ]
+      }
+    ]
+  }
+]

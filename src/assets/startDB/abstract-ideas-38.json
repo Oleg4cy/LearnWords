@@ -1,0 +1,282 @@
+[
+  {
+    "word": "opportunity",
+    "translate": [
+      {
+        "value": "случай",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She seized the opportunity."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "opposed",
+    "translate": [
+      {
+        "value": "противоположный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is opposed."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "opposition",
+    "translate": [
+      {
+        "value": "сопротивление",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "There is strong opposition to the plan."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "option",
+    "translate": [
+      {
+        "value": "вариант",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "You have two options."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "orange",
+    "translate": [
+      {
+        "value": "оранжевый",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She peeled the orange."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "ordinary",
+    "translate": [
+      {
+        "value": "обычный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He led an ordinary life."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "organ",
+    "translate": [
+      {
+        "value": "орган",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is organ."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "organization",
+    "translate": [
+      {
+        "value": "организация",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She works for a non-profit organization."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "organized",
+    "translate": [
+      {
+        "value": "организованный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The files were well organized."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "organizer",
+    "translate": [
+      {
+        "value": "организатор",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is organizer."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "origin",
+    "translate": [
+      {
+        "value": "род",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The origin of the word is Latin."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "original",
+    "translate": [
+      {
+        "value": "подлинный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is an original painting."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "outcome",
+    "translate": [
+      {
+        "value": "результат",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is outcome."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "outer",
+    "translate": [
+      {
+        "value": "внешний",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The outer layer is damaged."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "owner",
+    "translate": [
+      {
+        "value": "хозяин",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She is the owner of the shop."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "page",
+    "translate": [
+      {
+        "value": "страница",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "Please turn to page 20."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "pair",
+    "translate": [
+      {
+        "value": "двойка",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "I bought a new pair of shoes."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "palace",
+    "translate": [
+      {
+        "value": "дворец",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is palace."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "pale",
+    "translate": [
+      {
+        "value": "бледный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "Her face turned pale."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "pan",
+    "translate": [
+      {
+        "value": "чашка",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She cooked the pasta in a large pan."
+          }
+        ]
+      }
+    ]
+  }
+]

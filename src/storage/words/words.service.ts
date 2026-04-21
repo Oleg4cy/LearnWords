@@ -2,7 +2,8 @@ import { SQLiteDatabase, ResultSet, Transaction } from 'react-native-sqlite-stor
 import ISwords from './words.service';
 import SDB from '../db/db.service';
 
-import { TWord, TTranslate, TContext, TGroup } from './words.types';
+import {TWord, TTranslate, TContext, TGroup} from './words.types';
+import {startDBChunks, TStartDBChunk} from '../../assets/startDB';
 
 type TStructureTable = {
   [key: string]: string | string[],
@@ -10,7 +11,7 @@ type TStructureTable = {
   structure: string[],
 };
 
-type TStartDB = { data: TWord[], groups: number[] };
+type TStartDB = {data: TWord[]; groups: number[]}[];
 
 export default class SWords implements ISwords {
   private isInitialized = false;
@@ -655,9 +656,11 @@ export default class SWords implements ISwords {
         await this.checkTable(table);
       }
       const result: TStartDB = await this.getFromJSON();
-      for (const word of result.data) {
-        word.groups = result.groups;
-        await SWords.save(word);
+      for (const chunk of result) {
+        for (const word of chunk.data) {
+          word.groups = chunk.groups;
+          await SWords.insertWordAndTranslations(word);
+        }
       }
     } catch (error) {
       console.log(error);
@@ -667,16 +670,47 @@ export default class SWords implements ISwords {
 
   private async getFromJSON(): Promise<TStartDB> {
     try {
-      const data: TWord[] = await require('../../assets/startDB/basic.json');
-      const groupIDResult = await SWords.createGroup('Первая группа');
-      let groupID: number = 0;
-      if (typeof groupIDResult === 'number') groupID = groupIDResult;
-      const result: TStartDB = { data: data, groups: [groupID] };
+      const result: TStartDB = [];
+      let previousContextValue = '';
+      let groupNumber = 0;
+
+      for (const chunk of startDBChunks) {
+        const contextValue = this.getChunkContextValue(chunk);
+        if (contextValue === previousContextValue) {
+          groupNumber++;
+        } else {
+          previousContextValue = contextValue;
+          groupNumber = 1;
+        }
+
+        const groupIDResult = await SWords.createGroup(
+          `${contextValue} ${groupNumber}`,
+        );
+        let groupID: number = 0;
+        if (typeof groupIDResult === 'number') {
+          groupID = groupIDResult;
+        }
+        result.push({data: chunk.data, groups: [groupID]});
+      }
+
       return result;
     } catch (error) {
       console.log(error);
       throw error;
     }
   }
-}
 
+  private getChunkContextValue(chunk: TStartDBChunk): string {
+    for (const word of chunk.data) {
+      for (const translate of word.translate || []) {
+        for (const context of translate.context || []) {
+          if (context.value) {
+            return context.value;
+          }
+        }
+      }
+    }
+
+    throw new Error(`No context value found in ${chunk.file}`);
+  }
+}

@@ -1,0 +1,282 @@
+[
+  {
+    "word": "mirror",
+    "translate": [
+      {
+        "value": "зеркало",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She looked at herself in the mirror."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "missing",
+    "translate": [
+      {
+        "value": "недостающий",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "His name is on the missing list."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "mission",
+    "translate": [
+      {
+        "value": "поручение",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "Their mission is to explore space."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "mixed",
+    "translate": [
+      {
+        "value": "пёстрый",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She has mixed feelings about the move."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "mixture",
+    "translate": [
+      {
+        "value": "раствор",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The mixture should be smooth."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "mobile",
+    "translate": [
+      {
+        "value": "подвижной",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The device is fully mobile."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "modern",
+    "translate": [
+      {
+        "value": "современный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "Modern technology is amazing."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "moment",
+    "translate": [
+      {
+        "value": "минута",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "I'll be back in a moment."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "moon",
+    "translate": [
+      {
+        "value": "месяц",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The moon is full tonight."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "moral",
+    "translate": [
+      {
+        "value": "моральный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He has a strong moral sense."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "motor",
+    "translate": [
+      {
+        "value": "моторный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The car has a powerful motor."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "mouse",
+    "translate": [
+      {
+        "value": "мышка",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The mouse ran across the floor."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "movement",
+    "translate": [
+      {
+        "value": "движение",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "There was a sudden movement in the bushes."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "mud",
+    "translate": [
+      {
+        "value": "грязь",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The shoes were covered in mud."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "multiple",
+    "translate": [
+      {
+        "value": "многократный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is multiple."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "mum",
+    "translate": [
+      {
+        "value": "мама",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "Mum is cooking dinner."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "muscle",
+    "translate": [
+      {
+        "value": "мышца",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She has strong muscles."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "mysterious",
+    "translate": [
+      {
+        "value": "неведомый",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The disappearance was mysterious."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "mystery",
+    "translate": [
+      {
+        "value": "тайна",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The case remains a mystery."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "nail",
+    "translate": [
+      {
+        "value": "гвоздь",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He hammered the nail into the wall."
+          }
+        ]
+      }
+    ]
+  }
+]

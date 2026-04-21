@@ -1,0 +1,282 @@
+[
+  {
+    "word": "smoke",
+    "translate": [
+      {
+        "value": "курить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The smoke from the fire was thick."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "solve",
+    "translate": [
+      {
+        "value": "решить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She solved the puzzle quickly."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "soon",
+    "translate": [
+      {
+        "value": "сейчас",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "We will leave soon."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "sort",
+    "translate": [
+      {
+        "value": "сортировать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "This is my favorite sort of music."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "sound",
+    "translate": [
+      {
+        "value": "раздаться",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She heard a strange sound."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "south",
+    "translate": [
+      {
+        "value": "южный",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "They traveled south for the winter."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "specifically",
+    "translate": [
+      {
+        "value": "конкретно",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "This is specifically."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "speed",
+    "translate": [
+      {
+        "value": "стремиться",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The car was traveling at high speed."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "spell",
+    "translate": [
+      {
+        "value": "писаться",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She can spell her name correctly."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "spend",
+    "translate": [
+      {
+        "value": "провести",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "They spend a lot of money on travel."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "split",
+    "translate": [
+      {
+        "value": "лопнуть",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She split the log in two."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "sponsor",
+    "translate": [
+      {
+        "value": "покровитель",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "This is sponsor."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "spot",
+    "translate": [
+      {
+        "value": "обнаружить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "There was a spot on his shirt."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "spread",
+    "translate": [
+      {
+        "value": "развести",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She spread butter on the toast."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "spring",
+    "translate": [
+      {
+        "value": "происходить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "Spring is her favorite season."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "stage",
+    "translate": [
+      {
+        "value": "режиссировать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The project is in its final stage."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "stand",
+    "translate": [
+      {
+        "value": "стоять",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She stood in line."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "star",
+    "translate": [
+      {
+        "value": "звезда",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "They saw a bright star in the sky."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "stare",
+    "translate": [
+      {
+        "value": "уставиться",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "This is stare."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "stay",
+    "translate": [
+      {
+        "value": "остаться",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "They decided to stay at a hotel."
+          }
+        ]
+      }
+    ]
+  }
+]

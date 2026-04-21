@@ -1,0 +1,240 @@
+[
+  {
+    "word": "thirty",
+    "translate": [
+      {
+        "value": "тридцать",
+        "context": [
+          {
+            "value": "Время и числа",
+            "example": "There are thirty students in the class."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "thousand",
+    "translate": [
+      {
+        "value": "тысяча",
+        "context": [
+          {
+            "value": "Время и числа",
+            "example": "There were a thousand people at the concert."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "three",
+    "translate": [
+      {
+        "value": "тройка",
+        "context": [
+          {
+            "value": "Время и числа",
+            "example": "There are three books on the table."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "Thursday",
+    "translate": [
+      {
+        "value": "четверг",
+        "context": [
+          {
+            "value": "Время и числа",
+            "example": "We have a meeting on Thursday."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "time",
+    "translate": [
+      {
+        "value": "приурочить",
+        "context": [
+          {
+            "value": "Время и числа",
+            "example": "Time flies when you're having fun."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "today",
+    "translate": [
+      {
+        "value": "сегодняшний",
+        "context": [
+          {
+            "value": "Время и числа",
+            "example": "What are you doing today?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "tomorrow",
+    "translate": [
+      {
+        "value": "завтра",
+        "context": [
+          {
+            "value": "Время и числа",
+            "example": "We will meet tomorrow."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "tonight",
+    "translate": [
+      {
+        "value": "сегодня вечером",
+        "context": [
+          {
+            "value": "Время и числа",
+            "example": "We will have dinner tonight."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "Tuesday",
+    "translate": [
+      {
+        "value": "вторник",
+        "context": [
+          {
+            "value": "Время и числа",
+            "example": "We have a meeting on Tuesday."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "twelve",
+    "translate": [
+      {
+        "value": "двенадцать",
+        "context": [
+          {
+            "value": "Время и числа",
+            "example": "There are twelve months in a year."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "twenty",
+    "translate": [
+      {
+        "value": "двадцать",
+        "context": [
+          {
+            "value": "Время и числа",
+            "example": "She has twenty dollars."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "two",
+    "translate": [
+      {
+        "value": "двойка",
+        "context": [
+          {
+            "value": "Время и числа",
+            "example": "She has two cats."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "Wednesday",
+    "translate": [
+      {
+        "value": "среда",
+        "context": [
+          {
+            "value": "Время и числа",
+            "example": "This is wednesday."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "week",
+    "translate": [
+      {
+        "value": "неделя",
+        "context": [
+          {
+            "value": "Время и числа",
+            "example": "She goes to the gym three times a week."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "weekend",
+    "translate": [
+      {
+        "value": "выходные",
+        "context": [
+          {
+            "value": "Время и числа",
+            "example": "We are planning a trip for the weekend."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "yesterday",
+    "translate": [
+      {
+        "value": "вчера",
+        "context": [
+          {
+            "value": "Время и числа",
+            "example": "He left yesterday."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "zero",
+    "translate": [
+      {
+        "value": "нуль",
+        "context": [
+          {
+            "value": "Время и числа",
+            "example": "The temperature is expected to drop to zero tonight."
+          }
+        ]
+      }
+    ]
+  }
+]

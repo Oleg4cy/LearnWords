@@ -1,0 +1,226 @@
+[
+  {
+    "word": "researcher",
+    "translate": [
+      {
+        "value": "исследователь",
+        "context": [
+          {
+            "value": "Тело и здоровье",
+            "example": "The researcher published her findings."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "search",
+    "translate": [
+      {
+        "value": "искать",
+        "context": [
+          {
+            "value": "Тело и здоровье",
+            "example": "She searched for her keys."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "silly",
+    "translate": [
+      {
+        "value": "глупый",
+        "context": [
+          {
+            "value": "Тело и здоровье",
+            "example": "He felt silly wearing the clown costume."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "skill",
+    "translate": [
+      {
+        "value": "искусство",
+        "context": [
+          {
+            "value": "Тело и здоровье",
+            "example": "Her skill in cooking is impressive."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "skin",
+    "translate": [
+      {
+        "value": "кожа",
+        "context": [
+          {
+            "value": "Тело и здоровье",
+            "example": "His skin is very sensitive."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "still",
+    "translate": [
+      {
+        "value": "тихий",
+        "context": [
+          {
+            "value": "Тело и здоровье",
+            "example": "The lake was still in the early morning."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "surface",
+    "translate": [
+      {
+        "value": "поверхность",
+        "context": [
+          {
+            "value": "Тело и здоровье",
+            "example": "The surface of the table was smooth."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "swear",
+    "translate": [
+      {
+        "value": "ругаться",
+        "context": [
+          {
+            "value": "Тело и здоровье",
+            "example": "He swore to tell the truth."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "tear",
+    "translate": [
+      {
+        "value": "рвать, разрыв",
+        "context": [
+          {
+            "value": "Тело и здоровье",
+            "example": "He tore the paper in half."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "tear",
+    "translate": [
+      {
+        "value": "слеза",
+        "context": [
+          {
+            "value": "Тело и здоровье",
+            "example": "He tore the paper in half."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "underwear",
+    "translate": [
+      {
+        "value": "трусы",
+        "context": [
+          {
+            "value": "Тело и здоровье",
+            "example": "He packed his underwear in the suitcase."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "village",
+    "translate": [
+      {
+        "value": "деревня",
+        "context": [
+          {
+            "value": "Тело и здоровье",
+            "example": "They live in a small village."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "warm",
+    "translate": [
+      {
+        "value": "тёплый",
+        "context": [
+          {
+            "value": "Тело и здоровье",
+            "example": "She felt the warm sun on her face."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "wear",
+    "translate": [
+      {
+        "value": "носить",
+        "context": [
+          {
+            "value": "Тело и здоровье",
+            "example": "She likes to wear colorful clothes."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "willing",
+    "translate": [
+      {
+        "value": "готовый",
+        "context": [
+          {
+            "value": "Тело и здоровье",
+            "example": "He is willing to help."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "year",
+    "translate": [
+      {
+        "value": "год",
+        "context": [
+          {
+            "value": "Тело и здоровье",
+            "example": "She was born last year."
+          }
+        ]
+      }
+    ]
+  }
+]

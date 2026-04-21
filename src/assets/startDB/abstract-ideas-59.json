@@ -1,0 +1,282 @@
+[
+  {
+    "word": "tower",
+    "translate": [
+      {
+        "value": "башня",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The Eiffel Tower is in Paris."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "town",
+    "translate": [
+      {
+        "value": "город",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The town is small but charming."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "toy",
+    "translate": [
+      {
+        "value": "играть",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The child played with a toy car."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "tradition",
+    "translate": [
+      {
+        "value": "традиция",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is tradition."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "traditional",
+    "translate": [
+      {
+        "value": "традиционный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "They have traditional values."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "traffic",
+    "translate": [
+      {
+        "value": "дорожный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The traffic was heavy this morning."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "transition",
+    "translate": [
+      {
+        "value": "переход",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is transition."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "translation",
+    "translate": [
+      {
+        "value": "перевод",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The translation of the novel took a year."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "trend",
+    "translate": [
+      {
+        "value": "течение",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "There is a trend towards using renewable energy."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "trial",
+    "translate": [
+      {
+        "value": "процесс",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The trial lasted for several weeks."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "tropical",
+    "translate": [
+      {
+        "value": "тропический",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The island has a tropical climate."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "trousers",
+    "translate": [
+      {
+        "value": "штаны",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He wore a pair of trousers."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "truck",
+    "translate": [
+      {
+        "value": "грузовик",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The truck carried heavy loads."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "true",
+    "translate": [
+      {
+        "value": "настоящий",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "His story is true."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "truth",
+    "translate": [
+      {
+        "value": "правда",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He told the truth about what happened."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "tube",
+    "translate": [
+      {
+        "value": "трубка",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The water flows through the tube."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "tune",
+    "translate": [
+      {
+        "value": "мотив",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He played a familiar tune on the piano."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "tunnel",
+    "translate": [
+      {
+        "value": "тоннель",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The train went through the tunnel."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "twin",
+    "translate": [
+      {
+        "value": "парный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She has a twin brother."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "typical",
+    "translate": [
+      {
+        "value": "характерный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "It was a typical day at the office."
+          }
+        ]
+      }
+    ]
+  }
+]

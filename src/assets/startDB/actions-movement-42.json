@@ -1,0 +1,198 @@
+[
+  {
+    "word": "why",
+    "translate": [
+      {
+        "value": "почему",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "Why are you late?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "widely",
+    "translate": [
+      {
+        "value": "широко",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He is widely known for his generosity."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "win",
+    "translate": [
+      {
+        "value": "победить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She hopes to win the race."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "wish",
+    "translate": [
+      {
+        "value": "желать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She wished for a better future."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "witness",
+    "translate": [
+      {
+        "value": "свидетельствовать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The witness testified in court."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "wonder",
+    "translate": [
+      {
+        "value": "задуматься",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "I wonder what will happen next."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "worldwide",
+    "translate": [
+      {
+        "value": "общемировой",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "This is worldwide."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "worry",
+    "translate": [
+      {
+        "value": "волноваться",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He worries too much about everything."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "worse",
+    "translate": [
+      {
+        "value": "худший",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The situation got worse."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "worst",
+    "translate": [
+      {
+        "value": "худший",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "This is the worst day of my life."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "wound",
+    "translate": [
+      {
+        "value": "подстрелить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "This is wound."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "wrap",
+    "translate": [
+      {
+        "value": "завернуть",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She wrapped the gift in colorful paper."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "write",
+    "translate": [
+      {
+        "value": "писать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She writes in her journal every day."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "wrong",
+    "translate": [
+      {
+        "value": "кривой",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "That answer is wrong."
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,282 @@
+[
+  {
+    "word": "upper",
+    "translate": [
+      {
+        "value": "верхний",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The upper part of the building is new."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "urban",
+    "translate": [
+      {
+        "value": "городской",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "Urban areas are growing rapidly."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "used",
+    "translate": [
+      {
+        "value": "использованный, привыкший",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He is used to getting up early."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "useful",
+    "translate": [
+      {
+        "value": "полезный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This tool is very useful."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "user",
+    "translate": [
+      {
+        "value": "потребитель",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He is a regular user of this software."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "usual",
+    "translate": [
+      {
+        "value": "обычный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She took her usual route to work."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "valley",
+    "translate": [
+      {
+        "value": "долина",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The valley was covered with flowers."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "valuable",
+    "translate": [
+      {
+        "value": "ценный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He gave her valuable advice."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "van",
+    "translate": [
+      {
+        "value": "фургон",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "They transported the furniture in a van."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "variety",
+    "translate": [
+      {
+        "value": "сорт",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The store offers a variety of products."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "various",
+    "translate": [
+      {
+        "value": "разный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She has various interests."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "vast",
+    "translate": [
+      {
+        "value": "огромный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The desert is vast and empty."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "vehicle",
+    "translate": [
+      {
+        "value": "корабль",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "They need a larger vehicle for their trip."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "venue",
+    "translate": [
+      {
+        "value": "место проведения",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is venue."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "version",
+    "translate": [
+      {
+        "value": "версия",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is the latest version of the software."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "victim",
+    "translate": [
+      {
+        "value": "жертва",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The victim of the accident was taken to the hospital."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "victory",
+    "translate": [
+      {
+        "value": "победа",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "They celebrated their victory."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "viewer",
+    "translate": [
+      {
+        "value": "телезритель",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is viewer."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "violence",
+    "translate": [
+      {
+        "value": "насилие",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The movie contains scenes of violence."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "violent",
+    "translate": [
+      {
+        "value": "сильный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The protest turned violent."
+          }
+        ]
+      }
+    ]
+  }
+]

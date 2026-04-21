@@ -1,0 +1,282 @@
+[
+  {
+    "word": "measurement",
+    "translate": [
+      {
+        "value": "измерение",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The measurement was accurate."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "medical",
+    "translate": [
+      {
+        "value": "медицинский",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She is studying medical science."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "medium",
+    "translate": [
+      {
+        "value": "среднекалиберный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The internet is a medium for communication."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "member",
+    "translate": [
+      {
+        "value": "член",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He is a member of the club."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "memory",
+    "translate": [
+      {
+        "value": "память",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "Her memory is excellent."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "mental",
+    "translate": [
+      {
+        "value": "душевный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She has a strong mental capacity."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "menu",
+    "translate": [
+      {
+        "value": "меню",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The menu offers a variety of options."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "message",
+    "translate": [
+      {
+        "value": "сообщение",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He left a message on her voicemail."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "metal",
+    "translate": [
+      {
+        "value": "металл",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The sculpture was made of metal."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "method",
+    "translate": [
+      {
+        "value": "способ",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The scientific method is crucial."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "metre",
+    "translate": [
+      {
+        "value": "метр",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is metre."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "middle",
+    "translate": [
+      {
+        "value": "средний",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She stood in the middle of the room."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "mild",
+    "translate": [
+      {
+        "value": "тёплый",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The weather is mild today."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "mile",
+    "translate": [
+      {
+        "value": "миля",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "They walked a mile to the store."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "military",
+    "translate": [
+      {
+        "value": "военный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He is in the military."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "mine",
+    "translate": [
+      {
+        "value": "шахта",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This book is mine."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "mineral",
+    "translate": [
+      {
+        "value": "минерал",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The rock contains minerals."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "minimum",
+    "translate": [
+      {
+        "value": "минимальный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "Keep costs to a minimum."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "minor",
+    "translate": [
+      {
+        "value": "малолетний",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "It's a minor issue."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "minority",
+    "translate": [
+      {
+        "value": "меньшинство",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is minority."
+          }
+        ]
+      }
+    ]
+  }
+]

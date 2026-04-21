@@ -1,0 +1,282 @@
+[
+  {
+    "word": "tyre",
+    "translate": [
+      {
+        "value": "шина",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The car needs a new tyre."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "ugly",
+    "translate": [
+      {
+        "value": "дурной",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The painting was ugly."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "umbrella",
+    "translate": [
+      {
+        "value": "зонтик",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She carried an umbrella to avoid getting wet."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "unable",
+    "translate": [
+      {
+        "value": "не способный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He was unable to attend the meeting."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "unconscious",
+    "translate": [
+      {
+        "value": "бессознательный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He was knocked unconscious."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "understanding",
+    "translate": [
+      {
+        "value": "понимание",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She has a deep understanding of the subject."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "unemployed",
+    "translate": [
+      {
+        "value": "безработный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He has been unemployed for six months."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "unemployment",
+    "translate": [
+      {
+        "value": "безработица",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The government is working to reduce unemployment."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "unexpected",
+    "translate": [
+      {
+        "value": "неожиданный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The news was completely unexpected."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "unfair",
+    "translate": [
+      {
+        "value": "кривой",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The decision was unfair."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "uniform",
+    "translate": [
+      {
+        "value": "форма",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The students wear a uniform."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "union",
+    "translate": [
+      {
+        "value": "союз",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He is a member of the teachers' union."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "unique",
+    "translate": [
+      {
+        "value": "уникальный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "Her design is unique."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "unit",
+    "translate": [
+      {
+        "value": "объект",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The new housing unit is now available."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "universe",
+    "translate": [
+      {
+        "value": "вселенная",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The universe is vast and mysterious."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "unknown",
+    "translate": [
+      {
+        "value": "неизвестный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The author of the letter is unknown."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "unlikely",
+    "translate": [
+      {
+        "value": "неправдоподобный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "It is unlikely to rain today."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "unnecessary",
+    "translate": [
+      {
+        "value": "лишний",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This procedure is unnecessary."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "unpleasant",
+    "translate": [
+      {
+        "value": "неприятный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The smell was unpleasant."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "unusual",
+    "translate": [
+      {
+        "value": "необыкновенный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He had an unusual hobby."
+          }
+        ]
+      }
+    ]
+  }
+]

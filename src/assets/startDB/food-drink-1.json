@@ -1,0 +1,282 @@
+[
+  {
+    "word": "apple",
+    "translate": [
+      {
+        "value": "яблоко",
+        "context": [
+          {
+            "value": "Еда и напитки",
+            "example": "She ate an apple for lunch."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "banana",
+    "translate": [
+      {
+        "value": "банан",
+        "context": [
+          {
+            "value": "Еда и напитки",
+            "example": "This is banana."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "beat",
+    "translate": [
+      {
+        "value": "бить",
+        "context": [
+          {
+            "value": "Еда и напитки",
+            "example": "He beat the drum loudly."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "beef",
+    "translate": [
+      {
+        "value": "говядина",
+        "context": [
+          {
+            "value": "Еда и напитки",
+            "example": "They had beef for dinner."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "beer",
+    "translate": [
+      {
+        "value": "пиво",
+        "context": [
+          {
+            "value": "Еда и напитки",
+            "example": "He drank a bottle of beer."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "bread",
+    "translate": [
+      {
+        "value": "хлеб",
+        "context": [
+          {
+            "value": "Еда и напитки",
+            "example": "She bought a loaf of bread."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "breakfast",
+    "translate": [
+      {
+        "value": "завтрак",
+        "context": [
+          {
+            "value": "Еда и напитки",
+            "example": "They had eggs for breakfast."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "breath",
+    "translate": [
+      {
+        "value": "дух",
+        "context": [
+          {
+            "value": "Еда и напитки",
+            "example": "She took a deep breath."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "breathe",
+    "translate": [
+      {
+        "value": "дышать",
+        "context": [
+          {
+            "value": "Еда и напитки",
+            "example": "He had to breathe heavily after running."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "breathing",
+    "translate": [
+      {
+        "value": "дыхание",
+        "context": [
+          {
+            "value": "Еда и напитки",
+            "example": "Breathing exercises can help reduce stress."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "butter",
+    "translate": [
+      {
+        "value": "масло",
+        "context": [
+          {
+            "value": "Еда и напитки",
+            "example": "She spread butter on her toast."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "cake",
+    "translate": [
+      {
+        "value": "кусок",
+        "context": [
+          {
+            "value": "Еда и напитки",
+            "example": "She baked a chocolate cake."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "cheat",
+    "translate": [
+      {
+        "value": "развести",
+        "context": [
+          {
+            "value": "Еда и напитки",
+            "example": "He cheated on the test."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "cheese",
+    "translate": [
+      {
+        "value": "сыр",
+        "context": [
+          {
+            "value": "Еда и напитки",
+            "example": "He added some cheese to the sandwich."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "chicken",
+    "translate": [
+      {
+        "value": "курица",
+        "context": [
+          {
+            "value": "Еда и напитки",
+            "example": "They keep chickens in their backyard."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "coffee",
+    "translate": [
+      {
+        "value": "кофе",
+        "context": [
+          {
+            "value": "Еда и напитки",
+            "example": "She drank a cup of coffee."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "cook",
+    "translate": [
+      {
+        "value": "готовить",
+        "context": [
+          {
+            "value": "Еда и напитки",
+            "example": "He cooked dinner for the family."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "cooker",
+    "translate": [
+      {
+        "value": "плита",
+        "context": [
+          {
+            "value": "Еда и напитки",
+            "example": "The cooker prepared a delicious meal."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "cooking",
+    "translate": [
+      {
+        "value": "стол",
+        "context": [
+          {
+            "value": "Еда и напитки",
+            "example": "He enjoys cooking for his friends."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "create",
+    "translate": [
+      {
+        "value": "создать",
+        "context": [
+          {
+            "value": "Еда и напитки",
+            "example": "The artist created a beautiful painting."
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "word": "unhappy",
+    "translate": [
+      {
+        "value": "несчастный",
+        "context": [
+          {
+            "value": "Технологии и медиа",
+            "example": "She felt unhappy with the decision."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "video",
+    "translate": [
+      {
+        "value": "видео",
+        "context": [
+          {
+            "value": "Технологии и медиа",
+            "example": "She watched a video online."
+          }
+        ]
+      }
+    ]
+  }
+]

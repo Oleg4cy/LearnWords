@@ -1,0 +1,282 @@
+[
+  {
+    "word": "extra",
+    "translate": [
+      {
+        "value": "добавочный",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He needed extra time to finish the test."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "extremely",
+    "translate": [
+      {
+        "value": "весьма",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The weather was extremely hot."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "fail",
+    "translate": [
+      {
+        "value": "сорваться",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He failed to meet the deadline."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "fairly",
+    "translate": [
+      {
+        "value": "довольно",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The judge ruled fairly."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "fall",
+    "translate": [
+      {
+        "value": "приходиться",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "Leaves fall from the trees in autumn."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "fancy",
+    "translate": [
+      {
+        "value": "шикарный",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "I fancy a cup of coffee."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "far",
+    "translate": [
+      {
+        "value": "далёкий",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He lives far from the city."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "fast",
+    "translate": [
+      {
+        "value": "скорый",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The car is very fast."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "fasten",
+    "translate": [
+      {
+        "value": "привязать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He fastened his seatbelt."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "favour",
+    "translate": [
+      {
+        "value": "подарить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "This is favour."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "feed",
+    "translate": [
+      {
+        "value": "подавать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He feeds the dog every morning."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "feel",
+    "translate": [
+      {
+        "value": "чувствовать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "I can feel the warmth of the sun."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "fight",
+    "translate": [
+      {
+        "value": "воевать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "They fight for their rights."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "figure",
+    "translate": [
+      {
+        "value": "фигурировать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The figures show an increase in sales."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "file",
+    "translate": [
+      {
+        "value": "подшить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He put the documents in a file."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "finally",
+    "translate": [
+      {
+        "value": "наконец",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "Finally, the rain stopped."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "find",
+    "translate": [
+      {
+        "value": "найти",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She found a coin on the ground."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "finish",
+    "translate": [
+      {
+        "value": "кончиться",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She finished her homework."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "fire",
+    "translate": [
+      {
+        "value": "стрелять",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The fire kept us warm."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "firstly",
+    "translate": [
+      {
+        "value": "сначала",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "This is firstly."
+          }
+        ]
+      }
+    ]
+  }
+]

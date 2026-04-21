@@ -1,0 +1,282 @@
+[
+  {
+    "word": "period",
+    "translate": [
+      {
+        "value": "срок",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "It was a difficult period in his life."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "permission",
+    "translate": [
+      {
+        "value": "разрешение",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She gave her permission to leave early."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "perspective",
+    "translate": [
+      {
+        "value": "перспектива",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is perspective."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "pet",
+    "translate": [
+      {
+        "value": "любимец",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is pet."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "petrol",
+    "translate": [
+      {
+        "value": "бензин",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is petrol."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "phase",
+    "translate": [
+      {
+        "value": "фаза",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The project is in its final phase."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "phenomenon",
+    "translate": [
+      {
+        "value": "явление",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "Lightning is a natural phenomenon."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "philosophy",
+    "translate": [
+      {
+        "value": "философия",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She studied philosophy in college."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "phrase",
+    "translate": [
+      {
+        "value": "фраза",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He used a common phrase."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "physical",
+    "translate": [
+      {
+        "value": "физический",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She suffered physical pain."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "physics",
+    "translate": [
+      {
+        "value": "физика",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She has a degree in physics."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "piece",
+    "translate": [
+      {
+        "value": "кусок",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He ate a piece of cake."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "pig",
+    "translate": [
+      {
+        "value": "свинья",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The pig rolled in the mud."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "pilot",
+    "translate": [
+      {
+        "value": "лётчик",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The pilot landed the plane safely."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "pink",
+    "translate": [
+      {
+        "value": "розовый",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She wore a pink dress."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "pipe",
+    "translate": [
+      {
+        "value": "трубка",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The plumber fixed the broken pipe."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "pitch",
+    "translate": [
+      {
+        "value": "высота",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She has perfect pitch."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "plain",
+    "translate": [
+      {
+        "value": "простой",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She wore a plain dress."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "planning",
+    "translate": [
+      {
+        "value": "планирование",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "They are planning a trip to Europe."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "plastic",
+    "translate": [
+      {
+        "value": "пластический",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The toy is made of plastic."
+          }
+        ]
+      }
+    ]
+  }
+]

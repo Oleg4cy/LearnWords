@@ -1,0 +1,282 @@
+[
+  {
+    "word": "complaint",
+    "translate": [
+      {
+        "value": "жалоба",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "They filed a complaint with the manager."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "complex",
+    "translate": [
+      {
+        "value": "сложный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The problem is complex."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "component",
+    "translate": [
+      {
+        "value": "компонент",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is component."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "concentration",
+    "translate": [
+      {
+        "value": "концентрация",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This task requires full concentration."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "concept",
+    "translate": [
+      {
+        "value": "идея",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The concept of freedom is central to the story."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "concerned",
+    "translate": [
+      {
+        "value": "заинтересованный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She is concerned about his health."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "conclusion",
+    "translate": [
+      {
+        "value": "вывод",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The conclusion of the trial was unexpected."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "condition",
+    "translate": [
+      {
+        "value": "состояние",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The car is in good condition."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "conference",
+    "translate": [
+      {
+        "value": "заседание",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She attended a conference on climate change."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "confused",
+    "translate": [
+      {
+        "value": "смущённый",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He looked confused when I asked him the question."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "confusing",
+    "translate": [
+      {
+        "value": "сбивчивый",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The directions were confusing."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "connected",
+    "translate": [
+      {
+        "value": "связанный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The devices are connected."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "connection",
+    "translate": [
+      {
+        "value": "связь",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "There is a strong connection between diet and health."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "conscious",
+    "translate": [
+      {
+        "value": "сознательный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He was conscious during the procedure."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "consequence",
+    "translate": [
+      {
+        "value": "следствие",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "Her decision had serious consequences."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "conservative",
+    "translate": [
+      {
+        "value": "консервативный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He has conservative views."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "consideration",
+    "translate": [
+      {
+        "value": "внимание",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She gave the proposal careful consideration."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "consistent",
+    "translate": [
+      {
+        "value": "последовательный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is consistent."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "constant",
+    "translate": [
+      {
+        "value": "постоянный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The constant noise was annoying."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "construction",
+    "translate": [
+      {
+        "value": "строительство",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The construction of the bridge took two years."
+          }
+        ]
+      }
+    ]
+  }
+]

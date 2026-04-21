@@ -1,0 +1,282 @@
+[
+  {
+    "word": "narrative",
+    "translate": [
+      {
+        "value": "повествовательный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is narrative."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "nation",
+    "translate": [
+      {
+        "value": "народ",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The nation celebrated its independence day."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "national",
+    "translate": [
+      {
+        "value": "государственный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He works for the national government."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "native",
+    "translate": [
+      {
+        "value": "родной",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is native."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "natural",
+    "translate": [
+      {
+        "value": "свободный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She prefers natural light."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "necessary",
+    "translate": [
+      {
+        "value": "нужный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "It's necessary to wear a helmet."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "neck",
+    "translate": [
+      {
+        "value": "шея",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He has a stiff neck."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "needle",
+    "translate": [
+      {
+        "value": "игла",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She threaded the needle."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "negative",
+    "translate": [
+      {
+        "value": "отрицательный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He had a negative attitude."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "nerve",
+    "translate": [
+      {
+        "value": "нерв",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He damaged a nerve in his hand."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "net",
+    "translate": [
+      {
+        "value": "сеть",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He used a net to catch fish."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "new",
+    "translate": [
+      {
+        "value": "новый",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She bought a new car."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "news",
+    "translate": [
+      {
+        "value": "новость",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He reads the news every morning."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "newspaper",
+    "translate": [
+      {
+        "value": "газета",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She works for a newspaper."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "nice",
+    "translate": [
+      {
+        "value": "приятный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She is a nice person."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "noise",
+    "translate": [
+      {
+        "value": "шум",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The noise was unbearable."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "noisy",
+    "translate": [
+      {
+        "value": "шумный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The room was noisy."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "normal",
+    "translate": [
+      {
+        "value": "нормальный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "Everything is back to normal."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "northern",
+    "translate": [
+      {
+        "value": "северный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "They live in the northern part of the city."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "notion",
+    "translate": [
+      {
+        "value": "идея",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is notion."
+          }
+        ]
+      }
+    ]
+  }
+]

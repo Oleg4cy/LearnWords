@@ -1,0 +1,282 @@
+[
+  {
+    "word": "panel",
+    "translate": [
+      {
+        "value": "щит",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is panel."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "pants",
+    "translate": [
+      {
+        "value": "брюки",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He wore his favorite pants."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "paper",
+    "translate": [
+      {
+        "value": "газета",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He wrote his notes on paper."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "paragraph",
+    "translate": [
+      {
+        "value": "пункт",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is paragraph."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "parking",
+    "translate": [
+      {
+        "value": "стоянка",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "Parking is difficult in this area."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "passage",
+    "translate": [
+      {
+        "value": "путь",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The passage was narrow."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "passenger",
+    "translate": [
+      {
+        "value": "пассажир",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The passenger boarded the bus."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "path",
+    "translate": [
+      {
+        "value": "путь",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "They walked along the path."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "patient",
+    "translate": [
+      {
+        "value": "терпеливый",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She was very patient with the children."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "pattern",
+    "translate": [
+      {
+        "value": "модель",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The dress has a floral pattern."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "payment",
+    "translate": [
+      {
+        "value": "расчёт",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The payment was made in cash."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "peace",
+    "translate": [
+      {
+        "value": "мир",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "They lived in peace."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "peaceful",
+    "translate": [
+      {
+        "value": "тихий",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The village is very peaceful."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "pen",
+    "translate": [
+      {
+        "value": "ручка",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She signed the document with a pen."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "pencil",
+    "translate": [
+      {
+        "value": "карандаш",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He drew a picture with a pencil."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "penny",
+    "translate": [
+      {
+        "value": "копейка",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is penny."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "pension1",
+    "translate": [
+      {
+        "value": "пенсия",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is pension1."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "pepper",
+    "translate": [
+      {
+        "value": "перец",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She added pepper to the soup."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "percentage",
+    "translate": [
+      {
+        "value": "процент",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is percentage."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "perfect",
+    "translate": [
+      {
+        "value": "круглый",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The painting is perfect."
+          }
+        ]
+      }
+    ]
+  }
+]

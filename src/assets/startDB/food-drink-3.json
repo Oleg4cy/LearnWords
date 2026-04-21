@@ -1,0 +1,282 @@
+[
+  {
+    "word": "meal",
+    "translate": [
+      {
+        "value": "еда",
+        "context": [
+          {
+            "value": "Еда и напитки",
+            "example": "We had a delicious meal."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "meat",
+    "translate": [
+      {
+        "value": "мясо",
+        "context": [
+          {
+            "value": "Еда и напитки",
+            "example": "They eat meat every day."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "milk",
+    "translate": [
+      {
+        "value": "молоко",
+        "context": [
+          {
+            "value": "Еда и напитки",
+            "example": "She drank a glass of milk."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "neat",
+    "translate": [
+      {
+        "value": "чистый",
+        "context": [
+          {
+            "value": "Еда и напитки",
+            "example": "His room is always neat."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "potato",
+    "translate": [
+      {
+        "value": "картофелина",
+        "context": [
+          {
+            "value": "Еда и напитки",
+            "example": "He peeled the potato."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "price",
+    "translate": [
+      {
+        "value": "наценивать",
+        "context": [
+          {
+            "value": "Еда и напитки",
+            "example": "The price of the book is $20."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "repeat",
+    "translate": [
+      {
+        "value": "повторить",
+        "context": [
+          {
+            "value": "Еда и напитки",
+            "example": "Please repeat what you just said."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "repeated",
+    "translate": [
+      {
+        "value": "повторный",
+        "context": [
+          {
+            "value": "Еда и напитки",
+            "example": "He made repeated attempts to contact her."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "restaurant",
+    "translate": [
+      {
+        "value": "ресторан",
+        "context": [
+          {
+            "value": "Еда и напитки",
+            "example": "They went to a fancy restaurant."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "rice",
+    "translate": [
+      {
+        "value": "рис",
+        "context": [
+          {
+            "value": "Еда и напитки",
+            "example": "Rice is a staple food in many cultures."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "seat",
+    "translate": [
+      {
+        "value": "сажать",
+        "context": [
+          {
+            "value": "Еда и напитки",
+            "example": "He took a seat in the front row."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "soup",
+    "translate": [
+      {
+        "value": "суп",
+        "context": [
+          {
+            "value": "Еда и напитки",
+            "example": "He made a pot of chicken soup."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "steady",
+    "translate": [
+      {
+        "value": "стойкий",
+        "context": [
+          {
+            "value": "Еда и напитки",
+            "example": "He held the ladder steady."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "steal",
+    "translate": [
+      {
+        "value": "вытащить",
+        "context": [
+          {
+            "value": "Еда и напитки",
+            "example": "Someone tried to steal his wallet."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "sweater",
+    "translate": [
+      {
+        "value": "свитер",
+        "context": [
+          {
+            "value": "Еда и напитки",
+            "example": "This is sweater."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "tea",
+    "translate": [
+      {
+        "value": "чай",
+        "context": [
+          {
+            "value": "Еда и напитки",
+            "example": "She drinks tea every morning."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "teach",
+    "translate": [
+      {
+        "value": "учить",
+        "context": [
+          {
+            "value": "Еда и напитки",
+            "example": "She teaches English at the school."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "teacher",
+    "translate": [
+      {
+        "value": "учитель",
+        "context": [
+          {
+            "value": "Еда и напитки",
+            "example": "The teacher explained the lesson."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "teaching",
+    "translate": [
+      {
+        "value": "учение",
+        "context": [
+          {
+            "value": "Еда и напитки",
+            "example": "He is interested in teaching."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "team",
+    "translate": [
+      {
+        "value": "команда",
+        "context": [
+          {
+            "value": "Еда и напитки",
+            "example": "The team played well together."
+          }
+        ]
+      }
+    ]
+  }
+]

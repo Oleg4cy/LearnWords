@@ -1,0 +1,128 @@
+[
+  {
+    "word": "shop",
+    "translate": [
+      {
+        "value": "магазин",
+        "context": [
+          {
+            "value": "Учёба, работа и бизнес",
+            "example": "They opened a new shop in town."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "shopping",
+    "translate": [
+      {
+        "value": "покупки",
+        "context": [
+          {
+            "value": "Учёба, работа и бизнес",
+            "example": "She enjoys shopping on weekends."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "student",
+    "translate": [
+      {
+        "value": "студент",
+        "context": [
+          {
+            "value": "Учёба, работа и бизнес",
+            "example": "She is a diligent student."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "study",
+    "translate": [
+      {
+        "value": "проходить",
+        "context": [
+          {
+            "value": "Учёба, работа и бизнес",
+            "example": "He studies hard for his exams."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "supermarket",
+    "translate": [
+      {
+        "value": "универмаг",
+        "context": [
+          {
+            "value": "Учёба, работа и бизнес",
+            "example": "This is supermarket."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "university",
+    "translate": [
+      {
+        "value": "университет",
+        "context": [
+          {
+            "value": "Учёба, работа и бизнес",
+            "example": "She attends a prestigious university."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "work",
+    "translate": [
+      {
+        "value": "работать",
+        "context": [
+          {
+            "value": "Учёба, работа и бизнес",
+            "example": "She needs to work harder."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "worker",
+    "translate": [
+      {
+        "value": "работник",
+        "context": [
+          {
+            "value": "Учёба, работа и бизнес",
+            "example": "The factory worker is very diligent."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "working",
+    "translate": [
+      {
+        "value": "рабочий",
+        "context": [
+          {
+            "value": "Учёба, работа и бизнес",
+            "example": "She is working on a new project."
+          }
+        ]
+      }
+    ]
+  }
+]

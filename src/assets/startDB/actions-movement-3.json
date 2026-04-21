@@ -1,0 +1,282 @@
+[
+  {
+    "word": "apologize",
+    "translate": [
+      {
+        "value": "извиняться",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "I apologize for the mistake."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "argue",
+    "translate": [
+      {
+        "value": "утверждать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "They argued about the best solution."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "arise",
+    "translate": [
+      {
+        "value": "происходить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "Problems may arise if you don't follow the rules."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "arrange",
+    "translate": [
+      {
+        "value": "устроить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She arranged the flowers in a vase."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "arrest",
+    "translate": [
+      {
+        "value": "задержать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The police arrested the suspect."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "arrive",
+    "translate": [
+      {
+        "value": "прийти",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "We arrived at the hotel."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "ask",
+    "translate": [
+      {
+        "value": "спросить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She asked a question."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "assess",
+    "translate": [
+      {
+        "value": "распределить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "This is assess."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "assist",
+    "translate": [
+      {
+        "value": "помочь",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She assisted the elderly woman."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "associate",
+    "translate": [
+      {
+        "value": "водиться",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He associated himself with the campaign."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "assume",
+    "translate": [
+      {
+        "value": "полагать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "I assume he is coming."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "attach",
+    "translate": [
+      {
+        "value": "привязать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "Please attach the file to the email."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "attack",
+    "translate": [
+      {
+        "value": "наступить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The soldiers attacked the fort."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "attempt",
+    "translate": [
+      {
+        "value": "попробовать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She attempted to lift the box."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "attend",
+    "translate": [
+      {
+        "value": "слушать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She attended the meeting."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "attract",
+    "translate": [
+      {
+        "value": "привлечь",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The festival attracts many visitors."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "average",
+    "translate": [
+      {
+        "value": "средний",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The average temperature in July is high."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "avoid",
+    "translate": [
+      {
+        "value": "избегать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He tried to avoid the obstacle."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "away",
+    "translate": [
+      {
+        "value": "прочь",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She walked away from the crowd."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "back",
+    "translate": [
+      {
+        "value": "задний",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He lay on his back."
+          }
+        ]
+      }
+    ]
+  }
+]

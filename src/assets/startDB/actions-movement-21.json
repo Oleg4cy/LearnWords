@@ -1,0 +1,282 @@
+[
+  {
+    "word": "joke",
+    "translate": [
+      {
+        "value": "шутить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He told a funny joke."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "jump",
+    "translate": [
+      {
+        "value": "вскочить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The cat can jump high."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "just",
+    "translate": [
+      {
+        "value": "праведный",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "It was a just decision."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "justify",
+    "translate": [
+      {
+        "value": "оправдать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She tried to justify her actions."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "keep",
+    "translate": [
+      {
+        "value": "держать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "Please keep this document safe."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "kick",
+    "translate": [
+      {
+        "value": "ударить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He kicked the ball into the goal."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "kiss",
+    "translate": [
+      {
+        "value": "поцеловать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He kissed her on the cheek."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "knock",
+    "translate": [
+      {
+        "value": "стучать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He knocked on the door."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "know",
+    "translate": [
+      {
+        "value": "знать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "I know the answer."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "lack",
+    "translate": [
+      {
+        "value": "неимение",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "There is a lack of evidence."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "land",
+    "translate": [
+      {
+        "value": "садиться",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "They bought a piece of land."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "largely",
+    "translate": [
+      {
+        "value": "в значительной степени",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The success is largely due to teamwork."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "last",
+    "translate": [
+      {
+        "value": "последний",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He was the last person to leave."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "late",
+    "translate": [
+      {
+        "value": "бывший",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She arrived late to the meeting."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "later",
+    "translate": [
+      {
+        "value": "там",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "We will discuss this later."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "laugh",
+    "translate": [
+      {
+        "value": "смеяться",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The joke made everyone laugh."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "launch",
+    "translate": [
+      {
+        "value": "спустить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "They will launch the new product next month."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "lay",
+    "translate": [
+      {
+        "value": "лежать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He lay down on the bed."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "lead",
+    "translate": [
+      {
+        "value": "вести",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She will lead the team to victory."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "lean",
+    "translate": [
+      {
+        "value": "наклониться",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She leaned back in her chair."
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,282 @@
+[
+  {
+    "word": "spider",
+    "translate": [
+      {
+        "value": "паук",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "There is a spider on the wall."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "spiritual",
+    "translate": [
+      {
+        "value": "духовный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She is on a spiritual journey."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "spoken",
+    "translate": [
+      {
+        "value": "устный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The speech was well spoken."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "spoon",
+    "translate": [
+      {
+        "value": "ложка",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He ate soup with a spoon."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "square",
+    "translate": [
+      {
+        "value": "квадратный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He drew a square on the paper."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "stadium",
+    "translate": [
+      {
+        "value": "стадион",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is stadium."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "staff",
+    "translate": [
+      {
+        "value": "состав",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The hospital staff is very professional."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "stair",
+    "translate": [
+      {
+        "value": "ступенька",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She walked up the stairs."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "stamp",
+    "translate": [
+      {
+        "value": "печать",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He put a stamp on the envelope."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "standard",
+    "translate": [
+      {
+        "value": "стандартный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The equipment meets safety standards."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "statistic",
+    "translate": [
+      {
+        "value": "статистический",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is statistic."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "statue",
+    "translate": [
+      {
+        "value": "памятник",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The statue was unveiled in the town square."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "status",
+    "translate": [
+      {
+        "value": "положение",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "His status in the company is high."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "steel",
+    "translate": [
+      {
+        "value": "сталь",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The building is supported by steel beams."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "steep",
+    "translate": [
+      {
+        "value": "крутой",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The path became very steep."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "stick",
+    "translate": [
+      {
+        "value": "палка",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He picked up a stick from the ground."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "sticky",
+    "translate": [
+      {
+        "value": "липкий",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is sticky."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "stiff",
+    "translate": [
+      {
+        "value": "жёсткий",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The clothes were stiff from drying in the sun."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "stock",
+    "translate": [
+      {
+        "value": "род",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The store has a large stock of goods."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "stomach",
+    "translate": [
+      {
+        "value": "живот",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He felt a pain in his stomach."
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,282 @@
+[
+  {
+    "word": "hold",
+    "translate": [
+      {
+        "value": "держать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She held the baby in her arms."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "honour",
+    "translate": [
+      {
+        "value": "честь",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "This is honour."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "host",
+    "translate": [
+      {
+        "value": "хозяин",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The host welcomed us warmly."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "how",
+    "translate": [
+      {
+        "value": "как",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "How do you solve this problem?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "however",
+    "translate": [
+      {
+        "value": "однако",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He is tired; however, he will continue working."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "hunt",
+    "translate": [
+      {
+        "value": "охотиться",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "They went to hunt deer."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "hurry",
+    "translate": [
+      {
+        "value": "спешить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "Hurry, or we'll be late."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "hurt",
+    "translate": [
+      {
+        "value": "обиженный",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He hurt his leg while playing football."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "identify",
+    "translate": [
+      {
+        "value": "опознать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "Can you identify the suspect?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "ignore",
+    "translate": [
+      {
+        "value": "игнорировать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He ignored the warning signs."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "imagine",
+    "translate": [
+      {
+        "value": "представить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "Can you imagine a world without war?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "impact",
+    "translate": [
+      {
+        "value": "удар",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The impact of the crash was severe."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "imply",
+    "translate": [
+      {
+        "value": "намекать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "This is imply."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "import",
+    "translate": [
+      {
+        "value": "ввозить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "This is import."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "impose",
+    "translate": [
+      {
+        "value": "спустить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "This is impose."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "impress",
+    "translate": [
+      {
+        "value": "внушать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She wants to impress her boss."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "improve",
+    "translate": [
+      {
+        "value": "улучшить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He wants to improve his skills."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "include",
+    "translate": [
+      {
+        "value": "состоять",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The price includes tax."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "increase",
+    "translate": [
+      {
+        "value": "расти",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "They plan to increase production."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "increasingly",
+    "translate": [
+      {
+        "value": "всё больше",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He is becoming increasingly worried."
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,198 @@
+[
+  {
+    "word": "road",
+    "translate": [
+      {
+        "value": "дорога",
+        "context": [
+          {
+            "value": "Путешествия и транспорт",
+            "example": "They drove down the road."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "scared",
+    "translate": [
+      {
+        "value": "испуганный",
+        "context": [
+          {
+            "value": "Путешествия и транспорт",
+            "example": "She was scared of the dark."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "scary",
+    "translate": [
+      {
+        "value": "пугающий",
+        "context": [
+          {
+            "value": "Путешествия и транспорт",
+            "example": "The movie was really scary."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "ship",
+    "translate": [
+      {
+        "value": "отгружать",
+        "context": [
+          {
+            "value": "Путешествия и транспорт",
+            "example": "The ship sailed across the ocean."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "station",
+    "translate": [
+      {
+        "value": "станция",
+        "context": [
+          {
+            "value": "Путешествия и транспорт",
+            "example": "The train arrived at the station."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "street",
+    "translate": [
+      {
+        "value": "улица",
+        "context": [
+          {
+            "value": "Путешествия и транспорт",
+            "example": "She lives on Maple Street."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "ticket",
+    "translate": [
+      {
+        "value": "билет",
+        "context": [
+          {
+            "value": "Путешествия и транспорт",
+            "example": "She bought a ticket for the concert."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "train",
+    "translate": [
+      {
+        "value": "подготовить",
+        "context": [
+          {
+            "value": "Путешествия и транспорт",
+            "example": "She took the train to the city."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "trainer",
+    "translate": [
+      {
+        "value": "тренер",
+        "context": [
+          {
+            "value": "Путешествия и транспорт",
+            "example": "This is trainer."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "training",
+    "translate": [
+      {
+        "value": "подготовка",
+        "context": [
+          {
+            "value": "Путешествия и транспорт",
+            "example": "The training for the new job starts next week."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "transport",
+    "translate": [
+      {
+        "value": "возить",
+        "context": [
+          {
+            "value": "Путешествия и транспорт",
+            "example": "They transport goods by truck."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "travel",
+    "translate": [
+      {
+        "value": "лететь",
+        "context": [
+          {
+            "value": "Путешествия и транспорт",
+            "example": "She loves to travel around the world."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "traveller",
+    "translate": [
+      {
+        "value": "путник",
+        "context": [
+          {
+            "value": "Путешествия и транспорт",
+            "example": "The traveller shared his stories."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "trip",
+    "translate": [
+      {
+        "value": "споткнуться",
+        "context": [
+          {
+            "value": "Путешествия и транспорт",
+            "example": "They went on a trip to the mountains."
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,282 @@
+[
+  {
+    "word": "per",
+    "translate": [
+      {
+        "value": "за, на каждый",
+        "context": [
+          {
+            "value": "Грамматика и служебные слова",
+            "example": "He earns $50 per hour."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "please",
+    "translate": [
+      {
+        "value": "угодить",
+        "context": [
+          {
+            "value": "Грамматика и служебные слова",
+            "example": "Her smile pleased him."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "plenty",
+    "translate": [
+      {
+        "value": "изобилие",
+        "context": [
+          {
+            "value": "Грамматика и служебные слова",
+            "example": "There is plenty of food for everyone."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "plus",
+    "translate": [
+      {
+        "value": "плюс",
+        "context": [
+          {
+            "value": "Грамматика и служебные слова",
+            "example": "Two plus two equals four."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "round",
+    "translate": [
+      {
+        "value": "круглый",
+        "context": [
+          {
+            "value": "Грамматика и служебные слова",
+            "example": "The table was round."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "same",
+    "translate": [
+      {
+        "value": "одинаковый",
+        "context": [
+          {
+            "value": "Грамматика и служебные слова",
+            "example": "They wore the same dress."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "several",
+    "translate": [
+      {
+        "value": "ряд",
+        "context": [
+          {
+            "value": "Грамматика и служебные слова",
+            "example": "He has several friends in the city."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "shall",
+    "translate": [
+      {
+        "value": "следует, будем",
+        "context": [
+          {
+            "value": "Грамматика и служебные слова",
+            "example": "I shall return by evening."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "she",
+    "translate": [
+      {
+        "value": "она",
+        "context": [
+          {
+            "value": "Грамматика и служебные слова",
+            "example": "She is a talented musician."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "should",
+    "translate": [
+      {
+        "value": "следовать",
+        "context": [
+          {
+            "value": "Грамматика и служебные слова",
+            "example": "You should study for the exam."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "since",
+    "translate": [
+      {
+        "value": "благо",
+        "context": [
+          {
+            "value": "Грамматика и служебные слова",
+            "example": "Since it was raining, we stayed indoors."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "so",
+    "translate": [
+      {
+        "value": "часок",
+        "context": [
+          {
+            "value": "Грамматика и служебные слова",
+            "example": "She was so tired that she couldn't speak."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "some",
+    "translate": [
+      {
+        "value": "некоторый, немного",
+        "context": [
+          {
+            "value": "Грамматика и служебные слова",
+            "example": "She needs some help with her homework."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "somebody",
+    "translate": [
+      {
+        "value": "кто-то",
+        "context": [
+          {
+            "value": "Грамматика и служебные слова",
+            "example": "Somebody left their umbrella."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "someone",
+    "translate": [
+      {
+        "value": "некто",
+        "context": [
+          {
+            "value": "Грамматика и служебные слова",
+            "example": "Someone is at the door."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "something",
+    "translate": [
+      {
+        "value": "везти",
+        "context": [
+          {
+            "value": "Грамматика и служебные слова",
+            "example": "I need something to eat."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "somewhere",
+    "translate": [
+      {
+        "value": "где-то",
+        "context": [
+          {
+            "value": "Грамматика и служебные слова",
+            "example": "He lives somewhere near here."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "sorry",
+    "translate": [
+      {
+        "value": "простите",
+        "context": [
+          {
+            "value": "Грамматика и служебные слова",
+            "example": "I am sorry for your loss."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "such",
+    "translate": [
+      {
+        "value": "такой",
+        "context": [
+          {
+            "value": "Грамматика и служебные слова",
+            "example": "She had never seen such a beautiful sunset."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "than",
+    "translate": [
+      {
+        "value": "чём",
+        "context": [
+          {
+            "value": "Грамматика и служебные слова",
+            "example": "He is taller than his brother."
+          }
+        ]
+      }
+    ]
+  }
+]

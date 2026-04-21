@@ -1,0 +1,282 @@
+[
+  {
+    "word": "income",
+    "translate": [
+      {
+        "value": "доход",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She has a steady income."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "incredible",
+    "translate": [
+      {
+        "value": "невероятный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is incredible."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "independent",
+    "translate": [
+      {
+        "value": "отдельный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She is an independent woman."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "indirect",
+    "translate": [
+      {
+        "value": "косвенный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "They took an indirect route to avoid traffic."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "individual",
+    "translate": [
+      {
+        "value": "индивидуальный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "Every individual has rights."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "industrial",
+    "translate": [
+      {
+        "value": "промышленный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The city is known for its industrial heritage."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "industry",
+    "translate": [
+      {
+        "value": "промышленность",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The steel industry is vital to the economy."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "infection",
+    "translate": [
+      {
+        "value": "инфекция",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He has a throat infection."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "informal",
+    "translate": [
+      {
+        "value": "неофициальный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "They had an informal meeting."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "information",
+    "translate": [
+      {
+        "value": "информация",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "We need more information about the event."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "ingredient",
+    "translate": [
+      {
+        "value": "ингредиент",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The main ingredient is flour."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "initial",
+    "translate": [
+      {
+        "value": "начальный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "His initial reaction was surprise."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "initiative",
+    "translate": [
+      {
+        "value": "инициатива",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She took the initiative to start the meeting."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "injured",
+    "translate": [
+      {
+        "value": "раненый",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The injured person was taken to the hospital."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "injury",
+    "translate": [
+      {
+        "value": "рана",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He suffered a serious injury."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "inner",
+    "translate": [
+      {
+        "value": "внутренний",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She felt a sense of inner peace."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "innocent",
+    "translate": [
+      {
+        "value": "невиновный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He was found innocent of the charges."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "insight",
+    "translate": [
+      {
+        "value": "проницательность",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is insight."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "instance",
+    "translate": [
+      {
+        "value": "пример",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "For instance, she said she would be late."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "institute",
+    "translate": [
+      {
+        "value": "институт",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "They work at a research institute."
+          }
+        ]
+      }
+    ]
+  }
+]

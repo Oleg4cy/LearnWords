@@ -1,0 +1,282 @@
+[
+  {
+    "word": "fourth",
+    "translate": [
+      {
+        "value": "четверть",
+        "context": [
+          {
+            "value": "Время и числа",
+            "example": "She finished in fourth place."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "Friday",
+    "translate": [
+      {
+        "value": "пятница",
+        "context": [
+          {
+            "value": "Время и числа",
+            "example": "This is friday."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "holiday",
+    "translate": [
+      {
+        "value": "праздник",
+        "context": [
+          {
+            "value": "Время и числа",
+            "example": "They went on a holiday to Greece."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "hour",
+    "translate": [
+      {
+        "value": "час",
+        "context": [
+          {
+            "value": "Время и числа",
+            "example": "It takes an hour to get there."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "hundred",
+    "translate": [
+      {
+        "value": "сотня",
+        "context": [
+          {
+            "value": "Время и числа",
+            "example": "There were a hundred people at the event."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "January",
+    "translate": [
+      {
+        "value": "январь",
+        "context": [
+          {
+            "value": "Время и числа",
+            "example": "January is a cold month."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "July",
+    "translate": [
+      {
+        "value": "июль",
+        "context": [
+          {
+            "value": "Время и числа",
+            "example": "We have a holiday in July."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "June",
+    "translate": [
+      {
+        "value": "июнь",
+        "context": [
+          {
+            "value": "Время и числа",
+            "example": "June is my favorite month."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "last1",
+    "translate": [
+      {
+        "value": "длиться",
+        "context": [
+          {
+            "value": "Время и числа",
+            "example": "This is last1."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "March",
+    "translate": [
+      {
+        "value": "переход",
+        "context": [
+          {
+            "value": "Время и числа",
+            "example": "March is a windy month."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "May",
+    "translate": [
+      {
+        "value": "май",
+        "context": [
+          {
+            "value": "Время и числа",
+            "example": "May I come in?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "maybe",
+    "translate": [
+      {
+        "value": "чай",
+        "context": [
+          {
+            "value": "Время и числа",
+            "example": "Maybe we should try a different approach."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "midnight",
+    "translate": [
+      {
+        "value": "полночь",
+        "context": [
+          {
+            "value": "Время и числа",
+            "example": "The clock struck midnight."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "minute",
+    "translate": [
+      {
+        "value": "минута",
+        "context": [
+          {
+            "value": "Время и числа",
+            "example": "Wait a minute."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "Monday",
+    "translate": [
+      {
+        "value": "понедельник",
+        "context": [
+          {
+            "value": "Время и числа",
+            "example": "She will start her new job on Monday."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "month",
+    "translate": [
+      {
+        "value": "месяц",
+        "context": [
+          {
+            "value": "Время и числа",
+            "example": "They will visit next month."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "morning",
+    "translate": [
+      {
+        "value": "утро",
+        "context": [
+          {
+            "value": "Время и числа",
+            "example": "She drinks coffee every morning."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "night",
+    "translate": [
+      {
+        "value": "ночь",
+        "context": [
+          {
+            "value": "Время и числа",
+            "example": "They go out at night."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "nightmare",
+    "translate": [
+      {
+        "value": "кошмар",
+        "context": [
+          {
+            "value": "Время и числа",
+            "example": "This is nightmare."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "nine",
+    "translate": [
+      {
+        "value": "девятка",
+        "context": [
+          {
+            "value": "Время и числа",
+            "example": "She has nine books."
+          }
+        ]
+      }
+    ]
+  }
+]

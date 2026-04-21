@@ -1,0 +1,282 @@
+[
+  {
+    "word": "amazed",
+    "translate": [
+      {
+        "value": "удивлённый",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She was amazed by the news."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "amazing",
+    "translate": [
+      {
+        "value": "изумительный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The view is amazing."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "ambition",
+    "translate": [
+      {
+        "value": "амбиция",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "His ambition is to become a doctor."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "ambitious",
+    "translate": [
+      {
+        "value": "честолюбивый",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is ambitious."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "analysis",
+    "translate": [
+      {
+        "value": "исследование",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The analysis revealed some interesting facts."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "ancient",
+    "translate": [
+      {
+        "value": "старый",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "They found ancient artifacts."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "angle",
+    "translate": [
+      {
+        "value": "угол",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The angles of the triangle add up to 180 degrees."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "ankle",
+    "translate": [
+      {
+        "value": "щиколотка",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She twisted her ankle."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "anniversary",
+    "translate": [
+      {
+        "value": "юбилей",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "Today is their wedding anniversary."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "announcement",
+    "translate": [
+      {
+        "value": "объявление",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is announcement."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "annoying",
+    "translate": [
+      {
+        "value": "неприятный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The loud music was annoying."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "annual",
+    "translate": [
+      {
+        "value": "годовой",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The annual meeting is in July."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "anxious",
+    "translate": [
+      {
+        "value": "тревожный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She was anxious about the test."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "architect",
+    "translate": [
+      {
+        "value": "архитектор",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is architect."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "architecture",
+    "translate": [
+      {
+        "value": "архитектура",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is architecture."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "area",
+    "translate": [
+      {
+        "value": "место",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "They live in a rural area."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "argument",
+    "translate": [
+      {
+        "value": "доказательство",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "They had an argument about politics."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "arrangement",
+    "translate": [
+      {
+        "value": "установка",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The arrangement of the furniture was perfect."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "arrival",
+    "translate": [
+      {
+        "value": "съезд",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "Her arrival was delayed."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "ashamed",
+    "translate": [
+      {
+        "value": "пристыжённый",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He felt ashamed of his behavior."
+          }
+        ]
+      }
+    ]
+  }
+]

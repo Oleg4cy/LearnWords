@@ -1,0 +1,282 @@
+[
+  {
+    "word": "floor",
+    "translate": [
+      {
+        "value": "пол",
+        "context": [
+          {
+            "value": "Дом и быт",
+            "example": "She cleaned the kitchen floor."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "fridge",
+    "translate": [
+      {
+        "value": "холодильник",
+        "context": [
+          {
+            "value": "Дом и быт",
+            "example": "This is fridge."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "furniture",
+    "translate": [
+      {
+        "value": "обстановка",
+        "context": [
+          {
+            "value": "Дом и быт",
+            "example": "They bought new furniture for the living room."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "garden",
+    "translate": [
+      {
+        "value": "сад",
+        "context": [
+          {
+            "value": "Дом и быт",
+            "example": "She grows tomatoes in her garden."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "hat",
+    "translate": [
+      {
+        "value": "шляпа",
+        "context": [
+          {
+            "value": "Дом и быт",
+            "example": "He wore a hat to protect himself from the sun."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "hate",
+    "translate": [
+      {
+        "value": "ненавидеть",
+        "context": [
+          {
+            "value": "Дом и быт",
+            "example": "She hates getting up early."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "hockey",
+    "translate": [
+      {
+        "value": "хоккей",
+        "context": [
+          {
+            "value": "Дом и быт",
+            "example": "This is hockey."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "home",
+    "translate": [
+      {
+        "value": "родной",
+        "context": [
+          {
+            "value": "Дом и быт",
+            "example": "They bought a new home."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "homework",
+    "translate": [
+      {
+        "value": "урок",
+        "context": [
+          {
+            "value": "Дом и быт",
+            "example": "This is homework."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "house",
+    "translate": [
+      {
+        "value": "разместить",
+        "context": [
+          {
+            "value": "Дом и быт",
+            "example": "They bought a new house."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "household",
+    "translate": [
+      {
+        "value": "домочадцы",
+        "context": [
+          {
+            "value": "Дом и быт",
+            "example": "The whole household was asleep."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "indoor",
+    "translate": [
+      {
+        "value": "комнатный",
+        "context": [
+          {
+            "value": "Дом и быт",
+            "example": "This is indoor."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "indoors",
+    "translate": [
+      {
+        "value": "в помещении",
+        "context": [
+          {
+            "value": "Дом и быт",
+            "example": "We stayed indoors during the storm."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "key",
+    "translate": [
+      {
+        "value": "ключ",
+        "context": [
+          {
+            "value": "Дом и быт",
+            "example": "He lost his keys."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "keyboard",
+    "translate": [
+      {
+        "value": "клавиатура",
+        "context": [
+          {
+            "value": "Дом и быт",
+            "example": "She typed the letter on the keyboard."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "lamp",
+    "translate": [
+      {
+        "value": "фонарь",
+        "context": [
+          {
+            "value": "Дом и быт",
+            "example": "He turned on the lamp."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "light",
+    "translate": [
+      {
+        "value": "свет",
+        "context": [
+          {
+            "value": "Дом и быт",
+            "example": "The room is filled with light."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "monkey",
+    "translate": [
+      {
+        "value": "обезьяна",
+        "context": [
+          {
+            "value": "Дом и быт",
+            "example": "This is monkey."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "outdoor",
+    "translate": [
+      {
+        "value": "уличный",
+        "context": [
+          {
+            "value": "Дом и быт",
+            "example": "They enjoy outdoor activities."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "outdoors",
+    "translate": [
+      {
+        "value": "на улице",
+        "context": [
+          {
+            "value": "Дом и быт",
+            "example": "We decided to eat outdoors."
+          }
+        ]
+      }
+    ]
+  }
+]

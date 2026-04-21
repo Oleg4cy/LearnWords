@@ -1,0 +1,282 @@
+[
+  {
+    "word": "close",
+    "translate": [
+      {
+        "value": "близкий",
+        "context": [
+          {
+            "value": "Тело и здоровье",
+            "example": "This is close."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "college",
+    "translate": [
+      {
+        "value": "училище",
+        "context": [
+          {
+            "value": "Тело и здоровье",
+            "example": "She attended a prestigious college."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "disappear",
+    "translate": [
+      {
+        "value": "исчезнуть",
+        "context": [
+          {
+            "value": "Тело и здоровье",
+            "example": "The sun disappeared behind the clouds."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "disease",
+    "translate": [
+      {
+        "value": "заболевание",
+        "context": [
+          {
+            "value": "Тело и здоровье",
+            "example": "He suffers from a rare disease."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "doctor",
+    "translate": [
+      {
+        "value": "врач",
+        "context": [
+          {
+            "value": "Тело и здоровье",
+            "example": "She visited the doctor for a check-up."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "ear",
+    "translate": [
+      {
+        "value": "ухо",
+        "context": [
+          {
+            "value": "Тело и здоровье",
+            "example": "She has a piercing in her ear."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "early",
+    "translate": [
+      {
+        "value": "ранний",
+        "context": [
+          {
+            "value": "Тело и здоровье",
+            "example": "They arrived early to get good seats."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "earn",
+    "translate": [
+      {
+        "value": "заработать",
+        "context": [
+          {
+            "value": "Тело и здоровье",
+            "example": "She earns a good salary."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "earth",
+    "translate": [
+      {
+        "value": "земля",
+        "context": [
+          {
+            "value": "Тело и здоровье",
+            "example": "The Earth orbits the sun."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "earthquake",
+    "translate": [
+      {
+        "value": "землетрясение",
+        "context": [
+          {
+            "value": "Тело и здоровье",
+            "example": "This is earthquake."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "eye",
+    "translate": [
+      {
+        "value": "глаз",
+        "context": [
+          {
+            "value": "Тело и здоровье",
+            "example": "She has blue eyes."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "face",
+    "translate": [
+      {
+        "value": "глядеть",
+        "context": [
+          {
+            "value": "Тело и здоровье",
+            "example": "She washed her face."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "farm",
+    "translate": [
+      {
+        "value": "откупать",
+        "context": [
+          {
+            "value": "Тело и здоровье",
+            "example": "They own a large farm."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "farmer",
+    "translate": [
+      {
+        "value": "фермер",
+        "context": [
+          {
+            "value": "Тело и здоровье",
+            "example": "The farmer works hard every day."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "farming",
+    "translate": [
+      {
+        "value": "земледелие",
+        "context": [
+          {
+            "value": "Тело и здоровье",
+            "example": "Farming is their primary source of income."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "fear",
+    "translate": [
+      {
+        "value": "бояться",
+        "context": [
+          {
+            "value": "Тело и здоровье",
+            "example": "She has a fear of heights."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "fill",
+    "translate": [
+      {
+        "value": "заставить",
+        "context": [
+          {
+            "value": "Тело и здоровье",
+            "example": "She filled the glass with water."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "finger",
+    "translate": [
+      {
+        "value": "палец",
+        "context": [
+          {
+            "value": "Тело и здоровье",
+            "example": "He pointed with his index finger."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "flu",
+    "translate": [
+      {
+        "value": "грипп",
+        "context": [
+          {
+            "value": "Тело и здоровье",
+            "example": "This is flu."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "foot",
+    "translate": [
+      {
+        "value": "пехота",
+        "context": [
+          {
+            "value": "Тело и здоровье",
+            "example": "He injured his foot."
+          }
+        ]
+      }
+    ]
+  }
+]

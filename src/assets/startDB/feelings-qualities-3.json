@@ -1,0 +1,282 @@
+[
+  {
+    "word": "love",
+    "translate": [
+      {
+        "value": "любить",
+        "context": [
+          {
+            "value": "Чувства и качества",
+            "example": "They are deeply in love."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "mood",
+    "translate": [
+      {
+        "value": "настроение",
+        "context": [
+          {
+            "value": "Чувства и качества",
+            "example": "She is in a good mood."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "nervous",
+    "translate": [
+      {
+        "value": "нервный",
+        "context": [
+          {
+            "value": "Чувства и качества",
+            "example": "She felt nervous before the exam."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "passion",
+    "translate": [
+      {
+        "value": "страсть",
+        "context": [
+          {
+            "value": "Чувства и качества",
+            "example": "She has a passion for music."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "pleasure",
+    "translate": [
+      {
+        "value": "удовольствие",
+        "context": [
+          {
+            "value": "Чувства и качества",
+            "example": "It was a pleasure to meet you."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "proud",
+    "translate": [
+      {
+        "value": "гордый",
+        "context": [
+          {
+            "value": "Чувства и качества",
+            "example": "She is proud of her achievements."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "reaction",
+    "translate": [
+      {
+        "value": "реакция",
+        "context": [
+          {
+            "value": "Чувства и качества",
+            "example": "Her reaction was surprising."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "relief",
+    "translate": [
+      {
+        "value": "помощь",
+        "context": [
+          {
+            "value": "Чувства и качества",
+            "example": "He felt a sense of relief after hearing the good news."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "respect",
+    "translate": [
+      {
+        "value": "честь",
+        "context": [
+          {
+            "value": "Чувства и качества",
+            "example": "He earned the respect of his peers."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "sad",
+    "translate": [
+      {
+        "value": "печальный",
+        "context": [
+          {
+            "value": "Чувства и качества",
+            "example": "She felt sad after hearing the news."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "sadly",
+    "translate": [
+      {
+        "value": "грустно",
+        "context": [
+          {
+            "value": "Чувства и качества",
+            "example": "He looked at her sadly."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "say",
+    "translate": [
+      {
+        "value": "сказать",
+        "context": [
+          {
+            "value": "Чувства и качества",
+            "example": "She didn't know what to say."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "scream",
+    "translate": [
+      {
+        "value": "закричать",
+        "context": [
+          {
+            "value": "Чувства и качества",
+            "example": "She screamed when she saw the spider."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "shame",
+    "translate": [
+      {
+        "value": "стыд",
+        "context": [
+          {
+            "value": "Чувства и качества",
+            "example": "She felt a deep sense of shame."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "show",
+    "translate": [
+      {
+        "value": "глядеть",
+        "context": [
+          {
+            "value": "Чувства и качества",
+            "example": "She showed her true feelings."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "speak",
+    "translate": [
+      {
+        "value": "сказать",
+        "context": [
+          {
+            "value": "Чувства и качества",
+            "example": "She spoke to the manager."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "speech",
+    "translate": [
+      {
+        "value": "слово",
+        "context": [
+          {
+            "value": "Чувства и качества",
+            "example": "He gave a wonderful speech."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "spirit",
+    "translate": [
+      {
+        "value": "дух",
+        "context": [
+          {
+            "value": "Чувства и качества",
+            "example": "He has a strong spirit."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "stress",
+    "translate": [
+      {
+        "value": "подчеркнуть",
+        "context": [
+          {
+            "value": "Чувства и качества",
+            "example": "She is under a lot of stress at work."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "sympathy",
+    "translate": [
+      {
+        "value": "участие",
+        "context": [
+          {
+            "value": "Чувства и качества",
+            "example": "They expressed their sympathy for his loss."
+          }
+        ]
+      }
+    ]
+  }
+]

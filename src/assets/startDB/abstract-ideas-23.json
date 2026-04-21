@@ -1,0 +1,282 @@
+[
+  {
+    "word": "flame",
+    "translate": [
+      {
+        "value": "пламя",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The flame flickered in the wind."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "flat",
+    "translate": [
+      {
+        "value": "глухой",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The land was flat and featureless."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "flexible",
+    "translate": [
+      {
+        "value": "гибкий",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is flexible."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "flour",
+    "translate": [
+      {
+        "value": "мука",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She used flour to bake a cake."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "flying",
+    "translate": [
+      {
+        "value": "летучий",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is flying."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "folding",
+    "translate": [
+      {
+        "value": "складной",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is folding."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "folk",
+    "translate": [
+      {
+        "value": "народный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is folk."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "foreign",
+    "translate": [
+      {
+        "value": "пришлый",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He speaks several foreign languages."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "fork",
+    "translate": [
+      {
+        "value": "вилка",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He ate his salad with a fork."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "formal",
+    "translate": [
+      {
+        "value": "казённый",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He wore a formal suit to the event."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "former",
+    "translate": [
+      {
+        "value": "первый",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is former."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "fortune",
+    "translate": [
+      {
+        "value": "состояние",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He made a fortune in real estate."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "freedom",
+    "translate": [
+      {
+        "value": "свобода",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "They fought for their freedom."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "frequency",
+    "translate": [
+      {
+        "value": "частота",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is frequency."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "fresh",
+    "translate": [
+      {
+        "value": "свежий",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "They bought fresh vegetables from the market."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "frightened",
+    "translate": [
+      {
+        "value": "испуганный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She was frightened by the thunderstorm."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "frightening",
+    "translate": [
+      {
+        "value": "пугающий",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The horror movie was frightening."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "frog",
+    "translate": [
+      {
+        "value": "лягушка",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is frog."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "front",
+    "translate": [
+      {
+        "value": "первый",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The front door is open."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "frozen",
+    "translate": [
+      {
+        "value": "мороженый",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The lake is frozen in winter."
+          }
+        ]
+      }
+    ]
+  }
+]

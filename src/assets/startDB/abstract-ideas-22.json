@@ -1,0 +1,282 @@
+[
+  {
+    "word": "fashionable",
+    "translate": [
+      {
+        "value": "модный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She always wears fashionable clothes."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "fat",
+    "translate": [
+      {
+        "value": "толстый",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He needs to reduce his body fat."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "fault",
+    "translate": [
+      {
+        "value": "вина",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The fault was quickly corrected."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "favourite",
+    "translate": [
+      {
+        "value": "излюбленный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is favourite."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "fee",
+    "translate": [
+      {
+        "value": "гонорар",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The lawyer's fee was reasonable."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "feedback",
+    "translate": [
+      {
+        "value": "обратная связь",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is feedback."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "fellow",
+    "translate": [
+      {
+        "value": "малый",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He spoke to his fellow travelers."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "female",
+    "translate": [
+      {
+        "value": "женский",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "They have a female cat."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "fence",
+    "translate": [
+      {
+        "value": "забор",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The fence needs to be repaired."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "fiction",
+    "translate": [
+      {
+        "value": "фантастика",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is fiction."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "field",
+    "translate": [
+      {
+        "value": "область",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "They walked through the field."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "fighting",
+    "translate": [
+      {
+        "value": "бой",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The fighting lasted for hours."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "final",
+    "translate": [
+      {
+        "value": "конечный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is the final chapter of the book."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "financial",
+    "translate": [
+      {
+        "value": "финансовый",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "They need financial advice."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "finding",
+    "translate": [
+      {
+        "value": "изыскание",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is finding."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "fine",
+    "translate": [
+      {
+        "value": "тонкий",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The weather is fine today."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "firm",
+    "translate": [
+      {
+        "value": "фирма",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The table is firm and sturdy."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "fitness",
+    "translate": [
+      {
+        "value": "годность",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He works out regularly to maintain his fitness."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "fixed",
+    "translate": [
+      {
+        "value": "положенный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is fixed."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "flag",
+    "translate": [
+      {
+        "value": "плита",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The national flag was hoisted."
+          }
+        ]
+      }
+    ]
+  }
+]

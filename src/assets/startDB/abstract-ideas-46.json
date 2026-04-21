@@ -1,0 +1,282 @@
+[
+  {
+    "word": "recording",
+    "translate": [
+      {
+        "value": "занесение",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She listened to the recording."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "red",
+    "translate": [
+      {
+        "value": "красный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is red."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "reduction",
+    "translate": [
+      {
+        "value": "сведение",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "There was a reduction in crime rates."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "reference",
+    "translate": [
+      {
+        "value": "справка",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She provided a reference for her friend."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "region",
+    "translate": [
+      {
+        "value": "место",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This region is known for its wine."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "regional",
+    "translate": [
+      {
+        "value": "областной",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "Regional differences can be significant."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "regular",
+    "translate": [
+      {
+        "value": "очередной",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She has a regular schedule."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "regulation",
+    "translate": [
+      {
+        "value": "регулирование",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "There are strict regulations on this matter."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "related",
+    "translate": [
+      {
+        "value": "родственный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "They are related by blood."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "relation",
+    "translate": [
+      {
+        "value": "отношение",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The relation between the two events is unclear."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "relative",
+    "translate": [
+      {
+        "value": "условный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He is a relative of mine."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "relaxed",
+    "translate": [
+      {
+        "value": "расслабленный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She felt relaxed after the massage."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "relaxing",
+    "translate": [
+      {
+        "value": "расслабляющий",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The music was very relaxing."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "relevant",
+    "translate": [
+      {
+        "value": "актуальный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The information was not relevant to the case."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "reliable",
+    "translate": [
+      {
+        "value": "верный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is reliable."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "religion",
+    "translate": [
+      {
+        "value": "толк",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "Religion plays an important role in many people's lives."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "religious",
+    "translate": [
+      {
+        "value": "религиозный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He is very religious and attends church every Sunday."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "remote",
+    "translate": [
+      {
+        "value": "дальний",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "They live in a remote village."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "reporter",
+    "translate": [
+      {
+        "value": "корреспондент",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The reporter interviewed the mayor."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "representative",
+    "translate": [
+      {
+        "value": "представительный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The representative spoke on behalf of the company."
+          }
+        ]
+      }
+    ]
+  }
+]

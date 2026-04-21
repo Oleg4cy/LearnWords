@@ -1,0 +1,282 @@
+[
+  {
+    "word": "consumer",
+    "translate": [
+      {
+        "value": "потребитель",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "Consumers are demanding more organic products."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "container",
+    "translate": [
+      {
+        "value": "танк",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She put the cookies in a container."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "contemporary",
+    "translate": [
+      {
+        "value": "современник",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "Contemporary artists often explore different media."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "content",
+    "translate": [
+      {
+        "value": "содержимое",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She was content with her life."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "context",
+    "translate": [
+      {
+        "value": "содержание",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "You need to consider the context to understand the meaning."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "continent",
+    "translate": [
+      {
+        "value": "материк",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "Africa is a continent."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "continuous",
+    "translate": [
+      {
+        "value": "сплошной",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The continuous noise was annoying."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "contribution",
+    "translate": [
+      {
+        "value": "вклад",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She made a significant contribution to the project."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "convenient",
+    "translate": [
+      {
+        "value": "удобный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The location is convenient for shopping."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "conversation",
+    "translate": [
+      {
+        "value": "разговор",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "They had a long conversation over dinner."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "convinced",
+    "translate": [
+      {
+        "value": "убеждённый",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is convinced."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "core",
+    "translate": [
+      {
+        "value": "зерно",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The core of the problem is lack of communication."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "corner",
+    "translate": [
+      {
+        "value": "угол",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She sat in the corner of the room."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "corporate",
+    "translate": [
+      {
+        "value": "корпоративный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is corporate."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "costume",
+    "translate": [
+      {
+        "value": "костюм",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is costume."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "cottage",
+    "translate": [
+      {
+        "value": "дача",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "They rented a cottage by the lake."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "cotton",
+    "translate": [
+      {
+        "value": "хлопок",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She wore a cotton dress."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "council",
+    "translate": [
+      {
+        "value": "совет",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The city council meets every month."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "country",
+    "translate": [
+      {
+        "value": "страна",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "France is a beautiful country."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "countryside",
+    "translate": [
+      {
+        "value": "деревня",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "They live in the countryside."
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,282 @@
+[
+  {
+    "word": "girl",
+    "translate": [
+      {
+        "value": "девушка",
+        "context": [
+          {
+            "value": "Люди и семья",
+            "example": "The girl is playing in the park."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "girlfriend",
+    "translate": [
+      {
+        "value": "подруга",
+        "context": [
+          {
+            "value": "Люди и семья",
+            "example": "He went to the movies with his girlfriend."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "grand",
+    "translate": [
+      {
+        "value": "великий",
+        "context": [
+          {
+            "value": "Люди и семья",
+            "example": "The palace was grand and majestic."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "grandfather",
+    "translate": [
+      {
+        "value": "дед",
+        "context": [
+          {
+            "value": "Люди и семья",
+            "example": "Her grandfather told fascinating stories."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "grandmother",
+    "translate": [
+      {
+        "value": "бабушка",
+        "context": [
+          {
+            "value": "Люди и семья",
+            "example": "She visited her grandmother every summer."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "grandparent",
+    "translate": [
+      {
+        "value": "дедушка или бабушка",
+        "context": [
+          {
+            "value": "Люди и семья",
+            "example": "Her grandparents are visiting for the holidays."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "human",
+    "translate": [
+      {
+        "value": "человеческий",
+        "context": [
+          {
+            "value": "Люди и семья",
+            "example": "Human rights are important."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "husband",
+    "translate": [
+      {
+        "value": "хозяин",
+        "context": [
+          {
+            "value": "Люди и семья",
+            "example": "Her husband is very supportive."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "man",
+    "translate": [
+      {
+        "value": "человек",
+        "context": [
+          {
+            "value": "Люди и семья",
+            "example": "He is a strong man."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "manage",
+    "translate": [
+      {
+        "value": "успеть",
+        "context": [
+          {
+            "value": "Люди и семья",
+            "example": "She manages the store."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "management",
+    "translate": [
+      {
+        "value": "управление",
+        "context": [
+          {
+            "value": "Люди и семья",
+            "example": "Effective management is crucial."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "manager",
+    "translate": [
+      {
+        "value": "директор",
+        "context": [
+          {
+            "value": "Люди и семья",
+            "example": "He is the manager of the team."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "manner",
+    "translate": [
+      {
+        "value": "образ",
+        "context": [
+          {
+            "value": "Люди и семья",
+            "example": "She spoke in a friendly manner."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "mother",
+    "translate": [
+      {
+        "value": "мать",
+        "context": [
+          {
+            "value": "Люди и семья",
+            "example": "My mother is a great cook."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "neighbour",
+    "translate": [
+      {
+        "value": "сосед",
+        "context": [
+          {
+            "value": "Люди и семья",
+            "example": "This is neighbour."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "neighbourhood",
+    "translate": [
+      {
+        "value": "округа",
+        "context": [
+          {
+            "value": "Люди и семья",
+            "example": "This is neighbourhood."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "parent",
+    "translate": [
+      {
+        "value": "родитель",
+        "context": [
+          {
+            "value": "Люди и семья",
+            "example": "Her parents are very supportive."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "people",
+    "translate": [
+      {
+        "value": "человек",
+        "context": [
+          {
+            "value": "Люди и семья",
+            "example": "Many people attended the concert."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "performance",
+    "translate": [
+      {
+        "value": "игра",
+        "context": [
+          {
+            "value": "Люди и семья",
+            "example": "The performance was outstanding."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "permanent",
+    "translate": [
+      {
+        "value": "постоянный",
+        "context": [
+          {
+            "value": "Люди и семья",
+            "example": "They have a permanent residence."
+          }
+        ]
+      }
+    ]
+  }
+]

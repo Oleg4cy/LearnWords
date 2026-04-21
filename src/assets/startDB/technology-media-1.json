@@ -1,0 +1,282 @@
+[
+  {
+    "word": "app",
+    "translate": [
+      {
+        "value": "приложение",
+        "context": [
+          {
+            "value": "Технологии и медиа",
+            "example": "This is app."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "appeal",
+    "translate": [
+      {
+        "value": "взывать",
+        "context": [
+          {
+            "value": "Технологии и медиа",
+            "example": "They made an appeal for donations."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "application",
+    "translate": [
+      {
+        "value": "заявление",
+        "context": [
+          {
+            "value": "Технологии и медиа",
+            "example": "He filled out an application for the job."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "apply",
+    "translate": [
+      {
+        "value": "касаться",
+        "context": [
+          {
+            "value": "Технологии и медиа",
+            "example": "You need to apply for the position."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "appointment",
+    "translate": [
+      {
+        "value": "приём",
+        "context": [
+          {
+            "value": "Технологии и медиа",
+            "example": "I have an appointment with the doctor."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "appreciate",
+    "translate": [
+      {
+        "value": "ценить",
+        "context": [
+          {
+            "value": "Технологии и медиа",
+            "example": "I appreciate your help."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "approach",
+    "translate": [
+      {
+        "value": "подойти",
+        "context": [
+          {
+            "value": "Технологии и медиа",
+            "example": "She approached the door slowly."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "appropriate",
+    "translate": [
+      {
+        "value": "соответствующий",
+        "context": [
+          {
+            "value": "Технологии и медиа",
+            "example": "That outfit is appropriate for the occasion."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "approval",
+    "translate": [
+      {
+        "value": "утверждение",
+        "context": [
+          {
+            "value": "Технологии и медиа",
+            "example": "The project has received approval."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "approve",
+    "translate": [
+      {
+        "value": "утверждать",
+        "context": [
+          {
+            "value": "Технологии и медиа",
+            "example": "Do you approve of this plan?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "approximately",
+    "translate": [
+      {
+        "value": "примерно",
+        "context": [
+          {
+            "value": "Технологии и медиа",
+            "example": "There were approximately 50 people at the event."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "blog",
+    "translate": [
+      {
+        "value": "блог",
+        "context": [
+          {
+            "value": "Технологии и медиа",
+            "example": "This is blog."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "camera",
+    "translate": [
+      {
+        "value": "камера",
+        "context": [
+          {
+            "value": "Технологии и медиа",
+            "example": "She took a photo with her camera."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "CD",
+    "translate": [
+      {
+        "value": "компакт-диск",
+        "context": [
+          {
+            "value": "Технологии и медиа",
+            "example": "I bought a new music CD."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "code",
+    "translate": [
+      {
+        "value": "кодекс",
+        "context": [
+          {
+            "value": "Технологии и медиа",
+            "example": "They cracked the secret code."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "computer",
+    "translate": [
+      {
+        "value": "компьютер",
+        "context": [
+          {
+            "value": "Технологии и медиа",
+            "example": "She uses a computer for work."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "disappointed",
+    "translate": [
+      {
+        "value": "упавший",
+        "context": [
+          {
+            "value": "Технологии и медиа",
+            "example": "She was disappointed with the test results."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "disappointing",
+    "translate": [
+      {
+        "value": "досадный",
+        "context": [
+          {
+            "value": "Технологии и медиа",
+            "example": "The game was disappointing."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "download",
+    "translate": [
+      {
+        "value": "загрузить",
+        "context": [
+          {
+            "value": "Технологии и медиа",
+            "example": "This is download."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "DVD",
+    "translate": [
+      {
+        "value": "DVD-диск",
+        "context": [
+          {
+            "value": "Технологии и медиа",
+            "example": "They watched a movie on DVD."
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,282 @@
+[
+  {
+    "word": "distribution",
+    "translate": [
+      {
+        "value": "отпуск",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is distribution."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "district",
+    "translate": [
+      {
+        "value": "район",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He lives in the financial district."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "division",
+    "translate": [
+      {
+        "value": "дивизия",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The division of the company into two parts was announced."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "divorced",
+    "translate": [
+      {
+        "value": "разведённый",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She is divorced and has two children."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "documentary",
+    "translate": [
+      {
+        "value": "документальный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is documentary."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "dollar",
+    "translate": [
+      {
+        "value": "доллар",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The item costs ten dollars."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "domestic",
+    "translate": [
+      {
+        "value": "внутренний",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She is a domestic worker."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "drawing",
+    "translate": [
+      {
+        "value": "рисунок",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is drawing."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "driving",
+    "translate": [
+      {
+        "value": "вождение",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He is learning about safe driving."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "drug",
+    "translate": [
+      {
+        "value": "лекарство",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He was prescribed a new drug."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "drum",
+    "translate": [
+      {
+        "value": "диск",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He played the drum in the band."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "drunk",
+    "translate": [
+      {
+        "value": "пьяный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He was too drunk to drive."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "due",
+    "translate": [
+      {
+        "value": "причитающийся",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The rent is due tomorrow."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "dust",
+    "translate": [
+      {
+        "value": "пыль",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She cleaned the dust off the shelves."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "duty",
+    "translate": [
+      {
+        "value": "долг",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "It is your duty to attend the meeting."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "eastern",
+    "translate": [
+      {
+        "value": "восточный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "They live in the eastern part of the city."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "easy",
+    "translate": [
+      {
+        "value": "простой",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The exam was easy."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "economic",
+    "translate": [
+      {
+        "value": "экономический",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The country is facing economic challenges."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "economy",
+    "translate": [
+      {
+        "value": "хозяйство",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The economy is growing."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "edge",
+    "translate": [
+      {
+        "value": "край",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She stood at the edge of the cliff."
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,282 @@
+[
+  {
+    "word": "advantage",
+    "translate": [
+      {
+        "value": "плюс",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She has an advantage in the competition."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "adventure",
+    "translate": [
+      {
+        "value": "приключение",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "They went on an adventure."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "advertisement",
+    "translate": [
+      {
+        "value": "реклама",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The advertisement was very effective."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "advertising",
+    "translate": [
+      {
+        "value": "реклама",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She works in advertising."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "advice",
+    "translate": [
+      {
+        "value": "совет",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She gave good advice."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "affair",
+    "translate": [
+      {
+        "value": "стычка",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "It was a private affair."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "aged",
+    "translate": [
+      {
+        "value": "древний",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The aged man walked slowly."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "agency",
+    "translate": [
+      {
+        "value": "орган",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She works at an advertising agency."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "agenda",
+    "translate": [
+      {
+        "value": "повестка",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is agenda."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "agent",
+    "translate": [
+      {
+        "value": "агент",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He is a secret agent."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "aggressive",
+    "translate": [
+      {
+        "value": "агрессивный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He was aggressive during the argument."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "agreement",
+    "translate": [
+      {
+        "value": "условие",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "They signed the agreement."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "air",
+    "translate": [
+      {
+        "value": "воздух",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The air is fresh in the mountains."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "aircraft",
+    "translate": [
+      {
+        "value": "самолёт",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The aircraft took off smoothly."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "airline",
+    "translate": [
+      {
+        "value": "авиакомпания",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is airline."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "album",
+    "translate": [
+      {
+        "value": "альбом",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is album."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "alcohol",
+    "translate": [
+      {
+        "value": "спирт",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He doesn't drink alcohol."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "alcoholic",
+    "translate": [
+      {
+        "value": "спиртной",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He is an alcoholic."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "alive",
+    "translate": [
+      {
+        "value": "живой",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The patient is still alive."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "alternative",
+    "translate": [
+      {
+        "value": "альтернативный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "There is an alternative route."
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,282 @@
+[
+  {
+    "word": "asleep",
+    "translate": [
+      {
+        "value": "спящий",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He was sound asleep."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "aspect",
+    "translate": [
+      {
+        "value": "вид",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The financial aspect of the deal is crucial."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "assessment",
+    "translate": [
+      {
+        "value": "подать",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is assessment."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "assignment",
+    "translate": [
+      {
+        "value": "назначение",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is assignment."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "assistant",
+    "translate": [
+      {
+        "value": "подручный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She works as an assistant to the manager."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "associated",
+    "translate": [
+      {
+        "value": "связанный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She is associated with the project."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "association",
+    "translate": [
+      {
+        "value": "ассоциация",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The association meets every month."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "athlete",
+    "translate": [
+      {
+        "value": "богатырь",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is athlete."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "atmosphere",
+    "translate": [
+      {
+        "value": "атмосфера",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The atmosphere was tense."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "attraction",
+    "translate": [
+      {
+        "value": "привлечение",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The main attraction at the fair was the rollercoaster."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "attractive",
+    "translate": [
+      {
+        "value": "интересный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She is an attractive person."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "audience",
+    "translate": [
+      {
+        "value": "публика",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The audience applauded."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "author",
+    "translate": [
+      {
+        "value": "писатель",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He is the author of several books."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "authority",
+    "translate": [
+      {
+        "value": "власть",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She has the authority to make decisions."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "autumn",
+    "translate": [
+      {
+        "value": "осень",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "Autumn is my favorite season."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "awful",
+    "translate": [
+      {
+        "value": "кошмарный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The weather was awful."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "background",
+    "translate": [
+      {
+        "value": "фон",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She has a background in finance."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "bacteria",
+    "translate": [
+      {
+        "value": "бактерии",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "Bacteria can cause infections."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "bad",
+    "translate": [
+      {
+        "value": "плохой",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The weather was bad."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "ball",
+    "translate": [
+      {
+        "value": "шар",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "They played ball in the park."
+          }
+        ]
+      }
+    ]
+  }
+]

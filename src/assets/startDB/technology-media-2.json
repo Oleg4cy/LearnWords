@@ -1,0 +1,282 @@
+[
+  {
+    "word": "email",
+    "translate": [
+      {
+        "value": "электронная почта",
+        "context": [
+          {
+            "value": "Технологии и медиа",
+            "example": "She sent an email to her boss."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "happen",
+    "translate": [
+      {
+        "value": "бывать",
+        "context": [
+          {
+            "value": "Технологии и медиа",
+            "example": "What will happen next?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "happily",
+    "translate": [
+      {
+        "value": "весело",
+        "context": [
+          {
+            "value": "Технологии и медиа",
+            "example": "This is happily."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "happiness",
+    "translate": [
+      {
+        "value": "счастье",
+        "context": [
+          {
+            "value": "Технологии и медиа",
+            "example": "Her happiness was evident."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "happy",
+    "translate": [
+      {
+        "value": "счастливый",
+        "context": [
+          {
+            "value": "Технологии и медиа",
+            "example": "She was happy with her results."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "immediate",
+    "translate": [
+      {
+        "value": "непосредственный",
+        "context": [
+          {
+            "value": "Технологии и медиа",
+            "example": "They need an immediate response."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "immediately",
+    "translate": [
+      {
+        "value": "сразу",
+        "context": [
+          {
+            "value": "Технологии и медиа",
+            "example": "The ambulance arrived immediately."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "internet",
+    "translate": [
+      {
+        "value": "интернет",
+        "context": [
+          {
+            "value": "Технологии и медиа",
+            "example": "I found the information on the Internet."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "media",
+    "translate": [
+      {
+        "value": "сми",
+        "context": [
+          {
+            "value": "Технологии и медиа",
+            "example": "The news was reported by the media."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "online",
+    "translate": [
+      {
+        "value": "онлайн",
+        "context": [
+          {
+            "value": "Технологии и медиа",
+            "example": "She is always online."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "phone",
+    "translate": [
+      {
+        "value": "телефонировать",
+        "context": [
+          {
+            "value": "Технологии и медиа",
+            "example": "She answered the phone."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "program",
+    "translate": [
+      {
+        "value": "запрограммировать",
+        "context": [
+          {
+            "value": "Технологии и медиа",
+            "example": "They launched a new fitness program."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "programme",
+    "translate": [
+      {
+        "value": "загружённость",
+        "context": [
+          {
+            "value": "Технологии и медиа",
+            "example": "This is programme."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "radio",
+    "translate": [
+      {
+        "value": "радио",
+        "context": [
+          {
+            "value": "Технологии и медиа",
+            "example": "She listens to the radio every morning."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "ring",
+    "translate": [
+      {
+        "value": "звонить, звонок",
+        "context": [
+          {
+            "value": "Технологии и медиа",
+            "example": "She wore a gold ring on her finger."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "screen",
+    "translate": [
+      {
+        "value": "заслонить",
+        "context": [
+          {
+            "value": "Технологии и медиа",
+            "example": "He watched the movie on a big screen."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "smartphone",
+    "translate": [
+      {
+        "value": "смартфон",
+        "context": [
+          {
+            "value": "Технологии и медиа",
+            "example": "This is smartphone."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "software",
+    "translate": [
+      {
+        "value": "программное обеспечение",
+        "context": [
+          {
+            "value": "Технологии и медиа",
+            "example": "This is software."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "telephone",
+    "translate": [
+      {
+        "value": "обзванивать",
+        "context": [
+          {
+            "value": "Технологии и медиа",
+            "example": "She called him on the telephone."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "TV",
+    "translate": [
+      {
+        "value": "телевидение",
+        "context": [
+          {
+            "value": "Технологии и медиа",
+            "example": "She watched the news on TV."
+          }
+        ]
+      }
+    ]
+  }
+]

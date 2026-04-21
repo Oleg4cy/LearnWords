@@ -1,0 +1,282 @@
+[
+  {
+    "word": "band",
+    "translate": [
+      {
+        "value": "полоса",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She wore a hair band."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "barrier",
+    "translate": [
+      {
+        "value": "барьер",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The crowd was stopped by a barrier."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "baseball",
+    "translate": [
+      {
+        "value": "бейсбол",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is baseball."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "based",
+    "translate": [
+      {
+        "value": "основанный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The story is based on real events."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "basic",
+    "translate": [
+      {
+        "value": "основной",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The basic principles of math are taught in school."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "basis",
+    "translate": [
+      {
+        "value": "начало",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The basis of their argument was weak."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "basketball",
+    "translate": [
+      {
+        "value": "баскетбол",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is basketball."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "battery",
+    "translate": [
+      {
+        "value": "батарея",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The remote control needs new batteries."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "bean",
+    "translate": [
+      {
+        "value": "боб",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is bean."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "beautiful",
+    "translate": [
+      {
+        "value": "хороший",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She is a beautiful woman."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "beauty",
+    "translate": [
+      {
+        "value": "красота",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She is admired for her beauty."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "bee",
+    "translate": [
+      {
+        "value": "пчела",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is bee."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "beginning",
+    "translate": [
+      {
+        "value": "начало",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The beginning of the book is interesting."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "behaviour",
+    "translate": [
+      {
+        "value": "поведение",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is behaviour."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "being",
+    "translate": [
+      {
+        "value": "бытие",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is being."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "belief",
+    "translate": [
+      {
+        "value": "вера",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "Her belief in justice is strong."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "bell",
+    "translate": [
+      {
+        "value": "звонок",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The school bell rang."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "belt",
+    "translate": [
+      {
+        "value": "полоса",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He wore a leather belt."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "bent",
+    "translate": [
+      {
+        "value": "горбатый",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The metal rod was bent."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "big",
+    "translate": [
+      {
+        "value": "большой",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "They live in a big house."
+          }
+        ]
+      }
+    ]
+  }
+]

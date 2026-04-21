@@ -1,0 +1,282 @@
+[
+  {
+    "word": "copy",
+    "translate": [
+      {
+        "value": "списать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He made a copy of the document."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "correct",
+    "translate": [
+      {
+        "value": "верный",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He gave the correct answer."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "correctly",
+    "translate": [
+      {
+        "value": "правильно",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She spelled the word correctly."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "cost",
+    "translate": [
+      {
+        "value": "стоить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The cost of living is rising."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "count",
+    "translate": [
+      {
+        "value": "считать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He counted the money."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "cover",
+    "translate": [
+      {
+        "value": "закрыть",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He covered the pot with a lid."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "crash",
+    "translate": [
+      {
+        "value": "разбить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The car crashed into a tree."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "credit",
+    "translate": [
+      {
+        "value": "кредитовать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She has good credit and can easily get loans."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "criticize",
+    "translate": [
+      {
+        "value": "критиковать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "They criticized the government's handling of the crisis."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "cross",
+    "translate": [
+      {
+        "value": "перейти",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "They crossed the street."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "cry",
+    "translate": [
+      {
+        "value": "закричать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The baby started to cry."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "cure",
+    "translate": [
+      {
+        "value": "вылечить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The doctor was able to cure the disease."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "currently",
+    "translate": [
+      {
+        "value": "в настоящее время",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He is currently working on a new project."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "curve",
+    "translate": [
+      {
+        "value": "изгибаться",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The road curves around the hill."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "cut",
+    "translate": [
+      {
+        "value": "резать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He cut the rope with a knife."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "cycle",
+    "translate": [
+      {
+        "value": "велосипед",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The water cycle is an important natural process."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "daily",
+    "translate": [
+      {
+        "value": "дневной",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She reads the daily newspaper."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "damage",
+    "translate": [
+      {
+        "value": "повредить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The storm caused damage to the roof."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "date",
+    "translate": [
+      {
+        "value": "встречаться",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "Today's date is July 10th."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "deal",
+    "translate": [
+      {
+        "value": "разбираться",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He dealt the cards to the players."
+          }
+        ]
+      }
+    ]
+  }
+]

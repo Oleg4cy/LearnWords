@@ -1,0 +1,282 @@
+[
+  {
+    "word": "illustration",
+    "translate": [
+      {
+        "value": "рисунок",
+        "context": [
+          {
+            "value": "Тело и здоровье",
+            "example": "This is illustration."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "influence",
+    "translate": [
+      {
+        "value": "влиять",
+        "context": [
+          {
+            "value": "Тело и здоровье",
+            "example": "His influence made a big difference."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "kill",
+    "translate": [
+      {
+        "value": "убить",
+        "context": [
+          {
+            "value": "Тело и здоровье",
+            "example": "He was killed in an accident."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "killing",
+    "translate": [
+      {
+        "value": "умерщвление",
+        "context": [
+          {
+            "value": "Тело и здоровье",
+            "example": "This is killing."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "learn",
+    "translate": [
+      {
+        "value": "узнать",
+        "context": [
+          {
+            "value": "Тело и здоровье",
+            "example": "He wants to learn French."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "learning",
+    "translate": [
+      {
+        "value": "учение",
+        "context": [
+          {
+            "value": "Тело и здоровье",
+            "example": "This is learning."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "leg",
+    "translate": [
+      {
+        "value": "нога",
+        "context": [
+          {
+            "value": "Тело и здоровье",
+            "example": "He injured his leg during the game."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "legal",
+    "translate": [
+      {
+        "value": "законный",
+        "context": [
+          {
+            "value": "Тело и здоровье",
+            "example": "He needs legal advice."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "medicine",
+    "translate": [
+      {
+        "value": "лекарство",
+        "context": [
+          {
+            "value": "Тело и здоровье",
+            "example": "He takes medicine for his allergies."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "million",
+    "translate": [
+      {
+        "value": "миллион",
+        "context": [
+          {
+            "value": "Тело и здоровье",
+            "example": "The population is over a million."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "mouth",
+    "translate": [
+      {
+        "value": "рот",
+        "context": [
+          {
+            "value": "Тело и здоровье",
+            "example": "He opened his mouth to speak."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "nearly",
+    "translate": [
+      {
+        "value": "почти",
+        "context": [
+          {
+            "value": "Тело и здоровье",
+            "example": "He nearly missed the bus."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "nose",
+    "translate": [
+      {
+        "value": "нос",
+        "context": [
+          {
+            "value": "Тело и здоровье",
+            "example": "He has a big nose."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "nuclear",
+    "translate": [
+      {
+        "value": "ядерный",
+        "context": [
+          {
+            "value": "Тело и здоровье",
+            "example": "They are discussing nuclear energy."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "pain",
+    "translate": [
+      {
+        "value": "боль",
+        "context": [
+          {
+            "value": "Тело и здоровье",
+            "example": "He felt a sharp pain in his leg."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "painful",
+    "translate": [
+      {
+        "value": "болезненный",
+        "context": [
+          {
+            "value": "Тело и здоровье",
+            "example": "The injury was very painful."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "paint",
+    "translate": [
+      {
+        "value": "писать",
+        "context": [
+          {
+            "value": "Тело и здоровье",
+            "example": "She chose a bright color to paint her room."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "painter",
+    "translate": [
+      {
+        "value": "художник",
+        "context": [
+          {
+            "value": "Тело и здоровье",
+            "example": "The painter worked on the mural for days."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "painting",
+    "translate": [
+      {
+        "value": "картина",
+        "context": [
+          {
+            "value": "Тело и здоровье",
+            "example": "She admired the painting."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "research",
+    "translate": [
+      {
+        "value": "исследование",
+        "context": [
+          {
+            "value": "Тело и здоровье",
+            "example": "She conducted research on climate change."
+          }
+        ]
+      }
+    ]
+  }
+]

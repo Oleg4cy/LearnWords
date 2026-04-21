@@ -1,0 +1,282 @@
+[
+  {
+    "word": "seek",
+    "translate": [
+      {
+        "value": "искать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He sought advice from a lawyer."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "seem",
+    "translate": [
+      {
+        "value": "казаться",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He seems happy today."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "select",
+    "translate": [
+      {
+        "value": "выбрать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She was selected for the team."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "send",
+    "translate": [
+      {
+        "value": "послать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She sent a letter to her friend."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "sense",
+    "translate": [
+      {
+        "value": "чувствовать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He has a good sense of humor."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "sentence",
+    "translate": [
+      {
+        "value": "приговаривать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He wrote a complex sentence."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "separate",
+    "translate": [
+      {
+        "value": "разрозненный",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "They agreed to go their separate ways."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "seriously",
+    "translate": [
+      {
+        "value": "серьёзно",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She looked at him seriously."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "serve",
+    "translate": [
+      {
+        "value": "служить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He served in the military."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "set",
+    "translate": [
+      {
+        "value": "устанавливать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He set the book on the table."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "settle",
+    "translate": [
+      {
+        "value": "садиться",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "They settled their differences."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "shake",
+    "translate": [
+      {
+        "value": "пожать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He shook with fear."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "shape",
+    "translate": [
+      {
+        "value": "слепить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The shape of the object was unusual."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "share",
+    "translate": [
+      {
+        "value": "делиться",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He took his share of the profits."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "shelter",
+    "translate": [
+      {
+        "value": "укрыться",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "They found shelter under a tree."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "shift",
+    "translate": [
+      {
+        "value": "передвигаться",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He shifted the box to the other side of the room."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "shine",
+    "translate": [
+      {
+        "value": "гореть",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The sun was shining brightly."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "shock",
+    "translate": [
+      {
+        "value": "потрясти",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The news came as a shock."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "shoot",
+    "translate": [
+      {
+        "value": "стрелять",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He aimed and shot the deer."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "shout",
+    "translate": [
+      {
+        "value": "кричать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He shouted for help."
+          }
+        ]
+      }
+    ]
+  }
+]

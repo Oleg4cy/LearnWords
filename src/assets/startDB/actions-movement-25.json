@@ -1,0 +1,282 @@
+[
+  {
+    "word": "north",
+    "translate": [
+      {
+        "value": "северный",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The birds fly north in the summer."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "not",
+    "translate": [
+      {
+        "value": "не",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She is not coming to the party."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "note",
+    "translate": [
+      {
+        "value": "заметить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He took note of the changes."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "notice",
+    "translate": [
+      {
+        "value": "заметить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "Did you notice the difference?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "nowhere",
+    "translate": [
+      {
+        "value": "никуда",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The keys are nowhere to be found."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "number",
+    "translate": [
+      {
+        "value": "число, номер",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "What's your phone number?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "obey",
+    "translate": [
+      {
+        "value": "слушать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "Children should obey their parents."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "object",
+    "translate": [
+      {
+        "value": "возразить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He pointed to the object on the table."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "observe",
+    "translate": [
+      {
+        "value": "заметить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He observed the changes carefully."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "obtain",
+    "translate": [
+      {
+        "value": "получить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She managed to obtain a loan."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "obviously",
+    "translate": [
+      {
+        "value": "видно",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He is obviously not interested."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "occasionally",
+    "translate": [
+      {
+        "value": "изредка",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "They occasionally go hiking."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "occur",
+    "translate": [
+      {
+        "value": "бывать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The event will occur tomorrow."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "offend",
+    "translate": [
+      {
+        "value": "задеть",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He didn't mean to offend you."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "offer",
+    "translate": [
+      {
+        "value": "предложить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She offered him a drink."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "often",
+    "translate": [
+      {
+        "value": "часто",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She visits us often."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "only",
+    "translate": [
+      {
+        "value": "единственный",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "It's only a matter of time."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "open",
+    "translate": [
+      {
+        "value": "открытый",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The door is open."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "operate",
+    "translate": [
+      {
+        "value": "работать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The machine operates smoothly."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "oppose",
+    "translate": [
+      {
+        "value": "сопротивляться",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "They oppose the new policy."
+          }
+        ]
+      }
+    ]
+  }
+]

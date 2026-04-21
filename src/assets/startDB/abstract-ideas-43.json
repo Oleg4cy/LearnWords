@@ -1,0 +1,282 @@
+[
+  {
+    "word": "primary",
+    "translate": [
+      {
+        "value": "первоначальный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "Their primary concern is safety."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "prime",
+    "translate": [
+      {
+        "value": "грунтовать",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is prime."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "prince",
+    "translate": [
+      {
+        "value": "князь",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is prince."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "princess",
+    "translate": [
+      {
+        "value": "принцесса",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is princess."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "principle",
+    "translate": [
+      {
+        "value": "правило",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He is a man of principle."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "printer",
+    "translate": [
+      {
+        "value": "набойщик",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The printer is out of ink."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "printing",
+    "translate": [
+      {
+        "value": "печатание",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is printing."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "priority",
+    "translate": [
+      {
+        "value": "приоритет",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "Safety is our priority."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "privacy",
+    "translate": [
+      {
+        "value": "конфиденциальность",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is privacy."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "private",
+    "translate": [
+      {
+        "value": "личный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is a private conversation."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "prize",
+    "translate": [
+      {
+        "value": "премия",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is prize."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "problem",
+    "translate": [
+      {
+        "value": "проблема",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She has a problem with her car."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "procedure",
+    "translate": [
+      {
+        "value": "порядок",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The procedure is simple and straightforward."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "producer",
+    "translate": [
+      {
+        "value": "режиссёр",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She is a film producer."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "product",
+    "translate": [
+      {
+        "value": "продукт",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is a new product on the market."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "production",
+    "translate": [
+      {
+        "value": "производство",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The production of the film took two years."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "profession",
+    "translate": [
+      {
+        "value": "профессия",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He is in the medical profession."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "professional",
+    "translate": [
+      {
+        "value": "профессиональный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She is a professional athlete."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "professor",
+    "translate": [
+      {
+        "value": "профессор",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She is a respected professor at the university."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "profile",
+    "translate": [
+      {
+        "value": "профиль",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is profile."
+          }
+        ]
+      }
+    ]
+  }
+]

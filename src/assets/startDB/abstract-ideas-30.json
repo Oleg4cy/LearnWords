@@ -1,0 +1,282 @@
+[
+  {
+    "word": "IT",
+    "translate": [
+      {
+        "value": "информационные технологии",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "It is raining outside."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "item",
+    "translate": [
+      {
+        "value": "статья",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "Each item on the list must be checked."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "jacket",
+    "translate": [
+      {
+        "value": "рубашка",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He wore a leather jacket."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "jam",
+    "translate": [
+      {
+        "value": "варенье",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She spread jam on her toast."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "jazz",
+    "translate": [
+      {
+        "value": "джаз",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is jazz."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "jeans",
+    "translate": [
+      {
+        "value": "джинсы",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She bought a new pair of jeans."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "jewellery",
+    "translate": [
+      {
+        "value": "ювелирный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is jewellery."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "journal",
+    "translate": [
+      {
+        "value": "журнал",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is journal."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "journalist",
+    "translate": [
+      {
+        "value": "журналист",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She is a well-known journalist."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "juice",
+    "translate": [
+      {
+        "value": "сок",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She drank a glass of orange juice."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "junior",
+    "translate": [
+      {
+        "value": "младший",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He is a junior member of the team."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "justice",
+    "translate": [
+      {
+        "value": "суд",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "They are fighting for justice."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "keen",
+    "translate": [
+      {
+        "value": "сильный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She is keen to learn new things."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "kid",
+    "translate": [
+      {
+        "value": "ребёнок",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The kids are playing outside."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "kilometre",
+    "translate": [
+      {
+        "value": "километр",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is kilometre."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "king",
+    "translate": [
+      {
+        "value": "король",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The king addressed his subjects."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "knee",
+    "translate": [
+      {
+        "value": "колено",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He injured his knee while playing soccer."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "knife",
+    "translate": [
+      {
+        "value": "нож",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He cut the vegetables with a knife."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "knowledge",
+    "translate": [
+      {
+        "value": "наука",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "His knowledge of history is impressive."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "lady",
+    "translate": [
+      {
+        "value": "дама",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She is a kind lady."
+          }
+        ]
+      }
+    ]
+  }
+]

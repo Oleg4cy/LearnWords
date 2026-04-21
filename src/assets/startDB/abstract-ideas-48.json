@@ -1,0 +1,282 @@
+[
+  {
+    "word": "rough",
+    "translate": [
+      {
+        "value": "бурный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The table had a rough surface."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "route",
+    "translate": [
+      {
+        "value": "маршрут",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "They took a different route to avoid traffic."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "routine",
+    "translate": [
+      {
+        "value": "текущий",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She followed her daily routine."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "row",
+    "translate": [
+      {
+        "value": "ряд",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "They sat in the front row."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "royal",
+    "translate": [
+      {
+        "value": "царский",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "They visited the royal palace."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "rubber",
+    "translate": [
+      {
+        "value": "резиновый",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is rubber."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "rubbish",
+    "translate": [
+      {
+        "value": "глупость",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He threw the rubbish in the bin."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "rude",
+    "translate": [
+      {
+        "value": "грубый",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "His rude comments upset everyone."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "rugby",
+    "translate": [
+      {
+        "value": "регби",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is rugby."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "runner",
+    "translate": [
+      {
+        "value": "дорожка",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The runner crossed the finish line."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "running",
+    "translate": [
+      {
+        "value": "бег",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "Running is a great way to stay in shape."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "rural",
+    "translate": [
+      {
+        "value": "деревенский",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "They live in a rural area."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "safe",
+    "translate": [
+      {
+        "value": "безопасный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The children are safe at home."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "safety",
+    "translate": [
+      {
+        "value": "безопасность",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "They ensured the safety of the passengers."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "sailing",
+    "translate": [
+      {
+        "value": "отход",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "Sailing is his favorite hobby."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "sailor",
+    "translate": [
+      {
+        "value": "моряк",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is sailor."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "salad",
+    "translate": [
+      {
+        "value": "салат",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is salad."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "sale",
+    "translate": [
+      {
+        "value": "акция",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The sale of the house was completed."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "salt",
+    "translate": [
+      {
+        "value": "соль",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He added salt to his food."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "sand",
+    "translate": [
+      {
+        "value": "песок",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The children played in the sand."
+          }
+        ]
+      }
+    ]
+  }
+]

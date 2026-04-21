@@ -1,0 +1,282 @@
+[
+  {
+    "word": "abandon",
+    "translate": [
+      {
+        "value": "бросить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She decided to abandon her plans."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "absolutely",
+    "translate": [
+      {
+        "value": "абсолютно",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She is absolutely certain."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "accept",
+    "translate": [
+      {
+        "value": "принять",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She accepted the job offer."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "access",
+    "translate": [
+      {
+        "value": "доступ",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She has access to the library."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "accuse",
+    "translate": [
+      {
+        "value": "обвинить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He was accused of theft."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "achieve",
+    "translate": [
+      {
+        "value": "добиться",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She achieved her goal."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "acknowledge",
+    "translate": [
+      {
+        "value": "допустить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She acknowledged the problem."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "acquire",
+    "translate": [
+      {
+        "value": "завести",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She acquired new skills."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "act",
+    "translate": [
+      {
+        "value": "играть",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She decided to act."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "actually",
+    "translate": [
+      {
+        "value": "действительно",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She actually likes the idea."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "adapt",
+    "translate": [
+      {
+        "value": "приспособить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She adapted the recipe for her diet."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "add",
+    "translate": [
+      {
+        "value": "добавить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She added sugar to the tea."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "admire",
+    "translate": [
+      {
+        "value": "любоваться",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She admires her teacher."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "admit",
+    "translate": [
+      {
+        "value": "принять",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She admitted her mistake."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "adopt",
+    "translate": [
+      {
+        "value": "применять",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "They adopted a child."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "advance",
+    "translate": [
+      {
+        "value": "двигаться",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "They advanced towards the goal."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "advertise",
+    "translate": [
+      {
+        "value": "рекламировать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "They advertised the event on TV."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "advise",
+    "translate": [
+      {
+        "value": "посоветовать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She advised him to rest."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "affect",
+    "translate": [
+      {
+        "value": "поразить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The weather affects my mood."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "afford",
+    "translate": [
+      {
+        "value": "потянуть",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "They can't afford a new car."
+          }
+        ]
+      }
+    ]
+  }
+]

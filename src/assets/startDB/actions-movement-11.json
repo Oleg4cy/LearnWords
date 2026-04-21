@@ -1,0 +1,282 @@
+[
+  {
+    "word": "deserve",
+    "translate": [
+      {
+        "value": "заслужить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He deserves a reward for his efforts."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "design",
+    "translate": [
+      {
+        "value": "разработать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The architect presented the design for the new building."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "destroy",
+    "translate": [
+      {
+        "value": "вывести",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The fire destroyed the building."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "detail",
+    "translate": [
+      {
+        "value": "отрядить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He explained every detail of the plan."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "detect",
+    "translate": [
+      {
+        "value": "обнаружить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "This is detect."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "determine",
+    "translate": [
+      {
+        "value": "решить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The investigation will determine the cause of the accident."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "develop",
+    "translate": [
+      {
+        "value": "развиваться",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The company plans to develop new products."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "die",
+    "translate": [
+      {
+        "value": "умереть",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He died peacefully in his sleep."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "differently",
+    "translate": [
+      {
+        "value": "иначе",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She thinks differently than her parents."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "dig",
+    "translate": [
+      {
+        "value": "копать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "They began to dig a hole."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "direct",
+    "translate": [
+      {
+        "value": "прямой",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He gave me direct instructions."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "directly",
+    "translate": [
+      {
+        "value": "непосредственно",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She spoke to me directly."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "disagree",
+    "translate": [
+      {
+        "value": "не соглашаться",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "I disagree with your opinion."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "discount",
+    "translate": [
+      {
+        "value": "дисконтировать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The store offers a discount on all items."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "discover",
+    "translate": [
+      {
+        "value": "узнать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She discovered a hidden talent for painting."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "discuss",
+    "translate": [
+      {
+        "value": "спорить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "They discussed the plan in detail."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "dislike",
+    "translate": [
+      {
+        "value": "нелюбовь",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She dislikes eating broccoli."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "dismiss",
+    "translate": [
+      {
+        "value": "рассчитывать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The teacher dismissed the class early."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "display",
+    "translate": [
+      {
+        "value": "показать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "They displayed their artwork at the gallery."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "distribute",
+    "translate": [
+      {
+        "value": "сдать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "They distribute food to the homeless."
+          }
+        ]
+      }
+    ]
+  }
+]

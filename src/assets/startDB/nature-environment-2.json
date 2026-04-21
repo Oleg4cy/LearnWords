@@ -1,0 +1,282 @@
+[
+  {
+    "word": "grain",
+    "translate": [
+      {
+        "value": "хлеб",
+        "context": [
+          {
+            "value": "Природа и окружающая среда",
+            "example": "The farmer harvested the grain."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "grass",
+    "translate": [
+      {
+        "value": "трава",
+        "context": [
+          {
+            "value": "Природа и окружающая среда",
+            "example": "The lawn is covered with grass."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "horse",
+    "translate": [
+      {
+        "value": "лошадь",
+        "context": [
+          {
+            "value": "Природа и окружающая среда",
+            "example": "He rode a horse."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "hurricane",
+    "translate": [
+      {
+        "value": "ураган",
+        "context": [
+          {
+            "value": "Природа и окружающая среда",
+            "example": "This is hurricane."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "indicate",
+    "translate": [
+      {
+        "value": "указать",
+        "context": [
+          {
+            "value": "Природа и окружающая среда",
+            "example": "Please indicate your preferences on the form."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "insect",
+    "translate": [
+      {
+        "value": "насекомое",
+        "context": [
+          {
+            "value": "Природа и окружающая среда",
+            "example": "The insect buzzed around the room."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "lake",
+    "translate": [
+      {
+        "value": "озеро",
+        "context": [
+          {
+            "value": "Природа и окружающая среда",
+            "example": "They swam in the lake."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "lion",
+    "translate": [
+      {
+        "value": "лев",
+        "context": [
+          {
+            "value": "Природа и окружающая среда",
+            "example": "This is lion."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "locate",
+    "translate": [
+      {
+        "value": "уловить",
+        "context": [
+          {
+            "value": "Природа и окружающая среда",
+            "example": "They were able to locate the missing keys."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "located",
+    "translate": [
+      {
+        "value": "расположенный",
+        "context": [
+          {
+            "value": "Природа и окружающая среда",
+            "example": "This is located."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "location",
+    "translate": [
+      {
+        "value": "положение",
+        "context": [
+          {
+            "value": "Природа и окружающая среда",
+            "example": "The location of the building is ideal."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "mountain",
+    "translate": [
+      {
+        "value": "гора",
+        "context": [
+          {
+            "value": "Природа и окружающая среда",
+            "example": "They hiked up the mountain."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "nature",
+    "translate": [
+      {
+        "value": "природа",
+        "context": [
+          {
+            "value": "Природа и окружающая среда",
+            "example": "She loves being in nature."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "ocean",
+    "translate": [
+      {
+        "value": "море",
+        "context": [
+          {
+            "value": "Природа и окружающая среда",
+            "example": "They sailed across the ocean."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "publication",
+    "translate": [
+      {
+        "value": "орган",
+        "context": [
+          {
+            "value": "Природа и окружающая среда",
+            "example": "The publication of his new book is scheduled for next month."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "qualification",
+    "translate": [
+      {
+        "value": "квалификация",
+        "context": [
+          {
+            "value": "Природа и окружающая среда",
+            "example": "She obtained her teaching qualification last year."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "rain",
+    "translate": [
+      {
+        "value": "посыпаться",
+        "context": [
+          {
+            "value": "Природа и окружающая среда",
+            "example": "It started to rain."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "river",
+    "translate": [
+      {
+        "value": "река",
+        "context": [
+          {
+            "value": "Природа и окружающая среда",
+            "example": "The river flows into the sea."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "sea",
+    "translate": [
+      {
+        "value": "море",
+        "context": [
+          {
+            "value": "Природа и окружающая среда",
+            "example": "They sailed across the sea."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "season",
+    "translate": [
+      {
+        "value": "сезон",
+        "context": [
+          {
+            "value": "Природа и окружающая среда",
+            "example": "Spring is her favorite season."
+          }
+        ]
+      }
+    ]
+  }
+]

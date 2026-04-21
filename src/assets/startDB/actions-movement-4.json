@@ -1,0 +1,282 @@
+[
+  {
+    "word": "badly",
+    "translate": [
+      {
+        "value": "худо",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She performed badly on the test."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "bake",
+    "translate": [
+      {
+        "value": "печь",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She baked a cake."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "balance",
+    "translate": [
+      {
+        "value": "уравновесить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He lost his balance and fell."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "ban",
+    "translate": [
+      {
+        "value": "запретить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The city banned smoking in public places."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "bar",
+    "translate": [
+      {
+        "value": "запереть",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The windows were protected with iron bars."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "base",
+    "translate": [
+      {
+        "value": "основать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The lamp has a heavy base."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "basically",
+    "translate": [
+      {
+        "value": "в основном",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "Basically, they are the same."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "battle",
+    "translate": [
+      {
+        "value": "бороться",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The battle lasted for days."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "become",
+    "translate": [
+      {
+        "value": "становиться",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She became a doctor."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "beg",
+    "translate": [
+      {
+        "value": "умолять",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "This is beg."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "begin",
+    "translate": [
+      {
+        "value": "начать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The show will begin shortly."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "behave",
+    "translate": [
+      {
+        "value": "вести",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "They were told to behave properly."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "believe",
+    "translate": [
+      {
+        "value": "думать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "I believe in you."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "belong",
+    "translate": [
+      {
+        "value": "принадлежать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The book belongs to me."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "bend",
+    "translate": [
+      {
+        "value": "склониться",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She bent the wire into a circle."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "benefit",
+    "translate": [
+      {
+        "value": "польза",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The new plan will benefit everyone."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "best",
+    "translate": [
+      {
+        "value": "лучший",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "This is the best cake I've ever had."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "bet",
+    "translate": [
+      {
+        "value": "ставить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He bet $50 on the game."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "better",
+    "translate": [
+      {
+        "value": "лучший",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She is a better cook than I am."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "bite",
+    "translate": [
+      {
+        "value": "жалить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He bit into the apple."
+          }
+        ]
+      }
+    ]
+  }
+]

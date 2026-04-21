@@ -1,0 +1,282 @@
+[
+  {
+    "word": "curly",
+    "translate": [
+      {
+        "value": "кудрявый",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She has curly hair."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "currency",
+    "translate": [
+      {
+        "value": "валюта",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is currency."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "current",
+    "translate": [
+      {
+        "value": "текущий",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The current situation is difficult."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "curtain",
+    "translate": [
+      {
+        "value": "занавеска",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She opened the curtains to let in some light."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "curved",
+    "translate": [
+      {
+        "value": "кривой",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The path was curved."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "custom",
+    "translate": [
+      {
+        "value": "заведение",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "It is a custom to shake hands when meeting someone."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "dad",
+    "translate": [
+      {
+        "value": "папа",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is dad."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "dancing",
+    "translate": [
+      {
+        "value": "пляска",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "Dancing is her passion."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "danger",
+    "translate": [
+      {
+        "value": "опасность",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "There is a danger of falling rocks."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "dangerous",
+    "translate": [
+      {
+        "value": "опасный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "It's dangerous to swim here."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "dark",
+    "translate": [
+      {
+        "value": "тёмный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The room was dark and quiet."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "data",
+    "translate": [
+      {
+        "value": "данные",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "They collected data for the research project."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "daughter",
+    "translate": [
+      {
+        "value": "дочь",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "They have a daughter and a son."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "dead",
+    "translate": [
+      {
+        "value": "мёртвый",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The plant is dead."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "debt",
+    "translate": [
+      {
+        "value": "долг",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He is trying to pay off his debts."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "decade",
+    "translate": [
+      {
+        "value": "десяток",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He has been working here for a decade."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "decent",
+    "translate": [
+      {
+        "value": "приличный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is decent."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "decision",
+    "translate": [
+      {
+        "value": "решение",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The decision was unanimous."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "decoration",
+    "translate": [
+      {
+        "value": "орден",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The decoration of the hall was beautiful."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "defence",
+    "translate": [
+      {
+        "value": "защита",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "They built a wall for defence."
+          }
+        ]
+      }
+    ]
+  }
+]

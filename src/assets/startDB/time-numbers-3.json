@@ -1,0 +1,282 @@
+[
+  {
+    "word": "nineteen",
+    "translate": [
+      {
+        "value": "девятнадцать",
+        "context": [
+          {
+            "value": "Время и числа",
+            "example": "He turned nineteen today."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "ninety",
+    "translate": [
+      {
+        "value": "девяносто",
+        "context": [
+          {
+            "value": "Время и числа",
+            "example": "She counted to ninety."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "November",
+    "translate": [
+      {
+        "value": "ноябрь",
+        "context": [
+          {
+            "value": "Время и числа",
+            "example": "The weather gets colder in November."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "October",
+    "translate": [
+      {
+        "value": "октябрь",
+        "context": [
+          {
+            "value": "Время и числа",
+            "example": "The leaves fall in October."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "Saturday",
+    "translate": [
+      {
+        "value": "суббота",
+        "context": [
+          {
+            "value": "Время и числа",
+            "example": "This is saturday."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "second",
+    "translate": [
+      {
+        "value": "секунда",
+        "context": [
+          {
+            "value": "Время и числа",
+            "example": "She finished in second place."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "secondary",
+    "translate": [
+      {
+        "value": "вторичный",
+        "context": [
+          {
+            "value": "Время и числа",
+            "example": "He attended a secondary school."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "secondly",
+    "translate": [
+      {
+        "value": "второе",
+        "context": [
+          {
+            "value": "Время и числа",
+            "example": "This is secondly."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "September",
+    "translate": [
+      {
+        "value": "сентябрь",
+        "context": [
+          {
+            "value": "Время и числа",
+            "example": "School starts in September."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "seven",
+    "translate": [
+      {
+        "value": "семёрка",
+        "context": [
+          {
+            "value": "Время и числа",
+            "example": "This is seven."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "seventeen",
+    "translate": [
+      {
+        "value": "семнадцатилетний",
+        "context": [
+          {
+            "value": "Время и числа",
+            "example": "This is seventeen."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "seventy",
+    "translate": [
+      {
+        "value": "семьдесят",
+        "context": [
+          {
+            "value": "Время и числа",
+            "example": "This is seventy."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "six",
+    "translate": [
+      {
+        "value": "шестёрка",
+        "context": [
+          {
+            "value": "Время и числа",
+            "example": "There are six apples in the basket."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "sixteen",
+    "translate": [
+      {
+        "value": "шестнадцать",
+        "context": [
+          {
+            "value": "Время и числа",
+            "example": "She turned sixteen last month."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "sixty",
+    "translate": [
+      {
+        "value": "шестьдесят",
+        "context": [
+          {
+            "value": "Время и числа",
+            "example": "There are sixty seconds in a minute."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "sometimes",
+    "translate": [
+      {
+        "value": "иногда",
+        "context": [
+          {
+            "value": "Время и числа",
+            "example": "Sometimes I go for a walk."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "Sunday",
+    "translate": [
+      {
+        "value": "воскресенье",
+        "context": [
+          {
+            "value": "Время и числа",
+            "example": "We have a family dinner every Sunday."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "ten",
+    "translate": [
+      {
+        "value": "десятка",
+        "context": [
+          {
+            "value": "Время и числа",
+            "example": "This is ten."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "third",
+    "translate": [
+      {
+        "value": "терция",
+        "context": [
+          {
+            "value": "Время и числа",
+            "example": "He finished in third place."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "thirteen",
+    "translate": [
+      {
+        "value": "тринадцать",
+        "context": [
+          {
+            "value": "Время и числа",
+            "example": "There are thirteen apples in the basket."
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,282 @@
+[
+  {
+    "word": "possible",
+    "translate": [
+      {
+        "value": "возможный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "It is possible to finish the project on time."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "poster",
+    "translate": [
+      {
+        "value": "плакат",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is poster."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "pot",
+    "translate": [
+      {
+        "value": "котелок",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She cooked the soup in a large pot."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "potential",
+    "translate": [
+      {
+        "value": "потенциальный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She has a lot of potential."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "pound",
+    "translate": [
+      {
+        "value": "фунт",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He weighs about 150 pounds."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "poverty",
+    "translate": [
+      {
+        "value": "нищета",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is poverty."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "powder",
+    "translate": [
+      {
+        "value": "порошок",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He sprinkled powder on the cake."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "powerful",
+    "translate": [
+      {
+        "value": "сильный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The storm was very powerful."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "practical",
+    "translate": [
+      {
+        "value": "реальный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She has a practical approach to problem-solving."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "practice",
+    "translate": [
+      {
+        "value": "практика",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "Practice makes perfect."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "prayer",
+    "translate": [
+      {
+        "value": "молитва",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is prayer."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "prediction",
+    "translate": [
+      {
+        "value": "предсказание",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is prediction."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "pregnant",
+    "translate": [
+      {
+        "value": "беременный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She is six months pregnant."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "preparation",
+    "translate": [
+      {
+        "value": "подготовка",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The preparation for the event took weeks."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "prepared",
+    "translate": [
+      {
+        "value": "готовый",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is prepared."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "presence",
+    "translate": [
+      {
+        "value": "присутствие",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "Your presence is requested at the meeting."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "presentation",
+    "translate": [
+      {
+        "value": "представление",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The presentation was informative."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "pressure",
+    "translate": [
+      {
+        "value": "давление",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The pressure of the water was too strong."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "previous",
+    "translate": [
+      {
+        "value": "предыдущий",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She returned to her previous job."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "priest",
+    "translate": [
+      {
+        "value": "священник",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is priest."
+          }
+        ]
+      }
+    ]
+  }
+]

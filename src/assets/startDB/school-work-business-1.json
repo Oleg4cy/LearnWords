@@ -1,0 +1,282 @@
+[
+  {
+    "word": "accompany",
+    "translate": [
+      {
+        "value": "сопровождать",
+        "context": [
+          {
+            "value": "Учёба, работа и бизнес",
+            "example": "She will accompany him on the trip."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "account",
+    "translate": [
+      {
+        "value": "объяснить",
+        "context": [
+          {
+            "value": "Учёба, работа и бизнес",
+            "example": "She gave an account of the event."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "available",
+    "translate": [
+      {
+        "value": "доступный",
+        "context": [
+          {
+            "value": "Учёба, работа и бизнес",
+            "example": "The book is available in the library."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "bank",
+    "translate": [
+      {
+        "value": "банк",
+        "context": [
+          {
+            "value": "Учёба, работа и бизнес",
+            "example": "They sat on the river bank."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "bank",
+    "translate": [
+      {
+        "value": "берег реки",
+        "context": [
+          {
+            "value": "Учёба, работа и бизнес",
+            "example": "They sat on the river bank."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "budget",
+    "translate": [
+      {
+        "value": "бюджет",
+        "context": [
+          {
+            "value": "Учёба, работа и бизнес",
+            "example": "We need to stick to the budget."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "buy",
+    "translate": [
+      {
+        "value": "купить",
+        "context": [
+          {
+            "value": "Учёба, работа и бизнес",
+            "example": "She bought a new car."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "class",
+    "translate": [
+      {
+        "value": "класс",
+        "context": [
+          {
+            "value": "Учёба, работа и бизнес",
+            "example": "He is in the top class of his grade."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "classic",
+    "translate": [
+      {
+        "value": "классический",
+        "context": [
+          {
+            "value": "Учёба, работа и бизнес",
+            "example": "That book is a classic."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "classical",
+    "translate": [
+      {
+        "value": "античный",
+        "context": [
+          {
+            "value": "Учёба, работа и бизнес",
+            "example": "This is classical."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "client",
+    "translate": [
+      {
+        "value": "клиент",
+        "context": [
+          {
+            "value": "Учёба, работа и бизнес",
+            "example": "The lawyer met with her client."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "company",
+    "translate": [
+      {
+        "value": "общество",
+        "context": [
+          {
+            "value": "Учёба, работа и бизнес",
+            "example": "She works for a large company."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "course",
+    "translate": [
+      {
+        "value": "ход",
+        "context": [
+          {
+            "value": "Учёба, работа и бизнес",
+            "example": "The ship changed course."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "customer",
+    "translate": [
+      {
+        "value": "клиент",
+        "context": [
+          {
+            "value": "Учёба, работа и бизнес",
+            "example": "The store values each customer."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "education",
+    "translate": [
+      {
+        "value": "образование",
+        "context": [
+          {
+            "value": "Учёба, работа и бизнес",
+            "example": "He is studying education at the university."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "educational",
+    "translate": [
+      {
+        "value": "учебный",
+        "context": [
+          {
+            "value": "Учёба, работа и бизнес",
+            "example": "This is educational."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "exam",
+    "translate": [
+      {
+        "value": "экзамен",
+        "context": [
+          {
+            "value": "Учёба, работа и бизнес",
+            "example": "He passed the final exam."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "examination",
+    "translate": [
+      {
+        "value": "экзамен",
+        "context": [
+          {
+            "value": "Учёба, работа и бизнес",
+            "example": "The doctor performed a thorough examination."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "examine",
+    "translate": [
+      {
+        "value": "проверить",
+        "context": [
+          {
+            "value": "Учёба, работа и бизнес",
+            "example": "The doctor examined the patient."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "example",
+    "translate": [
+      {
+        "value": "пример",
+        "context": [
+          {
+            "value": "Учёба, работа и бизнес",
+            "example": "He is a good example for others."
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,282 @@
+[
+  {
+    "word": "apart",
+    "translate": [
+      {
+        "value": "разводить",
+        "context": [
+          {
+            "value": "Культура и развлечения",
+            "example": "He stood apart from the group."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "apartment",
+    "translate": [
+      {
+        "value": "квартира",
+        "context": [
+          {
+            "value": "Культура и развлечения",
+            "example": "She lives in an apartment downtown."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "art",
+    "translate": [
+      {
+        "value": "искусство",
+        "context": [
+          {
+            "value": "Культура и развлечения",
+            "example": "She studied art in college."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "article",
+    "translate": [
+      {
+        "value": "член",
+        "context": [
+          {
+            "value": "Культура и развлечения",
+            "example": "He wrote an article for the magazine."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "artificial",
+    "translate": [
+      {
+        "value": "искусственный",
+        "context": [
+          {
+            "value": "Культура и развлечения",
+            "example": "This drink contains artificial flavors."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "artist",
+    "translate": [
+      {
+        "value": "художник",
+        "context": [
+          {
+            "value": "Культура и развлечения",
+            "example": "He is a famous artist."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "artistic",
+    "translate": [
+      {
+        "value": "художественный",
+        "context": [
+          {
+            "value": "Культура и развлечения",
+            "example": "She has great artistic talent."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "book",
+    "translate": [
+      {
+        "value": "заказать",
+        "context": [
+          {
+            "value": "Культура и развлечения",
+            "example": "She read a book."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "chart",
+    "translate": [
+      {
+        "value": "схема",
+        "context": [
+          {
+            "value": "Культура и развлечения",
+            "example": "The sales chart shows an increase in revenue."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "comedy",
+    "translate": [
+      {
+        "value": "комедия",
+        "context": [
+          {
+            "value": "Культура и развлечения",
+            "example": "We watched a comedy show."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "concert",
+    "translate": [
+      {
+        "value": "концерт",
+        "context": [
+          {
+            "value": "Культура и развлечения",
+            "example": "They went to a rock concert."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "dance",
+    "translate": [
+      {
+        "value": "танцевать",
+        "context": [
+          {
+            "value": "Культура и развлечения",
+            "example": "They danced all night."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "dancer",
+    "translate": [
+      {
+        "value": "танцор",
+        "context": [
+          {
+            "value": "Культура и развлечения",
+            "example": "The dancer performed beautifully."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "department",
+    "translate": [
+      {
+        "value": "стол",
+        "context": [
+          {
+            "value": "Культура и развлечения",
+            "example": "She works in the marketing department."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "departure",
+    "translate": [
+      {
+        "value": "выступление",
+        "context": [
+          {
+            "value": "Культура и развлечения",
+            "example": "Their departure was delayed due to weather conditions."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "drama",
+    "translate": [
+      {
+        "value": "драма",
+        "context": [
+          {
+            "value": "Культура и развлечения",
+            "example": "She loves studying drama."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "dramatic",
+    "translate": [
+      {
+        "value": "драматический",
+        "context": [
+          {
+            "value": "Культура и развлечения",
+            "example": "The movie had a dramatic ending."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "festival",
+    "translate": [
+      {
+        "value": "торжество",
+        "context": [
+          {
+            "value": "Культура и развлечения",
+            "example": "They attended a music festival."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "film",
+    "translate": [
+      {
+        "value": "поснимать",
+        "context": [
+          {
+            "value": "Культура и развлечения",
+            "example": "They watched an interesting film."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "gallery",
+    "translate": [
+      {
+        "value": "галерея",
+        "context": [
+          {
+            "value": "Культура и развлечения",
+            "example": "This is gallery."
+          }
+        ]
+      }
+    ]
+  }
+]

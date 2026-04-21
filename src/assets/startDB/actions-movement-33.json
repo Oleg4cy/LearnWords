@@ -1,0 +1,282 @@
+[
+  {
+    "word": "revise",
+    "translate": [
+      {
+        "value": "пересматривать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "This is revise."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "rid",
+    "translate": [
+      {
+        "value": "избавлять",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "This is rid."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "ride",
+    "translate": [
+      {
+        "value": "ездить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She loves to ride horses."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "right",
+    "translate": [
+      {
+        "value": "тот",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He made the right decision."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "rise",
+    "translate": [
+      {
+        "value": "встать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The sun rises in the east."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "risk",
+    "translate": [
+      {
+        "value": "рисковать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "There is a high risk of injury."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "roll",
+    "translate": [
+      {
+        "value": "катить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He rolled the ball across the field."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "rub",
+    "translate": [
+      {
+        "value": "потереть",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She rubbed her hands together to warm them up."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "rule",
+    "translate": [
+      {
+        "value": "управлять",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "You must follow the school rules."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "run",
+    "translate": [
+      {
+        "value": "бежать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She runs every morning to stay fit."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "rush",
+    "translate": [
+      {
+        "value": "броситься",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She rushed to catch the bus."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "sail",
+    "translate": [
+      {
+        "value": "плавать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "They decided to sail around the world."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "sample",
+    "translate": [
+      {
+        "value": "опробовать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He took a sample of the soil."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "satisfy",
+    "translate": [
+      {
+        "value": "удовлетворить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The food satisfied their hunger."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "save",
+    "translate": [
+      {
+        "value": "спасти",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "They worked hard to save the environment."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "scan",
+    "translate": [
+      {
+        "value": "осмотреть",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "This is scan."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "schedule",
+    "translate": [
+      {
+        "value": "расписание",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He followed his daily schedule strictly."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "score",
+    "translate": [
+      {
+        "value": "забить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The final score was 3-2."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "secure",
+    "translate": [
+      {
+        "value": "закрепить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The door was securely locked."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "see",
+    "translate": [
+      {
+        "value": "видеть",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She can see clearly now."
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,282 @@
+[
+  {
+    "word": "race",
+    "translate": [
+      {
+        "value": "гонка, соревнование",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He won the race."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "raise",
+    "translate": [
+      {
+        "value": "поднять",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "They raised the flag."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "range",
+    "translate": [
+      {
+        "value": "простираться",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The price range is between $10 and $50."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "rank",
+    "translate": [
+      {
+        "value": "причислить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He holds the rank of captain."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "rapidly",
+    "translate": [
+      {
+        "value": "быстро",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The situation changed rapidly."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "rarely",
+    "translate": [
+      {
+        "value": "редко",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She rarely goes out."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "rate",
+    "translate": [
+      {
+        "value": "расценить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The birth rate is increasing."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "rather",
+    "translate": [
+      {
+        "value": "довольно",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "I would rather stay home."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "reach",
+    "translate": [
+      {
+        "value": "пройти",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He reached the top of the mountain."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "react",
+    "translate": [
+      {
+        "value": "реагировать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He reacted angrily."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "read",
+    "translate": [
+      {
+        "value": "читать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She likes to read books."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "realize",
+    "translate": [
+      {
+        "value": "понять",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She realized her mistake."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "really",
+    "translate": [
+      {
+        "value": "право",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "I really enjoyed the movie."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "recall",
+    "translate": [
+      {
+        "value": "вспомнить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He recalls the event clearly."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "receive",
+    "translate": [
+      {
+        "value": "получить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She received a gift."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "recently",
+    "translate": [
+      {
+        "value": "недавно",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "I recently visited my friend."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "recognize",
+    "translate": [
+      {
+        "value": "узнать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "I recognize her from school."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "recommend",
+    "translate": [
+      {
+        "value": "рекомендовать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She recommends this book."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "record",
+    "translate": [
+      {
+        "value": "записать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He set a new world record."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "recover",
+    "translate": [
+      {
+        "value": "вернуть",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He is expected to recover soon."
+          }
+        ]
+      }
+    ]
+  }
+]

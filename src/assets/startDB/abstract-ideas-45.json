@@ -1,0 +1,282 @@
+[
+  {
+    "word": "quiet",
+    "translate": [
+      {
+        "value": "тихий",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The library is a quiet place."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "quotation",
+    "translate": [
+      {
+        "value": "цитата",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is quotation."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "racing",
+    "translate": [
+      {
+        "value": "гоночный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is racing."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "railway",
+    "translate": [
+      {
+        "value": "чугунка",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "They are building a new railway."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "rapid",
+    "translate": [
+      {
+        "value": "частый",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She made rapid progress."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "rare",
+    "translate": [
+      {
+        "value": "редкий",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "It is rare to see such talent."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "raw",
+    "translate": [
+      {
+        "value": "сырой",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He ate raw vegetables."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "reader",
+    "translate": [
+      {
+        "value": "читатель",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He is an avid reader."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "reading",
+    "translate": [
+      {
+        "value": "чтение",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "Reading is a good habit."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "ready",
+    "translate": [
+      {
+        "value": "готовый",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She is ready to go."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "real",
+    "translate": [
+      {
+        "value": "настоящий",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The danger is very real."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "realistic",
+    "translate": [
+      {
+        "value": "реалистический",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He has a realistic view of the situation."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "reality",
+    "translate": [
+      {
+        "value": "действительность",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He needs to face reality."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "reason",
+    "translate": [
+      {
+        "value": "причина",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "There is a good reason for his actions."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "reasonable",
+    "translate": [
+      {
+        "value": "разумный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She made a reasonable decision."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "receipt",
+    "translate": [
+      {
+        "value": "получение",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is receipt."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "recent",
+    "translate": [
+      {
+        "value": "последний",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The recent news is shocking."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "reception",
+    "translate": [
+      {
+        "value": "встреча",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is reception."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "recipe",
+    "translate": [
+      {
+        "value": "рецепт",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She followed the recipe carefully."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "recommendation",
+    "translate": [
+      {
+        "value": "рекомендация",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is recommendation."
+          }
+        ]
+      }
+    ]
+  }
+]

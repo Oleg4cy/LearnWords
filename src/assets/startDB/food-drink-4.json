@@ -1,0 +1,114 @@
+[
+  {
+    "word": "theatre",
+    "translate": [
+      {
+        "value": "театр",
+        "context": [
+          {
+            "value": "Еда и напитки",
+            "example": "They went to the theatre to watch a play."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "threat",
+    "translate": [
+      {
+        "value": "угроза",
+        "context": [
+          {
+            "value": "Еда и напитки",
+            "example": "The threat was taken seriously by the police."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "threaten",
+    "translate": [
+      {
+        "value": "грозить",
+        "context": [
+          {
+            "value": "Еда и напитки",
+            "example": "He threatened to call the police."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "treat",
+    "translate": [
+      {
+        "value": "относиться",
+        "context": [
+          {
+            "value": "Еда и напитки",
+            "example": "He treats everyone with respect."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "treatment",
+    "translate": [
+      {
+        "value": "лечение",
+        "context": [
+          {
+            "value": "Еда и напитки",
+            "example": "The treatment was effective."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "vegetable",
+    "translate": [
+      {
+        "value": "овощ",
+        "context": [
+          {
+            "value": "Еда и напитки",
+            "example": "She grows her own vegetables."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "water",
+    "translate": [
+      {
+        "value": "поить",
+        "context": [
+          {
+            "value": "Еда и напитки",
+            "example": "She poured water into the glass."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "weather",
+    "translate": [
+      {
+        "value": "погода",
+        "context": [
+          {
+            "value": "Еда и напитки",
+            "example": "The weather is sunny today."
+          }
+        ]
+      }
+    ]
+  }
+]

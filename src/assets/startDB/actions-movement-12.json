@@ -1,0 +1,282 @@
+[
+  {
+    "word": "divide",
+    "translate": [
+      {
+        "value": "разделить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "They decided to divide the profits equally."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "document",
+    "translate": [
+      {
+        "value": "документировать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He signed the document."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "dominate",
+    "translate": [
+      {
+        "value": "возвышаться",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "One company has dominated the market."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "donate",
+    "translate": [
+      {
+        "value": "сдать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "This is donate."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "downstairs",
+    "translate": [
+      {
+        "value": "внизу",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The kitchen is downstairs."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "draft",
+    "translate": [
+      {
+        "value": "набросить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She wrote a draft of the report."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "drag",
+    "translate": [
+      {
+        "value": "тянуть",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He had to drag the heavy box."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "draw",
+    "translate": [
+      {
+        "value": "провести",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He can draw very well."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "dream",
+    "translate": [
+      {
+        "value": "мечтать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She had a strange dream last night."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "drive",
+    "translate": [
+      {
+        "value": "ехать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She drives to work every day."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "drop",
+    "translate": [
+      {
+        "value": "упасть",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She accidentally dropped her phone."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "dry",
+    "translate": [
+      {
+        "value": "сухой",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The clothes are dry."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "easily",
+    "translate": [
+      {
+        "value": "легко",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She solved the problem easily."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "east",
+    "translate": [
+      {
+        "value": "восточный",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The sun rises in the east."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "edit",
+    "translate": [
+      {
+        "value": "редактировать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "This is edit."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "effectively",
+    "translate": [
+      {
+        "value": "эффективно",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She worked effectively to meet the deadline."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "elect",
+    "translate": [
+      {
+        "value": "выбрать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "They elected a new president."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "else",
+    "translate": [
+      {
+        "value": "ещё, другой",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "Do you want anything else?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "elsewhere",
+    "translate": [
+      {
+        "value": "где-то в другом месте",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He couldn't find it elsewhere."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "emerge",
+    "translate": [
+      {
+        "value": "появиться",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The sun emerged from behind the clouds."
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,282 @@
+[
+  {
+    "word": "heaven",
+    "translate": [
+      {
+        "value": "небо",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "They believe their loved ones are in heaven."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "heavy",
+    "translate": [
+      {
+        "value": "тяжёлый",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The box was too heavy to lift."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "heel",
+    "translate": [
+      {
+        "value": "каблук",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She has a blister on her heel."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "height",
+    "translate": [
+      {
+        "value": "рост",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The height of the building is impressive."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "helicopter",
+    "translate": [
+      {
+        "value": "вертолёт",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is helicopter."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "hell",
+    "translate": [
+      {
+        "value": "ад",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He was afraid of going to hell."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "helpful",
+    "translate": [
+      {
+        "value": "полезный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She was very helpful during the project."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "hero",
+    "translate": [
+      {
+        "value": "герой",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The firefighter was a hero."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "historic",
+    "translate": [
+      {
+        "value": "исторический",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is historic."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "historical",
+    "translate": [
+      {
+        "value": "исторический",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is historical."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "history",
+    "translate": [
+      {
+        "value": "история",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She is studying history at university."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "hobby",
+    "translate": [
+      {
+        "value": "конёк",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "Her hobby is painting."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "hole",
+    "translate": [
+      {
+        "value": "очко",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "There is a hole in the ground."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "hollow",
+    "translate": [
+      {
+        "value": "пустой",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The tree was hollow inside."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "holy",
+    "translate": [
+      {
+        "value": "святой",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is holy."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "horrible",
+    "translate": [
+      {
+        "value": "ужасный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is horrible."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "hot",
+    "translate": [
+      {
+        "value": "горячий",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "It was a hot summer day."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "housing",
+    "translate": [
+      {
+        "value": "гнездо",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "There is a need for affordable housing."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "huge",
+    "translate": [
+      {
+        "value": "огромный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The elephant is a huge animal."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "humorous",
+    "translate": [
+      {
+        "value": "шутливый",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He told a humorous story."
+          }
+        ]
+      }
+    ]
+  }
+]

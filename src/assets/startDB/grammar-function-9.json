@@ -1,0 +1,282 @@
+[
+  {
+    "word": "used to",
+    "translate": [
+      {
+        "value": "раньше, бывало",
+        "context": [
+          {
+            "value": "Грамматика и служебные слова",
+            "example": "She used to live in New York."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "via",
+    "translate": [
+      {
+        "value": "через",
+        "context": [
+          {
+            "value": "Грамматика и служебные слова",
+            "example": "We traveled to the city via the highway."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "we",
+    "translate": [
+      {
+        "value": "мы",
+        "context": [
+          {
+            "value": "Грамматика и служебные слова",
+            "example": "We are going to the park."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "welcome",
+    "translate": [
+      {
+        "value": "приятный",
+        "context": [
+          {
+            "value": "Грамматика и служебные слова",
+            "example": "They welcomed the guests warmly."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "well",
+    "translate": [
+      {
+        "value": "колодец",
+        "context": [
+          {
+            "value": "Грамматика и служебные слова",
+            "example": "She did well on her exam."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "what",
+    "translate": [
+      {
+        "value": "какой",
+        "context": [
+          {
+            "value": "Грамматика и служебные слова",
+            "example": "What is your name?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "whatever",
+    "translate": [
+      {
+        "value": "что бы ни",
+        "context": [
+          {
+            "value": "Грамматика и служебные слова",
+            "example": "Take whatever you like."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "when",
+    "translate": [
+      {
+        "value": "когда",
+        "context": [
+          {
+            "value": "Грамматика и служебные слова",
+            "example": "When is your birthday?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "whenever",
+    "translate": [
+      {
+        "value": "когда бы ни",
+        "context": [
+          {
+            "value": "Грамматика и служебные слова",
+            "example": "Call me whenever you want."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "where",
+    "translate": [
+      {
+        "value": "где",
+        "context": [
+          {
+            "value": "Грамматика и служебные слова",
+            "example": "Where do you live?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "whereas",
+    "translate": [
+      {
+        "value": "тогда как",
+        "context": [
+          {
+            "value": "Грамматика и служебные слова",
+            "example": "He is short, whereas his brother is tall."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "wherever",
+    "translate": [
+      {
+        "value": "куда",
+        "context": [
+          {
+            "value": "Грамматика и служебные слова",
+            "example": "We can go wherever you like."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "whether",
+    "translate": [
+      {
+        "value": "ли",
+        "context": [
+          {
+            "value": "Грамматика и служебные слова",
+            "example": "I don't know whether to go or stay."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "which",
+    "translate": [
+      {
+        "value": "который",
+        "context": [
+          {
+            "value": "Грамматика и служебные слова",
+            "example": "Which color do you prefer?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "while",
+    "translate": [
+      {
+        "value": "когда",
+        "context": [
+          {
+            "value": "Грамматика и служебные слова",
+            "example": "He worked for a while."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "who",
+    "translate": [
+      {
+        "value": "который",
+        "context": [
+          {
+            "value": "Грамматика и служебные слова",
+            "example": "Who is that person?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "whom",
+    "translate": [
+      {
+        "value": "кого, кому",
+        "context": [
+          {
+            "value": "Грамматика и служебные слова",
+            "example": "To whom should I address the letter?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "whose",
+    "translate": [
+      {
+        "value": "чей",
+        "context": [
+          {
+            "value": "Грамматика и служебные слова",
+            "example": "Whose book is this?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "will",
+    "translate": [
+      {
+        "value": "воля",
+        "context": [
+          {
+            "value": "Грамматика и служебные слова",
+            "example": "She will go to the party."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "with",
+    "translate": [
+      {
+        "value": "с",
+        "context": [
+          {
+            "value": "Грамматика и служебные слова",
+            "example": "She came with her friend."
+          }
+        ]
+      }
+    ]
+  }
+]

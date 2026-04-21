@@ -1,0 +1,282 @@
+[
+  {
+    "word": "policy",
+    "translate": [
+      {
+        "value": "курс",
+        "context": [
+          {
+            "value": "Общество, право и политика",
+            "example": "The company's new policy encourages remote work."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "political",
+    "translate": [
+      {
+        "value": "политический",
+        "context": [
+          {
+            "value": "Общество, право и политика",
+            "example": "They discussed political issues."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "politician",
+    "translate": [
+      {
+        "value": "политик",
+        "context": [
+          {
+            "value": "Общество, право и политика",
+            "example": "The politician gave a speech."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "politics",
+    "translate": [
+      {
+        "value": "политика",
+        "context": [
+          {
+            "value": "Общество, право и политика",
+            "example": "She is interested in politics."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "president",
+    "translate": [
+      {
+        "value": "президент",
+        "context": [
+          {
+            "value": "Общество, право и политика",
+            "example": "The president gave a speech."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "prison",
+    "translate": [
+      {
+        "value": "тюрьма",
+        "context": [
+          {
+            "value": "Общество, право и политика",
+            "example": "He was sent to prison for theft."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "prisoner",
+    "translate": [
+      {
+        "value": "пленник",
+        "context": [
+          {
+            "value": "Общество, право и политика",
+            "example": "The prisoner escaped from jail."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "public",
+    "translate": [
+      {
+        "value": "государственный",
+        "context": [
+          {
+            "value": "Общество, право и политика",
+            "example": "The library is open to the public."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "reward",
+    "translate": [
+      {
+        "value": "пожаловать",
+        "context": [
+          {
+            "value": "Общество, право и политика",
+            "example": "He received a reward for his hard work."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "selection",
+    "translate": [
+      {
+        "value": "выбор",
+        "context": [
+          {
+            "value": "Общество, право и политика",
+            "example": "The selection process was rigorous."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "social",
+    "translate": [
+      {
+        "value": "социальный",
+        "context": [
+          {
+            "value": "Общество, право и политика",
+            "example": "She enjoys social activities."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "society",
+    "translate": [
+      {
+        "value": "свет",
+        "context": [
+          {
+            "value": "Общество, право и политика",
+            "example": "The society is very diverse."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "state",
+    "translate": [
+      {
+        "value": "государственный",
+        "context": [
+          {
+            "value": "Общество, право и политика",
+            "example": "The state of the economy is improving."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "statement",
+    "translate": [
+      {
+        "value": "заявление",
+        "context": [
+          {
+            "value": "Общество, право и политика",
+            "example": "Her statement was clear and concise."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "tax",
+    "translate": [
+      {
+        "value": "подать",
+        "context": [
+          {
+            "value": "Общество, право и политика",
+            "example": "He paid his taxes on time."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "taxi",
+    "translate": [
+      {
+        "value": "такси",
+        "context": [
+          {
+            "value": "Общество, право и политика",
+            "example": "This is taxi."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "upwards",
+    "translate": [
+      {
+        "value": "вверх",
+        "context": [
+          {
+            "value": "Общество, право и политика",
+            "example": "Prices have been moving upwards."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "war",
+    "translate": [
+      {
+        "value": "война",
+        "context": [
+          {
+            "value": "Общество, право и политика",
+            "example": "The war lasted for five years."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "warn",
+    "translate": [
+      {
+        "value": "предупредить",
+        "context": [
+          {
+            "value": "Общество, право и политика",
+            "example": "They warned us about the storm."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "warning",
+    "translate": [
+      {
+        "value": "сигнал",
+        "context": [
+          {
+            "value": "Общество, право и политика",
+            "example": "He received a warning about the dangers ahead."
+          }
+        ]
+      }
+    ]
+  }
+]

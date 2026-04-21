@@ -1,0 +1,282 @@
+[
+  {
+    "word": "mind",
+    "translate": [
+      {
+        "value": "голова",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She has a sharp mind."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "miss",
+    "translate": [
+      {
+        "value": "упустить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She missed the target."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "mistake",
+    "translate": [
+      {
+        "value": "ошибка",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "It was a simple mistake."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "mix",
+    "translate": [
+      {
+        "value": "смешивать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "Mix the flour and water together."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "model",
+    "translate": [
+      {
+        "value": "смоделировать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He built a model of the Eiffel Tower."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "modify",
+    "translate": [
+      {
+        "value": "переиначить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "This is modify."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "monitor",
+    "translate": [
+      {
+        "value": "монитор",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He watched the heart monitor closely."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "mostly",
+    "translate": [
+      {
+        "value": "в основном",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She is mostly happy."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "mount",
+    "translate": [
+      {
+        "value": "установить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "They decided to mount the stairs."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "move",
+    "translate": [
+      {
+        "value": "ходить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "They decided to move to a new city."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "multiply",
+    "translate": [
+      {
+        "value": "размножаться",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He learned to multiply numbers in school."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "murder",
+    "translate": [
+      {
+        "value": "убить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He was arrested for murder."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "name",
+    "translate": [
+      {
+        "value": "называть",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "What's your name?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "narrow",
+    "translate": [
+      {
+        "value": "узкий",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The street is very narrow."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "naturally",
+    "translate": [
+      {
+        "value": "понятно",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "Naturally, she was excited about the news."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "necessarily",
+    "translate": [
+      {
+        "value": "обязательно",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "This is necessarily."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "never",
+    "translate": [
+      {
+        "value": "никогда",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He never gives up."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "nevertheless",
+    "translate": [
+      {
+        "value": "всё",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "This is nevertheless."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "next",
+    "translate": [
+      {
+        "value": "следующий",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "We'll talk next time."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "normally",
+    "translate": [
+      {
+        "value": "нормально",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She normally arrives at 8 AM."
+          }
+        ]
+      }
+    ]
+  }
+]

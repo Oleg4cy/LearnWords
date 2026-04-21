@@ -1,0 +1,170 @@
+[
+  {
+    "word": "photography",
+    "translate": [
+      {
+        "value": "фотография",
+        "context": [
+          {
+            "value": "Культура и развлечения",
+            "example": "She is studying photography."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "piano",
+    "translate": [
+      {
+        "value": "пианино",
+        "context": [
+          {
+            "value": "Культура и развлечения",
+            "example": "She played the piano beautifully."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "player",
+    "translate": [
+      {
+        "value": "актёр",
+        "context": [
+          {
+            "value": "Культура и развлечения",
+            "example": "The player scored a goal."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "poem",
+    "translate": [
+      {
+        "value": "стихотворение",
+        "context": [
+          {
+            "value": "Культура и развлечения",
+            "example": "She recited a beautiful poem."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "poetry",
+    "translate": [
+      {
+        "value": "стихи",
+        "context": [
+          {
+            "value": "Культура и развлечения",
+            "example": "He is studying poetry in college."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "quarter",
+    "translate": [
+      {
+        "value": "четверть",
+        "context": [
+          {
+            "value": "Культура и развлечения",
+            "example": "She gave him a quarter of the apple."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "rest",
+    "translate": [
+      {
+        "value": "остальное",
+        "context": [
+          {
+            "value": "Культура и развлечения",
+            "example": "He needs to rest after the long journey."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "rock",
+    "translate": [
+      {
+        "value": "рок-музыка",
+        "context": [
+          {
+            "value": "Культура и развлечения",
+            "example": "He climbed the rock."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "smart",
+    "translate": [
+      {
+        "value": "умный",
+        "context": [
+          {
+            "value": "Культура и развлечения",
+            "example": "He is very smart for his age."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "song",
+    "translate": [
+      {
+        "value": "колено",
+        "context": [
+          {
+            "value": "Культура и развлечения",
+            "example": "She sang a beautiful song."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "sport",
+    "translate": [
+      {
+        "value": "спорт",
+        "context": [
+          {
+            "value": "Культура и развлечения",
+            "example": "He plays several sports."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "start",
+    "translate": [
+      {
+        "value": "начать",
+        "context": [
+          {
+            "value": "Культура и развлечения",
+            "example": "He decided to start his own business."
+          }
+        ]
+      }
+    ]
+  }
+]

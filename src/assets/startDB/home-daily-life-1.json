@@ -1,0 +1,282 @@
+[
+  {
+    "word": "acceptable",
+    "translate": [
+      {
+        "value": "приемлемый",
+        "context": [
+          {
+            "value": "Дом и быт",
+            "example": "The proposal is acceptable."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "address",
+    "translate": [
+      {
+        "value": "обратиться",
+        "context": [
+          {
+            "value": "Дом и быт",
+            "example": "She wrote her address on the form."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "bag",
+    "translate": [
+      {
+        "value": "мешок",
+        "context": [
+          {
+            "value": "Дом и быт",
+            "example": "She packed her bag."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "bath",
+    "translate": [
+      {
+        "value": "ванна",
+        "context": [
+          {
+            "value": "Дом и быт",
+            "example": "She took a bath to relax."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "bathroom",
+    "translate": [
+      {
+        "value": "туалет",
+        "context": [
+          {
+            "value": "Дом и быт",
+            "example": "The house has two bathrooms."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "bed",
+    "translate": [
+      {
+        "value": "кровать",
+        "context": [
+          {
+            "value": "Дом и быт",
+            "example": "He lay down on the bed."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "bedroom",
+    "translate": [
+      {
+        "value": "спальня",
+        "context": [
+          {
+            "value": "Дом и быт",
+            "example": "The bedroom is upstairs."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "bottle",
+    "translate": [
+      {
+        "value": "бутылка",
+        "context": [
+          {
+            "value": "Дом и быт",
+            "example": "She drank a bottle of water."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "box",
+    "translate": [
+      {
+        "value": "ящик",
+        "context": [
+          {
+            "value": "Дом и быт",
+            "example": "He put the tools in a box."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "chat",
+    "translate": [
+      {
+        "value": "болтать",
+        "context": [
+          {
+            "value": "Дом и быт",
+            "example": "They chatted about their plans for the weekend."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "classroom",
+    "translate": [
+      {
+        "value": "класс",
+        "context": [
+          {
+            "value": "Дом и быт",
+            "example": "The classroom was full of students."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "clean",
+    "translate": [
+      {
+        "value": "чистый",
+        "context": [
+          {
+            "value": "Дом и быт",
+            "example": "She cleaned the kitchen."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "clothes",
+    "translate": [
+      {
+        "value": "вещь",
+        "context": [
+          {
+            "value": "Дом и быт",
+            "example": "She bought new clothes."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "coat",
+    "translate": [
+      {
+        "value": "слой",
+        "context": [
+          {
+            "value": "Дом и быт",
+            "example": "She wore a warm coat."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "comfortable",
+    "translate": [
+      {
+        "value": "удобный",
+        "context": [
+          {
+            "value": "Дом и быт",
+            "example": "She sat in a comfortable chair."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "cup",
+    "translate": [
+      {
+        "value": "чашка",
+        "context": [
+          {
+            "value": "Дом и быт",
+            "example": "She drank a cup of tea."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "cupboard",
+    "translate": [
+      {
+        "value": "шкаф",
+        "context": [
+          {
+            "value": "Дом и быт",
+            "example": "The plates are in the cupboard."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "door",
+    "translate": [
+      {
+        "value": "дверь",
+        "context": [
+          {
+            "value": "Дом и быт",
+            "example": "He knocked on the door."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "dress",
+    "translate": [
+      {
+        "value": "одеваться",
+        "context": [
+          {
+            "value": "Дом и быт",
+            "example": "He dressed quickly for work."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "dressed",
+    "translate": [
+      {
+        "value": "одетый",
+        "context": [
+          {
+            "value": "Дом и быт",
+            "example": "She was dressed in a beautiful gown."
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,282 @@
+[
+  {
+    "word": "platform",
+    "translate": [
+      {
+        "value": "площадка",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "They stood on the platform waiting for the train."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "pleasant",
+    "translate": [
+      {
+        "value": "приятный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "They had a pleasant conversation."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "pleased",
+    "translate": [
+      {
+        "value": "довольный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is pleased."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "pocket",
+    "translate": [
+      {
+        "value": "карман",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He put the keys in his pocket."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "poet",
+    "translate": [
+      {
+        "value": "поэт",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is poet."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "pointed",
+    "translate": [
+      {
+        "value": "остроконечный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The pencil has a pointed tip."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "poisonous",
+    "translate": [
+      {
+        "value": "ядовитый",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The snake is poisonous."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "polite",
+    "translate": [
+      {
+        "value": "вежливый",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He is always polite to strangers."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "pollution",
+    "translate": [
+      {
+        "value": "загрязнение",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "Pollution is a major problem in the city."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "pool",
+    "translate": [
+      {
+        "value": "лужа",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "They swam in the pool."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "poor",
+    "translate": [
+      {
+        "value": "слабый",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The poor man had no home."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "pop",
+    "translate": [
+      {
+        "value": "щёлкнуть",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The balloon popped."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "popular",
+    "translate": [
+      {
+        "value": "народный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She is a popular singer."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "popularity",
+    "translate": [
+      {
+        "value": "популярность",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is popularity."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "population",
+    "translate": [
+      {
+        "value": "население",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The population of the city is growing."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "port",
+    "translate": [
+      {
+        "value": "окно",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The ship docked at the port."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "portrait",
+    "translate": [
+      {
+        "value": "портрет",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is portrait."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "positive",
+    "translate": [
+      {
+        "value": "уверенный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She has a positive attitude."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "possession",
+    "translate": [
+      {
+        "value": "владение",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He lost possession of the house."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "possibility",
+    "translate": [
+      {
+        "value": "возможность",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "There is a possibility of rain tomorrow."
+          }
+        ]
+      }
+    ]
+  }
+]

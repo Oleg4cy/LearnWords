@@ -1,0 +1,282 @@
+[
+  {
+    "word": "order",
+    "translate": [
+      {
+        "value": "предложить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She ordered a coffee."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "organize",
+    "translate": [
+      {
+        "value": "устроить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "They organized a meeting."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "originally",
+    "translate": [
+      {
+        "value": "изначально",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The building was originally a factory."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "otherwise",
+    "translate": [
+      {
+        "value": "иначе",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "We must hurry; otherwise, we'll be late."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "outline",
+    "translate": [
+      {
+        "value": "обвести",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He provided an outline of the plan."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "overall",
+    "translate": [
+      {
+        "value": "всесторонний",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "Overall, the project was a success."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "owe",
+    "translate": [
+      {
+        "value": "задолжать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She owes me money."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "o’clock",
+    "translate": [
+      {
+        "value": "часов",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "This is o’clock."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "pace",
+    "translate": [
+      {
+        "value": "шагать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "This is pace."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "pack",
+    "translate": [
+      {
+        "value": "заполнить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She needs to pack her suitcase."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "package",
+    "translate": [
+      {
+        "value": "пакет",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The package arrived on time."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "park",
+    "translate": [
+      {
+        "value": "парковать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "They went for a walk in the park."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "pass",
+    "translate": [
+      {
+        "value": "ходить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She passed the test."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "pay",
+    "translate": [
+      {
+        "value": "платить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He pays his bills on time."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "per cent",
+    "translate": [
+      {
+        "value": "процент",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "This is per cent."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "perfectly",
+    "translate": [
+      {
+        "value": "абсолютно",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She sang perfectly."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "perform",
+    "translate": [
+      {
+        "value": "играть",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "They performed the play last night."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "perhaps",
+    "translate": [
+      {
+        "value": "авось",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "Perhaps we can go tomorrow."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "permit",
+    "translate": [
+      {
+        "value": "позволить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "They were permitted to enter the building."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "persuade",
+    "translate": [
+      {
+        "value": "убедить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He persuaded me to join."
+          }
+        ]
+      }
+    ]
+  }
+]

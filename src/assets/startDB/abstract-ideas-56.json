@@ -1,0 +1,282 @@
+[
+  {
+    "word": "summary",
+    "translate": [
+      {
+        "value": "сводка",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He gave a brief summary of the report."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "summer",
+    "translate": [
+      {
+        "value": "лето",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "We go on vacation every summer."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "sun",
+    "translate": [
+      {
+        "value": "солнце",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The sun is shining brightly."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "supporter",
+    "translate": [
+      {
+        "value": "сторонник",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He is a strong supporter of the team."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "surgery",
+    "translate": [
+      {
+        "value": "медпункт",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is surgery."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "surprised",
+    "translate": [
+      {
+        "value": "удивлённый",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is surprised."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "surprising",
+    "translate": [
+      {
+        "value": "удивительный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is surprising."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "surrounding",
+    "translate": [
+      {
+        "value": "окружающий",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The surrounding area is beautiful."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "sweet",
+    "translate": [
+      {
+        "value": "сладкий",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The cake was very sweet."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "swimming",
+    "translate": [
+      {
+        "value": "плавание",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is swimming."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "symbol",
+    "translate": [
+      {
+        "value": "знак",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The heart is a symbol of love."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "symptom",
+    "translate": [
+      {
+        "value": "симптом",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is symptom."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "system",
+    "translate": [
+      {
+        "value": "система",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The computer system needs an update."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "tail",
+    "translate": [
+      {
+        "value": "правило",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The dog wagged its tail."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "tale",
+    "translate": [
+      {
+        "value": "сказка",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is tale."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "talent",
+    "translate": [
+      {
+        "value": "талант",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She has a talent for painting."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "talented",
+    "translate": [
+      {
+        "value": "талантливый",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is talented."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "tall",
+    "translate": [
+      {
+        "value": "высокий",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He is very tall for his age."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "tank",
+    "translate": [
+      {
+        "value": "танк",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The tank is full of water."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "tape",
+    "translate": [
+      {
+        "value": "лента",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is tape."
+          }
+        ]
+      }
+    ]
+  }
+]

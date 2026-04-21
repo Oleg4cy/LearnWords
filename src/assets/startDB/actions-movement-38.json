@@ -1,0 +1,282 @@
+[
+  {
+    "word": "supply",
+    "translate": [
+      {
+        "value": "отпустить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "They supply the town with water."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "support",
+    "translate": [
+      {
+        "value": "поддерживать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The bridge supports heavy traffic."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "suppose",
+    "translate": [
+      {
+        "value": "полагать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "I suppose you're right."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "sure",
+    "translate": [
+      {
+        "value": "уверенный",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "I am sure of my decision."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "surely",
+    "translate": [
+      {
+        "value": "несомненно",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "Surely you can't be serious?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "surprise",
+    "translate": [
+      {
+        "value": "удивить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "This is surprise."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "surround",
+    "translate": [
+      {
+        "value": "окружить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "Trees surround the house."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "survey",
+    "translate": [
+      {
+        "value": "осмотреть",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "They conducted a survey of consumer preferences."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "survive",
+    "translate": [
+      {
+        "value": "пережить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He managed to survive the accident."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "suspect",
+    "translate": [
+      {
+        "value": "догадаться",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "I suspect she is lying."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "sweep",
+    "translate": [
+      {
+        "value": "нахлынуть",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She swept the floor."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "swim",
+    "translate": [
+      {
+        "value": "плыть",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He loves to swim in the ocean."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "switch",
+    "translate": [
+      {
+        "value": "хлестать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He switched the channel to watch the news."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "take",
+    "translate": [
+      {
+        "value": "взять",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "Please take this to the kitchen."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "target",
+    "translate": [
+      {
+        "value": "цель",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "Her target is to finish the project by the end of the month."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "taste",
+    "translate": [
+      {
+        "value": "попробовать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The taste of the soup was delicious."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "tell",
+    "translate": [
+      {
+        "value": "сказать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "Can you tell me the time?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "tend",
+    "translate": [
+      {
+        "value": "ухаживать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He tends to forget things easily."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "term",
+    "translate": [
+      {
+        "value": "условие",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The term 'biodiversity' is often used by scientists."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "test",
+    "translate": [
+      {
+        "value": "попробовать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She passed the driving test."
+          }
+        ]
+      }
+    ]
+  }
+]

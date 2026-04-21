@@ -1,0 +1,282 @@
+[
+  {
+    "word": "frighten",
+    "translate": [
+      {
+        "value": "пугать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The loud noise frightened the cat."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "fry",
+    "translate": [
+      {
+        "value": "жарить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "This is fry."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "fuel",
+    "translate": [
+      {
+        "value": "топливо",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The car runs on diesel fuel."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "fully",
+    "translate": [
+      {
+        "value": "вполне",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The work is fully completed."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "function",
+    "translate": [
+      {
+        "value": "действовать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The main function of the machine is to cut paper."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "fund",
+    "translate": [
+      {
+        "value": "фонд",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "They set up a fund for the project."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "further",
+    "translate": [
+      {
+        "value": "дальнейший",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "We need to look further into the problem."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "furthermore",
+    "translate": [
+      {
+        "value": "кроме того",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "This is furthermore."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "gain",
+    "translate": [
+      {
+        "value": "расположить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He gained a lot of experience from that job."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "gather",
+    "translate": [
+      {
+        "value": "собраться",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "They gathered around the table."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "generally",
+    "translate": [
+      {
+        "value": "вообще",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "Generally, people are friendly."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "generate",
+    "translate": [
+      {
+        "value": "производить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The machine generates electricity."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "get",
+    "translate": [
+      {
+        "value": "получить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He got a new job."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "give",
+    "translate": [
+      {
+        "value": "давать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "Please give me the book."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "go",
+    "translate": [
+      {
+        "value": "идти",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "They decided to go on a trip."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "govern",
+    "translate": [
+      {
+        "value": "управлять",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The president governs the country."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "grab",
+    "translate": [
+      {
+        "value": "хватать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She grabbed her bag and left."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "grade",
+    "translate": [
+      {
+        "value": "марка",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He received a high grade on his test."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "gradually",
+    "translate": [
+      {
+        "value": "постепенно",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The weather improved gradually."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "graduate",
+    "translate": [
+      {
+        "value": "выпускать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "This is graduate."
+          }
+        ]
+      }
+    ]
+  }
+]

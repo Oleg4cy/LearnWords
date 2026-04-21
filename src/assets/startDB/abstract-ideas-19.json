@@ -1,0 +1,282 @@
+[
+  {
+    "word": "ending",
+    "translate": [
+      {
+        "value": "конец",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The story has a happy ending."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "enemy",
+    "translate": [
+      {
+        "value": "враг",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "They are enemies in the game."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "energy",
+    "translate": [
+      {
+        "value": "энергия",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He has a lot of energy."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "engaged",
+    "translate": [
+      {
+        "value": "помолвленный, занятый",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She is engaged in a new project."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "engine",
+    "translate": [
+      {
+        "value": "машина",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The car's engine is powerful."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "engineer",
+    "translate": [
+      {
+        "value": "инженер",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He is a civil engineer."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "engineering",
+    "translate": [
+      {
+        "value": "техника",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She studied engineering at university."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "enormous",
+    "translate": [
+      {
+        "value": "огромный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The building is enormous."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "enquiry",
+    "translate": [
+      {
+        "value": "запрос, справка",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The enquiry took several hours."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "entertainment",
+    "translate": [
+      {
+        "value": "развлечение",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "They enjoyed the evening's entertainment."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "enthusiasm",
+    "translate": [
+      {
+        "value": "подъём",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He showed great enthusiasm for the project."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "enthusiastic",
+    "translate": [
+      {
+        "value": "восторженный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She is very enthusiastic about her new job."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "entire",
+    "translate": [
+      {
+        "value": "целый",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He read the entire book in one day."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "entrance",
+    "translate": [
+      {
+        "value": "ход",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He stood at the entrance of the building."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "entry",
+    "translate": [
+      {
+        "value": "ход",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "They made a dramatic entry."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "episode",
+    "translate": [
+      {
+        "value": "эпизод",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is episode."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "equipment",
+    "translate": [
+      {
+        "value": "техника",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The gym has all the necessary equipment."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "error",
+    "translate": [
+      {
+        "value": "ошибка",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "There was an error in the calculation."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "essay",
+    "translate": [
+      {
+        "value": "исследование",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She wrote an essay on the importance of recycling."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "essential",
+    "translate": [
+      {
+        "value": "существенный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "Water is essential for life."
+          }
+        ]
+      }
+    ]
+  }
+]

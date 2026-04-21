@@ -1,0 +1,282 @@
+[
+  {
+    "word": "afterwards",
+    "translate": [
+      {
+        "value": "потом",
+        "context": [
+          {
+            "value": "Общество, право и политика",
+            "example": "She went shopping and afterwards, she relaxed."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "award",
+    "translate": [
+      {
+        "value": "наградить",
+        "context": [
+          {
+            "value": "Общество, право и политика",
+            "example": "She won an award for her work."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "aware",
+    "translate": [
+      {
+        "value": "осознающий",
+        "context": [
+          {
+            "value": "Общество, право и политика",
+            "example": "He is aware of the risks."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "backwards",
+    "translate": [
+      {
+        "value": "назад",
+        "context": [
+          {
+            "value": "Общество, право и политика",
+            "example": "She walked backwards."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "community",
+    "translate": [
+      {
+        "value": "общественность",
+        "context": [
+          {
+            "value": "Общество, право и политика",
+            "example": "The community came together to clean the park."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "court",
+    "translate": [
+      {
+        "value": "двор",
+        "context": [
+          {
+            "value": "Общество, право и политика",
+            "example": "The court found him guilty."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "crime",
+    "translate": [
+      {
+        "value": "преступление",
+        "context": [
+          {
+            "value": "Общество, право и политика",
+            "example": "The city has a low crime rate."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "downwards",
+    "translate": [
+      {
+        "value": "вниз",
+        "context": [
+          {
+            "value": "Общество, право и политика",
+            "example": "She looked downwards at her feet."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "election",
+    "translate": [
+      {
+        "value": "выборы",
+        "context": [
+          {
+            "value": "Общество, право и политика",
+            "example": "The next election will be held in November."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "estate",
+    "translate": [
+      {
+        "value": "экономия",
+        "context": [
+          {
+            "value": "Общество, право и политика",
+            "example": "They live on a large estate."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "forward",
+    "translate": [
+      {
+        "value": "передовой",
+        "context": [
+          {
+            "value": "Общество, право и политика",
+            "example": "She took a step forward."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "government",
+    "translate": [
+      {
+        "value": "правительство",
+        "context": [
+          {
+            "value": "Общество, право и политика",
+            "example": "The government announced new policies."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "judge",
+    "translate": [
+      {
+        "value": "судить",
+        "context": [
+          {
+            "value": "Общество, право и политика",
+            "example": "The judge will give his verdict."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "judgement",
+    "translate": [
+      {
+        "value": "суждение",
+        "context": [
+          {
+            "value": "Общество, право и политика",
+            "example": "Use your judgement to make the decision."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "law",
+    "translate": [
+      {
+        "value": "право",
+        "context": [
+          {
+            "value": "Общество, право и политика",
+            "example": "Everyone must obey the law."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "lawyer",
+    "translate": [
+      {
+        "value": "адвокат",
+        "context": [
+          {
+            "value": "Общество, право и политика",
+            "example": "She is studying to become a lawyer."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "lie",
+    "translate": [
+      {
+        "value": "лгать",
+        "context": [
+          {
+            "value": "Общество, право и политика",
+            "example": "He lies down to rest every afternoon."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "minister",
+    "translate": [
+      {
+        "value": "министр",
+        "context": [
+          {
+            "value": "Общество, право и политика",
+            "example": "He is the minister of education."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "parliament",
+    "translate": [
+      {
+        "value": "парламент",
+        "context": [
+          {
+            "value": "Общество, право и политика",
+            "example": "This is parliament."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "police",
+    "translate": [
+      {
+        "value": "полиция",
+        "context": [
+          {
+            "value": "Общество, право и политика",
+            "example": "The police arrested the suspect."
+          }
+        ]
+      }
+    ]
+  }
+]

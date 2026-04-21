@@ -1,0 +1,282 @@
+[
+  {
+    "word": "confirm",
+    "translate": [
+      {
+        "value": "подтвердить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "Can you confirm your attendance?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "conflict",
+    "translate": [
+      {
+        "value": "сталкиваться",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The conflict between the two countries has escalated."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "confuse",
+    "translate": [
+      {
+        "value": "путать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The instructions confused me."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "connect",
+    "translate": [
+      {
+        "value": "соединить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She connected the wires."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "consider",
+    "translate": [
+      {
+        "value": "думать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He is considering changing jobs."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "consist",
+    "translate": [
+      {
+        "value": "состоять",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The committee consists of ten members."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "constantly",
+    "translate": [
+      {
+        "value": "постоянно",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She is constantly late."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "construct",
+    "translate": [
+      {
+        "value": "построить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "They are constructing a new building."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "consume",
+    "translate": [
+      {
+        "value": "сжечь",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "This is consume."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "contact",
+    "translate": [
+      {
+        "value": "контакт",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "They had close contact during the negotiation."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "contain",
+    "translate": [
+      {
+        "value": "содержать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The box contains old photos."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "contest",
+    "translate": [
+      {
+        "value": "оспаривать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The contest was fierce and competitive."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "continue",
+    "translate": [
+      {
+        "value": "продолжать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "They continued their journey."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "contract",
+    "translate": [
+      {
+        "value": "сжаться",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "They signed a new contract."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "contrast",
+    "translate": [
+      {
+        "value": "противопоставить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "There is a stark contrast between the two styles."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "contribute",
+    "translate": [
+      {
+        "value": "вносить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He contributed to the charity fund."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "control",
+    "translate": [
+      {
+        "value": "наблюдать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The company has control over the market."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "convert",
+    "translate": [
+      {
+        "value": "обратиться",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "They converted the garage into a living space."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "convince",
+    "translate": [
+      {
+        "value": "убедить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She convinced him to go on the trip."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "cool",
+    "translate": [
+      {
+        "value": "холодный",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The weather is cool today."
+          }
+        ]
+      }
+    ]
+  }
+]

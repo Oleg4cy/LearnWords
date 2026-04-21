@@ -1,0 +1,282 @@
+[
+  {
+    "word": "finance",
+    "translate": [
+      {
+        "value": "финансировать",
+        "context": [
+          {
+            "value": "Учёба, работа и бизнес",
+            "example": "He works in finance."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "interview",
+    "translate": [
+      {
+        "value": "интервьюировать",
+        "context": [
+          {
+            "value": "Учёба, работа и бизнес",
+            "example": "She had a job interview yesterday."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "job",
+    "translate": [
+      {
+        "value": "место",
+        "context": [
+          {
+            "value": "Учёба, работа и бизнес",
+            "example": "He has a new job at the company."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "lab",
+    "translate": [
+      {
+        "value": "лаборатория",
+        "context": [
+          {
+            "value": "Учёба, работа и бизнес",
+            "example": "This is lab."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "label",
+    "translate": [
+      {
+        "value": "этикетка",
+        "context": [
+          {
+            "value": "Учёба, работа и бизнес",
+            "example": "She read the label on the bottle."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "laboratory",
+    "translate": [
+      {
+        "value": "лаборатория",
+        "context": [
+          {
+            "value": "Учёба, работа и бизнес",
+            "example": "The scientist works in a laboratory."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "labour",
+    "translate": [
+      {
+        "value": "труд",
+        "context": [
+          {
+            "value": "Учёба, работа и бизнес",
+            "example": "This is labour."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "lesson",
+    "translate": [
+      {
+        "value": "урок",
+        "context": [
+          {
+            "value": "Учёба, работа и бизнес",
+            "example": "The teacher gave a history lesson."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "market",
+    "translate": [
+      {
+        "value": "сбывать",
+        "context": [
+          {
+            "value": "Учёба, работа и бизнес",
+            "example": "She went to the market to buy vegetables."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "marketing",
+    "translate": [
+      {
+        "value": "маркетинг",
+        "context": [
+          {
+            "value": "Учёба, работа и бизнес",
+            "example": "He works in marketing."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "maths",
+    "translate": [
+      {
+        "value": "математика",
+        "context": [
+          {
+            "value": "Учёба, работа и бизнес",
+            "example": "This is maths."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "meeting",
+    "translate": [
+      {
+        "value": "встреча",
+        "context": [
+          {
+            "value": "Учёба, работа и бизнес",
+            "example": "The meeting will start at 10 AM."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "money",
+    "translate": [
+      {
+        "value": "бабка",
+        "context": [
+          {
+            "value": "Учёба, работа и бизнес",
+            "example": "He saved his money for a new bike."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "network",
+    "translate": [
+      {
+        "value": "сеть",
+        "context": [
+          {
+            "value": "Учёба, работа и бизнес",
+            "example": "The company has a large network of suppliers."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "office",
+    "translate": [
+      {
+        "value": "кабинет",
+        "context": [
+          {
+            "value": "Учёба, работа и бизнес",
+            "example": "She works in an office downtown."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "officer",
+    "translate": [
+      {
+        "value": "офицер",
+        "context": [
+          {
+            "value": "Учёба, работа и бизнес",
+            "example": "The officer gave the order."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "project",
+    "translate": [
+      {
+        "value": "намечать",
+        "context": [
+          {
+            "value": "Учёба, работа и бизнес",
+            "example": "The project is due next week."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "salary",
+    "translate": [
+      {
+        "value": "содержание",
+        "context": [
+          {
+            "value": "Учёба, работа и бизнес",
+            "example": "She received her salary at the end of the month."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "school",
+    "translate": [
+      {
+        "value": "школа",
+        "context": [
+          {
+            "value": "Учёба, работа и бизнес",
+            "example": "This is school."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "sell",
+    "translate": [
+      {
+        "value": "продать",
+        "context": [
+          {
+            "value": "Учёба, работа и бизнес",
+            "example": "They decided to sell their car."
+          }
+        ]
+      }
+    ]
+  }
+]

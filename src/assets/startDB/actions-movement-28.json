@@ -1,0 +1,282 @@
+[
+  {
+    "word": "pray",
+    "translate": [
+      {
+        "value": "молиться",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "This is pray."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "predict",
+    "translate": [
+      {
+        "value": "предсказать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "This is predict."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "prefer",
+    "translate": [
+      {
+        "value": "предпочитать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "I prefer coffee over tea."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "prepare",
+    "translate": [
+      {
+        "value": "готовиться",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He prepared the meal."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "present",
+    "translate": [
+      {
+        "value": "данный",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She is present at the meeting."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "preserve",
+    "translate": [
+      {
+        "value": "сохранить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "They work to preserve the environment."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "press",
+    "translate": [
+      {
+        "value": "прижать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He pressed the button."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "pretend",
+    "translate": [
+      {
+        "value": "выдать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She pretended to be asleep."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "pretty",
+    "translate": [
+      {
+        "value": "хорошенький",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She has a pretty smile."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "prevent",
+    "translate": [
+      {
+        "value": "предупреждать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "They worked to prevent accidents."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "previously",
+    "translate": [
+      {
+        "value": "ранее",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He was previously married."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "print",
+    "translate": [
+      {
+        "value": "напечатать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "They print the newspaper every morning."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "probably",
+    "translate": [
+      {
+        "value": "неверный",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He will probably arrive late."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "process",
+    "translate": [
+      {
+        "value": "обрабатывать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The process will take several weeks."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "produce",
+    "translate": [
+      {
+        "value": "составить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The factory produces thousands of cars each year."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "progress",
+    "translate": [
+      {
+        "value": "прогрессировать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She is making good progress in her studies."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "promise",
+    "translate": [
+      {
+        "value": "обещать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He made a promise to help her."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "promote",
+    "translate": [
+      {
+        "value": "выдвинуть",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "They aim to promote education for all."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "pronounce",
+    "translate": [
+      {
+        "value": "произнести",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "This is pronounce."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "properly",
+    "translate": [
+      {
+        "value": "правильно",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "This is properly."
+          }
+        ]
+      }
+    ]
+  }
+]

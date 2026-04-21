@@ -1,0 +1,282 @@
+[
+  {
+    "word": "gift",
+    "translate": [
+      {
+        "value": "подарок",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She received a beautiful gift."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "glass",
+    "translate": [
+      {
+        "value": "стекло",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The glass window was clear."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "global",
+    "translate": [
+      {
+        "value": "глобальный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "They discussed global issues."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "glove",
+    "translate": [
+      {
+        "value": "перчатка",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She wore gloves to keep her hands warm."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "goal",
+    "translate": [
+      {
+        "value": "цель",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "Her goal is to become a doctor."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "god",
+    "translate": [
+      {
+        "value": "бог",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "They prayed to God."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "gold",
+    "translate": [
+      {
+        "value": "золотой",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The ring is made of gold."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "good",
+    "translate": [
+      {
+        "value": "хороший",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She is a good person."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "goods",
+    "translate": [
+      {
+        "value": "товар",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The store sells various goods."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "green",
+    "translate": [
+      {
+        "value": "зелёный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The leaves are green in summer."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "grey",
+    "translate": [
+      {
+        "value": "серый",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The sky was grey and cloudy."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "ground",
+    "translate": [
+      {
+        "value": "земля",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The ground was wet after the rain."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "group",
+    "translate": [
+      {
+        "value": "группа",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "They formed a study group."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "growth",
+    "translate": [
+      {
+        "value": "развитие",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The company has seen rapid growth."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "guest",
+    "translate": [
+      {
+        "value": "гость",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She welcomed her guests warmly."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "gun",
+    "translate": [
+      {
+        "value": "оружие",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is gun."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "guy",
+    "translate": [
+      {
+        "value": "парень",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is guy."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "gym",
+    "translate": [
+      {
+        "value": "спортзал",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is gym."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "habit",
+    "translate": [
+      {
+        "value": "привычка",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She has a habit of biting her nails."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "hall",
+    "translate": [
+      {
+        "value": "зал",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "They waited in the hall."
+          }
+        ]
+      }
+    ]
+  }
+]

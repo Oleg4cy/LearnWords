@@ -1,0 +1,282 @@
+[
+  {
+    "word": "debate",
+    "translate": [
+      {
+        "value": "спорить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "They had a debate about the new policy."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "decide",
+    "translate": [
+      {
+        "value": "решить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She decided to go to college."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "declare",
+    "translate": [
+      {
+        "value": "заявить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He declared his love for her."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "decline",
+    "translate": [
+      {
+        "value": "упасть",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The economy is beginning to decline."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "decorate",
+    "translate": [
+      {
+        "value": "убирать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "They decorated the room for the party."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "decrease",
+    "translate": [
+      {
+        "value": "уменьшаться",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "There was a decrease in sales."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "deep",
+    "translate": [
+      {
+        "value": "глубокий",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The lake is very deep."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "deeply",
+    "translate": [
+      {
+        "value": "глубоко",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She was deeply moved by the story."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "defend",
+    "translate": [
+      {
+        "value": "защитить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "They defended their country from invaders."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "define",
+    "translate": [
+      {
+        "value": "определить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "Can you define this term?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "definitely",
+    "translate": [
+      {
+        "value": "определённо",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "I definitely agree with you."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "delay",
+    "translate": [
+      {
+        "value": "тянуть",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The flight was delayed due to bad weather."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "deliberately",
+    "translate": [
+      {
+        "value": "сознательно",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She deliberately ignored him."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "delight",
+    "translate": [
+      {
+        "value": "восхищать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She took great delight in her work."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "deliver",
+    "translate": [
+      {
+        "value": "передать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The courier delivered the package."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "demonstrate",
+    "translate": [
+      {
+        "value": "доказать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The experiment demonstrated the principle."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "deny",
+    "translate": [
+      {
+        "value": "отказать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He denied the allegations."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "depend",
+    "translate": [
+      {
+        "value": "зависеть",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "Their success depends on the weather."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "describe",
+    "translate": [
+      {
+        "value": "описать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He described the scene in detail."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "desert",
+    "translate": [
+      {
+        "value": "покинуть",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He deserted his post."
+          }
+        ]
+      }
+    ]
+  }
+]

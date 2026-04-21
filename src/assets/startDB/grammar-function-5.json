@@ -1,0 +1,282 @@
+[
+  {
+    "word": "lot",
+    "translate": [
+      {
+        "value": "наврать",
+        "context": [
+          {
+            "value": "Грамматика и служебные слова",
+            "example": "She bought a lot of books."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "many",
+    "translate": [
+      {
+        "value": "многие",
+        "context": [
+          {
+            "value": "Грамматика и служебные слова",
+            "example": "There are many options."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "may",
+    "translate": [
+      {
+        "value": "май",
+        "context": [
+          {
+            "value": "Грамматика и служебные слова",
+            "example": "May I come in?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "me",
+    "translate": [
+      {
+        "value": "меня, мне",
+        "context": [
+          {
+            "value": "Грамматика и служебные слова",
+            "example": "She gave me a gift."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "might",
+    "translate": [
+      {
+        "value": "смочь",
+        "context": [
+          {
+            "value": "Грамматика и служебные слова",
+            "example": "He might come to the party."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "mine",
+    "translate": [
+      {
+        "value": "мой",
+        "context": [
+          {
+            "value": "Грамматика и служебные слова",
+            "example": "This book is mine."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "more",
+    "translate": [
+      {
+        "value": "более",
+        "context": [
+          {
+            "value": "Грамматика и служебные слова",
+            "example": "She needs more time to finish."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "most",
+    "translate": [
+      {
+        "value": "самый",
+        "context": [
+          {
+            "value": "Грамматика и служебные слова",
+            "example": "He has the most experience."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "much",
+    "translate": [
+      {
+        "value": "гораздо",
+        "context": [
+          {
+            "value": "Грамматика и служебные слова",
+            "example": "There is much to learn."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "must",
+    "translate": [
+      {
+        "value": "приходиться",
+        "context": [
+          {
+            "value": "Грамматика и служебные слова",
+            "example": "You must finish your homework."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "myself",
+    "translate": [
+      {
+        "value": "себя",
+        "context": [
+          {
+            "value": "Грамматика и служебные слова",
+            "example": "I made it myself."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "near",
+    "translate": [
+      {
+        "value": "скорый",
+        "context": [
+          {
+            "value": "Грамматика и служебные слова",
+            "example": "She lives near the school."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "need",
+    "translate": [
+      {
+        "value": "требовать",
+        "context": [
+          {
+            "value": "Грамматика и служебные слова",
+            "example": "I need some help."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "neither",
+    "translate": [
+      {
+        "value": "ни",
+        "context": [
+          {
+            "value": "Грамматика и служебные слова",
+            "example": "Neither of them knew the answer."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "next to",
+    "translate": [
+      {
+        "value": "рядом",
+        "context": [
+          {
+            "value": "Грамматика и служебные слова",
+            "example": "This is next to."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "no",
+    "translate": [
+      {
+        "value": "нет",
+        "context": [
+          {
+            "value": "Грамматика и служебные слова",
+            "example": "No, I don't want any."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "no one",
+    "translate": [
+      {
+        "value": "никой",
+        "context": [
+          {
+            "value": "Грамматика и служебные слова",
+            "example": "This is no one."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "nobody",
+    "translate": [
+      {
+        "value": "нуль",
+        "context": [
+          {
+            "value": "Грамматика и служебные слова",
+            "example": "Nobody was there."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "none",
+    "translate": [
+      {
+        "value": "никакой",
+        "context": [
+          {
+            "value": "Грамматика и служебные слова",
+            "example": "None of the answers are correct."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "nor",
+    "translate": [
+      {
+        "value": "равно",
+        "context": [
+          {
+            "value": "Грамматика и служебные слова",
+            "example": "Neither the teacher nor the student knew the answer."
+          }
+        ]
+      }
+    ]
+  }
+]

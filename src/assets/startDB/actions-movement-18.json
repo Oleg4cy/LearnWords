@@ -1,0 +1,282 @@
+[
+  {
+    "word": "grant",
+    "translate": [
+      {
+        "value": "пожаловать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The scholarship was granted to her."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "greet",
+    "translate": [
+      {
+        "value": "поклониться",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "They greeted each other warmly."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "grow",
+    "translate": [
+      {
+        "value": "отпустить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "Children grow quickly."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "guarantee",
+    "translate": [
+      {
+        "value": "гарантировать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The product comes with a money-back guarantee."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "guard",
+    "translate": [
+      {
+        "value": "хранить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The guard checked everyone's ID."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "guess",
+    "translate": [
+      {
+        "value": "догадаться",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "Can you guess the answer?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "guide",
+    "translate": [
+      {
+        "value": "руководить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The guide led us through the museum."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "hang",
+    "translate": [
+      {
+        "value": "повесить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "They hang the clothes to dry."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "hard",
+    "translate": [
+      {
+        "value": "тяжёлый",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The ground was hard after the frost."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "hardly",
+    "translate": [
+      {
+        "value": "едва",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She could hardly believe her eyes."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "heavily",
+    "translate": [
+      {
+        "value": "сильно",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "It rained heavily all night."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "help",
+    "translate": [
+      {
+        "value": "помочь",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "Can you help me with this task?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "here",
+    "translate": [
+      {
+        "value": "здешний",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "This is here."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "hesitate",
+    "translate": [
+      {
+        "value": "колебаться",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "Do not hesitate to ask if you need anything."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "hide",
+    "translate": [
+      {
+        "value": "скрывать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He tried to hide behind the tree."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "high",
+    "translate": [
+      {
+        "value": "высокий",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The mountain is very high."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "highlight",
+    "translate": [
+      {
+        "value": "выделить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The highlight of the trip was the sunset."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "highly",
+    "translate": [
+      {
+        "value": "высококультурный",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She is highly skilled."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "hire",
+    "translate": [
+      {
+        "value": "взять",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "They decided to hire a car."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "hit",
+    "translate": [
+      {
+        "value": "попасть",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He hit the ball with a bat."
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,282 @@
+[
+  {
+    "word": "transform",
+    "translate": [
+      {
+        "value": "преобразовать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The caterpillar transformed into a butterfly."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "translate",
+    "translate": [
+      {
+        "value": "перевести",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He translated the book from French to English."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "trick",
+    "translate": [
+      {
+        "value": "обмануть",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He played a trick on his friend."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "trouble",
+    "translate": [
+      {
+        "value": "беспокоиться",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He is having trouble with his car."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "truly",
+    "translate": [
+      {
+        "value": "право",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "This is truly."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "trust",
+    "translate": [
+      {
+        "value": "верить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She has trust in her friends."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "try",
+    "translate": [
+      {
+        "value": "попробовать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "You should try to finish your homework."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "turn",
+    "translate": [
+      {
+        "value": "повернуться",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She turned the key in the lock."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "twice",
+    "translate": [
+      {
+        "value": "дважды",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He called twice yesterday."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "type",
+    "translate": [
+      {
+        "value": "напечатать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She likes that type of music."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "typically",
+    "translate": [
+      {
+        "value": "типично",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "Typically, he arrives early."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "ultimately",
+    "translate": [
+      {
+        "value": "в конечном счёте",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "Ultimately, the decision is yours."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "underground",
+    "translate": [
+      {
+        "value": "подземный",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The subway runs underground."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "understand",
+    "translate": [
+      {
+        "value": "понять",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "I can understand why you're upset."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "unfortunately",
+    "translate": [
+      {
+        "value": "сожаление",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "Unfortunately, we missed the train."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "update",
+    "translate": [
+      {
+        "value": "обновить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "This is update."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "upset",
+    "translate": [
+      {
+        "value": "волновать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The news upset him."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "upstairs",
+    "translate": [
+      {
+        "value": "наверху",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "They went upstairs to their rooms."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "urge",
+    "translate": [
+      {
+        "value": "призывать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "They urged him to apply for the job."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "use",
+    "translate": [
+      {
+        "value": "использовать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She uses a computer for her work."
+          }
+        ]
+      }
+    ]
+  }
+]

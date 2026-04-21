@@ -1,0 +1,282 @@
+[
+  {
+    "word": "incredibly",
+    "translate": [
+      {
+        "value": "невероятно",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "This is incredibly."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "indeed",
+    "translate": [
+      {
+        "value": "право",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "Indeed, it was a remarkable achievement."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "inform",
+    "translate": [
+      {
+        "value": "сообщить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "Please inform me of any changes."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "initially",
+    "translate": [
+      {
+        "value": "первоначально",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "Initially, it was difficult to understand."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "injure",
+    "translate": [
+      {
+        "value": "ранить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He injured his leg while playing soccer."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "insist",
+    "translate": [
+      {
+        "value": "настаивать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He insisted on paying for the meal."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "inspire",
+    "translate": [
+      {
+        "value": "внушать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "This is inspire."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "install",
+    "translate": [
+      {
+        "value": "установить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "They will install the new software tomorrow."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "intend",
+    "translate": [
+      {
+        "value": "думать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "They intend to start a business."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "interpret",
+    "translate": [
+      {
+        "value": "переводить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He will interpret the results for us."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "interrupt",
+    "translate": [
+      {
+        "value": "перебить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "Please do not interrupt the speaker."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "introduce",
+    "translate": [
+      {
+        "value": "ввести",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "They will introduce a new product next month."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "invent",
+    "translate": [
+      {
+        "value": "придумать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "He invented a new type of engine."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "invest",
+    "translate": [
+      {
+        "value": "приложить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "She decided to invest in real estate."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "investigate",
+    "translate": [
+      {
+        "value": "разобрать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The police will investigate the case."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "invite",
+    "translate": [
+      {
+        "value": "пригласить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "They invited us to their wedding."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "involve",
+    "translate": [
+      {
+        "value": "втянуть",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The project will involve several steps."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "iron",
+    "translate": [
+      {
+        "value": "погладить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "The gate is made of iron."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "issue",
+    "translate": [
+      {
+        "value": "выдать",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "They discussed the issue at length."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "join",
+    "translate": [
+      {
+        "value": "поступить",
+        "context": [
+          {
+            "value": "Действия и движение",
+            "example": "They decided to join the club."
+          }
+        ]
+      }
+    ]
+  }
+]

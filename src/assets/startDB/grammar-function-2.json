@@ -1,0 +1,282 @@
+[
+  {
+    "word": "as",
+    "translate": [
+      {
+        "value": "когда",
+        "context": [
+          {
+            "value": "Грамматика и служебные слова",
+            "example": "He watched her as she left."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "at",
+    "translate": [
+      {
+        "value": "в",
+        "context": [
+          {
+            "value": "Грамматика и служебные слова",
+            "example": "She is at the library."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "attention",
+    "translate": [
+      {
+        "value": "внимание",
+        "context": [
+          {
+            "value": "Грамматика и служебные слова",
+            "example": "He paid attention to the details."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "be",
+    "translate": [
+      {
+        "value": "быть",
+        "context": [
+          {
+            "value": "Грамматика и служебные слова",
+            "example": "To be or not to be, that is the question."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "because",
+    "translate": [
+      {
+        "value": "потому",
+        "context": [
+          {
+            "value": "Грамматика и служебные слова",
+            "example": "I stayed home because it was raining."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "before",
+    "translate": [
+      {
+        "value": "пред",
+        "context": [
+          {
+            "value": "Грамматика и служебные слова",
+            "example": "She left before dawn."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "behind",
+    "translate": [
+      {
+        "value": "за",
+        "context": [
+          {
+            "value": "Грамматика и служебные слова",
+            "example": "She hid behind the curtain."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "below",
+    "translate": [
+      {
+        "value": "под",
+        "context": [
+          {
+            "value": "Грамматика и служебные слова",
+            "example": "The temperature is below freezing."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "between",
+    "translate": [
+      {
+        "value": "между",
+        "context": [
+          {
+            "value": "Грамматика и служебные слова",
+            "example": "The ball rolled between the chairs."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "beyond",
+    "translate": [
+      {
+        "value": "выше",
+        "context": [
+          {
+            "value": "Грамматика и служебные слова",
+            "example": "The road extends beyond the horizon."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "both",
+    "translate": [
+      {
+        "value": "двух",
+        "context": [
+          {
+            "value": "Грамматика и служебные слова",
+            "example": "Both cats are black."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "but",
+    "translate": [
+      {
+        "value": "а",
+        "context": [
+          {
+            "value": "Грамматика и служебные слова",
+            "example": "I want to go, but I can't."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "by",
+    "translate": [
+      {
+        "value": "у",
+        "context": [
+          {
+            "value": "Грамматика и служебные слова",
+            "example": "The book was written by him."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "bye",
+    "translate": [
+      {
+        "value": "пока",
+        "context": [
+          {
+            "value": "Грамматика и служебные слова",
+            "example": "She waved bye to her friend."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "can",
+    "translate": [
+      {
+        "value": "мочь",
+        "context": [
+          {
+            "value": "Грамматика и служебные слова",
+            "example": "This is can."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "could",
+    "translate": [
+      {
+        "value": "мочь",
+        "context": [
+          {
+            "value": "Грамматика и служебные слова",
+            "example": "She said she could help."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "dear",
+    "translate": [
+      {
+        "value": "родной",
+        "context": [
+          {
+            "value": "Грамматика и служебные слова",
+            "example": "She is a dear friend."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "despite",
+    "translate": [
+      {
+        "value": "несмотря",
+        "context": [
+          {
+            "value": "Грамматика и служебные слова",
+            "example": "They went out despite the rain."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "do",
+    "translate": [
+      {
+        "value": "делать",
+        "context": [
+          {
+            "value": "Грамматика и служебные слова",
+            "example": "What do you want to do today?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "down",
+    "translate": [
+      {
+        "value": "спустить",
+        "context": [
+          {
+            "value": "Грамматика и служебные слова",
+            "example": "The sun went down."
+          }
+        ]
+      }
+    ]
+  }
+]

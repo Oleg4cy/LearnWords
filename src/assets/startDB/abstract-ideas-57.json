@@ -1,0 +1,282 @@
+[
+  {
+    "word": "task",
+    "translate": [
+      {
+        "value": "задача",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "His task was to clean the room."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "technical",
+    "translate": [
+      {
+        "value": "технический",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He has technical skills."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "technique",
+    "translate": [
+      {
+        "value": "приём",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "Her technique in painting is unique."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "technology",
+    "translate": [
+      {
+        "value": "технология",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "Advances in technology are rapid."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "teenage",
+    "translate": [
+      {
+        "value": "подростковый",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is teenage."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "teenager",
+    "translate": [
+      {
+        "value": "подросток",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is teenager."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "television",
+    "translate": [
+      {
+        "value": "телевидение",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "She watched her favorite show on television."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "temperature",
+    "translate": [
+      {
+        "value": "температура",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The temperature dropped suddenly."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "temporary",
+    "translate": [
+      {
+        "value": "временный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is just a temporary solution."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "tennis",
+    "translate": [
+      {
+        "value": "теннис",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is tennis."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "tent",
+    "translate": [
+      {
+        "value": "палатка",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "They set up a tent in the campsite."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "terrible",
+    "translate": [
+      {
+        "value": "страшный",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The weather was terrible yesterday."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "theme",
+    "translate": [
+      {
+        "value": "тема",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The theme of the conference is sustainability."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "theory",
+    "translate": [
+      {
+        "value": "теория",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "His theory about the universe is fascinating."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "therapy",
+    "translate": [
+      {
+        "value": "терапия",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "This is therapy."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "thick",
+    "translate": [
+      {
+        "value": "толстый",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The book has thick pages."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "thief",
+    "translate": [
+      {
+        "value": "вор",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "The thief was caught by the police."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "thin",
+    "translate": [
+      {
+        "value": "худой",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "He has a thin build."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "thing",
+    "translate": [
+      {
+        "value": "вещь",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "What is that thing on the table?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "word": "thinking",
+    "translate": [
+      {
+        "value": "мышление",
+        "context": [
+          {
+            "value": "Абстрактные понятия",
+            "example": "Her thinking is very logical."
+          }
+        ]
+      }
+    ]
+  }
+]
