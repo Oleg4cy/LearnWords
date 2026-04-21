@@ -38,7 +38,6 @@ export function WordsGroups({ navigation }: IWordsGroupsScreenProps): JSX.Elemen
 
   const getGroups = async () => {
     const allArr: TGroup[] = await SWords.getGroups();
-    console.log(allArr);
 		setGroups(allArr);
 	}
 
@@ -321,3 +320,4 @@ const styles = StyleSheet.create({
 		fontWeight: '700',
 	},
 });
+

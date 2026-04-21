@@ -6,7 +6,7 @@ import { Input } from '../../components/Input';
 import { Header } from '../../modules/Header';
 import { Alert, TAlertButton } from '../../modules/Alert';
 import SWords from '../../storage/words/words.service';
-import { TGroup, TTranslate, TWord } from '../../storage/words/words.types';
+import { TContext, TGroup, TTranslate, TWord } from '../../storage/words/words.types';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import IconsStrings from '../../assets/awesomeIcons';
 import SelectDropdown from 'react-native-select-dropdown';
@@ -132,35 +132,38 @@ export function WordEdit({ navigation }: IWordEditScreenProps): JSX.Element {
     }
   };
 
-  const updateInputGroups = (
-    value: string,
-    index: number,
-    type: string,
-    contextIndex?: number,
-  ) => {
-    setInputsGroup(prevInputGroups => {
-      const newInputsGroups = [...prevInputGroups];
-      const inputGroup = newInputsGroups[index];
-      if (!inputGroup) return newInputsGroups;
-      switch (type) {
-        case 'translate':
-          inputGroup.value = value;
-          break;
-        case 'context':
-          if (inputGroup.context && contextIndex !== undefined) {
-            inputGroup.context[contextIndex] = value;
-          }
-          break;
-      }
-      return newInputsGroups;
+  const updateTranslateValue = (value: string, index: number) => {
+    setInputsGroup(prev => {
+      const next = [...prev];
+      if (next[index]) next[index].value = value;
+      return next;
+    });
+  };
+
+  const updateContextValue = (text: string, index: number, contextIndex: number) => {
+    setInputsGroup(prev => {
+      const next = [...prev];
+      const ctx = next[index]?.context;
+      if (ctx && ctx[contextIndex]) ctx[contextIndex].value = text;
+      return next;
+    });
+  };
+
+  const updateContextExample = (text: string, index: number, contextIndex: number) => {
+    setInputsGroup(prev => {
+      const next = [...prev];
+      const ctx = next[index]?.context;
+      if (ctx && ctx[contextIndex]) ctx[contextIndex].example = text;
+      return next;
     });
   };
 
   const addNewContext = (index: number) => {
     const newInputsGroups = [...inputsGroups];
     const inputGroup = newInputsGroups[index];
-    if (inputGroup?.context) {
-      inputGroup.context.push('');
+    if (inputGroup) {
+      if (!inputGroup.context) inputGroup.context = [];
+      (inputGroup.context as TContext[]).push({ value: '' });
       setInputsGroup(newInputsGroups);
     }
   };
@@ -223,7 +226,7 @@ export function WordEdit({ navigation }: IWordEditScreenProps): JSX.Element {
           return acc;
         }
         if (item.context) {
-          item.context = item.context.filter(contextItem => contextItem !== '');
+          item.context = (item.context as TContext[]).filter(ctx => ctx.value !== '');
         }
         acc.push(item);
         return acc;
@@ -340,50 +343,45 @@ export function WordEdit({ navigation }: IWordEditScreenProps): JSX.Element {
             label="Перевод"
             placeholder="Введите перевод"
             value={data.value}
-            onChangeText={translate =>
-              updateInputGroups(translate, index, 'translate')
-            }
+            onChangeText={translate => updateTranslateValue(translate, index)}
             onLayout={() => handleLayout()}
             icon={
               inputsGroups.length > 1
                 ? {
-                  type: IconsStrings.remove,
-                  style: {
-                    position: 'absolute',
-                    right: -2,
-                    padding: 10,
-                  },
-                  onPress: () => removeTranslate(index),
-                }
+                    type: IconsStrings.remove,
+                    style: { position: 'absolute', right: -2, padding: 10 },
+                    onPress: () => removeTranslate(index),
+                  }
                 : undefined
             }
           />
 
-          {data.context &&
-            data.context.map((contextValue: string, contextIndex: number) => {
-              return (
-                <Input
-                  style={[styles.mb]}
-                  key={`context-${index}-${contextIndex}`}
-                  label="Контекст"
-                  placeholder="Добавьте контекст"
-                  value={contextValue}
-                  onChangeText={context =>
-                    updateInputGroups(context, index, 'context', contextIndex)
-                  }
-                  multiline={true}
-                  icon={{
-                    type: IconsStrings.cancel,
-                    style: {
-                      position: 'absolute',
-                      right: -2,
-                      padding: 10,
-                    },
-                    onPress: () => removeContext(index, contextIndex),
-                  }}
-                />
-              )
-            })}
+          {(data.context as TContext[] | undefined)?.map((ctx: TContext, contextIndex: number) => (
+            <React.Fragment key={`context-${index}-${contextIndex}`}>
+              <Input
+                style={[styles.mb]}
+                label="Контекст"
+                placeholder="Добавьте контекст"
+                value={ctx.value}
+                onChangeText={text => updateContextValue(text, index, contextIndex)}
+                multiline={true}
+                icon={{
+                  type: IconsStrings.cancel,
+                  style: { position: 'absolute', right: -2, padding: 10 },
+                  onPress: () => removeContext(index, contextIndex),
+                }}
+              />
+              <Input
+                style={[styles.mb]}
+                label="Пример использования"
+                placeholder="Добавьте пример"
+                value={ctx.example || ''}
+                onChangeText={text => updateContextExample(text, index, contextIndex)}
+                multiline={true}
+              />
+            </React.Fragment>
+          ))}
+
           <Button
             style={styles.inlineActionButton}
             textStyle={styles.inlineActionButtonText}

@@ -227,6 +227,14 @@ export function InputMode({ navigation }: IInputModeScreenProps): JSX.Element {
     }
   }
 
+  const getInputStatusStyle = (answer: TAnswer) => {
+    if (!checked) return undefined;
+    return {
+      borderColor: answer.correct ? theme.colors.success : theme.colors.danger,
+      backgroundColor: answer.correct ? theme.colors.successSoft : theme.colors.dangerSoft,
+    };
+  };
+
   const removeTranslateInput = (index: number): void => {
     let newInputsGroups: TAnswer[] = [... inputsGroups];
     newInputsGroups.splice(index, 1);
@@ -257,6 +265,7 @@ export function InputMode({ navigation }: IInputModeScreenProps): JSX.Element {
                 onChangeText={(value: string) => updateAnswer(value, index)}
                 onLayout={() => handleLayout()}
                 disabled={checked}
+                focusedStyle={getInputStatusStyle(answer)}
                 icon={inputsGroups.length > 1 ? {
                   type: IconsStrings.remove,
                   style: {

@@ -4,7 +4,7 @@ import { StackNavigationProp } from "@react-navigation/stack";
 import { Button } from "../../components/Button";
 import { Header } from "../../modules/Header";
 import SWords from "../../storage/words/words.service";
-import { TTranslate, TWord } from "../../storage/words/words.types";
+import { TContext, TTranslate, TWord } from "../../storage/words/words.types";
 import IconsStrings from "../../assets/awesomeIcons";
 
 import containerStyles from "../../styles/container";
@@ -122,17 +122,20 @@ export function WordData({ navigation }: IWordDataScreenProps): JSX.Element {
                       <Text style={styles.value}>{data.value}</Text>
                     </View>
 
-                    {data.context &&
-                      data.context.map(
-                        (contextValue: string, contextIndex: number) => {
-                          return (
-                            <View key={`context-${index}-${contextIndex}`}>
-                              <Text style={styles.label}>Контекст</Text>
-                              <Text style={styles.contextValue}>{contextValue}</Text>
-                            </View>
-                          );
-                        },
-                      )}
+                    {(data.context as TContext[] | undefined)?.map(
+                      (ctx: TContext, contextIndex: number) => (
+                        <View key={`context-${index}-${contextIndex}`}>
+                          <Text style={styles.label}>Контекст</Text>
+                          <Text style={styles.contextValue}>{ctx.value}</Text>
+                          {ctx.example ? (
+                            <>
+                              <Text style={styles.label}>Пример использования</Text>
+                              <Text style={styles.contextValue}>{ctx.example}</Text>
+                            </>
+                          ) : null}
+                        </View>
+                      ),
+                    )}
                   </View>
                 </React.Fragment>
               );

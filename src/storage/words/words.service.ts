@@ -2,7 +2,7 @@ import { SQLiteDatabase, ResultSet, Transaction } from 'react-native-sqlite-stor
 import ISwords from './words.service';
 import SDB from '../db/db.service';
 
-import { TWord, TTranslate, TGroup } from './words.types';
+import { TWord, TTranslate, TContext, TGroup } from './words.types';
 
 type TStructureTable = {
   [key: string]: string | string[],
@@ -167,8 +167,6 @@ export default class SWords implements ISwords {
 
   // static async getWordsList(groupID?: number | null | 'null'): Promise<TWord[]> {
   static async getWordsList(groupID?: number | null): Promise<TWord[]> {
-    console.log('groupID: ', groupID);
-    console.log(typeof groupID);
     let sql = `
       SELECT
         words.*,
@@ -186,7 +184,6 @@ export default class SWords implements ISwords {
     } else if (groupID !== 0) {
       sql += ` WHERE groups.id = ${groupID}`;
     }
-    console.log(sql);
 
     try {
       const results: ResultSet = await SWords.execute(sql);
@@ -220,10 +217,14 @@ export default class SWords implements ISwords {
 
     for (let i = 0; i < results.rows.length; i++) {
       const result = results.rows.item(i);
+      const rawContext = JSON.parse(result.context || '[]');
+      const context: TContext[] = rawContext.map((item: any) =>
+        typeof item === 'string' ? { value: item } : item,
+      );
       const translation: TTranslate = {
         id: result.t_id,
         value: result.translate,
-        context: JSON.parse(result.context),
+        context,
       };
       wordTranslations.push(translation);
     }
@@ -423,9 +424,9 @@ export default class SWords implements ISwords {
 
   private static async insertTranslation(translate: TTranslate, insertedWordId: number) {
     const sql = 'INSERT INTO word_translate (word_id, translate, context) VALUES (?, ?, ?)';
-    let { context, value } = translate;
-    context = context && context.filter(item => item !== '');
-    const contextJson: string = JSON.stringify(context);
+    const { context, value } = translate;
+    const filtered = (context || []).filter((ctx: TContext) => ctx.value !== '');
+    const contextJson: string = JSON.stringify(filtered);
     const params = [insertedWordId, value, contextJson];
     try {
       const results: ResultSet = await SWords.execute(sql, params);
@@ -443,7 +444,8 @@ export default class SWords implements ISwords {
 
   private static async updateTranslation(translateData: TTranslate): Promise<ResultSet> {
     const sql = 'UPDATE word_translate SET translate = ?, context = ? WHERE id = ?';
-    const contextJson: string = JSON.stringify(translateData?.context?.filter(item => item !== ''));
+    const filtered = (translateData.context || []).filter((ctx: TContext) => ctx.value !== '');
+    const contextJson: string = JSON.stringify(filtered);
     const params = [translateData.value, contextJson, translateData.id];
     return SWords.execute(sql, params);
   }
@@ -496,7 +498,6 @@ export default class SWords implements ISwords {
       await SWords.execute('DELETE FROM word_translate WHERE word_id = ?', [id]);
       await SWords.execute('DELETE FROM word_group WHERE word_id = ?', [id]);
       await SWords.execute('DELETE FROM words WHERE id = ?', [id]);
-      console.log(`Word with ID ${id} has been deleted.`);
     } catch (error) {
       console.log(error);
       throw error;
@@ -622,7 +623,6 @@ export default class SWords implements ISwords {
     const params = [groupID, wordID];
     try {
       await SWords.execute(sql, params);
-      console.log(`word ${wordID} added to ${groupID} group`);
     } catch (error) {
       console.log(error);
       throw error;
@@ -633,9 +633,7 @@ export default class SWords implements ISwords {
     try {
       const dropTableQuery = `DROP TABLE IF EXISTS ${table.name};`;
       await this.db?.executeSql(dropTableQuery);
-      console.log(`Таблица "${table.name}" успешно удалена`);
     } catch (error) {
-      console.log('DROP ERR: ', error);
       throw error;
     }
   }
@@ -644,7 +642,6 @@ export default class SWords implements ISwords {
     const query = `CREATE TABLE IF NOT EXISTS ${table.name} (${table.structure.join(', ')});`
     try {
       await this.db?.executeSql(query);
-      console.log(table.name, ' table is ok.');
     } catch (error) {
       console.log('Ошибка при создании таблицы:', error);
       throw error;
@@ -682,3 +679,4 @@ export default class SWords implements ISwords {
     }
   }
 }
+

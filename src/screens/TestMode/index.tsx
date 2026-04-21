@@ -43,8 +43,6 @@ export function TestMode({ navigation }: ITestModeScreenProps): JSX.Element {
 
 	useEffect(() => {
 		if (activeWord) {
-			console.log(activeWord);
-			console.log((activeWord.translate[0].context));
 			getCorrectAnswer();
 			fetchRandomAnswers();
 		}
@@ -245,7 +243,7 @@ const styles = StyleSheet.create({
 	},
 
 	unselectedAnswer: {
-		// backgroundColor: 'gray', 
+		// backgroundColor: 'gray',
 	},
 
 	answerText: {
