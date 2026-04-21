@@ -43,6 +43,7 @@ export function InputMode({ navigation }: IInputModeScreenProps): JSX.Element {
   const emptyAnswer: TAnswer = { correct: false, value: '' };
 
   const modes: TMode[] = ['word', 'translate'];
+  const [showCorrectAnswer, setShowCorrectAnswer] = useState(false);
   const [activeMode, setActiveMode] = useState<TMode>(modes[0]);
   const [isRandomMode, setRandomMode] = useState<boolean>(false);
   const [isAlertVisible, setAlertVisible] = useState(false);
@@ -128,11 +129,12 @@ export function InputMode({ navigation }: IInputModeScreenProps): JSX.Element {
     setScrollBottom(true);
   }
 
-  const reset = () => {    
+  const reset = () => {
     setInputsGroups([emptyAnswer]);
     setCheckButtonDisabled(true);
     setActiveWord(null);
     setChecked(false);
+    setShowCorrectAnswer(false);
   }
 
   const next = () => {
@@ -146,28 +148,49 @@ export function InputMode({ navigation }: IInputModeScreenProps): JSX.Element {
 
   const check = () => {
     setChecked(true);
+
     setInputsGroups(prevInputGroups => {
       let newInputsGroups = [...prevInputGroups];
-      newInputsGroups = newInputsGroups.filter(answer => answer.value > '');
-      if (newInputsGroups.length < 1) newInputsGroups = [emptyAnswer];
-      newInputsGroups.forEach((answer: TAnswer, index) => {
-        if (!activeWord) return;
-        let checkAnswer: boolean = false;
+      newInputsGroups = newInputsGroups.filter(answer => answer.value.trim() !== '');
+
+      if (newInputsGroups.length < 1) {
+        newInputsGroups = [{ correct: false, value: '' }];
+      }
+
+      let hasWrongAnswer = false;
+
+      newInputsGroups = newInputsGroups.map((answer: TAnswer) => {
+        if (!activeWord) return answer;
+
+        let checkAnswer = false;
+
         switch (activeMode) {
-          case modes[0]:
-            checkAnswer = activeWord.word.toLowerCase() === answer.value.toLowerCase();
+          case 'word':
+            checkAnswer = activeWord.word.toLowerCase().trim() === answer.value.toLowerCase().trim();
             break;
-          case modes[1]:
-            checkAnswer = activeWord.translate.some(translate => {
-            	return translate.value.toLowerCase() == answer.value.toLowerCase();
-            });
+
+          case 'translate':
+            checkAnswer = activeWord.translate.some(translate =>
+              translate.value.toLowerCase().trim() === answer.value.toLowerCase().trim()
+            );
             break;
         }
-        if (checkAnswer) newInputsGroups[index].correct = true;
+
+        if (!checkAnswer) {
+          hasWrongAnswer = true;
+        }
+
+        return {
+          ...answer,
+          correct: checkAnswer,
+        };
       });
+
+      setShowCorrectAnswer(hasWrongAnswer);
+
       return newInputsGroups;
     });
-  }
+  };
 
   const isModeTabActive = (mode: TMode) => activeMode === mode && !isRandomMode;
 
@@ -277,6 +300,43 @@ export function InputMode({ navigation }: IInputModeScreenProps): JSX.Element {
                 } : undefined}
               />
             ))}
+            {checked && showCorrectAnswer && activeWord && (
+              <View style={styles.correctAnswerBox}>
+                <Text style={styles.correctAnswerTitle}>Правильный ответ</Text>
+
+                {activeWord.translate.map((translate, translateIndex, translateArr) => (
+                  <React.Fragment key={`correct-translate-${translateIndex}`}>
+                    <View style={styles.correctTranslateBlock}>
+                      <Text style={styles.correctAnswerValue}>{translate.value}</Text>
+
+                      {(translate.context || []).map((ctx, contextIndex, contextArr) => (
+                        <React.Fragment key={`correct-context-${translateIndex}-${contextIndex}`}>
+                          <View style={styles.correctContextCard}>
+                            <Text style={styles.correctContextLabel}>Контекст</Text>
+                            <Text style={styles.correctContextValue}>{ctx.value}</Text>
+
+                            {ctx.example ? (
+                              <>
+                                <Text style={styles.correctContextLabel}>Пример использования</Text>
+                                <Text style={styles.correctContextValue}>{ctx.example}</Text>
+                              </>
+                            ) : null}
+                          </View>
+
+                          {contextIndex !== contextArr.length - 1 && (
+                            <View style={styles.contextDivider} />
+                          )}
+                        </React.Fragment>
+                      ))}
+                    </View>
+
+                    {translateIndex !== translateArr.length - 1 && (
+                      <View style={styles.translateDivider} />
+                    )}
+                  </React.Fragment>
+                ))}
+              </View>
+            )}
             {activeMode === 'translate' && <Button title='Добавить перевод' onPress={() => addNewTranslate()} disabled={checked} />}
           </View>
         </ScrollView>
@@ -393,5 +453,67 @@ const styles = StyleSheet.create({
   answerInput: {
     marginBottom: 12,
   },
+  correctAnswerBox: {
+    marginTop: 20,
+    padding: 16,
+    borderRadius: 12,
+    backgroundColor: theme.colors.surface,
+    borderWidth: 1,
+    borderColor: theme.colors.border,
+  },
 
+  correctAnswerTitle: {
+    fontSize: 18,
+    fontWeight: '700',
+    color: theme.colors.text,
+    marginBottom: 12,
+  },
+
+  correctTranslateBlock: {
+    paddingVertical: 4,
+  },
+
+  correctAnswerValue: {
+    fontSize: 16,
+    fontWeight: '700',
+    color: theme.colors.text,
+    marginBottom: 10,
+  },
+
+  correctContextCard: {
+    paddingVertical: 6,
+  },
+
+  correctContextLabel: {
+    fontSize: 13,
+    fontWeight: '600',
+    color: theme.colors.textSecondary ?? theme.colors.text,
+    marginBottom: 4,
+  },
+
+  correctContextValue: {
+    fontSize: 15,
+    color: theme.colors.text,
+    lineHeight: 21,
+  },
+
+  contextDivider: {
+    height: 1,
+    backgroundColor: '#E9E9E9',
+    marginVertical: 10,
+  },
+
+  translateDivider: {
+    height: 1,
+    backgroundColor: '#D5D5D5',
+    marginVertical: 14,
+  },
+  /*
+  correctContextCard: {
+    padding: 10,
+    borderRadius: 8,
+    backgroundColor: theme.colors.appBackground,
+  },
+  */
 });
+
