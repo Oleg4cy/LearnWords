@@ -86,10 +86,17 @@ export function WordsGroups({ navigation }: IWordsGroupsScreenProps): JSX.Elemen
 	}
 
 	const openGroup = (id?: number) => {
+		const listMode = id === 0
+			? 'all'
+			: id
+				? 'group'
+				: 'withoutGroup';
+
 		navigation.push(
 			'WordsList',
 			{
 				groupID: id ?? null,
+				listMode,
 			}
 		);
 	}

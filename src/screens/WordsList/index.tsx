@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { RouteProp, useFocusEffect, useRoute } from '@react-navigation/native';
 import { StackNavigationProp } from '@react-navigation/stack';
 import { Header } from '../../modules/Header';
@@ -29,12 +29,26 @@ interface IWordsListScreenProps {
 type RootStackParamList = {
 	WordsList: {
 		groupID?: number | null,
+		listMode?: 'group' | 'withoutGroup' | 'all',
+		refreshKey?: number,
 	};
 };
 
 export function WordsList({ navigation }: IWordsListScreenProps): JSX.Element {
 	const route = useRoute<RouteProp<RootStackParamList, 'WordsList'>>();
-	const [groupID, setGroupID] = useState<number|null>(route.params?.groupID ?? null);
+	const listMode = route.params?.listMode ?? (
+		route.params?.groupID === 0
+			? 'all'
+			: route.params?.groupID
+				? 'group'
+				: 'withoutGroup'
+	);
+	const groupID = listMode === 'all'
+		? 0
+		: listMode === 'withoutGroup'
+			? null
+			: route.params?.groupID ?? null;
+	const refreshKey = route.params?.refreshKey ?? 0;
 
 	const startArr: TWord[] = [];
 	const [words, setWords] = useState<TWord[]>(startArr);
@@ -44,14 +58,14 @@ export function WordsList({ navigation }: IWordsListScreenProps): JSX.Element {
 
   useFocusEffect(
     React.useCallback(() => {
-      fetchWords();
+      fetchWords(groupID);
       return () => {};
-    }, [groupID])
+    }, [groupID, refreshKey])
   );
 
-	const fetchWords = async () => {
+	const fetchWords = async (activeGroupID: number | null) => {
 		try {
-			let words = await SWords.getWordsList(groupID ?? null);
+			let words = await SWords.getWordsList(activeGroupID);
 			words = words.sort((a, b) => a.word.localeCompare(b.word));
 			setWords(words);
 		} catch (error) {
@@ -74,10 +88,10 @@ export function WordsList({ navigation }: IWordsListScreenProps): JSX.Element {
         backPath={() => navigation.goBack()} 
         rightIcon={{
           type: IconsStrings.plus,
-          onPress: () => navigation.push(
-					'WordEdit',
-					{
-            groupID: groupID,
+	          onPress: () => navigation.push(
+						'WordEdit',
+						{
+	            groupID: groupID,
 						isNewWord: true,
 					}
 				),

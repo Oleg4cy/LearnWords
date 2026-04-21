@@ -123,8 +123,13 @@ export function GroupForm({
 			buttons.push({
 				title: 'Добавить слова в группу',
 				onPress: () => {
-					setAlertVisible(!isAlertVisible);
-					navigation.navigate('WordData', { backPathRoute: 'Words', isShowWord: false, groupID: groupID });
+					setAlertVisible(false);
+					onClose();
+					resetForm();
+					navigation.push('WordEdit', {
+						isNewWord: true,
+						groupID: groupID,
+					});
 				}
 			});
 		}

@@ -319,7 +319,11 @@ export function WordEdit({ navigation }: IWordEditScreenProps): JSX.Element {
       title: 'К списку слов',
       onPress: () => {
         closeAlert();
-        navigation.navigate('WordsList', { groupID: selectedGroupID });
+        navigation.push('WordsList', {
+          groupID: selectedGroupID ?? null,
+          listMode: selectedGroupID ? 'group' : 'withoutGroup',
+          refreshKey: Date.now(),
+        });
       },
     });
 
