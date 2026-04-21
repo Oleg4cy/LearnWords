@@ -223,6 +223,8 @@ export function GroupForm({
 				/>
 				<Button
 					title='Отменить'
+					style={styles.cancelButton}
+					textStyle={styles.cancelButtonText}
 					onPress={() => cancel()}
 				/>
 			</Animated.View>
@@ -246,5 +248,19 @@ const styles = StyleSheet.create({
 		borderTopLeftRadius: theme.radius.sm,
 		borderTopRightRadius: theme.radius.sm,
 		zIndex: 100,
+	},
+
+	cancelButton: {
+		minHeight: 56,
+		borderRadius: 14,
+		borderWidth: 2,
+		borderColor: theme.colors.primary,
+		backgroundColor: theme.colors.surface,
+	},
+
+	cancelButtonText: {
+		color: theme.colors.primary,
+		fontSize: 16,
+		fontWeight: '700',
 	},
 });

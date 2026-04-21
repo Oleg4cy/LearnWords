@@ -184,7 +184,7 @@ const styles = StyleSheet.create({
   prevButton: {
     marginHorizontal: 20,
     marginBottom: 10,
-    backgroundColor: theme.colors.text,
+    backgroundColor: theme.colors.primary,
   },
 
   wordTitle: {

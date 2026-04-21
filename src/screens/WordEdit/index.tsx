@@ -385,6 +385,14 @@ export function WordEdit({ navigation }: IWordEditScreenProps): JSX.Element {
               )
             })}
           <Button
+            style={styles.inlineActionButton}
+            textStyle={styles.inlineActionButtonText}
+            icon={{
+              front: true,
+              type: IconsStrings.plus,
+              color: theme.colors.primary,
+              style: styles.inlineActionIcon,
+            }}
             title="Добавить контекст"
             onPress={() => addNewContext(index)}
           />
@@ -412,7 +420,8 @@ export function WordEdit({ navigation }: IWordEditScreenProps): JSX.Element {
             contentContainerStyle={[styles.scrollViewContent, containerStyles]}>
             <View style={styles.section}>
               <Button
-                style={styles.topActionButton}
+                style={[styles.inlineActionButton, styles.groupActionButton]}
+                textStyle={styles.inlineActionButtonText}
                 title={`Группа: ${selectedGroupName()}`}
                 onPress={() => setGroupListVisible(true)}
               />
@@ -538,9 +547,27 @@ const styles = StyleSheet.create({
     ...theme.shadow,
   },
 
-  topActionButton: {
+  inlineActionButton: {
+    minHeight: 38,
+    alignSelf: 'flex-start',
+    paddingVertical: 8,
+    paddingHorizontal: 0,
+    backgroundColor: 'transparent',
+  },
+
+  inlineActionButtonText: {
+    color: theme.colors.primary,
+    fontSize: 16,
+    fontWeight: '700',
+  },
+
+  inlineActionIcon: {
+    color: theme.colors.primary,
+    marginRight: 8,
+  },
+
+  groupActionButton: {
     marginBottom: 16,
-    backgroundColor: theme.colors.text,
   },
 
   contextRow: {
@@ -576,7 +603,7 @@ const styles = StyleSheet.create({
 
   addGroupButton: {
     marginTop: 14,
-    backgroundColor: theme.colors.text,
+    backgroundColor: theme.colors.primary,
   },
 
   dropdown1BtnStyle: {

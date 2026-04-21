@@ -21,6 +21,7 @@ export type IButtonProps = PropsWithChildren<{
 	icon?: {
 		front?: boolean,
 		type: string,
+		color?: string,
 		style?: object,
 	},
 }>;
@@ -41,7 +42,7 @@ export const Button = ({
 
 	const getIcon = () => {
 		if (!icon) return null;
-		return <Icon name={icon.type} size={16} color={theme.colors.surface} style={icon.style ?? {}} />;
+		return <Icon name={icon.type} size={16} color={icon.color ?? theme.colors.surface} style={icon.style ?? {}} />;
 	};
 
 	const buttonStyles = [
