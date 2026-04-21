@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { useRoute, useFocusEffect } from '@react-navigation/native';
+import { RouteProp, useRoute, useFocusEffect } from '@react-navigation/native';
 import { StackNavigationProp } from '@react-navigation/stack';
 import { Button } from '../../components/Button';
 import { Input } from '../../components/Input';
@@ -30,6 +30,13 @@ interface IInputModeScreenProps {
   navigation: StackNavigationProp<any>;
 }
 
+type RootStackParamList = {
+  InputMode: {
+    groupID?: number,
+    groupName?: string,
+  },
+};
+
 type TAnswer = {
   correct: boolean,
   value: string,
@@ -38,7 +45,8 @@ type TAnswer = {
 type TMode = 'word' | 'translate';
 
 export function InputMode({ navigation }: IInputModeScreenProps): JSX.Element {
-  const route = useRoute();
+  const route = useRoute<RouteProp<RootStackParamList, 'InputMode'>>();
+  const groupID = route.params?.groupID ?? 0;
 
   const emptyAnswer: TAnswer = { correct: false, value: '' };
 
@@ -78,7 +86,7 @@ export function InputMode({ navigation }: IInputModeScreenProps): JSX.Element {
   }, [inputsGroups]);
 
   const fetchWord = async () => {
-    const word = await SWords.getRandom();
+    const word = await SWords.getRandom(groupID);
     if (word) {
       setActiveWord(word);
       const ind = Math.floor(Math.random() * (word.translate.length - 1));
@@ -487,7 +495,7 @@ const styles = StyleSheet.create({
   correctContextLabel: {
     fontSize: 13,
     fontWeight: '600',
-    color: theme.colors.textSecondary ?? theme.colors.text,
+    color: theme.colors.textMuted,
     marginBottom: 4,
   },
 
@@ -516,4 +524,3 @@ const styles = StyleSheet.create({
   },
   */
 });
-

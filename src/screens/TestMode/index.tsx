@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { RouteProp, useRoute } from '@react-navigation/native';
 import { StackNavigationProp } from '@react-navigation/stack';
 import { Button } from '../../components/Button';
 import { Header } from '../../modules/Header';
@@ -23,12 +24,22 @@ interface ITestModeScreenProps {
 	navigation: StackNavigationProp<any>;
 }
 
+type RootStackParamList = {
+	TestMode: {
+		groupID?: number,
+		groupName?: string,
+	},
+};
+
 type TAnswer = TTranslate & {
 	correct: boolean,
 	selected: boolean,
 }
 
 export function TestMode({ navigation }: ITestModeScreenProps): JSX.Element {
+	const route = useRoute<RouteProp<RootStackParamList, 'TestMode'>>();
+	const groupID = route.params?.groupID ?? 0;
+
 	const [isAlertVisible, setAlertVisible] = useState(false);
 	const [activeWord, setActiveWord] = useState<TWord | null>(null);
 	const [correctAnswers, setCorrectAnswers] = useState<TAnswer[]>([]);
@@ -64,7 +75,7 @@ export function TestMode({ navigation }: ITestModeScreenProps): JSX.Element {
 	}
 
 	const fetchWord = async () => {
-		const word = await SWords.getRandom();
+		const word = await SWords.getRandom(groupID);
 		if (word) setActiveWord(word);
 	}
 
@@ -77,7 +88,7 @@ export function TestMode({ navigation }: ITestModeScreenProps): JSX.Element {
 
 	const fetchRandomAnswers = async () => {
 		if (activeWord && activeWord.id) {
-			let answersArr = await SWords.getRandomAnswers(activeWord.id);
+			let answersArr = await SWords.getRandomAnswers(activeWord.id, groupID);
 			const answers: TAnswer[] = setCorrect(answersArr, false);
 			setInCorrectAnswers(answers);
 		}
@@ -165,7 +176,7 @@ export function TestMode({ navigation }: ITestModeScreenProps): JSX.Element {
 							style={[
 								styles.answerText,
 								answer.selected ? styles.selectedAnswerText : null,
-								answer.correct && checked ? styles.selectedAnswerText : null
+								answer.correct && checked ? styles.correctAnswerText : null
 							]}>{answer.value}</Text>
 					</TouchableOpacity>
 				))}
@@ -232,8 +243,8 @@ const styles = StyleSheet.create({
 
 	correctAnswer: {
 		borderWidth: 2,
-		borderColor: theme.colors.primary,
-		backgroundColor: theme.colors.primarySoft,
+		borderColor: theme.colors.success,
+		backgroundColor: theme.colors.successSoft,
 	},
 
 	inCorrectAnswer: {
@@ -254,6 +265,10 @@ const styles = StyleSheet.create({
 
 	selectedAnswerText: {
 		color: theme.colors.primary,
+	},
+
+	correctAnswerText: {
+		color: theme.colors.success,
 	},
 
 });
