@@ -65,7 +65,7 @@ export function WordData({ navigation }: IWordDataScreenProps): JSX.Element {
 
   const fetchWord = async () => {
     if (!wordID) return;
-    const word = await SWords.getByID(wordID);
+    const word = await SWords.getByID(wordID, groupID ?? 0);
     if (word) {
       setWordName(word.word);
       setWordData(word.translate);
@@ -236,4 +236,3 @@ const styles = StyleSheet.create({
     marginVertical: 12,
   },
 });
-

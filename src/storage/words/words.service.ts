@@ -3,7 +3,7 @@ import ISwords from './words.service';
 import SDB from '../db/db.service';
 
 import {TWord, TTranslate, TContext, TGroup} from './words.types';
-import {startDBChunks, TStartDBChunk} from '../../assets/startDB';
+import {startDBDictionary, TStartDBDictionary} from '../../assets/startDB';
 
 type TStructureTable = {
   [key: string]: string | string[],
@@ -11,7 +11,10 @@ type TStructureTable = {
   structure: string[],
 };
 
-type TStartDB = {data: TWord[]; groups: number[]}[];
+type TStartDB = {
+  groups: (TGroup & {id: number})[];
+  words: TWord[];
+};
 
 export default class SWords implements ISwords {
   private isInitialized = false;
@@ -43,6 +46,7 @@ export default class SWords implements ISwords {
       structure: [
         'id INTEGER PRIMARY KEY AUTOINCREMENT',
         'name TEXT',
+        'context TEXT',
         'description TEXT NULL',
       ]
     },
@@ -51,11 +55,13 @@ export default class SWords implements ISwords {
       structure: [
         'word_id INTEGER',
         'group_id  INTEGER',
+        'translate_id INTEGER',
         'translate TEXT',
         'context TEXT',
         'FOREIGN KEY (group_id) REFERENCES groups(id) ON DELETE CASCADE',
         'FOREIGN KEY (word_id) REFERENCES words(id) ON DELETE CASCADE',
-        'PRIMARY KEY (group_id, word_id)',
+        'FOREIGN KEY (translate_id) REFERENCES word_translate(id) ON DELETE CASCADE',
+        'PRIMARY KEY (group_id, word_id, translate_id)',
       ]
     },
     {
@@ -93,6 +99,11 @@ export default class SWords implements ISwords {
       for (const table of this.tables) {
         await this.checkTable(table);
       }
+      if (!(await this.isSchemaActual())) {
+        await this.reset();
+        await SWords.execute(`INSERT INTO settings (installed) VALUES (1);`);
+        return 1;
+      }
       const results: ResultSet = await SWords.execute(`SELECT * FROM settings`);
       const result = results.rows.item(0);
       if (result && result.installed === 1) {
@@ -107,6 +118,32 @@ export default class SWords implements ISwords {
       console.error(error);
       throw error;
     }
+  }
+
+  private async isSchemaActual(): Promise<boolean> {
+    const wordGroupColumns = await this.getTableColumns('word_group');
+    const groupColumns = await this.getTableColumns('groups');
+
+    return (
+      wordGroupColumns.includes('translate_id') &&
+      groupColumns.includes('context')
+    );
+  }
+
+  private async getTableColumns(tableName: string): Promise<string[]> {
+    const results = await this.db?.executeSql(`PRAGMA table_info(${tableName});`);
+    const columns: string[] = [];
+    const rows = results?.[0]?.rows;
+
+    if (!rows) {
+      return columns;
+    }
+
+    for (let i = 0; i < rows.length; i++) {
+      columns.push(rows.item(i).name);
+    }
+
+    return columns;
   }
 
   private static async execute(sql: string, params: Array<any> = []): Promise<ResultSet> {
@@ -183,7 +220,7 @@ export default class SWords implements ISwords {
     if (groupID === null) {
       sql += ` WHERE word_group.word_id IS NULL`;
     } else if (groupID !== 0) {
-      sql += ` WHERE groups.id = ${groupID}`;
+      sql += ` WHERE word_group.group_id = ${groupID}`;
     }
     sql += ` GROUP BY words.id`;
 
@@ -216,9 +253,16 @@ export default class SWords implements ISwords {
 
   private static createTranslationsData(results: ResultSet): TTranslate[] {
     const wordTranslations: TTranslate[] = [];
+    const usedTranslationIDs = new Set<number>();
 
     for (let i = 0; i < results.rows.length; i++) {
       const result = results.rows.item(i);
+      if (result.t_id && usedTranslationIDs.has(result.t_id)) {
+        continue;
+      }
+      if (result.t_id) {
+        usedTranslationIDs.add(result.t_id);
+      }
       const rawContext = JSON.parse(result.context || '[]');
       const context: TContext[] = rawContext.map((item: any) =>
         typeof item === 'string' ? { value: item } : item,
@@ -241,21 +285,25 @@ export default class SWords implements ISwords {
         word_translate.translate,
         word_translate.context
       FROM words
-      LEFT JOIN word_translate on words.id=word_translate.word_id
+      LEFT JOIN word_translate ON words.id = word_translate.word_id
+      ${groupID ? `
+        INNER JOIN word_group AS active_word_group
+          ON active_word_group.translate_id = word_translate.id
+          AND active_word_group.group_id = (?)
+      ` : ''}
       WHERE words.id = (
         SELECT words.id
         FROM words
         ${groupID ? `
-          LEFT JOIN word_group ON word_group.word_id = words.id
-          LEFT JOIN groups ON groups.id = word_group.group_id
+          INNER JOIN word_group ON word_group.word_id = words.id
         ` : ''}
-        ${groupID ? `WHERE groups.id = (?)` : ''}
+        ${groupID ? `WHERE word_group.group_id = (?)` : ''}
         GROUP BY words.id
         ORDER BY RANDOM()
         LIMIT 1
       )
     ;`
-    const params = groupID ? [groupID] : [];
+    const params = groupID ? [groupID, groupID] : [];
 
     try {
       const results: ResultSet = await SWords.execute(sql, params);
@@ -273,19 +321,16 @@ export default class SWords implements ISwords {
   static async getNextWordInGroup(wordID: number, groupID: number, order: 'next' | 'prev'): Promise<TWord | null> {
     const sql = `
       SELECT
-        words.*,
-        word_translate.id as t_id,
-        word_translate.translate,
-        word_translate.context
+        words.id
       FROM words
-      LEFT JOIN word_translate ON words.id = word_translate.word_id
       ${groupID ? `
-        LEFT JOIN word_group ON word_group.word_id = words.id
-        LEFT JOIN groups ON groups.id = word_group.group_id
+        INNER JOIN word_group
+          ON word_group.word_id = words.id
+          AND word_group.group_id = (?)
       ` : ''}
       WHERE
-        ${groupID ? `groups.id = (?) AND` : ''}
         words.word COLLATE NOCASE ${order === 'next' ? '>' : '<'} (SELECT words.word FROM words WHERE id = ?)
+      GROUP BY words.id
       ORDER BY words.word COLLATE NOCASE ${order === 'next' ? 'ASC' : 'DESC'}
       LIMIT 1
     `;
@@ -294,8 +339,8 @@ export default class SWords implements ISwords {
     try {
       const results: ResultSet = await SWords.execute(sql, params);
       if (results.rows.length > 0) {
-        const word: TWord = SWords.createWordData(results);
-        return word;
+        const nextWordID = results.rows.item(0).id;
+        return SWords.getByID(nextWordID, groupID);
       }
       return null;
     } catch (error) {
@@ -307,17 +352,14 @@ export default class SWords implements ISwords {
   static async getExtremeWordInGroup(groupID: number, extreme: 'first' | 'last'): Promise<TWord | null> {
     const sql = `
       SELECT
-        words.*,
-        word_translate.id as t_id,
-        word_translate.translate,
-        word_translate.context
+        words.id
       FROM words
-      LEFT JOIN word_translate ON words.id = word_translate.word_id
       ${groupID ? `
-        LEFT JOIN word_group ON word_group.word_id = words.id
-        LEFT JOIN groups ON groups.id = word_group.group_id
-        WHERE groups.id = (?)
+        INNER JOIN word_group
+          ON word_group.word_id = words.id
+          AND word_group.group_id = (?)
       ` : ''}
+      GROUP BY words.id
       ORDER BY words.word ${extreme === 'first' ? 'ASC' : 'DESC'}
       LIMIT 1
     `;
@@ -326,8 +368,8 @@ export default class SWords implements ISwords {
     try {
       const results: ResultSet = await SWords.execute(sql, params);
       if (results.rows.length > 0) {
-        const word: TWord = SWords.createWordData(results);
-        return word;
+        const wordID = results.rows.item(0).id;
+        return SWords.getByID(wordID, groupID);
       }
       return null;
     } catch (error) {
@@ -341,14 +383,14 @@ export default class SWords implements ISwords {
       SELECT word_translate.*
       FROM word_translate
       ${groupID ? `
-        LEFT JOIN word_group ON word_group.word_id = word_translate.word_id
-        LEFT JOIN groups ON groups.id = word_group.group_id
+        INNER JOIN word_group
+          ON word_group.translate_id = word_translate.id
+          AND word_group.group_id = (?)
       ` : ''}
       WHERE word_translate.word_id <> (?)
-      ${groupID ? `AND groups.id = (?)` : ''}
       ORDER BY RANDOM() LIMIT 5
     `;
-    const params = groupID ? [wordID, groupID] : [wordID];
+    const params = groupID ? [groupID, wordID] : [wordID];
 
     try {
       const results: ResultSet = await SWords.execute(sql, params);
@@ -363,18 +405,23 @@ export default class SWords implements ISwords {
     }
   }
 
-  static async getByID(id: number): Promise<TWord | null> {
+  static async getByID(id: number, groupID: number = 0): Promise<TWord | null> {
     const sql = `
       SELECT
           words.*,
           word_translate.id as t_id,
           word_translate.translate,
-          word_translate.context
+          word_translate.context,
+          CASE WHEN active_word_group.group_id IS NULL THEN 1 ELSE 0 END AS group_priority
       FROM words
       LEFT JOIN word_translate ON words.id = word_translate.word_id
+      LEFT JOIN word_group AS active_word_group
+        ON active_word_group.translate_id = word_translate.id
+        AND active_word_group.group_id = (?)
       WHERE words.id = (?)
+      ORDER BY group_priority ASC, word_translate.id ASC
     `;
-    const params = [id];
+    const params = [groupID, id];
 
     try {
       const results: ResultSet = await SWords.execute(sql, params);
@@ -420,17 +467,16 @@ export default class SWords implements ISwords {
       const results: ResultSet = await SWords.execute(sql, params);
       const insertedWordID: number = results.insertId;
 
-      if (word.groups) {
-        const groupPromises = (word.groups as number[]).map(async (group: number) => {
-          await SWords.insertGroup(group, insertedWordID);
-        });
-        await Promise.all(groupPromises);
-      }
-
       if (word.translate && Array.isArray(word.translate)) {
         const translationPromises = word.translate.map(async (translateData: TTranslate) => {
           if (translateData.value > '') {
-            await SWords.insertTranslation(translateData, insertedWordID);
+            const results = await SWords.insertTranslation(translateData, insertedWordID);
+            if (word.groups && results.insertId) {
+              const groupPromises = (word.groups as number[]).map(async (group: number) => {
+                await SWords.insertGroup(group, insertedWordID, results.insertId);
+              });
+              await Promise.all(groupPromises);
+            }
           }
         });
         await Promise.all(translationPromises);
@@ -488,7 +534,12 @@ export default class SWords implements ISwords {
       if (word.translate && Array.isArray(word.translate)) {
         const promises = word.translate.map(async (translateData: TTranslate) => {
           if (translateData.new && word.id) {
-            await SWords.insertTranslation(translateData, word.id);
+            const results = await SWords.insertTranslation(translateData, word.id);
+            if (word.groups && results.insertId) {
+              await Promise.all((word.groups as number[]).map((groupID: number) =>
+                SWords.insertGroup(groupID, word.id as number, results.insertId),
+              ));
+            }
           } else if (translateData.removed) {
             await SWords.deleteTranslation(translateData);
           } else {
@@ -508,9 +559,19 @@ export default class SWords implements ISwords {
 
   private static async updateWordGroups(wordID: number, groups: number[]): Promise<void> {
     await SWords.execute('DELETE FROM word_group WHERE word_id = ?', [wordID]);
-    const insertGroupPromises = groups.map(async (groupID: number) => {
-      await SWords.insertGroup(groupID, wordID);
-    });
+    const translationResults = await SWords.execute(
+      'SELECT id FROM word_translate WHERE word_id = ?',
+      [wordID],
+    );
+    const translationIDs: number[] = [];
+    for (let i = 0; i < translationResults.rows.length; i++) {
+      translationIDs.push(translationResults.rows.item(i).id);
+    }
+    const insertGroupPromises = groups.flatMap((groupID: number) =>
+      translationIDs.map(async (translateID: number) => {
+        await SWords.insertGroup(groupID, wordID, translateID);
+      }),
+    );
     await Promise.all(insertGroupPromises);
   }
 
@@ -585,7 +646,7 @@ export default class SWords implements ISwords {
     const sql = `
       SELECT
         groups.*,
-        COUNT(words.id) AS count
+        COUNT(DISTINCT words.id) AS count
       FROM groups
       LEFT JOIN word_group ON groups.id = word_group.group_id
       LEFT JOIN words ON word_group.word_id = words.id
@@ -616,11 +677,11 @@ export default class SWords implements ISwords {
     }
   }
 
-  static async createGroup(name: string, description?: string): Promise<string | number> {
+  static async createGroup(name: string, description?: string, context?: string): Promise<string | number> {
     const selectQuery = 'SELECT COUNT(*) AS count FROM groups WHERE name = ?';
     const selectParams = [name];
-    const insertQuery = 'INSERT INTO groups (name, description) VALUES (?, ?)';
-    const insertParams = [name, description ?? null];
+    const insertQuery = 'INSERT INTO groups (name, description, context) VALUES (?, ?, ?)';
+    const insertParams = [name, description ?? null, context ?? null];
 
     try {
       const resultsSelect: ResultSet = await SWords.execute(selectQuery, selectParams);
@@ -639,9 +700,9 @@ export default class SWords implements ISwords {
     }
   }
 
-  private static async insertGroup(groupID: number, wordID: number) {
-    const sql = 'INSERT INTO word_group (group_id, word_id) VALUES (?, ?)';
-    const params = [groupID, wordID];
+  private static async insertGroup(groupID: number, wordID: number, translateID?: number) {
+    const sql = 'INSERT INTO word_group (group_id, word_id, translate_id) VALUES (?, ?, ?)';
+    const params = [groupID, wordID, translateID ?? null];
     try {
       await SWords.execute(sql, params);
     } catch (error) {
@@ -683,117 +744,64 @@ export default class SWords implements ISwords {
     }
   }
 
-  private async seedStartDB(chunks: TStartDB): Promise<void> {
+  private async seedStartDB(dictionary: TStartDB): Promise<void> {
     if (!this.db) {
       throw new Error('Database connection is not initialized');
     }
 
-    const wordIDs = new Map<string, number>();
-    const groupLinks = new Set<string>();
+    const groupIDs = new Map<string, number>();
     const translations = new Set<string>();
 
     return new Promise((resolve, reject) => {
       try {
         this.db?.transaction(
           (tx: Transaction) => {
-            let chunkIndex = 0;
-            let wordIndex = 0;
+            for (const group of dictionary.groups) {
+              groupIDs.set(group.name, group.id);
+            }
 
-            const nextWord = () => {
-              while (
-                chunkIndex < chunks.length &&
-                wordIndex >= chunks[chunkIndex].data.length
-              ) {
-                chunkIndex++;
-                wordIndex = 0;
-              }
-
-              if (chunkIndex >= chunks.length) {
-                return;
-              }
-
-              const chunk = chunks[chunkIndex];
-              const word = chunk.data[wordIndex];
-              const groupID = chunk.groups[0];
-              wordIndex++;
-
-              const existingWordID = wordIDs.get(word.word);
-              if (existingWordID) {
-                insertWordData(existingWordID, word, groupID, nextWord);
-                return;
-              }
-
+            let translationID = 1;
+            dictionary.words.forEach((word: TWord, wordIndex: number) => {
+              const wordID = wordIndex + 1;
               tx.executeSql(
-                'INSERT INTO words (word) VALUES (?)',
-                [word.word],
-                (transaction: Transaction, results: ResultSet) => {
-                  const insertedWordID = results.insertId;
-                  wordIDs.set(word.word, insertedWordID);
-                  insertWordData(insertedWordID, word, groupID, nextWord);
-                },
+                'INSERT INTO words (id, word) VALUES (?, ?)',
+                [wordID, word.word],
               );
-            };
 
-            const insertWordData = (
-              wordID: number,
-              word: TWord,
-              groupID: number,
-              done: () => void,
-            ) => {
-              const insertTranslations = () => {
-                const wordTranslations = (word.translate || []).filter(
-                  (translate: TTranslate) => translate.value > '',
+              for (const translate of word.translate || []) {
+                if (translate.value <= '') {
+                  continue;
+                }
+
+                const filtered = (translate.context || []).filter(
+                  (ctx: TContext) => ctx.value !== '',
                 );
-                insertTranslation(0, wordID, wordTranslations, done);
-              };
+                const contextJson = JSON.stringify(filtered);
+                const translationKey = `${wordID}:${translate.value}:${contextJson}`;
+                if (translations.has(translationKey)) {
+                  continue;
+                }
 
-              const groupLinkKey = `${groupID}:${wordID}`;
-              if (!groupID || groupLinks.has(groupLinkKey)) {
-                insertTranslations();
-                return;
+                const currentTranslationID = translationID;
+                translationID++;
+                translations.add(translationKey);
+                tx.executeSql(
+                  'INSERT INTO word_translate (id, word_id, translate, context) VALUES (?, ?, ?, ?)',
+                  [currentTranslationID, wordID, translate.value, contextJson],
+                );
+
+                const translateGroups = (translate.groups || [])
+                  .map((group) => typeof group === 'number' ? group : groupIDs.get(group))
+                  .filter((groupID): groupID is number => typeof groupID === 'number' && groupID > 0);
+
+                for (const groupID of translateGroups) {
+                  tx.executeSql(
+                    'INSERT OR IGNORE INTO word_group (group_id, word_id, translate_id, translate, context) VALUES (?, ?, ?, ?, ?)',
+                    [groupID, wordID, currentTranslationID, translate.value, contextJson],
+                  );
+                }
               }
-
-              groupLinks.add(groupLinkKey);
-              tx.executeSql(
-                'INSERT INTO word_group (group_id, word_id) VALUES (?, ?)',
-                [groupID, wordID],
-                () => insertTranslations(),
-              );
-            };
-
-            const insertTranslation = (
-              index: number,
-              wordID: number,
-              wordTranslations: TTranslate[],
-              done: () => void,
-            ) => {
-              if (index >= wordTranslations.length) {
-                done();
-                return;
-              }
-
-              const translate = wordTranslations[index];
-              const filtered = (translate.context || []).filter(
-                (ctx: TContext) => ctx.value !== '',
-              );
-              const contextJson = JSON.stringify(filtered);
-              const translationKey = `${wordID}:${translate.value}:${contextJson}`;
-
-              if (translations.has(translationKey)) {
-                insertTranslation(index + 1, wordID, wordTranslations, done);
-                return;
-              }
-
-              translations.add(translationKey);
-              tx.executeSql(
-                'INSERT INTO word_translate (word_id, translate, context) VALUES (?, ?, ?)',
-                [wordID, translate.value, contextJson],
-                () =>
-                  insertTranslation(index + 1, wordID, wordTranslations, done),
-              );
-            };
-
-            nextWord();
+            });
           },
           (error: any) => reject(error),
           () => resolve(),
@@ -806,47 +814,25 @@ export default class SWords implements ISwords {
 
   private async getFromJSON(): Promise<TStartDB> {
     try {
-      const result: TStartDB = [];
-      let previousContextValue = '';
-      let groupNumber = 0;
-
-      for (const chunk of startDBChunks) {
-        const contextValue = this.getChunkContextValue(chunk);
-        if (contextValue === previousContextValue) {
-          groupNumber++;
-        } else {
-          previousContextValue = contextValue;
-          groupNumber = 1;
-        }
-
+      const groups: (TGroup & {id: number})[] = [];
+      for (const group of startDBDictionary.groups) {
         const groupIDResult = await SWords.createGroup(
-          `${contextValue} ${groupNumber}`,
+          group.name,
+          group.description,
+          group.context,
         );
-        let groupID: number = 0;
         if (typeof groupIDResult === 'number') {
-          groupID = groupIDResult;
+          groups.push({...group, id: groupIDResult});
         }
-        result.push({data: chunk.data, groups: [groupID]});
       }
 
-      return result;
+      return {
+        groups,
+        words: startDBDictionary.words,
+      };
     } catch (error) {
       console.log(error);
       throw error;
     }
-  }
-
-  private getChunkContextValue(chunk: TStartDBChunk): string {
-    for (const word of chunk.data) {
-      for (const translate of word.translate || []) {
-        for (const context of translate.context || []) {
-          if (context.value) {
-            return context.value;
-          }
-        }
-      }
-    }
-
-    throw new Error(`No context value found in ${chunk.file}`);
   }
 }
