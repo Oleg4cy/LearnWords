@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import { RouteProp, useFocusEffect, useRoute } from '@react-navigation/native';
 import { StackNavigationProp } from '@react-navigation/stack';
 import { Header } from '../../modules/Header';
@@ -55,6 +55,9 @@ export function WordsList({ navigation }: IWordsListScreenProps): JSX.Element {
 
 	const [wordToRemove, setWordToRemove] = useState<TWord | null>(null);
 	const [isAlertVisible, setAlertVisible] = useState<boolean>(false);
+	const [selectedWordIDs, setSelectedWordIDs] = useState<number[]>([]);
+	const [isBulkDeleteAlertVisible, setBulkDeleteAlertVisible] = useState<boolean>(false);
+	const isLongPressRef = useRef<boolean>(false);
 
   useFocusEffect(
     React.useCallback(() => {
@@ -75,15 +78,62 @@ export function WordsList({ navigation }: IWordsListScreenProps): JSX.Element {
 	}
 
 
-	const removeWord = async (word: TWord) => {
-		if (word.id) {
-			setWords(words.filter(item => item.id !== word.id));
-			SWords.removeByID(word.id);
+		const removeWord = async (word: TWord) => {
+			if (word.id) {
+				setWords(words.filter(item => item.id !== word.id));
+				await SWords.removeByID(word.id);
+			}
 		}
-	}
 
-	return (
-		<SafeAreaView style={styles.container}>
+		const isSelectionMode = selectedWordIDs.length > 0;
+
+		const toggleWordSelection = (id?: number) => {
+			if (!id) return;
+			setSelectedWordIDs(prevSelectedIDs => {
+				if (prevSelectedIDs.includes(id)) {
+					return prevSelectedIDs.filter(selectedID => selectedID !== id);
+				}
+				return [...prevSelectedIDs, id];
+			});
+		}
+
+		const openWord = (word: TWord) => {
+			navigation.push(
+				'WordData',
+				{
+					isShowWord: true,
+					wordID: word.id,
+          groupID: groupID,
+				}
+			);
+		}
+
+		const handleWordPress = (word: TWord) => {
+			if (isLongPressRef.current) {
+				isLongPressRef.current = false;
+				return;
+			}
+			if (isSelectionMode) {
+				toggleWordSelection(word.id);
+				return;
+			}
+			openWord(word);
+		}
+
+		const removeSelectedWords = async () => {
+			try {
+				await Promise.all(selectedWordIDs.map((wordID: number) => SWords.removeByID(wordID)));
+				setWords(words.filter((word: TWord) => !word.id || !selectedWordIDs.includes(word.id)));
+				setSelectedWordIDs([]);
+				setBulkDeleteAlertVisible(false);
+			} catch (error) {
+				console.log(error);
+				setBulkDeleteAlertVisible(false);
+			}
+		}
+
+		return (
+			<SafeAreaView style={styles.container}>
 			<Header 
         backPath={() => navigation.goBack()} 
         rightIcon={{
@@ -96,35 +146,60 @@ export function WordsList({ navigation }: IWordsListScreenProps): JSX.Element {
 					}
 				),
         }}
-      />
-			<ScrollView contentContainerStyle={[styles.scrollViewContent, containerStyles]}>
-				{words.map((word: TWord) => (
-					<View key={word.id} style={styles.rowContainer} >
-						<TouchableOpacity
-							style={styles.wordContainer}
-							onPress={() => navigation.push(
-								'WordData',
-								{
-									isShowWord: true,
-									wordID: word.id,
-                  groupID: groupID,
-								}
-							)}
-						>
-							<Text style={styles.wordText}>{word.word}</Text>
-						</TouchableOpacity>
-						<TouchableOpacity style={{ padding: 5 }} onPress={() => {
-							setWordToRemove(word);
-							setAlertVisible(!isAlertVisible);
-						}}>
-							<Icon name={IconsStrings.remove} size={20} color={theme.colors.textMuted} />
-						</TouchableOpacity>
+	      />
+				{isSelectionMode && (
+					<View style={[styles.actions, containerStyles]}>
+						<Button
+							title={`Удалить (${selectedWordIDs.length})`}
+							style={styles.deleteButton}
+							onPress={() => setBulkDeleteAlertVisible(true)}
+						/>
+						<Button
+							title="Отмена"
+							style={styles.cancelSelectionButton}
+							textStyle={styles.cancelSelectionButtonText}
+							onPress={() => setSelectedWordIDs([])}
+						/>
 					</View>
-				))}
-			</ScrollView>
-      <Button
-        style={buttonBottomFreeze}
-        textStyle={buttonBottomFreezeText}
+				)}
+				<ScrollView contentContainerStyle={[styles.scrollViewContent, containerStyles]}>
+					{words.map((word: TWord) => {
+						const isSelected = Boolean(word.id && selectedWordIDs.includes(word.id));
+						return (
+						<TouchableOpacity
+							key={word.id}
+							style={[
+								styles.rowContainer,
+								isSelected && styles.rowContainerSelected,
+							]}
+							onPress={() => handleWordPress(word)}
+							onLongPress={() => {
+								isLongPressRef.current = true;
+								toggleWordSelection(word.id);
+							}}
+						>
+							<View
+								style={styles.wordContainer}
+							>
+								<Text style={styles.wordText}>{word.word}</Text>
+							</View>
+							{isSelected ? (
+								<Text style={styles.selectedMark}>✓</Text>
+							) : (
+							<TouchableOpacity style={{ padding: 5 }} onPress={() => {
+								setWordToRemove(word);
+								setAlertVisible(!isAlertVisible);
+							}}>
+								<Icon name={IconsStrings.remove} size={20} color={theme.colors.textMuted} />
+							</TouchableOpacity>
+							)}
+						</TouchableOpacity>
+					)})}
+				</ScrollView>
+	      {!isSelectionMode && (
+	      <Button
+	        style={buttonBottomFreeze}
+	        textStyle={buttonBottomFreezeText}
         title='Учить'
         onPress={() => navigation.push(
             'WordData',
@@ -132,9 +207,10 @@ export function WordsList({ navigation }: IWordsListScreenProps): JSX.Element {
               wordID: words[0].id,
               groupID: groupID,
             }
-          )}
-      />
-			<Alert
+	          )}
+	      />
+	      )}
+				<Alert
 				isVisible={isAlertVisible}
 				message='Удалить слово из словаря?'
 				onOverlayPress={() => setAlertVisible(!isAlertVisible)}
@@ -152,11 +228,26 @@ export function WordsList({ navigation }: IWordsListScreenProps): JSX.Element {
 							setAlertVisible(!isAlertVisible);
 						}
 					}
-				]}
-			/>
-		</SafeAreaView>
-	);
-}
+					]}
+				/>
+				<Alert
+					isVisible={isBulkDeleteAlertVisible}
+					message="Удалить выбранные слова?"
+					onOverlayPress={() => setBulkDeleteAlertVisible(false)}
+					buttons={[
+						{
+							title: 'Удалить',
+							onPress: () => removeSelectedWords(),
+						},
+						{
+							title: 'Отмена',
+							onPress: () => setBulkDeleteAlertVisible(false),
+						}
+					]}
+				/>
+			</SafeAreaView>
+		);
+	}
 
 const styles = StyleSheet.create({
 	container: {
@@ -171,6 +262,7 @@ const styles = StyleSheet.create({
 	},
 
 	rowContainer: {
+		width: '100%',
 		marginBottom: 8,
 		minHeight: 58,
 		paddingLeft: 14,
@@ -186,8 +278,14 @@ const styles = StyleSheet.create({
 		...theme.shadow,
 	},
 
+	rowContainerSelected: {
+		borderWidth: 2,
+		borderColor: theme.colors.primary,
+		backgroundColor: theme.colors.primarySoft,
+	},
+
 	wordContainer: {
-		flexGrow: 1,
+		flex: 1,
 		paddingVertical: 15,
 	},
 
@@ -202,5 +300,42 @@ const styles = StyleSheet.create({
 		justifyContent: 'center',
 		alignItems: 'center',
 		backgroundColor: 'transparent',
+	},
+
+	selectedMark: {
+		width: 34,
+		height: 28,
+		overflow: 'hidden',
+		borderRadius: theme.radius.xs,
+		backgroundColor: theme.colors.primary,
+		color: theme.colors.surface,
+		fontSize: 16,
+		fontWeight: '700',
+		textAlign: 'center',
+		textAlignVertical: 'center',
+	},
+
+	actions: {
+		flexDirection: 'row',
+		columnGap: 10,
+		marginBottom: 10,
+	},
+
+	deleteButton: {
+		flex: 1,
+		backgroundColor: theme.colors.danger,
+	},
+
+	cancelSelectionButton: {
+		flex: 1,
+		borderWidth: 2,
+		borderColor: theme.colors.primary,
+		backgroundColor: theme.colors.surface,
+	},
+
+	cancelSelectionButtonText: {
+		color: theme.colors.primary,
+		fontSize: 15,
+		fontWeight: '700',
 	},
 });
