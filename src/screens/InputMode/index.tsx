@@ -327,6 +327,13 @@ export function InputMode({ navigation }: IInputModeScreenProps): JSX.Element {
               <View style={styles.correctAnswerBox}>
                 <Text style={styles.correctAnswerTitle}>Правильный ответ</Text>
 
+                {activeMode === 'word' && (
+                  <>
+                    <Text style={styles.correctAnswerWord}>{activeWord.word}</Text>
+                    <View style={styles.translateDivider} />
+                  </>
+                )}
+
                 {activeWord.translate.map((translate, translateIndex, translateArr) => (
                   <React.Fragment key={`correct-translate-${translateIndex}`}>
                     <View style={styles.correctTranslateBlock}>
@@ -490,6 +497,13 @@ const styles = StyleSheet.create({
     fontWeight: '700',
     color: theme.colors.text,
     marginBottom: 12,
+  },
+
+  correctAnswerWord: {
+    fontSize: 18,
+    fontWeight: '800',
+    color: theme.colors.primary,
+    marginBottom: 10,
   },
 
   correctTranslateBlock: {
