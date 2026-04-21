@@ -185,6 +185,7 @@ export default class SWords implements ISwords {
     } else if (groupID !== 0) {
       sql += ` WHERE groups.id = ${groupID}`;
     }
+    sql += ` GROUP BY words.id`;
 
     try {
       const results: ResultSet = await SWords.execute(sql);
@@ -241,13 +242,18 @@ export default class SWords implements ISwords {
         word_translate.context
       FROM words
       LEFT JOIN word_translate on words.id=word_translate.word_id
-      ${groupID ? `
-        LEFT JOIN word_group ON word_group.word_id = words.id
-        LEFT JOIN groups ON groups.id = word_group.group_id
-      ` : ''}
-      ${groupID ? `WHERE groups.id = (?)` : ''}
-      ORDER BY RANDOM()
-      LIMIT 1
+      WHERE words.id = (
+        SELECT words.id
+        FROM words
+        ${groupID ? `
+          LEFT JOIN word_group ON word_group.word_id = words.id
+          LEFT JOIN groups ON groups.id = word_group.group_id
+        ` : ''}
+        ${groupID ? `WHERE groups.id = (?)` : ''}
+        GROUP BY words.id
+        ORDER BY RANDOM()
+        LIMIT 1
+      )
     ;`
     const params = groupID ? [groupID] : [];
 
@@ -670,16 +676,132 @@ export default class SWords implements ISwords {
         await this.checkTable(table);
       }
       const result: TStartDB = await this.getFromJSON();
-      for (const chunk of result) {
-        for (const word of chunk.data) {
-          word.groups = chunk.groups;
-          await SWords.insertWordAndTranslations(word);
-        }
-      }
+      await this.seedStartDB(result);
     } catch (error) {
       console.log(error);
       throw error;
     }
+  }
+
+  private async seedStartDB(chunks: TStartDB): Promise<void> {
+    if (!this.db) {
+      throw new Error('Database connection is not initialized');
+    }
+
+    const wordIDs = new Map<string, number>();
+    const groupLinks = new Set<string>();
+    const translations = new Set<string>();
+
+    return new Promise((resolve, reject) => {
+      try {
+        this.db?.transaction(
+          (tx: Transaction) => {
+            let chunkIndex = 0;
+            let wordIndex = 0;
+
+            const nextWord = () => {
+              while (
+                chunkIndex < chunks.length &&
+                wordIndex >= chunks[chunkIndex].data.length
+              ) {
+                chunkIndex++;
+                wordIndex = 0;
+              }
+
+              if (chunkIndex >= chunks.length) {
+                return;
+              }
+
+              const chunk = chunks[chunkIndex];
+              const word = chunk.data[wordIndex];
+              const groupID = chunk.groups[0];
+              wordIndex++;
+
+              const existingWordID = wordIDs.get(word.word);
+              if (existingWordID) {
+                insertWordData(existingWordID, word, groupID, nextWord);
+                return;
+              }
+
+              tx.executeSql(
+                'INSERT INTO words (word) VALUES (?)',
+                [word.word],
+                (transaction: Transaction, results: ResultSet) => {
+                  const insertedWordID = results.insertId;
+                  wordIDs.set(word.word, insertedWordID);
+                  insertWordData(insertedWordID, word, groupID, nextWord);
+                },
+              );
+            };
+
+            const insertWordData = (
+              wordID: number,
+              word: TWord,
+              groupID: number,
+              done: () => void,
+            ) => {
+              const insertTranslations = () => {
+                const wordTranslations = (word.translate || []).filter(
+                  (translate: TTranslate) => translate.value > '',
+                );
+                insertTranslation(0, wordID, wordTranslations, done);
+              };
+
+              const groupLinkKey = `${groupID}:${wordID}`;
+              if (!groupID || groupLinks.has(groupLinkKey)) {
+                insertTranslations();
+                return;
+              }
+
+              groupLinks.add(groupLinkKey);
+              tx.executeSql(
+                'INSERT INTO word_group (group_id, word_id) VALUES (?, ?)',
+                [groupID, wordID],
+                () => insertTranslations(),
+              );
+            };
+
+            const insertTranslation = (
+              index: number,
+              wordID: number,
+              wordTranslations: TTranslate[],
+              done: () => void,
+            ) => {
+              if (index >= wordTranslations.length) {
+                done();
+                return;
+              }
+
+              const translate = wordTranslations[index];
+              const filtered = (translate.context || []).filter(
+                (ctx: TContext) => ctx.value !== '',
+              );
+              const contextJson = JSON.stringify(filtered);
+              const translationKey = `${wordID}:${translate.value}:${contextJson}`;
+
+              if (translations.has(translationKey)) {
+                insertTranslation(index + 1, wordID, wordTranslations, done);
+                return;
+              }
+
+              translations.add(translationKey);
+              tx.executeSql(
+                'INSERT INTO word_translate (word_id, translate, context) VALUES (?, ?, ?)',
+                [wordID, translate.value, contextJson],
+                () =>
+                  insertTranslation(index + 1, wordID, wordTranslations, done),
+              );
+            };
+
+            nextWord();
+          },
+          (error: any) => reject(error),
+          () => resolve(),
+        );
+      } catch (error) {
+        reject(error);
+      }
+    });
   }
 
   private async getFromJSON(): Promise<TStartDB> {
