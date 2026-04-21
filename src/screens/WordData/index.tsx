@@ -73,11 +73,12 @@ export function WordData({ navigation }: IWordDataScreenProps): JSX.Element {
   };
 
   const nextWord = async (order: "next" | "prev") => {
-    if (!wordID || !groupID) return;
-    let word = await SWords.getNextWordInGroup(wordID, groupID, order);
+    if (!wordID) return;
+    const activeGroupID = groupID ?? 0;
+    let word = await SWords.getNextWordInGroup(wordID, activeGroupID, order);
     if (!word) {
       const extreme = order === "next" ? "first" : "last";
-      word = await SWords.getExtremeWordInGroup(groupID, extreme);
+      word = await SWords.getExtremeWordInGroup(activeGroupID, extreme);
     }
     if (word) {
       setWordID(word.id ?? null);
@@ -215,3 +216,4 @@ const styles = StyleSheet.create({
     lineHeight: 21,
   },
 });
+

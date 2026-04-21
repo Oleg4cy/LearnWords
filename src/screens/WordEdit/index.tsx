@@ -619,3 +619,4 @@ const styles = StyleSheet.create({
   dropdown1RowStyle: { backgroundColor: theme.colors.surface, borderBottomColor: theme.colors.border },
   dropdown1RowTxtStyle: { color: theme.colors.text, textAlign: 'left', fontSize: 15 },
 });
+

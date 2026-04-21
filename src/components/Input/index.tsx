@@ -155,7 +155,7 @@ const styles = StyleSheet.create({
 	},
 
 	textArea: {
-		minHeight: 84,
+		//minHeight: 84,
 		paddingTop: 10,
 	},
 
