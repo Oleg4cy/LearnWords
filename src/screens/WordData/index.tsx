@@ -8,7 +8,8 @@ import { TTranslate, TWord } from "../../storage/words/words.types";
 import IconsStrings from "../../assets/awesomeIcons";
 
 import containerStyles from "../../styles/container";
-import buttonBottomFreeze from "../../styles/buttonBottomFreeze";
+import buttonBottomFreeze, { buttonBottomFreezeText } from "../../styles/buttonBottomFreeze";
+import theme from "../../styles/theme";
 
 import {
   KeyboardAvoidingView,
@@ -101,19 +102,23 @@ export function WordData({ navigation }: IWordDataScreenProps): JSX.Element {
             },
           }}
         />
-        <Button title="Предыдущее слово" onPress={() => nextWord("prev")} />
+        <Button
+          style={styles.prevButton}
+          title="Предыдущее слово"
+          onPress={() => nextWord("prev")}
+        />
         <ScrollView
           contentContainerStyle={[styles.scrollViewContent, containerStyles]}
         >
           <View style={styles.section}>
-            <Text>{wordName}</Text>
+            <Text style={styles.wordTitle}>{wordName}</Text>
             {wordData.map((data, index) => {
               return (
                 <React.Fragment key={`group-${index}`}>
                   <View style={styles.groupWord}>
                     <View key={`translate-${index}`}>
-                      <Text>Перевод:</Text>
-                      <Text>{data.value}</Text>
+                      <Text style={styles.label}>Перевод</Text>
+                      <Text style={styles.value}>{data.value}</Text>
                     </View>
 
                     {data.context &&
@@ -121,8 +126,8 @@ export function WordData({ navigation }: IWordDataScreenProps): JSX.Element {
                         (contextValue: string, contextIndex: number) => {
                           return (
                             <View key={`context-${index}-${contextIndex}`}>
-                              <Text>Контекст:</Text>
-                              <Text>{contextValue}</Text>
+                              <Text style={styles.label}>Контекст</Text>
+                              <Text style={styles.contextValue}>{contextValue}</Text>
                             </View>
                           );
                         },
@@ -135,6 +140,7 @@ export function WordData({ navigation }: IWordDataScreenProps): JSX.Element {
         </ScrollView>
         <Button
           style={buttonBottomFreeze}
+          textStyle={buttonBottomFreezeText}
           title="Следующее слово"
           onPress={() => nextWord("next")}
         />
@@ -146,6 +152,7 @@ export function WordData({ navigation }: IWordDataScreenProps): JSX.Element {
 const styles = StyleSheet.create({
   safeArea: {
     flex: 1,
+    backgroundColor: theme.colors.appBackground,
   },
 
   flex: {
@@ -154,18 +161,57 @@ const styles = StyleSheet.create({
 
   scrollViewContent: {
     flexGrow: 1,
-    alignItems: "center",
+    paddingTop: 10,
+    paddingBottom: 84,
   },
 
   section: {
-    width: "80%",
+    width: "100%",
     paddingBottom: 30,
   },
 
   groupWord: {
-    marginBottom: 30,
-    paddingBottom: 20,
+    marginBottom: 10,
+    padding: 14,
     flexGrow: 1,
-    borderBottomWidth: 1,
+    borderWidth: 1,
+    borderColor: theme.colors.border,
+    borderRadius: theme.radius.sm,
+    backgroundColor: theme.colors.surface,
+    ...theme.shadow,
+  },
+
+  prevButton: {
+    marginHorizontal: 20,
+    marginBottom: 10,
+    backgroundColor: theme.colors.text,
+  },
+
+  wordTitle: {
+    marginBottom: 16,
+    color: theme.colors.text,
+    fontSize: 28,
+    fontWeight: "700",
+  },
+
+  label: {
+    marginBottom: 4,
+    color: theme.colors.textMuted,
+    fontSize: 12,
+    fontWeight: "600",
+  },
+
+  value: {
+    marginBottom: 14,
+    color: theme.colors.text,
+    fontSize: 18,
+    fontWeight: "600",
+  },
+
+  contextValue: {
+    marginBottom: 14,
+    color: theme.colors.text,
+    fontSize: 15,
+    lineHeight: 21,
   },
 });

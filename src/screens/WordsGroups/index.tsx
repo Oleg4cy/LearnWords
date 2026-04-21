@@ -8,6 +8,7 @@ import { TGroup } from '../../storage/words/words.types';
 import IconsStrings from '../../assets/awesomeIcons';
 
 import containerStyles from '../../styles/container';
+import theme from '../../styles/theme';
 
 import {
 	SafeAreaView,
@@ -15,6 +16,7 @@ import {
 	ScrollView,
 	Text,
 	TouchableOpacity,
+	View,
 } from 'react-native';
 
 interface IWordsGroupsScreenProps {
@@ -72,8 +74,11 @@ export function WordsGroups({ navigation }: IWordsGroupsScreenProps): JSX.Elemen
 					}
 				)}
 			>
-				<Text>{name}</Text>
-				<Text>{count}</Text>
+				<View>
+					<Text style={styles.rowTitle}>{name}</Text>
+					<Text style={styles.rowSubtitle}>Слов: {count}</Text>
+				</View>
+				<Text style={styles.rowCount}>{count}</Text>
 			</TouchableOpacity>
 		);
 	}
@@ -107,19 +112,54 @@ export function WordsGroups({ navigation }: IWordsGroupsScreenProps): JSX.Elemen
 const styles = StyleSheet.create({
 	container: {
 		flex: 1,
+		backgroundColor: theme.colors.appBackground,
 	},
 
 	scrollViewContent: {
 		flexGrow: 1,
+		paddingTop: 10,
+		paddingBottom: 24,
 	},
 
 	rowContainer: {
-		marginBottom: 10,
+		marginBottom: 8,
+		minHeight: 64,
+		paddingVertical: 12,
+		paddingHorizontal: 14,
 		display: 'flex',
 		flexDirection: 'row',
 		justifyContent: 'space-between',
 		alignItems: 'center',
+		backgroundColor: theme.colors.surface,
+		borderRadius: theme.radius.sm,
+		borderWidth: 1,
+		borderColor: theme.colors.border,
+		...theme.shadow,
+	},
+
+	rowTitle: {
+		color: theme.colors.text,
+		fontSize: 16,
+		fontWeight: '600',
+	},
+
+	rowSubtitle: {
+		marginTop: 3,
+		color: theme.colors.textMuted,
+		fontSize: 12,
+	},
+
+	rowCount: {
+		minWidth: 34,
+		paddingHorizontal: 9,
+		paddingVertical: 5,
+		overflow: 'hidden',
+		borderRadius: theme.radius.xs,
+		backgroundColor: theme.colors.primarySoft,
+		color: theme.colors.primary,
+		fontSize: 13,
+		fontWeight: '700',
+		textAlign: 'center',
 	},
 });
-
 

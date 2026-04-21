@@ -1,10 +1,10 @@
 import React from 'react';
-import { NavigationProp } from '@react-navigation/native';
+import { StackNavigationProp } from '@react-navigation/stack';
 import { CenteredContent } from '../../modules/CenteredContent';
 import { Button } from '../../components/Button';
 
 interface IDictionaryScreenProps {
-	navigation: NavigationProp<any>,
+	navigation: StackNavigationProp<any>,
 }
 
 export const Dictionary = ({ navigation }: IDictionaryScreenProps): JSX.Element => {
@@ -26,5 +26,4 @@ export const Dictionary = ({ navigation }: IDictionaryScreenProps): JSX.Element 
 		</CenteredContent>
 	);
 };
-
 

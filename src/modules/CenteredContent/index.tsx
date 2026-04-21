@@ -3,6 +3,7 @@ import { StackNavigationProp } from '@react-navigation/stack';
 import { Header } from '../../modules/Header';
 import containerStyles from '../../styles/container';
 import centeredStyles from '../../styles/centeredContent';
+import theme from '../../styles/theme';
 
 import {
 	View,
@@ -31,12 +32,13 @@ export const CenteredContent = ({ navigation, children, header }: IWordsScreenPr
 
 const styles = StyleSheet.create({
 	content: {
-		height: '100%'
+		height: '100%',
+		backgroundColor: theme.colors.appBackground,
 	},
 
 	header: {
 		position: 'absolute',
+		zIndex: 1,
 	}
 });
-
 

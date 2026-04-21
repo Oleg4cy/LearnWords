@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect, useMemo, MutableRefObject } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { useRoute, useFocusEffect } from '@react-navigation/native';
 import { StackNavigationProp } from '@react-navigation/stack';
 import { Button } from '../../components/Button';
@@ -11,7 +11,7 @@ import IconsStrings from '../../assets/awesomeIcons';
 import shuffle from '../../helpers/shuffleArray';
 
 import containerStyles from '../../styles/container';
-import buttonBottomFreeze from '../../styles/buttonBottomFreeze';
+import buttonBottomFreeze, { buttonBottomFreezeText } from '../../styles/buttonBottomFreeze';
 
 import {
   SafeAreaView,
@@ -21,7 +21,10 @@ import {
   KeyboardAvoidingView,
   StyleSheet,
   Platform,
+  TouchableOpacity,
 } from 'react-native';
+import Icon from 'react-native-vector-icons/FontAwesome';
+import theme from '../../styles/theme';
 
 interface IInputModeScreenProps {
   navigation: StackNavigationProp<any>;
@@ -49,7 +52,7 @@ export function InputMode({ navigation }: IInputModeScreenProps): JSX.Element {
   const [checkButtonDisabled, setCheckButtonDisabled] = useState(true);
   const [inputsGroups, setInputsGroups] = useState<TAnswer[]>([emptyAnswer]);
   const [scrollBottom, setScrollBottom] = useState(false);
-  const scrollViewRef = useRef(null);
+  const scrollViewRef = useRef<ScrollView | null>(null);
 
   useEffect(() => {
     if (scrollBottom && scrollViewRef && scrollViewRef.current) {
@@ -166,12 +169,42 @@ export function InputMode({ navigation }: IInputModeScreenProps): JSX.Element {
     });
   }
 
-  const computedAnswerStyles = (answer: TAnswer) => {
-    if (checked) {
-      if (answer.correct) return [styles.correctAnswer, styles.textWhite];
-      return [styles.inCorrectAnswer, styles.textWhite];
-    }
-    return [styles.textBlack];
+  const isModeTabActive = (mode: TMode) => activeMode === mode && !isRandomMode;
+
+  const renderModeTab = (mode: TMode) => {
+    const isActive = isModeTabActive(mode);
+    return (
+      <TouchableOpacity
+        key={`mode_${mode}`}
+        style={[styles.modeTab, isActive ? styles.modeTabActive : styles.modeTabInactive]}
+        onPress={() => changeMode(mode)}
+        disabled={isActive}
+      >
+        <View style={[styles.modeIndicator, isActive ? styles.modeIndicatorActive : styles.modeIndicatorInactive]}>
+          {isActive && <Icon name={IconsStrings.accept} size={10} color={theme.colors.surface} />}
+        </View>
+        <Text style={[styles.modeTabText, isActive ? styles.modeTabTextActive : styles.modeTabTextInactive]}>
+          {mode}
+        </Text>
+      </TouchableOpacity>
+    );
+  }
+
+  const renderRandomTab = () => {
+    return (
+      <TouchableOpacity
+        style={[styles.modeTab, isRandomMode ? styles.modeTabActive : styles.modeTabInactive]}
+        onPress={() => changeModeToRandom()}
+        disabled={isRandomMode}
+      >
+        <View style={[styles.modeIndicator, isRandomMode ? styles.modeIndicatorActive : styles.modeIndicatorInactive]}>
+          {isRandomMode && <Icon name={IconsStrings.accept} size={10} color={theme.colors.surface} />}
+        </View>
+        <Text style={[styles.modeTabText, isRandomMode ? styles.modeTabTextActive : styles.modeTabTextInactive]}>
+          random
+        </Text>
+      </TouchableOpacity>
+    );
   }
 
   const changeMode = (mode: TMode) => {
@@ -211,34 +244,19 @@ export function InputMode({ navigation }: IInputModeScreenProps): JSX.Element {
         <ScrollView ref={scrollViewRef} contentContainerStyle={[styles.scrollViewContent, containerStyles]}>
           <View style={styles.section}>
             <View style={styles.modes}>
-              {modes.map((mode: TMode) => (
-                <Button
-                  key={`mode_${mode}`}
-                  style={styles.modeButton}
-                  textStyle={(activeMode === mode) && !isRandomMode ? styles.modeButtonTextActive : styles.modeButtonText}
-                  title={mode}
-                  onPress={() => changeMode(mode)}
-                  disabled={(activeMode === mode) && !isRandomMode}
-                />
-              ))}
-              <Button
-                style={styles.modeButton}
-                textStyle={isRandomMode ? styles.modeButtonTextActive : styles.modeButtonText}
-                title={'random'}
-                onPress={() => changeModeToRandom()}
-                  disabled={isRandomMode}
-              />
+              {modes.map((mode: TMode) => renderModeTab(mode))}
+              {renderRandomTab()}
             </View>
             <Text style={styles.word}>{getTitle()}</Text>
             {inputsGroups.map((answer: TAnswer, index) => (
               <Input
                 key={`translate-${index}`}
-                style={computedAnswerStyles(answer)}
+                style={styles.answerInput}
                 placeholder="Введите перевод"
                 value={answer.value}
                 onChangeText={(value: string) => updateAnswer(value, index)}
                 onLayout={() => handleLayout()}
-                disabled={!checked}
+                disabled={checked}
                 icon={inputsGroups.length > 1 ? {
                   type: IconsStrings.remove,
                   style: {
@@ -256,6 +274,7 @@ export function InputMode({ navigation }: IInputModeScreenProps): JSX.Element {
       </KeyboardAvoidingView>
       <Button
         style={buttonBottomFreeze}
+        textStyle={buttonBottomFreezeText}
         disabled={checkButtonDisabled}
         title={checked ? "Следующее слово" : "Проверить"}
         onPress={() => {
@@ -276,6 +295,7 @@ export function InputMode({ navigation }: IInputModeScreenProps): JSX.Element {
 const styles = StyleSheet.create({
   safeArea: {
     flex: 1,
+    backgroundColor: theme.colors.appBackground,
   },
 
   flex: {
@@ -284,60 +304,85 @@ const styles = StyleSheet.create({
 
   word: {
     width: '100%',
-    marginBottom: 20,
-    fontSize: 24,
-    fontWeight: 'bold',
+    marginBottom: 22,
+    color: theme.colors.text,
+    fontSize: 22,
+    fontWeight: '700',
     textAlign: 'center',
   },
 
   scrollViewContent: {
     flexGrow: 1,
     alignItems: 'center',
+    paddingTop: 10,
+    paddingBottom: 92,
   },
 
   section: {
-    width: '80%',
+    width: '100%',
     paddingBottom: 45,
   },
 
   modes: {
-    display: 'flex',
     flexDirection: 'row',
-    justifyContent: 'space-between',
+    justifyContent: 'center',
+    columnGap: 8,
+    marginBottom: 22,
   },
 
-  modeButton: {
-    backgroundColor: 'transparent',
+  modeTab: {
+    minHeight: 38,
+    paddingHorizontal: 12,
+    borderRadius: 8,
+    borderWidth: 1,
+    flexDirection: 'row',
+    alignItems: 'center',
+    columnGap: 7,
   },
 
-  modeButtonText: {
-    color: 'black',
+  modeTabActive: {
+    borderColor: theme.colors.primary,
+    backgroundColor: theme.colors.primarySoft,
   },
 
-  modeButtonTextActive: {
-    color: 'blue',
+  modeTabInactive: {
+    borderColor: theme.colors.border,
+    backgroundColor: theme.colors.surface,
   },
 
-  textWhite: {
-    color: 'white',
+  modeIndicator: {
+    width: 16,
+    height: 16,
+    borderRadius: 8,
+    alignItems: 'center',
+    justifyContent: 'center',
   },
 
-  textBlack: {
-    color: 'black',
+  modeIndicatorActive: {
+    backgroundColor: theme.colors.primary,
   },
 
-  correctAnswer: {
-    backgroundColor: 'green',
+  modeIndicatorInactive: {
+    borderWidth: 1,
+    borderColor: theme.colors.borderStrong,
+    backgroundColor: theme.colors.surface,
   },
 
-  inCorrectAnswer: {
-    backgroundColor: 'red',
+  modeTabText: {
+    fontSize: 14,
+    fontWeight: '600',
   },
 
-  answerText: {
-    fontSize: 16,
+  modeTabTextActive: {
+    color: theme.colors.primary,
+  },
+
+  modeTabTextInactive: {
+    color: theme.colors.text,
+  },
+
+  answerInput: {
+    marginBottom: 12,
   },
 
 });
-
-

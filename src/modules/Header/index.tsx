@@ -3,6 +3,7 @@ import { StatusBar, Platform } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import IconsStrings from '../../assets/awesomeIcons';
 import containerStyles from '../../styles/container';
+import theme from '../../styles/theme';
 
 import {
 	SafeAreaView,
@@ -43,20 +44,20 @@ export const Header = ({
 					style={[styles.buttonsPadding, {paddingLeft: 0}]}
 					onPress={() => backPath()}
 				>
-					<Icon name={IconsStrings.arrow} size={24} />
+					<Icon name={IconsStrings.arrow} size={20} color={theme.colors.text} />
 				</TouchableOpacity>
 				}
 				{accept && <TouchableOpacity
 					style={[styles.buttonsPadding, {paddingRight: 0}]}
 					onPress={() => accept()}
 				>
-					<Icon name={IconsStrings.accept} size={24} />
+					<Icon name={IconsStrings.accept} size={20} color={theme.colors.primary} />
 				</TouchableOpacity>}
 				{rightIcon && <TouchableOpacity
 					style={[styles.buttonsPadding, {paddingRight: 0}]}
 					onPress={() => rightIcon.onPress()}
 				>
-					<Icon name={rightIcon.type} size={24} />
+					<Icon name={rightIcon.type} size={20} color={theme.colors.primary} />
 				</TouchableOpacity>}
 			</View>
 		</SafeAreaView>
@@ -66,17 +67,22 @@ export const Header = ({
 const styles = StyleSheet.create({
 	header: {
 		marginTop: getStatusBarMargin(),
-		height: 50,
+		height: 56,
 		display: 'flex',
 		flexDirection: 'row',
 		alignItems: 'center',
 		justifyContent: 'space-between',
+		backgroundColor: theme.colors.appBackground,
 		...containerStyles,
 	},
 
 	buttonsPadding: {
-		padding: 10,
+		width: 40,
+		height: 40,
+		borderRadius: 20,
+		alignItems: 'center',
+		justifyContent: 'center',
+		backgroundColor: theme.colors.surface,
 	},
 });
-
 

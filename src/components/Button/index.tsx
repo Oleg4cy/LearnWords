@@ -1,6 +1,7 @@
 import React from 'react';
 import type { PropsWithChildren } from 'react';
 import Icon from 'react-native-vector-icons/FontAwesome';
+import theme from '../../styles/theme';
 
 import {
 	Text,
@@ -40,13 +41,13 @@ export const Button = ({
 
 	const getIcon = () => {
 		if (!icon) return null;
-		return <Icon name={icon.type} size={16} style={icon.style ?? {}} />;
+		return <Icon name={icon.type} size={16} color={theme.colors.surface} style={icon.style ?? {}} />;
 	};
 
 	const buttonStyles = [
 		styles.button,
+		disabled && styles.disabledButton,
 		style,
-		disabled && styles.disabledButton
 	];
 
 	return (
@@ -62,25 +63,26 @@ export const Button = ({
 
 const styles = StyleSheet.create({
 	button: {
-		borderRadius: 8,
-		padding: 10,
+		minHeight: 46,
+		borderRadius: theme.radius.sm,
+		paddingVertical: 12,
+		paddingHorizontal: 16,
 		overflow: 'hidden',
 		flexDirection: 'row',
 		alignItems: 'center',
 		justifyContent: 'center',
-		backgroundColor: 'blue',
+		backgroundColor: theme.colors.primary,
+		columnGap: 8,
 	},
 
 	disabledButton: {
-		backgroundColor: 'gray',
+		backgroundColor: theme.colors.disabled,
 	},
 
 	buttonText: {
-		color: 'white',
-		fontSize: 16,
-		fontWeight: 'bold',
+		color: theme.colors.surface,
+		fontSize: 15,
+		fontWeight: '600',
 		textAlign: 'center',
 	},
 });
-
-

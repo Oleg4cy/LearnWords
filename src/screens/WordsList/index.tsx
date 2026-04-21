@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useFocusEffect, useRoute } from '@react-navigation/native';
+import { RouteProp, useFocusEffect, useRoute } from '@react-navigation/native';
 import { StackNavigationProp } from '@react-navigation/stack';
 import { Header } from '../../modules/Header';
 import { Alert, TAlertButton } from '../../modules/Alert';
@@ -9,8 +9,9 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 import IconsStrings from '../../assets/awesomeIcons';
 import { Button } from '../../components/Button';
 
-import buttonBottomFreeze from '../../styles/buttonBottomFreeze';
+import buttonBottomFreeze, { buttonBottomFreezeText } from '../../styles/buttonBottomFreeze';
 import containerStyles from '../../styles/container';
+import theme from '../../styles/theme';
 
 import {
 	SafeAreaView,
@@ -25,9 +26,14 @@ interface IWordsListScreenProps {
 	navigation: StackNavigationProp<any>,
 }
 
+type RootStackParamList = {
+	WordsList: {
+		groupID?: number | null,
+	};
+};
 
 export function WordsList({ navigation }: IWordsListScreenProps): JSX.Element {
-	const route = useRoute();
+	const route = useRoute<RouteProp<RootStackParamList, 'WordsList'>>();
 	const [groupID, setGroupID] = useState<number|null>(route.params?.groupID ?? null);
 
 	const startArr: TWord[] = [];
@@ -91,19 +97,20 @@ export function WordsList({ navigation }: IWordsListScreenProps): JSX.Element {
 								}
 							)}
 						>
-							<Text>{word.word}</Text>
+							<Text style={styles.wordText}>{word.word}</Text>
 						</TouchableOpacity>
 						<TouchableOpacity style={{ padding: 5 }} onPress={() => {
 							setWordToRemove(word);
 							setAlertVisible(!isAlertVisible);
 						}}>
-							<Icon name={IconsStrings.remove} size={24} />
+							<Icon name={IconsStrings.remove} size={20} color={theme.colors.textMuted} />
 						</TouchableOpacity>
 					</View>
 				))}
 			</ScrollView>
       <Button
         style={buttonBottomFreeze}
+        textStyle={buttonBottomFreezeText}
         title='Учить'
         onPress={() => navigation.push(
             'WordData',
@@ -140,24 +147,40 @@ export function WordsList({ navigation }: IWordsListScreenProps): JSX.Element {
 const styles = StyleSheet.create({
 	container: {
 		flex: 1,
+		backgroundColor: theme.colors.appBackground,
 	},
 
 	scrollViewContent: {
-    paddingBottom: 50,
+    paddingTop: 10,
+    paddingBottom: 76,
 		flexGrow: 1,
 	},
 
 	rowContainer: {
-		marginBottom: 10,
+		marginBottom: 8,
+		minHeight: 58,
+		paddingLeft: 14,
+		paddingRight: 8,
 		display: 'flex',
 		flexDirection: 'row',
 		justifyContent: 'space-between',
 		alignItems: 'center',
+		backgroundColor: theme.colors.surface,
+		borderRadius: theme.radius.sm,
+		borderWidth: 1,
+		borderColor: theme.colors.border,
+		...theme.shadow,
 	},
 
 	wordContainer: {
 		flexGrow: 1,
-		paddingVertical: 10,
+		paddingVertical: 15,
+	},
+
+	wordText: {
+		color: theme.colors.text,
+		fontSize: 16,
+		fontWeight: '600',
 	},
 
 	removeButton: {
@@ -167,5 +190,3 @@ const styles = StyleSheet.create({
 		backgroundColor: 'transparent',
 	},
 });
-
-

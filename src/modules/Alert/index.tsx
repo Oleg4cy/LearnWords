@@ -1,6 +1,7 @@
 import React from 'react';
 import { ModalWithOverlay } from '../ModalWithOverlay';
 import { Button } from '../../components/Button';
+import theme from '../../styles/theme';
 
 import {
 	View,
@@ -30,7 +31,6 @@ export function Alert({
 	buttons,
 	style,
 	onOverlayPress,
-	x,
 }: IAlertProps): JSX.Element {
 	return (
 		<ModalWithOverlay
@@ -46,6 +46,7 @@ export function Alert({
 					<Button
 						key={index}
 						style={[
+							styles.button,
 							(buttons.length - 1 != index) ? styles.marginBottom : {},
 							button.style
 						]}
@@ -64,28 +65,30 @@ const styles = StyleSheet.create({
 
 	container: {
 		margin: 20,
-		backgroundColor: 'white',
-		borderRadius: 20,
-		padding: 35,
+		backgroundColor: theme.colors.surface,
+		borderRadius: theme.radius.sm,
+		padding: 24,
 		alignItems: 'center',
-		shadowColor: '#000',
-		shadowOffset: {
-			width: 0,
-			height: 2,
-		},
+		borderWidth: 1,
+		borderColor: theme.colors.border,
+		...theme.shadow,
 	},
 
 	message: {
-		fontSize: 22,
+		color: theme.colors.text,
+		fontSize: 18,
+		fontWeight: '600',
 		textAlign: 'center',
+	},
+
+	button: {
+		width: 150,
 	},
 
 
 	textStyle: {
-		color: 'white',
-		fontWeight: 'bold',
+		color: theme.colors.surface,
+		fontWeight: '600',
 		textAlign: 'center',
 	},
 });
-
-

@@ -7,6 +7,7 @@ import { Alert, TAlertButton } from '../../modules/Alert';
 import SWords from '../../storage/words/words.service';
 
 import containerStyles from '../../styles/container';
+import theme from '../../styles/theme';
 
 import {
 	StyleSheet,
@@ -232,11 +233,12 @@ const styles = StyleSheet.create({
 		bottom: 0,
 		left: 0,
 		width: '100%',
-		paddingTop: 30,
+		paddingTop: 24,
 		paddingBottom: 50,
-		backgroundColor: 'white',
+		backgroundColor: theme.colors.surface,
+		borderTopLeftRadius: theme.radius.sm,
+		borderTopRightRadius: theme.radius.sm,
 		zIndex: 100,
 	},
 });
-
 

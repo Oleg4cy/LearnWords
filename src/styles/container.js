@@ -2,7 +2,7 @@ import {StyleSheet} from 'react-native';
 
 const container = StyleSheet.create({
   style: {
-    paddingHorizontal: 24,
+    paddingHorizontal: 20,
   },
 });
 

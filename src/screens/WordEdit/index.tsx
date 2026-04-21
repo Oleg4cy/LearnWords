@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect, } from 'react';
-import { useRoute, useFocusEffect, } from '@react-navigation/native';
+import { RouteProp, useRoute, useFocusEffect, } from '@react-navigation/native';
 import { StackNavigationProp } from '@react-navigation/stack';
 import { Button } from '../../components/Button';
 import { Input } from '../../components/Input';
@@ -14,7 +14,8 @@ import { BottomModalWindow } from '../../modules/BottomModalWindow';
 import { getStatusBarHeight } from 'react-native-iphone-x-helper';
 
 import containerStyles from '../../styles/container';
-import buttonBottomFreeze from '../../styles/buttonBottomFreeze';
+import buttonBottomFreeze, { buttonBottomFreezeText } from '../../styles/buttonBottomFreeze';
+import theme from '../../styles/theme';
 
 import {
   SafeAreaView,
@@ -29,11 +30,19 @@ interface IWordEditScreenProps {
   navigation: StackNavigationProp<any>;
 }
 
+type RootStackParamList = {
+  WordEdit: {
+    isNewWord?: boolean;
+    wordID?: number | null;
+    groupID?: number | null;
+  };
+};
+
 export function WordEdit({ navigation }: IWordEditScreenProps): JSX.Element {
-  const route = useRoute();
-  const isNewWord = route.params.isNewWord ?? false;
-  const wordID = route.params.wordID ?? null;
-  const groupID = route.params.groupID ?? null;
+  const route = useRoute<RouteProp<RootStackParamList, 'WordEdit'>>();
+  const isNewWord = route.params?.isNewWord ?? false;
+  const wordID = route.params?.wordID ?? null;
+  const groupID = route.params?.groupID ?? null;
 
   const inputDataGroup: TTranslate = {
     value: '',
@@ -50,7 +59,7 @@ export function WordEdit({ navigation }: IWordEditScreenProps): JSX.Element {
   const [inputsGroups, setInputsGroup] = useState<TTranslate[]>([inputDataGroup,]);
   const [startScroll, setStartScroll] = useState(true);
   const [scrollBottom, setScrollBottom] = useState(false);
-  const scrollViewRef = useRef(null);
+  const scrollViewRef = useRef<ScrollView | null>(null);
   useEffect(() => {
     if (scrollBottom && scrollViewRef && scrollViewRef.current) {
       scrollViewRef.current.scrollToEnd({ animated: true });
@@ -66,6 +75,7 @@ export function WordEdit({ navigation }: IWordEditScreenProps): JSX.Element {
   });
 
   const fetchWord = async () => {
+    if (!wordID) return;
     const word = await SWords.getByID(wordID);
     if (word) {
       setInputWord(word.word);
@@ -81,13 +91,15 @@ export function WordEdit({ navigation }: IWordEditScreenProps): JSX.Element {
   ) => {
     setInputsGroup(prevInputGroups => {
       const newInputsGroups = [...prevInputGroups];
+      const inputGroup = newInputsGroups[index];
+      if (!inputGroup) return newInputsGroups;
       switch (type) {
         case 'translate':
-          newInputsGroups[index].value = value;
+          inputGroup.value = value;
           break;
         case 'context':
-          if (newInputsGroups[index].context && contextIndex !== undefined) {
-            newInputsGroups[index].context[contextIndex] = value;
+          if (inputGroup.context && contextIndex !== undefined) {
+            inputGroup.context[contextIndex] = value;
           }
           break;
       }
@@ -97,16 +109,18 @@ export function WordEdit({ navigation }: IWordEditScreenProps): JSX.Element {
 
   const addNewContext = (index: number) => {
     const newInputsGroups = [...inputsGroups];
-    if (newInputsGroups[index] && newInputsGroups[index].context) {
-      newInputsGroups[index].context.push('');
+    const inputGroup = newInputsGroups[index];
+    if (inputGroup?.context) {
+      inputGroup.context.push('');
       setInputsGroup(newInputsGroups);
     }
   };
 
   const removeContext = (index: number, contextIndex: number) => {
     const newInputsGroups = [...inputsGroups];
-    if (newInputsGroups[index] && newInputsGroups[index].context) {
-      newInputsGroups[index].context.splice(contextIndex, 1);
+    const inputGroup = newInputsGroups[index];
+    if (inputGroup?.context) {
+      inputGroup.context.splice(contextIndex, 1);
       setInputsGroup(newInputsGroups);
     }
   };
@@ -119,7 +133,9 @@ export function WordEdit({ navigation }: IWordEditScreenProps): JSX.Element {
 
   const removeTranslate = (index: number) => {
     const newInputsGroups = [...inputsGroups];
-    newInputsGroups[index].removed = true;
+    if (newInputsGroups[index]) {
+      newInputsGroups[index].removed = true;
+    }
     setInputsGroup(newInputsGroups);
   };
 
@@ -130,7 +146,7 @@ export function WordEdit({ navigation }: IWordEditScreenProps): JSX.Element {
   };
 
   const updateWord = async (word: TWord) => {
-    word.id = wordID;
+    word.id = wordID ?? undefined;
     await SWords.update(word);
   };
 
@@ -278,7 +294,7 @@ export function WordEdit({ navigation }: IWordEditScreenProps): JSX.Element {
                   type: IconsStrings.remove,
                   style: {
                     position: 'absolute',
-                    right: '-12%',
+                    right: -2,
                     padding: 10,
                   },
                   onPress: () => removeTranslate(index),
@@ -304,7 +320,7 @@ export function WordEdit({ navigation }: IWordEditScreenProps): JSX.Element {
                     type: IconsStrings.cancel,
                     style: {
                       position: 'absolute',
-                      right: '-12%',
+                      right: -2,
                       padding: 10,
                     },
                     onPress: () => removeContext(index, contextIndex),
@@ -340,6 +356,7 @@ export function WordEdit({ navigation }: IWordEditScreenProps): JSX.Element {
             contentContainerStyle={[styles.scrollViewContent, containerStyles]}>
             <View style={styles.section}>
               <Button
+                style={styles.topActionButton}
                 title="Показать список групп"
                 onPress={() => setGroupListVisible(true)}
               />
@@ -358,6 +375,7 @@ export function WordEdit({ navigation }: IWordEditScreenProps): JSX.Element {
         </KeyboardAvoidingView>
         <Button
           style={buttonBottomFreeze}
+          textStyle={buttonBottomFreezeText}
           title="Добавить перевод"
           onPress={() => {
             setStartScroll(false);
@@ -372,11 +390,6 @@ export function WordEdit({ navigation }: IWordEditScreenProps): JSX.Element {
           data={['Egypt', 'Canada', 'Australia', 'Ireland']}
           onSelect={(selectedItem, index) => {
             console.log(selectedItem, index);
-          }}
-          buttonTextAfterSelection={(selectedItem, index) => {
-            // text represented after item is selected
-            // if data array is an array of objects then return selectedItem.property to render after item is selected
-            return selectedItem;
           }}
           rowTextForSelection={(item, index) => {
             // text represented for each item in dropdown
@@ -416,11 +429,12 @@ export function WordEdit({ navigation }: IWordEditScreenProps): JSX.Element {
 
 const styles = StyleSheet.create({
   mb: {
-    marginBottom: 10,
+    marginBottom: 12,
   },
 
   safeArea: {
     flex: 1,
+    backgroundColor: theme.colors.appBackground,
   },
 
   flex: {
@@ -430,6 +444,8 @@ const styles = StyleSheet.create({
   scrollViewContent: {
     flexGrow: 1,
     alignItems: 'center',
+    paddingTop: 10,
+    paddingBottom: 84,
   },
 
   wordRow: {
@@ -439,15 +455,24 @@ const styles = StyleSheet.create({
   },
 
   section: {
-    width: '80%',
+    width: '100%',
     paddingBottom: 30,
   },
 
   groupInputs: {
-    marginBottom: 30,
-    paddingBottom: 20,
+    marginBottom: 16,
+    padding: 14,
     flexGrow: 1,
-    borderBottomWidth: 1,
+    borderWidth: 1,
+    borderColor: theme.colors.border,
+    borderRadius: theme.radius.sm,
+    backgroundColor: theme.colors.surface,
+    ...theme.shadow,
+  },
+
+  topActionButton: {
+    marginBottom: 16,
+    backgroundColor: theme.colors.text,
   },
 
   contextRow: {
@@ -470,22 +495,20 @@ const styles = StyleSheet.create({
     width: '100%',
     paddingTop: 30,
     paddingBottom: 50,
-    backgroundColor: 'white',
+    backgroundColor: theme.colors.surface,
     zIndex: 100,
   },
 
   dropdown1BtnStyle: {
-    width: '80%',
-    height: 50,
-    backgroundColor: '#FFF',
-    borderRadius: 8,
+    width: '100%',
+    height: 48,
+    backgroundColor: theme.colors.surface,
+    borderRadius: theme.radius.sm,
     borderWidth: 1,
-    borderColor: '#444',
+    borderColor: theme.colors.border,
   },
-  dropdown1BtnTxtStyle: { color: '#444', textAlign: 'left' },
-  dropdown1DropdownStyle: { backgroundColor: '#EFEFEF' },
-  dropdown1RowStyle: { backgroundColor: '#EFEFEF', borderBottomColor: '#C5C5C5' },
-  dropdown1RowTxtStyle: { color: '#444', textAlign: 'left' },
+  dropdown1BtnTxtStyle: { color: theme.colors.text, textAlign: 'left', fontSize: 15 },
+  dropdown1DropdownStyle: { backgroundColor: theme.colors.surface },
+  dropdown1RowStyle: { backgroundColor: theme.colors.surface, borderBottomColor: theme.colors.border },
+  dropdown1RowTxtStyle: { color: theme.colors.text, textAlign: 'left', fontSize: 15 },
 });
-
-

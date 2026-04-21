@@ -12,7 +12,7 @@ const centeredContent = StyleSheet.create({
     marginTop: 'auto',
     marginBottom: 'auto',
     justifyContent: 'center',
-    rowGap: 20,
+    rowGap: 12,
   },
 });
 

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Icon from 'react-native-vector-icons/FontAwesome';
+import theme from '../../styles/theme';
 
 import {
 	View,
@@ -56,8 +57,9 @@ export function Input({
 	const inputTemplate = () => {
 		return (
 			<TextInput
-				style={[{ paddingTop: 0, paddingBottom: 0, }]}
+				style={[styles.textInput]}
 				placeholder={placeholder}
+				placeholderTextColor={theme.colors.textSoft}
 				value={value}
 				onChangeText={onChangeText}
 				onFocus={handleFocus}
@@ -65,7 +67,7 @@ export function Input({
 				multiline={multiline}
 				numberOfLines={numberOfLines}
 				onLayout={onLayout}
-				editable={disabled}
+				editable={!disabled}
 			/>
 		);
 	}
@@ -81,7 +83,8 @@ export function Input({
 		return <Icon
 			name={icon.type}
 			size={16}
-			style={[icon.style, { flexShrink: 1 }]}
+			color={theme.colors.textMuted}
+			style={[styles.icon, icon.style]}
 			onPress={() => pressIcon()}
 		/>
 	}
@@ -94,7 +97,6 @@ export function Input({
 					style={[
 						styles.inputStyle,
 						multiline ? styles.textArea : styles.input,
-						style,
 						isFocused && styles.inputFocused,
 						focusedStyle,
 						styles.inputContainer,
@@ -127,8 +129,10 @@ const styles = StyleSheet.create({
 	},
 
 	label: {
-		marginBottom: 8,
-		fontSize: 16,
+		marginBottom: 7,
+		fontSize: 13,
+		fontWeight: '600',
+		color: theme.colors.textMuted,
 	},
 
 	inputRow: {
@@ -139,23 +143,36 @@ const styles = StyleSheet.create({
 
 	inputStyle: {
 		borderWidth: 1,
-		borderColor: 'gray',
-		paddingHorizontal: 10,
+		borderColor: theme.colors.border,
+		borderRadius: theme.radius.sm,
+		backgroundColor: theme.colors.surface,
+		paddingHorizontal: 12,
 		flexGrow: 1,
 	},
 
 	input: {
-		height: 40,
+		height: 44,
 	},
 
 	textArea: {
-		minHeight: 40,
-		paddingTop: 5,
+		minHeight: 84,
+		paddingTop: 10,
 	},
 
 	inputFocused: {
-		borderColor: 'blue',
+		borderColor: theme.colors.primary,
+		backgroundColor: theme.colors.surface,
+	},
+
+	textInput: {
+		paddingTop: 0,
+		paddingBottom: 0,
+		color: theme.colors.text,
+		fontSize: 15,
+	},
+
+	icon: {
+		flexShrink: 1,
 	},
 });
-
 

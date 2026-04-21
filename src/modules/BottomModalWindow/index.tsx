@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { ModalWithOverlay } from '../../modules/ModalWithOverlay';
 
 import containerStyles from '../../styles/container';
+import theme from '../../styles/theme';
 
 import {
 	StyleSheet,
@@ -24,7 +25,7 @@ export function BottomModalWindow({
 
 	const [isBottomModalWindowVisible, setBottomModalWindowVisible] = useState<boolean>(false);
 	const [animatedModalViewHeight, setAnimatedModalViewHeight] = useState(0);
-	const animatedModalViewRef = useRef(null);
+	const animatedModalViewRef = useRef<any | null>(null);
 	const [animationModal] = useState(new Animated.Value(0));
 	const [isShowModal, setShowModal] = useState<boolean>(true);
 
@@ -55,7 +56,7 @@ export function BottomModalWindow({
 
 	const onLayoutModal = () => {
 		if (animatedModalViewRef.current) {
-			animatedModalViewRef.current.measure((x, y, width, height) => {
+			animatedModalViewRef.current.measure((x: number, y: number, width: number, height: number) => {
 				setAnimatedModalViewHeight(height);
 			});
 		}
@@ -97,11 +98,11 @@ const styles = StyleSheet.create({
 		bottom: 0,
 		left: 0,
 		width: '100%',
-		paddingTop: 30,
+		paddingTop: 24,
 		paddingBottom: 50,
-		backgroundColor: 'white',
+		backgroundColor: theme.colors.surface,
+		borderTopLeftRadius: theme.radius.sm,
+		borderTopRightRadius: theme.radius.sm,
 		zIndex: 100,
 	},
 });
-
-

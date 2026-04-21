@@ -8,7 +8,8 @@ import { TTranslate, TWord } from '../../storage/words/words.types';
 import shuffle from '../../helpers/shuffleArray';
 
 import containerStyles from '../../styles/container';
-import buttonBottomFreeze from '../../styles/buttonBottomFreeze';
+import buttonBottomFreeze, { buttonBottomFreezeText } from '../../styles/buttonBottomFreeze';
+import theme from '../../styles/theme';
 
 import {
 	SafeAreaView,
@@ -103,7 +104,7 @@ export function TestMode({ navigation }: ITestModeScreenProps): JSX.Element {
 		setActiveAnswers(prevAnswers => {
 			const updatedAnswers = [...prevAnswers];
 			updatedAnswers[index].selected = !updatedAnswers[index].selected;
-			const selected = activeAnswers.some(answer => answer.selected);
+			const selected = updatedAnswers.some(answer => answer.selected);
 			if (selected) setIsAnyAnswerSelected(true);
 			else setIsAnyAnswerSelected(false);
 			return updatedAnswers;
@@ -173,6 +174,7 @@ export function TestMode({ navigation }: ITestModeScreenProps): JSX.Element {
 			</ScrollView>
 			<Button
 				style={buttonBottomFreeze}
+				textStyle={buttonBottomFreezeText}
 				disabled={!isAnyAnswerSelected}
 				title={checked ? "Следующее слово" : "Проверить"}
 				onPress={() => {
@@ -195,7 +197,8 @@ export function TestMode({ navigation }: ITestModeScreenProps): JSX.Element {
 const styles = StyleSheet.create({
 	safeArea: {
 		flex: 1,
-    justifyContent: 'flex-end',
+		justifyContent: 'flex-end',
+		backgroundColor: theme.colors.appBackground,
 	},
 
 	flex: {
@@ -204,28 +207,41 @@ const styles = StyleSheet.create({
 
 	word: {
 		width: '100%',
+		marginBottom: 18,
+		color: theme.colors.text,
 		fontSize: 24,
-		fontWeight: 'bold',
+		fontWeight: '700',
 		textAlign: 'center',
 	},
 
 	answerContainer: {
-		padding: 10,
-		marginVertical: 5,
+		minHeight: 54,
+		paddingVertical: 14,
+		paddingHorizontal: 16,
+		marginVertical: 6,
 		borderRadius: 8,
+		borderWidth: 1,
+		borderColor: theme.colors.border,
+		backgroundColor: theme.colors.surface,
+		justifyContent: 'center',
 	},
 
 	selectedAnswer: {
-		backgroundColor: 'blue',
-		color: 'white',
+		borderWidth: 2,
+		borderColor: theme.colors.primary,
+		backgroundColor: theme.colors.surface,
 	},
 
 	correctAnswer: {
-		backgroundColor: 'green',
+		borderWidth: 2,
+		borderColor: theme.colors.primary,
+		backgroundColor: theme.colors.primarySoft,
 	},
 
 	inCorrectAnswer: {
-		backgroundColor: 'red',
+		borderWidth: 2,
+		borderColor: theme.colors.danger,
+		backgroundColor: theme.colors.surface,
 	},
 
 	unselectedAnswer: {
@@ -233,12 +249,13 @@ const styles = StyleSheet.create({
 	},
 
 	answerText: {
+		color: theme.colors.text,
 		fontSize: 16,
+		fontWeight: '600',
 	},
 
 	selectedAnswerText: {
-		color: 'white',
+		color: theme.colors.primary,
 	},
+
 });
-
-
