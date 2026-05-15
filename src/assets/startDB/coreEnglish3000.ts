@@ -2,6 +2,10 @@ export type TCoreEnglish3000Translation = {
   language_code: string;
   value: string;
   status: string;
+  context?: string;
+  example?: string;
+  example_translation?: string;
+  topics?: string[];
 };
 
 export type TCoreEnglish3000Entry = {
@@ -12,6 +16,33 @@ export type TCoreEnglish3000Entry = {
   rank: number | null;
   sources: string[];
   translations: TCoreEnglish3000Translation[];
+};
+
+export type TCoreEnglish3000TranslationSeedEntry = {
+  word: string;
+  translations: TCoreEnglish3000Translation[];
+};
+
+export type TCoreEnglish3000TranslationSeed = {
+  meta: {
+    language_code: string;
+    source: string;
+    version: number;
+  };
+  translations: TCoreEnglish3000TranslationSeedEntry[];
+};
+
+export type TCoreEnglish3000Topic = {
+  id: string;
+  name: string;
+  description: string;
+};
+
+export type TCoreEnglish3000TopicSeed = {
+  meta: {
+    version: number;
+  };
+  topics: TCoreEnglish3000Topic[];
 };
 
 export type TCoreEnglish3000Seed = {

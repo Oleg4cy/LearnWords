@@ -1,0 +1,57 @@
+{
+  "meta": {
+    "version": 1
+  },
+  "topics": [
+    {
+      "id": "food",
+      "name": "Food & Cooking",
+      "description": "Food, cooking, meals, ingredients, kitchen vocabulary"
+    },
+    {
+      "id": "travel",
+      "name": "Travel & Transport",
+      "description": "Travel, movement, transport, navigation vocabulary"
+    },
+    {
+      "id": "work",
+      "name": "Work & Business",
+      "description": "Jobs, office, business, finance, work vocabulary"
+    },
+    {
+      "id": "home",
+      "name": "Home & Daily Life",
+      "description": "Home, family, daily routines, household vocabulary"
+    },
+    {
+      "id": "people",
+      "name": "People & Communication",
+      "description": "People, emotions, communication, relationships"
+    },
+    {
+      "id": "health",
+      "name": "Health & Body",
+      "description": "Health, body, medicine, physical condition"
+    },
+    {
+      "id": "education",
+      "name": "Education & Learning",
+      "description": "Education, study, school, learning vocabulary"
+    },
+    {
+      "id": "technology",
+      "name": "Technology & Internet",
+      "description": "Technology, computers, internet, digital vocabulary"
+    },
+    {
+      "id": "nature",
+      "name": "Nature & Environment",
+      "description": "Nature, animals, weather, environment vocabulary"
+    },
+    {
+      "id": "shopping",
+      "name": "Shopping & Money",
+      "description": "Money, shopping, products, commerce vocabulary"
+    }
+  ]
+}

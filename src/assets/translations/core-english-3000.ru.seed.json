@@ -1,0 +1,401 @@
+{
+  "meta": {
+    "language_code": "ru",
+    "source": "manual_seed",
+    "version": 1
+  },
+  "translations": [
+    {
+      "word": "a",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "неопределённый артикль",
+          "context": "Используется перед исчисляемыми существительными в единственном числе, когда речь о чём-то впервые или о любом представителе класса.",
+          "example": "I saw a dog in the park.",
+          "example_translation": "Я видел собаку в парке.",
+          "status": "machine_unverified",
+          "topics": [
+            "education",
+            "people"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "a.m.",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "до полудня",
+          "context": "Используется для обозначения времени с полуночи до полудня (00:00–11:59).",
+          "example": "The meeting is at 9 a.m.",
+          "example_translation": "Встреча в 9 утра.",
+          "status": "machine_unverified",
+          "topics": [
+            "work",
+            "education"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "abandon",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "покидать",
+          "context": "Используется, когда речь о том, чтобы оставить кого-то или что-то навсегда.",
+          "example": "They had to abandon the sinking ship.",
+          "example_translation": "Им пришлось покинуть тонущий корабль.",
+          "status": "machine_unverified",
+          "topics": [
+            "travel",
+            "people"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "abandoned",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "заброшенный",
+          "context": "Описывает место или объект, который был оставлен и больше не используется.",
+          "example": "The abandoned house was falling apart.",
+          "example_translation": "Заброшенный дом разваливался.",
+          "status": "machine_unverified",
+          "topics": [
+            "home",
+            "nature"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "ability",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "способность",
+          "context": "Используется, когда речь о возможности или умении что-то делать.",
+          "example": "She has the ability to learn quickly.",
+          "example_translation": "Она способна быстро учиться.",
+          "status": "machine_unverified",
+          "topics": [
+            "education",
+            "people"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "able",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "способный",
+          "context": "Описывает человека, который может что-то сделать.",
+          "example": "He is able to solve complex problems.",
+          "example_translation": "Он способен решать сложные проблемы.",
+          "status": "machine_unverified",
+          "topics": [
+            "education",
+            "work"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "about",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "о",
+          "context": "Используется для указания темы разговора или текста.",
+          "example": "We talked about the weather.",
+          "example_translation": "Мы говорили о погоде.",
+          "status": "machine_unverified",
+          "topics": [
+            "people",
+            "education"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "above",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "над",
+          "context": "Указывает на положение выше чего-либо.",
+          "example": "The plane flew above the clouds.",
+          "example_translation": "Самолёт летел над облаками.",
+          "status": "machine_unverified",
+          "topics": [
+            "travel",
+            "nature"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "abroad",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "за границей",
+          "context": "Используется, когда речь о нахождении в другой стране.",
+          "example": "She studied abroad for a year.",
+          "example_translation": "Она училась за границей в течение года.",
+          "status": "machine_unverified",
+          "topics": [
+            "travel",
+            "education"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "absence",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "отсутствие",
+          "context": "Используется, когда кто-то или что-то не присутствует.",
+          "example": "His absence was noticed by everyone.",
+          "example_translation": "Его отсутствие было замечено всеми.",
+          "status": "machine_unverified",
+          "topics": [
+            "work",
+            "education"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "absent",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "отсутствующий",
+          "context": "Описывает человека, который не присутствует на мероприятии или занятии.",
+          "example": "Three students were absent today.",
+          "example_translation": "Три студента сегодня отсутствовали.",
+          "status": "machine_unverified",
+          "topics": [
+            "education",
+            "work"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "absolute",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "абсолютный",
+          "context": "Используется для подчёркивания полной степени чего-либо.",
+          "example": "That is an absolute lie.",
+          "example_translation": "Это абсолютная ложь.",
+          "status": "machine_unverified",
+          "topics": [
+            "people",
+            "education"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "absolutely",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "абсолютно",
+          "context": "Используется для усиления утверждения, означает 'полностью' или 'совершенно'.",
+          "example": "I absolutely agree with you.",
+          "example_translation": "Я абсолютно с вами согласен.",
+          "status": "machine_unverified",
+          "topics": [
+            "people"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "absorb",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "впитывать",
+          "context": "Используется, когда жидкость или газ впитывается в материал.",
+          "example": "The sponge absorbs water.",
+          "example_translation": "Губка впитывает воду.",
+          "status": "machine_unverified",
+          "topics": [
+            "nature",
+            "home"
+          ]
+        },
+        {
+          "language_code": "ru",
+          "value": "усваивать",
+          "context": "Используется в переносном смысле, когда речь об усвоении информации.",
+          "example": "It takes time to absorb new information.",
+          "example_translation": "Требуется время, чтобы усвоить новую информацию.",
+          "status": "machine_unverified",
+          "topics": [
+            "education"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "abuse",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "злоупотребление",
+          "context": "Используется, когда речь о неправильном или чрезмерном использовании чего-либо.",
+          "example": "Drug abuse is a serious problem.",
+          "example_translation": "Злоупотребление наркотиками — серьёзная проблема.",
+          "status": "machine_unverified",
+          "topics": [
+            "health"
+          ]
+        },
+        {
+          "language_code": "ru",
+          "value": "оскорбление",
+          "context": "Используется, когда речь о грубом или жестоком обращении с человеком.",
+          "example": "He suffered verbal abuse at work.",
+          "example_translation": "Он страдал от словесных оскорблений на работе.",
+          "status": "machine_unverified",
+          "topics": [
+            "people",
+            "work"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "academic",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "академический",
+          "context": "Используется для описания всего, что связано с образованием, наукой или учебой.",
+          "example": "She has a strong academic background.",
+          "example_translation": "У неё сильное академическое образование.",
+          "status": "machine_unverified",
+          "topics": [
+            "education"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "accent",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "акцент",
+          "context": "Используется, когда речь о произношении, характерном для определённого региона или языка.",
+          "example": "He speaks English with a French accent.",
+          "example_translation": "Он говорит по-английски с французским акцентом.",
+          "status": "machine_unverified",
+          "topics": [
+            "people",
+            "travel"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "accept",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "принимать",
+          "context": "Используется, когда речь о согласии получить что-либо или согласии с чем-либо.",
+          "example": "I accept your invitation.",
+          "example_translation": "Я принимаю ваше приглашение.",
+          "status": "machine_unverified",
+          "topics": [
+            "people"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "acceptable",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "приемлемый",
+          "context": "Используется, когда что-то соответствует стандартам или ожиданиям.",
+          "example": "Your work is acceptable.",
+          "example_translation": "Ваша работа приемлема.",
+          "status": "machine_unverified",
+          "topics": [
+            "work",
+            "education"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "access",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "доступ",
+          "context": "Используется, когда речь о возможности войти куда-либо или получить что-либо.",
+          "example": "Do you have access to the internet?",
+          "example_translation": "У вас есть доступ в интернет?",
+          "status": "machine_unverified",
+          "topics": [
+            "technology"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "accident",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "несчастный случай",
+          "context": "Используется, когда речь о неожиданном событии, причиняющем вред или ущерб.",
+          "example": "He was injured in a car accident.",
+          "example_translation": "Он получил травму в автомобильной аварии.",
+          "status": "machine_unverified",
+          "topics": [
+            "health",
+            "travel"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "accidental",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "случайный",
+          "context": "Используется, когда что-то происходит непреднамеренно.",
+          "example": "The discovery was accidental.",
+          "example_translation": "Открытие было случайным.",
+          "status": "machine_unverified",
+          "topics": [
+            "education",
+            "work"
+          ]
+        }
+      ]
+    }
+  ]
+}
