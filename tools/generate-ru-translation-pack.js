@@ -306,7 +306,7 @@ function getRequiredEnv(name) {
 
 function createTopicPromptSection(topicIndex) {
   return Array.from(topicIndex.values())
-    .map(topic => `- ${topic.id}: ${topic.name}`)
+    .map(topic => `- ${topic.id}: ${topic.name} — ${topic.description}`)
     .join('\n');
 }
 
@@ -356,8 +356,25 @@ function buildDeepSeekPrompt({batchWords, topicIndex}) {
     '- Prefer the most common meaning for beginner/intermediate English learners.',
     '- If a word has several very common meanings, include up to 2 translations.',
     '- topics must contain 1 to 3 topic ids.',
+    '- Use ONLY topic ids from the allowed list.',
+    '- Never invent new topic ids.',
+    '- Prefer the most semantically accurate topics.',
+    '- Do not overuse generic topics like people or education.',
+    '- Grammar or function words should use grammar.',
+    '- Time expressions should use time.',
+    '- Abstract ideas should use abstract.',
+    '- Measurements and quantities should use numbers or measurement.',
+    '- Movement, direction, and location concepts should use movement, or transport when the meaning is specifically about vehicles, traffic, or transport systems.',
     '- Use only allowed topic ids from this list:',
     topicPromptSection,
+    '',
+    'Topic examples:',
+    '- "a" -> ["grammar"]',
+    '- "a.m." -> ["time"]',
+    '- "ability" -> ["abstract", "education"]',
+    '- "above" -> ["movement"]',
+    '- "accept" -> ["communication", "people"]',
+    '- "accident" -> ["transport", "health"]',
     '',
     `Allowed topic ids json: ${JSON.stringify(allowedTopics)}`,
   ].join('\n');
