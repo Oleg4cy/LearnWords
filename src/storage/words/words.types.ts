@@ -1,6 +1,8 @@
 export type TGroup = {
 	name: string,
 	id?: number,
+	parent_id?: number | null,
+	kind?: string,
 	description?: string,
 	context?: string,
 	count?: number,
@@ -17,6 +19,9 @@ export type TTranslate = {
 	value: string;
 	context?: TContext[];
 	groups?: string[] | number[];
+	language_code?: string,
+	status?: string,
+	source?: string,
 	word_id?: number,
 	removed?: boolean,
 	new?: boolean,

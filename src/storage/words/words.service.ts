@@ -16,6 +16,13 @@ type TStartDB = {
   words: TWord[];
 };
 
+const SYSTEM_GROUPS: Array<Pick<TGroup, 'name' | 'kind'>> = [
+  {name: 'Sources', kind: 'system'},
+  {name: 'Levels', kind: 'system'},
+  {name: 'Topics', kind: 'system'},
+  {name: 'System', kind: 'system'},
+];
+
 export default class SWords implements ISwords {
   private isInitialized = false;
   private static instance: ISwords;
@@ -38,6 +45,9 @@ export default class SWords implements ISwords {
         'word_id  INTEGER',
         'translate TEXT',
         'context TEXT',
+        'language_code TEXT NOT NULL DEFAULT \'ru\'',
+        'status TEXT NOT NULL DEFAULT \'seed\'',
+        'source TEXT NULL',
         'FOREIGN KEY (word_id) REFERENCES words(id) ON DELETE CASCADE',
       ]
     },
@@ -48,6 +58,9 @@ export default class SWords implements ISwords {
         'name TEXT',
         'context TEXT',
         'description TEXT NULL',
+        'parent_id INTEGER NULL',
+        'kind TEXT NOT NULL DEFAULT \'custom\'',
+        'FOREIGN KEY (parent_id) REFERENCES groups(id) ON DELETE CASCADE',
       ]
     },
     {
@@ -99,6 +112,7 @@ export default class SWords implements ISwords {
       for (const table of this.tables) {
         await this.checkTable(table);
       }
+      await this.migrateSchema();
       if (!(await this.isSchemaActual())) {
         await this.reset();
         await SWords.execute(`INSERT INTO settings (installed) VALUES (1);`);
@@ -123,10 +137,64 @@ export default class SWords implements ISwords {
   private async isSchemaActual(): Promise<boolean> {
     const wordGroupColumns = await this.getTableColumns('word_group');
     const groupColumns = await this.getTableColumns('groups');
+    const translationColumns = await this.getTableColumns('word_translate');
 
     return (
       wordGroupColumns.includes('translate_id') &&
-      groupColumns.includes('context')
+      groupColumns.includes('context') &&
+      groupColumns.includes('parent_id') &&
+      groupColumns.includes('kind') &&
+      translationColumns.includes('language_code') &&
+      translationColumns.includes('status') &&
+      translationColumns.includes('source')
+    );
+  }
+
+  private async migrateSchema(): Promise<void> {
+    const groupColumns = await this.getTableColumns('groups');
+    const translationColumns = await this.getTableColumns('word_translate');
+
+    if (!groupColumns.includes('parent_id')) {
+      await this.db?.executeSql(
+        `ALTER TABLE groups ADD COLUMN parent_id INTEGER NULL;`,
+      );
+    }
+
+    if (!groupColumns.includes('kind')) {
+      await this.db?.executeSql(
+        `ALTER TABLE groups ADD COLUMN kind TEXT NOT NULL DEFAULT 'custom';`,
+      );
+    }
+
+    if (!translationColumns.includes('language_code')) {
+      await this.db?.executeSql(
+        `ALTER TABLE word_translate ADD COLUMN language_code TEXT NOT NULL DEFAULT 'ru';`,
+      );
+    }
+
+    if (!translationColumns.includes('status')) {
+      await this.db?.executeSql(
+        `ALTER TABLE word_translate ADD COLUMN status TEXT NOT NULL DEFAULT 'seed';`,
+      );
+    }
+
+    if (!translationColumns.includes('source')) {
+      await this.db?.executeSql(
+        `ALTER TABLE word_translate ADD COLUMN source TEXT NULL;`,
+      );
+    }
+
+    await SWords.execute(
+      `UPDATE groups
+       SET kind = COALESCE(NULLIF(kind, ''), 'custom')
+      `,
+    );
+
+    await SWords.execute(
+      `UPDATE word_translate
+       SET language_code = COALESCE(NULLIF(language_code, ''), 'ru'),
+           status = COALESCE(NULLIF(status, ''), 'seed')
+      `,
     );
   }
 
@@ -268,9 +336,12 @@ export default class SWords implements ISwords {
         typeof item === 'string' ? { value: item } : item,
       );
       const translation: TTranslate = {
-        id: result.t_id,
+        id: result.t_id ?? result.id,
         value: result.translate,
         context,
+        language_code: result.language_code ?? 'ru',
+        status: result.status ?? 'seed',
+        source: result.source ?? undefined,
       };
       wordTranslations.push(translation);
     }
@@ -283,7 +354,10 @@ export default class SWords implements ISwords {
       SELECT words.*,
         word_translate.id as t_id,
         word_translate.translate,
-        word_translate.context
+        word_translate.context,
+        word_translate.language_code,
+        word_translate.status,
+        word_translate.source
       FROM words
       LEFT JOIN word_translate ON words.id = word_translate.word_id
       ${groupID ? `
@@ -412,6 +486,9 @@ export default class SWords implements ISwords {
           word_translate.id as t_id,
           word_translate.translate,
           word_translate.context,
+          word_translate.language_code,
+          word_translate.status,
+          word_translate.source,
           CASE WHEN active_word_group.group_id IS NULL THEN 1 ELSE 0 END AS group_priority
       FROM words
       LEFT JOIN word_translate ON words.id = word_translate.word_id
@@ -490,11 +567,21 @@ export default class SWords implements ISwords {
   }
 
   private static async insertTranslation(translate: TTranslate, insertedWordId: number) {
-    const sql = 'INSERT INTO word_translate (word_id, translate, context) VALUES (?, ?, ?)';
+    const sql = `
+      INSERT INTO word_translate (word_id, translate, context, language_code, status, source)
+      VALUES (?, ?, ?, ?, ?, ?)
+    `;
     const { context, value } = translate;
     const filtered = (context || []).filter((ctx: TContext) => ctx.value !== '');
     const contextJson: string = JSON.stringify(filtered);
-    const params = [insertedWordId, value, contextJson];
+    const params = [
+      insertedWordId,
+      value,
+      contextJson,
+      translate.language_code ?? 'ru',
+      translate.status ?? 'approved',
+      translate.source ?? 'manual',
+    ];
     try {
       const results: ResultSet = await SWords.execute(sql, params);
       return results;
@@ -510,10 +597,21 @@ export default class SWords implements ISwords {
   }
 
   private static async updateTranslation(translateData: TTranslate): Promise<ResultSet> {
-    const sql = 'UPDATE word_translate SET translate = ?, context = ? WHERE id = ?';
+    const sql = `
+      UPDATE word_translate
+      SET translate = ?, context = ?, language_code = ?, status = ?, source = ?
+      WHERE id = ?
+    `;
     const filtered = (translateData.context || []).filter((ctx: TContext) => ctx.value !== '');
     const contextJson: string = JSON.stringify(filtered);
-    const params = [translateData.value, contextJson, translateData.id];
+    const params = [
+      translateData.value,
+      contextJson,
+      translateData.language_code ?? 'ru',
+      translateData.status ?? 'approved',
+      translateData.source ?? 'manual',
+      translateData.id,
+    ];
     return SWords.execute(sql, params);
   }
 
@@ -677,11 +775,20 @@ export default class SWords implements ISwords {
     }
   }
 
-  static async createGroup(name: string, description?: string, context?: string): Promise<string | number> {
-    const selectQuery = 'SELECT COUNT(*) AS count FROM groups WHERE name = ?';
-    const selectParams = [name];
-    const insertQuery = 'INSERT INTO groups (name, description, context) VALUES (?, ?, ?)';
-    const insertParams = [name, description ?? null, context ?? null];
+  static async createGroup(
+    name: string,
+    description?: string,
+    context?: string,
+    parentID?: number | null,
+    kind: string = 'custom',
+  ): Promise<string | number> {
+    const hasParent = typeof parentID === 'number';
+    const selectQuery = hasParent
+      ? 'SELECT COUNT(*) AS count FROM groups WHERE name = ? AND parent_id = ?'
+      : 'SELECT COUNT(*) AS count FROM groups WHERE name = ? AND parent_id IS NULL';
+    const selectParams = hasParent ? [name, parentID] : [name];
+    const insertQuery = 'INSERT INTO groups (name, description, context, parent_id, kind) VALUES (?, ?, ?, ?, ?)';
+    const insertParams = [name, description ?? null, context ?? null, parentID ?? null, kind];
 
     try {
       const resultsSelect: ResultSet = await SWords.execute(selectQuery, selectParams);
@@ -786,15 +893,20 @@ export default class SWords implements ISwords {
                 translationID++;
                 translations.add(translationKey);
                 tx.executeSql(
-                  'INSERT INTO word_translate (id, word_id, translate, context) VALUES (?, ?, ?, ?)',
-                  [currentTranslationID, wordID, translate.value, contextJson],
+                  `
+                    INSERT INTO word_translate
+                    (id, word_id, translate, context, language_code, status, source)
+                    VALUES (?, ?, ?, ?, ?, ?, ?)
+                  `,
+                  [currentTranslationID, wordID, translate.value, contextJson, 'ru', 'seed', 'seed'],
                 );
 
                 const translateGroups = (translate.groups || [])
                   .map((group) => typeof group === 'number' ? group : groupIDs.get(group))
                   .filter((groupID): groupID is number => typeof groupID === 'number' && groupID > 0);
+                const uniqueTranslateGroups = [...new Set(translateGroups)];
 
-                for (const groupID of translateGroups) {
+                for (const groupID of uniqueTranslateGroups) {
                   tx.executeSql(
                     'INSERT OR IGNORE INTO word_group (group_id, word_id, translate_id, translate, context) VALUES (?, ?, ?, ?, ?)',
                     [groupID, wordID, currentTranslationID, translate.value, contextJson],
@@ -814,15 +926,19 @@ export default class SWords implements ISwords {
 
   private async getFromJSON(): Promise<TStartDB> {
     try {
+      await this.ensureSystemGroups();
+
       const groups: (TGroup & {id: number})[] = [];
       for (const group of startDBDictionary.groups) {
         const groupIDResult = await SWords.createGroup(
           group.name,
           group.description,
           group.context,
+          null,
+          'legacy',
         );
         if (typeof groupIDResult === 'number') {
-          groups.push({...group, id: groupIDResult});
+          groups.push({...group, id: groupIDResult, parent_id: null, kind: 'legacy'});
         }
       }
 
@@ -833,6 +949,22 @@ export default class SWords implements ISwords {
     } catch (error) {
       console.log(error);
       throw error;
+    }
+  }
+
+  private async ensureSystemGroups(): Promise<void> {
+    for (const group of SYSTEM_GROUPS) {
+      const result = await SWords.createGroup(
+        group.name,
+        undefined,
+        undefined,
+        null,
+        group.kind ?? 'system',
+      );
+
+      if (result !== 'duplicate' && typeof result !== 'number') {
+        throw new Error(`Failed to create system group "${group.name}"`);
+      }
     }
   }
 }
