@@ -40505,6 +40505,356 @@
           ]
         }
       ]
+    },
+    {
+      "word": "rice",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "рис",
+          "context": "Используется для обозначения зерновой культуры, употребляемой в пищу.",
+          "example": "We eat rice almost every day.",
+          "example_translation": "Мы едим рис почти каждый день.",
+          "status": "machine_unverified",
+          "topics": [
+            "food"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "rich",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "богатый",
+          "context": "Используется для описания человека, имеющего много денег или имущества.",
+          "example": "He is a rich businessman.",
+          "example_translation": "Он богатый бизнесмен.",
+          "status": "machine_unverified",
+          "topics": [
+            "money",
+            "people"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "rid",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "избавляться",
+          "context": "Используется в значении освобождения от чего-то нежелательного.",
+          "example": "I want to get rid of this old furniture.",
+          "example_translation": "Я хочу избавиться от этой старой мебели.",
+          "status": "machine_unverified",
+          "topics": [
+            "abstract",
+            "home"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "ride",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "ездить",
+          "context": "Используется для обозначения передвижения на транспортном средстве или животном.",
+          "example": "She likes to ride a bicycle.",
+          "example_translation": "Она любит ездить на велосипеде.",
+          "status": "machine_unverified",
+          "topics": [
+            "transport",
+            "movement"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "rider",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "всадник",
+          "context": "Используется для обозначения человека, который едет верхом на лошади.",
+          "example": "The rider fell off the horse.",
+          "example_translation": "Всадник упал с лошади.",
+          "status": "machine_unverified",
+          "topics": [
+            "animals",
+            "sports"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "ridiculous",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "смехотворный",
+          "context": "Используется для описания чего-то абсурдного или нелепого.",
+          "example": "That's a ridiculous idea.",
+          "example_translation": "Это смехотворная идея.",
+          "status": "machine_unverified",
+          "topics": [
+            "abstract",
+            "emotions"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "riding",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "верховая езда",
+          "context": "Используется для обозначения вида спорта или активности.",
+          "example": "Riding is a popular hobby.",
+          "example_translation": "Верховая езда — популярное хобби.",
+          "status": "machine_unverified",
+          "topics": [
+            "sports",
+            "animals"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "right",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "правильный",
+          "context": "Используется для обозначения чего-то верного или соответствующего истине.",
+          "example": "Your answer is right.",
+          "example_translation": "Ваш ответ правильный.",
+          "status": "machine_unverified",
+          "topics": [
+            "abstract",
+            "education"
+          ]
+        },
+        {
+          "language_code": "ru",
+          "value": "право",
+          "context": "Используется для обозначения юридического или морального права.",
+          "example": "Everyone has the right to education.",
+          "example_translation": "Каждый имеет право на образование.",
+          "status": "machine_unverified",
+          "topics": [
+            "law",
+            "society"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "rightly",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "справедливо",
+          "context": "Используется для обозначения правильности или обоснованности действия.",
+          "example": "He was rightly praised for his work.",
+          "example_translation": "Его справедливо хвалили за работу.",
+          "status": "machine_unverified",
+          "topics": [
+            "abstract",
+            "society"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "ring 1",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "кольцо",
+          "context": "Используется для обозначения ювелирного украшения, надеваемого на палец.",
+          "example": "She wears a gold ring.",
+          "example_translation": "Она носит золотое кольцо.",
+          "status": "machine_unverified",
+          "topics": [
+            "shopping",
+            "people"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "rise",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "подниматься",
+          "context": "Используется для обозначения движения вверх или увеличения.",
+          "example": "The sun rises in the east.",
+          "example_translation": "Солнце встает на востоке.",
+          "status": "machine_unverified",
+          "topics": [
+            "movement",
+            "nature"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "risk",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "риск",
+          "context": "Используется для обозначения возможности опасности или неудачи.",
+          "example": "There is a risk of rain today.",
+          "example_translation": "Сегодня есть риск дождя.",
+          "status": "machine_unverified",
+          "topics": [
+            "abstract",
+            "weather"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "rival",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "соперник",
+          "context": "Используется для обозначения человека или группы, конкурирующих с кем-то.",
+          "example": "They are rivals in business.",
+          "example_translation": "Они соперники в бизнесе.",
+          "status": "machine_unverified",
+          "topics": [
+            "business",
+            "people"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "river",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "река",
+          "context": "Используется для обозначения естественного водного потока.",
+          "example": "The river flows through the city.",
+          "example_translation": "Река протекает через город.",
+          "status": "machine_unverified",
+          "topics": [
+            "nature",
+            "travel"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "road",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "дорога",
+          "context": "Используется для обозначения пути для движения транспорта.",
+          "example": "The road is very busy.",
+          "example_translation": "Дорога очень загружена.",
+          "status": "machine_unverified",
+          "topics": [
+            "transport",
+            "travel"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "rob",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "грабить",
+          "context": "Используется для обозначения кражи с применением силы или угроз.",
+          "example": "They tried to rob the bank.",
+          "example_translation": "Они пытались ограбить банк.",
+          "status": "machine_unverified",
+          "topics": [
+            "law",
+            "money"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "rock",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "камень",
+          "context": "Используется для обозначения твердого минерального материала.",
+          "example": "He threw a rock into the lake.",
+          "example_translation": "Он бросил камень в озеро.",
+          "status": "machine_unverified",
+          "topics": [
+            "nature"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "role",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "роль",
+          "context": "Используется для обозначения функции или положения в какой-либо ситуации.",
+          "example": "She plays an important role in the team.",
+          "example_translation": "Она играет важную роль в команде.",
+          "status": "machine_unverified",
+          "topics": [
+            "work",
+            "people"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "roll",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "катить",
+          "context": "Используется для обозначения движения предмета вращением.",
+          "example": "The ball rolled down the hill.",
+          "example_translation": "Мяч покатился вниз с холма.",
+          "status": "machine_unverified",
+          "topics": [
+            "movement",
+            "sports"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "romantic",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "романтический",
+          "context": "Используется для описания чего-то, связанного с любовью или романтикой.",
+          "example": "They had a romantic dinner.",
+          "example_translation": "У них был романтический ужин.",
+          "status": "machine_unverified",
+          "topics": [
+            "emotions",
+            "people"
+          ]
+        }
+      ]
     }
   ]
 }

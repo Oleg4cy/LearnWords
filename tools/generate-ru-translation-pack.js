@@ -544,6 +544,8 @@ function buildDeepSeekGenerationPrompt({batchWords, topicIndex}) {
   const allowedTopics = Array.from(topicIndex.keys());
   const topicPromptSection = createTopicPromptSection(topicIndex);
   const systemPrompt = [
+    'Never invent new topic ids.',
+    'If a concept looks like crime, police, court, punishment, justice, or legal rules, use "law"; do not return "crime".',
     'Return only valid json.',
     'Do not include markdown.',
     'Do not include prose.',
@@ -633,6 +635,8 @@ function buildDeepSeekReclassificationPrompt({batchEntries, topicIndex}) {
   const payloadPreview = batchEntries.map(buildReclassificationPayloadEntry);
   const systemPrompt = [
     'Return only valid json.',
+    'Never invent new topic ids.',
+    'If a concept looks like crime, police, court, punishment, justice, or legal rules, use "law"; do not return "crime".',
     'Do not include markdown.',
     'Do not include prose.',
     'You reclassify topic ids for an existing Russian vocabulary translation pack.',
@@ -1259,3 +1263,4 @@ main().catch(error => {
   console.error(error.message);
   process.exit(1);
 });
+
