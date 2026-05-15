@@ -34363,6 +34363,6148 @@
           ]
         }
       ]
+    },
+    {
+      "word": "photocopy",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "ксерокопия",
+          "context": "Используется для обозначения копии документа, сделанной на копировальном аппарате.",
+          "example": "I need to make a photocopy of this contract.",
+          "example_translation": "Мне нужно сделать ксерокопию этого контракта.",
+          "status": "machine_unverified",
+          "topics": [
+            "technology",
+            "work"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "photograph",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "фотография",
+          "context": "Используется для обозначения изображения, полученного с помощью фотоаппарата.",
+          "example": "She took a beautiful photograph of the sunset.",
+          "example_translation": "Она сделала красивую фотографию заката.",
+          "status": "machine_unverified",
+          "topics": [
+            "art",
+            "technology"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "photographer",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "фотограф",
+          "context": "Человек, который профессионально занимается фотографией.",
+          "example": "The photographer captured the wedding perfectly.",
+          "example_translation": "Фотограф идеально запечатлел свадьбу.",
+          "status": "machine_unverified",
+          "topics": [
+            "art",
+            "work"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "photography",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "фотография",
+          "context": "Искусство или процесс создания фотографий.",
+          "example": "He studied photography at university.",
+          "example_translation": "Он изучал фотографию в университете.",
+          "status": "machine_unverified",
+          "topics": [
+            "art",
+            "education"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "phrase",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "фраза",
+          "context": "Группа слов, выражающая законченную мысль или часть предложения.",
+          "example": "Can you explain this phrase to me?",
+          "example_translation": "Не могли бы вы объяснить мне эту фразу?",
+          "status": "machine_unverified",
+          "topics": [
+            "communication",
+            "grammar"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "physical",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "физический",
+          "context": "Относящийся к телу или материальному миру, в отличие от умственного или духовного.",
+          "example": "Regular exercise improves physical health.",
+          "example_translation": "Регулярные упражнения улучшают физическое здоровье.",
+          "status": "machine_unverified",
+          "topics": [
+            "body",
+            "health"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "physically",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "физически",
+          "context": "Наречие, указывающее на физический аспект или тело.",
+          "example": "He is physically strong but emotionally fragile.",
+          "example_translation": "Он физически силён, но эмоционально хрупок.",
+          "status": "machine_unverified",
+          "topics": [
+            "body",
+            "health"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "physics",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "физика",
+          "context": "Наука, изучающая материю, энергию и их взаимодействие.",
+          "example": "Physics is my favorite subject.",
+          "example_translation": "Физика — мой любимый предмет.",
+          "status": "machine_unverified",
+          "topics": [
+            "science",
+            "education"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "piano",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "пианино",
+          "context": "Музыкальный инструмент с клавишами.",
+          "example": "She plays the piano beautifully.",
+          "example_translation": "Она красиво играет на пианино.",
+          "status": "machine_unverified",
+          "topics": [
+            "music"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "pick",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "выбирать",
+          "context": "Выбрать что-то из нескольких вариантов.",
+          "example": "Please pick a color for the walls.",
+          "example_translation": "Пожалуйста, выбери цвет для стен.",
+          "status": "machine_unverified",
+          "topics": [
+            "abstract",
+            "shopping"
+          ]
+        },
+        {
+          "language_code": "ru",
+          "value": "срывать",
+          "context": "Срывать цветы, фрукты или другие растения.",
+          "example": "We went to pick apples in the orchard.",
+          "example_translation": "Мы пошли срывать яблоки в саду.",
+          "status": "machine_unverified",
+          "topics": [
+            "nature",
+            "food"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "picture",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "картина",
+          "context": "Изображение, нарисованное или напечатанное на поверхности.",
+          "example": "There is a beautiful picture on the wall.",
+          "example_translation": "На стене висит красивая картина.",
+          "status": "machine_unverified",
+          "topics": [
+            "art"
+          ]
+        },
+        {
+          "language_code": "ru",
+          "value": "фотография",
+          "context": "Изображение, полученное с помощью фотоаппарата.",
+          "example": "I took a picture of the Eiffel Tower.",
+          "example_translation": "Я сделал фотографию Эйфелевой башни.",
+          "status": "machine_unverified",
+          "topics": [
+            "art",
+            "technology"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "piece",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "кусок",
+          "context": "Часть целого, отделённая от него.",
+          "example": "Can I have a piece of cake?",
+          "example_translation": "Можно мне кусок торта?",
+          "status": "machine_unverified",
+          "topics": [
+            "food",
+            "measurement"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "pig",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "свинья",
+          "context": "Домашнее животное, разводимое для мяса и сала.",
+          "example": "The pig is sleeping in the mud.",
+          "example_translation": "Свинья спит в грязи.",
+          "status": "machine_unverified",
+          "topics": [
+            "animals",
+            "food"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "pile",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "куча",
+          "context": "Группа предметов, сложенных друг на друга.",
+          "example": "There is a pile of books on the desk.",
+          "example_translation": "На столе лежит куча книг.",
+          "status": "machine_unverified",
+          "topics": [
+            "home",
+            "measurement"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "pill",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "таблетка",
+          "context": "Небольшое твёрдое лекарство, которое проглатывают.",
+          "example": "Take one pill after each meal.",
+          "example_translation": "Принимайте по одной таблетке после каждого приёма пищи.",
+          "status": "machine_unverified",
+          "topics": [
+            "health"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "pilot",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "пилот",
+          "context": "Человек, управляющий самолётом или вертолётом.",
+          "example": "The pilot announced that we would land soon.",
+          "example_translation": "Пилот объявил, что мы скоро приземлимся.",
+          "status": "machine_unverified",
+          "topics": [
+            "transport",
+            "work"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "pin",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "булавка",
+          "context": "Тонкий металлический стержень с острым концом, используемый для скрепления ткани.",
+          "example": "She used a pin to fasten the dress.",
+          "example_translation": "Она использовала булавку, чтобы закрепить платье.",
+          "status": "machine_unverified",
+          "topics": [
+            "home",
+            "body"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "pink",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "розовый",
+          "context": "Цвет, средний между красным и белым.",
+          "example": "She wore a pink dress to the party.",
+          "example_translation": "Она надела розовое платье на вечеринку.",
+          "status": "machine_unverified",
+          "topics": [
+            "art",
+            "shopping"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "pint",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "пинта",
+          "context": "Единица измерения объёма жидкости, равная 0,568 литра в Великобритании или 0,473 литра в США.",
+          "example": "I'd like a pint of beer, please.",
+          "example_translation": "Мне, пожалуйста, пинту пива.",
+          "status": "machine_unverified",
+          "topics": [
+            "measurement",
+            "food"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "pipe",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "труба",
+          "context": "Полый цилиндр для транспортировки жидкостей или газов.",
+          "example": "The water pipe burst in the basement.",
+          "example_translation": "В подвале лопнула водопроводная труба.",
+          "status": "machine_unverified",
+          "topics": [
+            "home",
+            "technology"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "pitch",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "подача",
+          "context": "Используется в спорте, когда мяч бросают или подают.",
+          "example": "The pitcher made a fast pitch.",
+          "example_translation": "Питчер сделал быструю подачу.",
+          "status": "machine_unverified",
+          "topics": [
+            "sports"
+          ]
+        },
+        {
+          "language_code": "ru",
+          "value": "высота",
+          "context": "Используется в музыке для описания высоты звука.",
+          "example": "The pitch of the note was very high.",
+          "example_translation": "Высота ноты была очень высокой.",
+          "status": "machine_unverified",
+          "topics": [
+            "music"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "place",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "место",
+          "context": "Общее слово для обозначения местоположения или пространства.",
+          "example": "This is a nice place to relax.",
+          "example_translation": "Это хорошее место, чтобы расслабиться.",
+          "status": "machine_unverified",
+          "topics": [
+            "movement",
+            "home"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "plain",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "равнина",
+          "context": "Используется для описания плоской местности.",
+          "example": "The plain stretched for miles.",
+          "example_translation": "Равнина простиралась на много миль.",
+          "status": "machine_unverified",
+          "topics": [
+            "nature"
+          ]
+        },
+        {
+          "language_code": "ru",
+          "value": "простой",
+          "context": "Используется для описания чего-то без украшений или сложностей.",
+          "example": "She wore a plain white dress.",
+          "example_translation": "На ней было простое белое платье.",
+          "status": "machine_unverified",
+          "topics": [
+            "abstract"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "plan",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "план",
+          "context": "Используется для обозначения намерений или заранее продуманных действий.",
+          "example": "We need a plan for the project.",
+          "example_translation": "Нам нужен план для проекта.",
+          "status": "machine_unverified",
+          "topics": [
+            "work",
+            "abstract"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "plane",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "самолёт",
+          "context": "Используется для обозначения воздушного транспортного средства.",
+          "example": "The plane took off at noon.",
+          "example_translation": "Самолёт взлетел в полдень.",
+          "status": "machine_unverified",
+          "topics": [
+            "transport",
+            "travel"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "planet",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "планета",
+          "context": "Используется для обозначения небесных тел, вращающихся вокруг звезды.",
+          "example": "Earth is the third planet from the Sun.",
+          "example_translation": "Земля — третья планета от Солнца.",
+          "status": "machine_unverified",
+          "topics": [
+            "science",
+            "nature"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "planning",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "планирование",
+          "context": "Используется для обозначения процесса разработки планов.",
+          "example": "Planning is essential for success.",
+          "example_translation": "Планирование необходимо для успеха.",
+          "status": "machine_unverified",
+          "topics": [
+            "work",
+            "abstract"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "plant",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "растение",
+          "context": "Используется для обозначения живого организма, обычно растущего в земле.",
+          "example": "Water the plant every day.",
+          "example_translation": "Поливайте растение каждый день.",
+          "status": "machine_unverified",
+          "topics": [
+            "nature",
+            "home"
+          ]
+        },
+        {
+          "language_code": "ru",
+          "value": "завод",
+          "context": "Используется для обозначения промышленного предприятия.",
+          "example": "The car plant employs thousands of workers.",
+          "example_translation": "Автомобильный завод нанимает тысячи рабочих.",
+          "status": "machine_unverified",
+          "topics": [
+            "work",
+            "business"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "plastic",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "пластик",
+          "context": "Используется для обозначения синтетического материала.",
+          "example": "The bottle is made of plastic.",
+          "example_translation": "Бутылка сделана из пластика.",
+          "status": "machine_unverified",
+          "topics": [
+            "technology",
+            "home"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "plate",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "тарелка",
+          "context": "Используется для обозначения посуды, из которой едят.",
+          "example": "Put the food on a plate.",
+          "example_translation": "Положи еду на тарелку.",
+          "status": "machine_unverified",
+          "topics": [
+            "home",
+            "food"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "platform",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "платформа",
+          "context": "Используется для обозначения возвышенной поверхности или цифровой среды.",
+          "example": "The train leaves from platform 3.",
+          "example_translation": "Поезд отправляется с платформы 3.",
+          "status": "machine_unverified",
+          "topics": [
+            "transport",
+            "technology"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "play",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "играть",
+          "context": "Используется для обозначения участия в играх или занятиях для удовольствия.",
+          "example": "Children play in the park.",
+          "example_translation": "Дети играют в парке.",
+          "status": "machine_unverified",
+          "topics": [
+            "sports",
+            "people"
+          ]
+        },
+        {
+          "language_code": "ru",
+          "value": "пьеса",
+          "context": "Используется для обозначения драматического произведения в театре.",
+          "example": "We saw a wonderful play last night.",
+          "example_translation": "Вчера вечером мы посмотрели замечательную пьесу.",
+          "status": "machine_unverified",
+          "topics": [
+            "art",
+            "media"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "player",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "игрок",
+          "context": "Используется для обозначения участника игры или спорта.",
+          "example": "He is a talented football player.",
+          "example_translation": "Он талантливый футболист.",
+          "status": "machine_unverified",
+          "topics": [
+            "sports",
+            "people"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "pleasant",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "приятный",
+          "context": "Используется для описания чего-то, что доставляет удовольствие.",
+          "example": "The weather is very pleasant today.",
+          "example_translation": "Сегодня очень приятная погода.",
+          "status": "machine_unverified",
+          "topics": [
+            "emotions",
+            "weather"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "please",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "пожалуйста",
+          "context": "Используется как вежливая просьба или приглашение.",
+          "example": "Please pass the salt.",
+          "example_translation": "Пожалуйста, передай соль.",
+          "status": "machine_unverified",
+          "topics": [
+            "grammar",
+            "communication"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "pleased",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "довольный",
+          "context": "Используется для выражения удовлетворения или радости.",
+          "example": "I am pleased with the result.",
+          "example_translation": "Я доволен результатом.",
+          "status": "machine_unverified",
+          "topics": [
+            "emotions"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "pleasure",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "удовольствие",
+          "context": "Используется для обозначения чувства радости или удовлетворения.",
+          "example": "It was a pleasure to meet you.",
+          "example_translation": "Было приятно познакомиться с вами.",
+          "status": "machine_unverified",
+          "topics": [
+            "emotions",
+            "people"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "plenty",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "много",
+          "context": "Используется для обозначения большого количества чего-либо.",
+          "example": "There is plenty of food for everyone.",
+          "example_translation": "Еды хватит на всех.",
+          "status": "machine_unverified",
+          "topics": [
+            "numbers",
+            "abstract"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "plot",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "сюжет",
+          "context": "Используется для обозначения последовательности событий в книге или фильме.",
+          "example": "The plot of the movie was very exciting.",
+          "example_translation": "Сюжет фильма был очень захватывающим.",
+          "status": "machine_unverified",
+          "topics": [
+            "media",
+            "art"
+          ]
+        },
+        {
+          "language_code": "ru",
+          "value": "участок",
+          "context": "Используется для обозначения небольшого участка земли.",
+          "example": "They bought a plot of land to build a house.",
+          "example_translation": "Они купили участок земли, чтобы построить дом.",
+          "status": "machine_unverified",
+          "topics": [
+            "nature",
+            "home"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "plug",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "вилка",
+          "context": "Используется для обозначения электрического штекера.",
+          "example": "Insert the plug into the socket.",
+          "example_translation": "Вставьте вилку в розетку.",
+          "status": "machine_unverified",
+          "topics": [
+            "technology",
+            "home"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "plug in",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "включать в розетку",
+          "context": "Используется для подключения электрического устройства к источнику питания.",
+          "example": "Please plug in the laptop.",
+          "example_translation": "Пожалуйста, включи ноутбук в розетку.",
+          "status": "machine_unverified",
+          "topics": [
+            "technology",
+            "home"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "plus 1",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "плюс один",
+          "context": "Используется в математике или при подсчёте для обозначения добавления единицы.",
+          "example": "Two plus one equals three.",
+          "example_translation": "Два плюс один равно три.",
+          "status": "machine_unverified",
+          "topics": [
+            "numbers"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "pocket",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "карман",
+          "context": "Небольшое отделение в одежде для хранения мелких предметов.",
+          "example": "He put his keys in his pocket.",
+          "example_translation": "Он положил ключи в карман.",
+          "status": "machine_unverified",
+          "topics": [
+            "home",
+            "body"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "poem",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "стихотворение",
+          "context": "Литературное произведение в стихотворной форме.",
+          "example": "She wrote a beautiful poem.",
+          "example_translation": "Она написала красивое стихотворение.",
+          "status": "machine_unverified",
+          "topics": [
+            "art",
+            "communication"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "poetry",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "поэзия",
+          "context": "Литературный жанр, использующий ритм и образность.",
+          "example": "He enjoys reading poetry.",
+          "example_translation": "Он любит читать поэзию.",
+          "status": "machine_unverified",
+          "topics": [
+            "art",
+            "communication"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "point",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "точка",
+          "context": "Место или позиция в пространстве или на шкале.",
+          "example": "The temperature reached the boiling point.",
+          "example_translation": "Температура достигла точки кипения.",
+          "status": "machine_unverified",
+          "topics": [
+            "measurement",
+            "movement"
+          ]
+        },
+        {
+          "language_code": "ru",
+          "value": "смысл",
+          "context": "Основная идея или цель высказывания.",
+          "example": "What is the point of this story?",
+          "example_translation": "В чём смысл этой истории?",
+          "status": "machine_unverified",
+          "topics": [
+            "communication",
+            "abstract"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "pointed",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "острый",
+          "context": "Имеющий заострённый конец.",
+          "example": "Be careful with the pointed knife.",
+          "example_translation": "Будь осторожен с острым ножом.",
+          "status": "machine_unverified",
+          "topics": [
+            "home",
+            "body"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "poison",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "яд",
+          "context": "Вещество, вызывающее отравление или смерть.",
+          "example": "Some mushrooms contain poison.",
+          "example_translation": "Некоторые грибы содержат яд.",
+          "status": "machine_unverified",
+          "topics": [
+            "health",
+            "science"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "poisonous",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "ядовитый",
+          "context": "Содержащий яд или способный отравить.",
+          "example": "That snake is poisonous.",
+          "example_translation": "Эта змея ядовита.",
+          "status": "machine_unverified",
+          "topics": [
+            "animals",
+            "health"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "pole",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "шест",
+          "context": "Длинный тонкий кусок дерева или металла.",
+          "example": "He used a pole to reach the fruit.",
+          "example_translation": "Он использовал шест, чтобы достать фрукты.",
+          "status": "machine_unverified",
+          "topics": [
+            "home",
+            "movement"
+          ]
+        },
+        {
+          "language_code": "ru",
+          "value": "полюс",
+          "context": "Один из концов оси Земли или магнита.",
+          "example": "The North Pole is very cold.",
+          "example_translation": "Северный полюс очень холодный.",
+          "status": "machine_unverified",
+          "topics": [
+            "nature",
+            "science"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "police",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "полиция",
+          "context": "Орган, отвечающий за поддержание правопорядка.",
+          "example": "The police arrived quickly.",
+          "example_translation": "Полиция прибыла быстро.",
+          "status": "machine_unverified",
+          "topics": [
+            "law",
+            "society"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "policy",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "политика",
+          "context": "Набор правил или принципов, принятых организацией или правительством.",
+          "example": "The company has a strict policy on smoking.",
+          "example_translation": "У компании строгая политика в отношении курения.",
+          "status": "machine_unverified",
+          "topics": [
+            "business",
+            "politics"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "polish",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "полировать",
+          "context": "Делать поверхность гладкой и блестящей.",
+          "example": "She polished her shoes until they shone.",
+          "example_translation": "Она полировала туфли, пока они не заблестели.",
+          "status": "machine_unverified",
+          "topics": [
+            "home",
+            "work"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "polite",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "вежливый",
+          "context": "Проявляющий уважение и хорошие манеры.",
+          "example": "It's polite to say thank you.",
+          "example_translation": "Вежливо говорить спасибо.",
+          "status": "machine_unverified",
+          "topics": [
+            "people",
+            "communication"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "political",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "политический",
+          "context": "Относящийся к политике или управлению государством.",
+          "example": "They discussed political issues.",
+          "example_translation": "Они обсуждали политические вопросы.",
+          "status": "machine_unverified",
+          "topics": [
+            "politics",
+            "society"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "politically",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "политически",
+          "context": "В отношении политики или с политической точки зрения.",
+          "example": "The country is politically stable.",
+          "example_translation": "Страна политически стабильна.",
+          "status": "machine_unverified",
+          "topics": [
+            "politics"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "politician",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "политик",
+          "context": "Человек, занимающийся политической деятельностью.",
+          "example": "The politician gave a speech.",
+          "example_translation": "Политик произнёс речь.",
+          "status": "machine_unverified",
+          "topics": [
+            "politics",
+            "people"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "politics",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "политика",
+          "context": "Деятельность, связанная с управлением государством или обществом.",
+          "example": "He is interested in politics.",
+          "example_translation": "Он интересуется политикой.",
+          "status": "machine_unverified",
+          "topics": [
+            "politics",
+            "society"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "pollution",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "загрязнение",
+          "context": "Вредные вещества в окружающей среде.",
+          "example": "Air pollution is a serious problem.",
+          "example_translation": "Загрязнение воздуха — серьёзная проблема.",
+          "status": "machine_unverified",
+          "topics": [
+            "nature",
+            "health"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "pool",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "бассейн",
+          "context": "Искусственный водоём для плавания.",
+          "example": "We swam in the pool.",
+          "example_translation": "Мы плавали в бассейне.",
+          "status": "machine_unverified",
+          "topics": [
+            "sports",
+            "home"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "poor",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "бедный",
+          "context": "Используется для описания человека или семьи, у которых мало денег.",
+          "example": "Many poor families cannot afford proper healthcare.",
+          "example_translation": "Многие бедные семьи не могут позволить себе надлежащее медицинское обслуживание.",
+          "status": "machine_unverified",
+          "topics": [
+            "money",
+            "society"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "pop",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "лопаться",
+          "context": "Используется, когда что-то издает короткий громкий звук или взрывается.",
+          "example": "The balloon popped when I touched it.",
+          "example_translation": "Воздушный шар лопнул, когда я дотронулся до него.",
+          "status": "machine_unverified",
+          "topics": [
+            "body",
+            "home"
+          ]
+        },
+        {
+          "language_code": "ru",
+          "value": "поп-музыка",
+          "context": "Сокращение от «популярная музыка»; используется для обозначения современной коммерческой музыки.",
+          "example": "I like pop music from the 80s.",
+          "example_translation": "Мне нравится поп-музыка 80-х.",
+          "status": "machine_unverified",
+          "topics": [
+            "music"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "popular",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "популярный",
+          "context": "Используется, когда что-то или кто-то нравится многим людям.",
+          "example": "This song is very popular among teenagers.",
+          "example_translation": "Эта песня очень популярна среди подростков.",
+          "status": "machine_unverified",
+          "topics": [
+            "people",
+            "media"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "population",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "население",
+          "context": "Используется для обозначения количества людей, живущих в определённой местности.",
+          "example": "The population of the city is over two million.",
+          "example_translation": "Население города составляет более двух миллионов.",
+          "status": "machine_unverified",
+          "topics": [
+            "society",
+            "numbers"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "port",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "порт",
+          "context": "Используется для обозначения места, где корабли загружают и разгружают грузы.",
+          "example": "The ship arrived at the port early in the morning.",
+          "example_translation": "Корабль прибыл в порт рано утром.",
+          "status": "machine_unverified",
+          "topics": [
+            "transport",
+            "travel"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "pose",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "поза",
+          "context": "Используется для описания положения тела, особенно при фотографировании или рисовании.",
+          "example": "She struck a pose for the camera.",
+          "example_translation": "Она приняла позу для камеры.",
+          "status": "machine_unverified",
+          "topics": [
+            "art",
+            "body"
+          ]
+        },
+        {
+          "language_code": "ru",
+          "value": "представлять (собой)",
+          "context": "Используется, когда что-то создаёт проблему или угрозу.",
+          "example": "The storm poses a threat to the coastal towns.",
+          "example_translation": "Шторм представляет угрозу для прибрежных городов.",
+          "status": "machine_unverified",
+          "topics": [
+            "abstract",
+            "nature"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "position",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "положение",
+          "context": "Используется для указания места, где находится объект или человек.",
+          "example": "Can you show me your position on the map?",
+          "example_translation": "Можете показать мне ваше положение на карте?",
+          "status": "machine_unverified",
+          "topics": [
+            "movement",
+            "measurement"
+          ]
+        },
+        {
+          "language_code": "ru",
+          "value": "должность",
+          "context": "Используется для обозначения работы или роли в организации.",
+          "example": "She applied for a position in the marketing department.",
+          "example_translation": "Она подала заявку на должность в отделе маркетинга.",
+          "status": "machine_unverified",
+          "topics": [
+            "work",
+            "business"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "positive",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "положительный",
+          "context": "Используется для описания хороших, оптимистичных или благоприятных вещей.",
+          "example": "Try to stay positive even in difficult situations.",
+          "example_translation": "Старайтесь оставаться позитивными даже в сложных ситуациях.",
+          "status": "machine_unverified",
+          "topics": [
+            "emotions",
+            "abstract"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "possess",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "обладать",
+          "context": "Используется, когда кто-то имеет или владеет чем-то, часто абстрактным.",
+          "example": "He possesses great talent for music.",
+          "example_translation": "Он обладает большим талантом к музыке.",
+          "status": "machine_unverified",
+          "topics": [
+            "abstract",
+            "people"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "possession",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "владение",
+          "context": "Используется для обозначения состояния владения чем-либо.",
+          "example": "The car is in my possession.",
+          "example_translation": "Машина находится в моём владении.",
+          "status": "machine_unverified",
+          "topics": [
+            "law",
+            "money"
+          ]
+        },
+        {
+          "language_code": "ru",
+          "value": "вещь",
+          "context": "Используется во множественном числе для обозначения личных вещей.",
+          "example": "Please take all your possessions with you.",
+          "example_translation": "Пожалуйста, заберите все свои вещи.",
+          "status": "machine_unverified",
+          "topics": [
+            "home",
+            "people"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "possibility",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "возможность",
+          "context": "Используется, когда что-то может произойти или быть правдой.",
+          "example": "There is a possibility of rain tomorrow.",
+          "example_translation": "Завтра есть вероятность дождя.",
+          "status": "machine_unverified",
+          "topics": [
+            "abstract",
+            "weather"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "possible",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "возможный",
+          "context": "Используется для описания того, что может произойти или быть сделано.",
+          "example": "Is it possible to finish this work today?",
+          "example_translation": "Возможно ли закончить эту работу сегодня?",
+          "status": "machine_unverified",
+          "topics": [
+            "abstract",
+            "work"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "possibly",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "возможно",
+          "context": "Используется для выражения неуверенности или предположения.",
+          "example": "He is possibly the best candidate for the job.",
+          "example_translation": "Он, возможно, лучший кандидат на эту работу.",
+          "status": "machine_unverified",
+          "topics": [
+            "grammar",
+            "abstract"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "post",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "почта",
+          "context": "Используется для обозначения системы доставки писем и посылок.",
+          "example": "I sent the letter by post.",
+          "example_translation": "Я отправил письмо по почте.",
+          "status": "machine_unverified",
+          "topics": [
+            "communication",
+            "travel"
+          ]
+        },
+        {
+          "language_code": "ru",
+          "value": "публиковать",
+          "context": "Используется в интернете для размещения сообщений или контента.",
+          "example": "She posted a photo on Instagram.",
+          "example_translation": "Она опубликовала фото в Instagram.",
+          "status": "machine_unverified",
+          "topics": [
+            "internet",
+            "communication"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "post office",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "почтовое отделение",
+          "context": "Используется для обозначения здания или учреждения, где отправляют и получают почту.",
+          "example": "I need to go to the post office to buy stamps.",
+          "example_translation": "Мне нужно сходить в почтовое отделение, чтобы купить марки.",
+          "status": "machine_unverified",
+          "topics": [
+            "communication",
+            "travel"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "pot",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "кастрюля",
+          "context": "Используется для обозначения глубокой ёмкости для приготовления пищи.",
+          "example": "She boiled water in a pot.",
+          "example_translation": "Она вскипятила воду в кастрюле.",
+          "status": "machine_unverified",
+          "topics": [
+            "food",
+            "home"
+          ]
+        },
+        {
+          "language_code": "ru",
+          "value": "горшок",
+          "context": "Используется для обозначения ёмкости для выращивания растений.",
+          "example": "I planted a flower in a pot.",
+          "example_translation": "Я посадил цветок в горшок.",
+          "status": "machine_unverified",
+          "topics": [
+            "home",
+            "nature"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "potato",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "картофель",
+          "context": "Используется для обозначения овоща, который широко используется в кулинарии.",
+          "example": "I like to eat baked potatoes.",
+          "example_translation": "Я люблю есть печёный картофель.",
+          "status": "machine_unverified",
+          "topics": [
+            "food"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "potential",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "потенциал",
+          "context": "Используется для описания скрытых возможностей или способностей.",
+          "example": "She has the potential to become a great leader.",
+          "example_translation": "У неё есть потенциал стать великим лидером.",
+          "status": "machine_unverified",
+          "topics": [
+            "abstract",
+            "people"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "pound",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "фунт",
+          "context": "Используется как единица веса (около 454 граммов) или денежная единица Великобритании.",
+          "example": "The baby weighed eight pounds at birth.",
+          "example_translation": "Ребёнок весил восемь фунтов при рождении.",
+          "status": "machine_unverified",
+          "topics": [
+            "measurement",
+            "money"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "pour",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "наливать",
+          "context": "Используется, когда жидкость переливается из одного сосуда в другой.",
+          "example": "Please pour me a glass of water.",
+          "example_translation": "Пожалуйста, налей мне стакан воды.",
+          "status": "machine_unverified",
+          "topics": [
+            "food",
+            "home"
+          ]
+        },
+        {
+          "language_code": "ru",
+          "value": "лить (о дожде)",
+          "context": "Используется, когда идёт сильный дождь.",
+          "example": "It is pouring outside, take an umbrella.",
+          "example_translation": "На улице льёт как из ведра, возьми зонт.",
+          "status": "machine_unverified",
+          "topics": [
+            "weather"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "poverty",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "бедность",
+          "context": "Состояние, когда у человека не хватает денег на основные нужды.",
+          "example": "Many people live in poverty.",
+          "example_translation": "Многие люди живут в бедности.",
+          "status": "machine_unverified",
+          "topics": [
+            "money",
+            "society"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "powder",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "порошок",
+          "context": "Сыпучее вещество, состоящее из мелких частиц.",
+          "example": "She put some powder on her face.",
+          "example_translation": "Она нанесла немного пудры на лицо.",
+          "status": "machine_unverified",
+          "topics": [
+            "body",
+            "home"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "power",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "власть",
+          "context": "Способность контролировать или влиять на других.",
+          "example": "The president has a lot of power.",
+          "example_translation": "У президента большая власть.",
+          "status": "machine_unverified",
+          "topics": [
+            "politics",
+            "society"
+          ]
+        },
+        {
+          "language_code": "ru",
+          "value": "энергия",
+          "context": "Электричество или топливо, используемые для работы машин.",
+          "example": "The power went out last night.",
+          "example_translation": "Вчера вечером отключили электричество.",
+          "status": "machine_unverified",
+          "topics": [
+            "technology",
+            "science"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "powerful",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "могущественный",
+          "context": "Имеющий большую власть или влияние.",
+          "example": "She is a powerful leader.",
+          "example_translation": "Она могущественный лидер.",
+          "status": "machine_unverified",
+          "topics": [
+            "politics",
+            "people"
+          ]
+        },
+        {
+          "language_code": "ru",
+          "value": "мощный",
+          "context": "Обладающий большой силой или энергией.",
+          "example": "This car has a powerful engine.",
+          "example_translation": "У этой машины мощный двигатель.",
+          "status": "machine_unverified",
+          "topics": [
+            "technology",
+            "transport"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "practical",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "практичный",
+          "context": "Полезный и подходящий для реального использования.",
+          "example": "This bag is very practical for travel.",
+          "example_translation": "Эта сумка очень практична для путешествий.",
+          "status": "machine_unverified",
+          "topics": [
+            "home",
+            "travel"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "practically",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "практически",
+          "context": "Почти, в значительной степени.",
+          "example": "It's practically impossible to finish on time.",
+          "example_translation": "Это практически невозможно закончить вовремя.",
+          "status": "machine_unverified",
+          "topics": [
+            "abstract"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "practice",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "практика",
+          "context": "Повторение действия для улучшения навыка.",
+          "example": "Practice makes perfect.",
+          "example_translation": "Практика ведёт к совершенству.",
+          "status": "machine_unverified",
+          "topics": [
+            "education",
+            "sports"
+          ]
+        },
+        {
+          "language_code": "ru",
+          "value": "тренировка",
+          "context": "Занятие для отработки навыков, особенно в спорте или музыке.",
+          "example": "I have soccer practice after school.",
+          "example_translation": "После школы у меня тренировка по футболу.",
+          "status": "machine_unverified",
+          "topics": [
+            "sports",
+            "education"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "praise",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "хвалить",
+          "context": "Выражать одобрение или восхищение.",
+          "example": "The teacher praised the student for his hard work.",
+          "example_translation": "Учитель похвалил ученика за его усердную работу.",
+          "status": "machine_unverified",
+          "topics": [
+            "communication",
+            "education"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "prayer",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "молитва",
+          "context": "Обращение к Богу или божеству.",
+          "example": "She said a prayer before bed.",
+          "example_translation": "Она прочитала молитву перед сном.",
+          "status": "machine_unverified",
+          "topics": [
+            "society",
+            "abstract"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "precise",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "точный",
+          "context": "Очень точный, без ошибок.",
+          "example": "We need precise measurements.",
+          "example_translation": "Нам нужны точные измерения.",
+          "status": "machine_unverified",
+          "topics": [
+            "measurement",
+            "science"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "precisely",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "точно",
+          "context": "Используется для подчёркивания точности или согласия.",
+          "example": "That's precisely what I meant.",
+          "example_translation": "Именно это я и имел в виду.",
+          "status": "machine_unverified",
+          "topics": [
+            "communication",
+            "abstract"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "predict",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "предсказывать",
+          "context": "Говорить, что произойдёт в будущем.",
+          "example": "The weather forecast predicts rain tomorrow.",
+          "example_translation": "Прогноз погоды предсказывает дождь завтра.",
+          "status": "machine_unverified",
+          "topics": [
+            "weather",
+            "science"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "prefer",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "предпочитать",
+          "context": "Выбирать что-то как более желательное.",
+          "example": "I prefer tea to coffee.",
+          "example_translation": "Я предпочитаю чай кофе.",
+          "status": "machine_unverified",
+          "topics": [
+            "food",
+            "people"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "preference",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "предпочтение",
+          "context": "Выбор или склонность к чему-то.",
+          "example": "She has a preference for classical music.",
+          "example_translation": "У неё предпочтение к классической музыке.",
+          "status": "machine_unverified",
+          "topics": [
+            "music",
+            "people"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "pregnant",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "беременная",
+          "context": "Состояние женщины, ожидающей ребёнка.",
+          "example": "She is three months pregnant.",
+          "example_translation": "Она беременна на третьем месяце.",
+          "status": "machine_unverified",
+          "topics": [
+            "health",
+            "family"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "premises",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "помещение",
+          "context": "Здание или территория, используемые для определённой цели.",
+          "example": "No smoking on the premises.",
+          "example_translation": "На территории запрещено курение.",
+          "status": "machine_unverified",
+          "topics": [
+            "work",
+            "home"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "preparation",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "подготовка",
+          "context": "Действия, чтобы быть готовым к чему-то.",
+          "example": "Preparation for the exam takes time.",
+          "example_translation": "Подготовка к экзамену требует времени.",
+          "status": "machine_unverified",
+          "topics": [
+            "education",
+            "work"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "prepare",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "готовить",
+          "context": "Делать что-то готовым к использованию или событию.",
+          "example": "I need to prepare dinner.",
+          "example_translation": "Мне нужно приготовить ужин.",
+          "status": "machine_unverified",
+          "topics": [
+            "food",
+            "home"
+          ]
+        },
+        {
+          "language_code": "ru",
+          "value": "подготавливать",
+          "context": "Готовиться к чему-то заранее.",
+          "example": "She prepared for the meeting.",
+          "example_translation": "Она подготовилась к встрече.",
+          "status": "machine_unverified",
+          "topics": [
+            "work",
+            "education"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "prepared",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "готовый",
+          "context": "Находящийся в состоянии готовности.",
+          "example": "We are prepared for the worst.",
+          "example_translation": "Мы готовы к худшему.",
+          "status": "machine_unverified",
+          "topics": [
+            "abstract",
+            "work"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "presence",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "присутствие",
+          "context": "Факт нахождения в определённом месте.",
+          "example": "Your presence is requested at the meeting.",
+          "example_translation": "Ваше присутствие требуется на собрании.",
+          "status": "machine_unverified",
+          "topics": [
+            "people",
+            "work"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "present",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "подарок",
+          "context": "Используется, когда речь о вещи, которую дарят.",
+          "example": "I bought a present for her birthday.",
+          "example_translation": "Я купил подарок на её день рождения.",
+          "status": "machine_unverified",
+          "topics": [
+            "shopping",
+            "people"
+          ]
+        },
+        {
+          "language_code": "ru",
+          "value": "присутствовать",
+          "context": "Используется, когда речь о нахождении где-либо.",
+          "example": "All students must present at the meeting.",
+          "example_translation": "Все студенты должны присутствовать на собрании.",
+          "status": "machine_unverified",
+          "topics": [
+            "people",
+            "education"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "presentation",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "презентация",
+          "context": "Используется, когда речь о выступлении с демонстрацией материала.",
+          "example": "She gave a presentation on climate change.",
+          "example_translation": "Она сделала презентацию об изменении климата.",
+          "status": "machine_unverified",
+          "topics": [
+            "education",
+            "work"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "preserve",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "сохранять",
+          "context": "Используется, когда речь о сохранении чего-либо в исходном состоянии.",
+          "example": "We need to preserve the environment.",
+          "example_translation": "Нам нужно сохранять окружающую среду.",
+          "status": "machine_unverified",
+          "topics": [
+            "nature",
+            "abstract"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "president",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "президент",
+          "context": "Используется, когда речь о главе государства или организации.",
+          "example": "The president gave a speech.",
+          "example_translation": "Президент произнёс речь.",
+          "status": "machine_unverified",
+          "topics": [
+            "politics",
+            "work"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "press",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "нажимать",
+          "context": "Используется, когда речь о нажатии на кнопку или поверхность.",
+          "example": "Press the button to start.",
+          "example_translation": "Нажмите кнопку, чтобы начать.",
+          "status": "machine_unverified",
+          "topics": [
+            "technology",
+            "body"
+          ]
+        },
+        {
+          "language_code": "ru",
+          "value": "пресса",
+          "context": "Используется, когда речь о средствах массовой информации.",
+          "example": "The press reported the news.",
+          "example_translation": "Пресса сообщила новости.",
+          "status": "machine_unverified",
+          "topics": [
+            "media",
+            "communication"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "pressure",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "давление",
+          "context": "Используется, когда речь о физическом или психологическом давлении.",
+          "example": "He felt pressure to succeed.",
+          "example_translation": "Он чувствовал давление, чтобы добиться успеха.",
+          "status": "machine_unverified",
+          "topics": [
+            "abstract",
+            "emotions"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "presumably",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "предположительно",
+          "context": "Используется, когда речь о предположении, основанном на вероятности.",
+          "example": "Presumably, he will arrive on time.",
+          "example_translation": "Предположительно, он прибудет вовремя.",
+          "status": "machine_unverified",
+          "topics": [
+            "abstract",
+            "communication"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "pretend",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "притворяться",
+          "context": "Используется, когда речь о создании ложного впечатления.",
+          "example": "The children pretend to be pirates.",
+          "example_translation": "Дети притворяются пиратами.",
+          "status": "machine_unverified",
+          "topics": [
+            "people",
+            "emotions"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "pretty",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "довольно",
+          "context": "Используется как наречие для усиления степени.",
+          "example": "It's pretty cold today.",
+          "example_translation": "Сегодня довольно холодно.",
+          "status": "machine_unverified",
+          "topics": [
+            "grammar",
+            "abstract"
+          ]
+        },
+        {
+          "language_code": "ru",
+          "value": "красивый",
+          "context": "Используется, когда речь о привлекательной внешности.",
+          "example": "She has a pretty face.",
+          "example_translation": "У неё красивое лицо.",
+          "status": "machine_unverified",
+          "topics": [
+            "people",
+            "art"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "prevent",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "предотвращать",
+          "context": "Используется, когда речь о недопущении чего-либо.",
+          "example": "Vaccines prevent diseases.",
+          "example_translation": "Вакцины предотвращают болезни.",
+          "status": "machine_unverified",
+          "topics": [
+            "health",
+            "abstract"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "previous",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "предыдущий",
+          "context": "Используется, когда речь о чём-то, что было раньше.",
+          "example": "I read the previous chapter.",
+          "example_translation": "Я прочитал предыдущую главу.",
+          "status": "machine_unverified",
+          "topics": [
+            "time",
+            "abstract"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "previously",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "ранее",
+          "context": "Используется, когда речь о времени до настоящего момента.",
+          "example": "He previously worked as a teacher.",
+          "example_translation": "Ранее он работал учителем.",
+          "status": "machine_unverified",
+          "topics": [
+            "time",
+            "work"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "price",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "цена",
+          "context": "Используется, когда речь о стоимости товара или услуги.",
+          "example": "The price of bread has increased.",
+          "example_translation": "Цена на хлеб выросла.",
+          "status": "machine_unverified",
+          "topics": [
+            "money",
+            "shopping"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "pride",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "гордость",
+          "context": "Используется, когда речь о чувстве удовлетворения от достижений.",
+          "example": "She felt pride in her work.",
+          "example_translation": "Она испытывала гордость за свою работу.",
+          "status": "machine_unverified",
+          "topics": [
+            "emotions",
+            "people"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "priest",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "священник",
+          "context": "Используется, когда речь о религиозном служителе.",
+          "example": "The priest led the prayer.",
+          "example_translation": "Священник вёл молитву.",
+          "status": "machine_unverified",
+          "topics": [
+            "people",
+            "society"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "primarily",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "главным образом",
+          "context": "Используется для указания на основную причину или цель.",
+          "example": "The book is primarily for children.",
+          "example_translation": "Книга предназначена главным образом для детей.",
+          "status": "machine_unverified",
+          "topics": [
+            "abstract",
+            "communication"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "primary",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "основной",
+          "context": "Используется, когда речь о самом важном или первом по значению.",
+          "example": "Our primary goal is to help.",
+          "example_translation": "Наша основная цель — помогать.",
+          "status": "machine_unverified",
+          "topics": [
+            "abstract",
+            "education"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "prime minister",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "премьер-министр",
+          "context": "Используется, когда речь о главе правительства.",
+          "example": "The prime minister announced new policies.",
+          "example_translation": "Премьер-министр объявил о новой политике.",
+          "status": "machine_unverified",
+          "topics": [
+            "politics",
+            "work"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "prince",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "принц",
+          "context": "Используется, когда речь о сыне монарха.",
+          "example": "The prince married a commoner.",
+          "example_translation": "Принц женился на простолюдинке.",
+          "status": "machine_unverified",
+          "topics": [
+            "people",
+            "society"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "princess",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "принцесса",
+          "context": "Используется, когда речь о дочери монарха.",
+          "example": "The princess lived in a castle.",
+          "example_translation": "Принцесса жила в замке.",
+          "status": "machine_unverified",
+          "topics": [
+            "people",
+            "society"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "principal",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "директор школы",
+          "context": "Используется для обозначения руководителя учебного заведения.",
+          "example": "The principal gave a speech at the assembly.",
+          "example_translation": "Директор выступил с речью на собрании.",
+          "status": "machine_unverified",
+          "topics": [
+            "education",
+            "people"
+          ]
+        },
+        {
+          "language_code": "ru",
+          "value": "основной",
+          "context": "Используется для указания на главный или самый важный элемент.",
+          "example": "The principal reason for the delay was the weather.",
+          "example_translation": "Основной причиной задержки была погода.",
+          "status": "machine_unverified",
+          "topics": [
+            "abstract"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "principle",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "принцип",
+          "context": "Используется для обозначения основного правила или убеждения.",
+          "example": "He refused to lie on principle.",
+          "example_translation": "Он отказался лгать из принципа.",
+          "status": "machine_unverified",
+          "topics": [
+            "abstract",
+            "society"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "print",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "печатать",
+          "context": "Используется для действия вывода текста или изображений на бумагу.",
+          "example": "Please print the document for me.",
+          "example_translation": "Пожалуйста, распечатайте для меня документ.",
+          "status": "machine_unverified",
+          "topics": [
+            "technology",
+            "work"
+          ]
+        },
+        {
+          "language_code": "ru",
+          "value": "шрифт",
+          "context": "Используется для обозначения типа или размера букв в тексте.",
+          "example": "The print in this book is too small.",
+          "example_translation": "Шрифт в этой книге слишком мелкий.",
+          "status": "machine_unverified",
+          "topics": [
+            "media",
+            "art"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "printer",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "принтер",
+          "context": "Используется для обозначения устройства, которое печатает документы.",
+          "example": "The printer is out of ink.",
+          "example_translation": "В принтере закончились чернила.",
+          "status": "machine_unverified",
+          "topics": [
+            "technology",
+            "work"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "prior",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "предшествующий",
+          "context": "Используется для указания на то, что произошло раньше во времени.",
+          "example": "I had a prior commitment.",
+          "example_translation": "У меня была предварительная договорённость.",
+          "status": "machine_unverified",
+          "topics": [
+            "time",
+            "abstract"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "priority",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "приоритет",
+          "context": "Используется для обозначения того, что считается наиболее важным.",
+          "example": "Safety is our top priority.",
+          "example_translation": "Безопасность — наш главный приоритет.",
+          "status": "machine_unverified",
+          "topics": [
+            "abstract",
+            "work"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "prison",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "тюрьма",
+          "context": "Используется для обозначения места заключения преступников.",
+          "example": "He was sent to prison for five years.",
+          "example_translation": "Его отправили в тюрьму на пять лет.",
+          "status": "machine_unverified",
+          "topics": [
+            "law",
+            "society"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "prisoner",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "заключённый",
+          "context": "Используется для обозначения человека, находящегося в тюрьме.",
+          "example": "The prisoner escaped from jail.",
+          "example_translation": "Заключённый сбежал из тюрьмы.",
+          "status": "machine_unverified",
+          "topics": [
+            "law",
+            "people"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "private",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "частный",
+          "context": "Используется для обозначения чего-то, принадлежащего отдельному лицу или непубличного.",
+          "example": "This is a private conversation.",
+          "example_translation": "Это частный разговор.",
+          "status": "machine_unverified",
+          "topics": [
+            "society",
+            "abstract"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "prize",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "приз",
+          "context": "Используется для обозначения награды за победу в соревновании или конкурсе.",
+          "example": "She won first prize in the competition.",
+          "example_translation": "Она выиграла первый приз в соревновании.",
+          "status": "machine_unverified",
+          "topics": [
+            "sports",
+            "art",
+            "education"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "probably",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "вероятно",
+          "context": "Используется для выражения высокой степени вероятности.",
+          "example": "It will probably rain tomorrow.",
+          "example_translation": "Завтра, вероятно, будет дождь.",
+          "status": "machine_unverified",
+          "topics": [
+            "abstract",
+            "grammar"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "problem",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "проблема",
+          "context": "Используется для обозначения трудной ситуации или вопроса, требующего решения.",
+          "example": "We need to solve this problem.",
+          "example_translation": "Нам нужно решить эту проблему.",
+          "status": "machine_unverified",
+          "topics": [
+            "abstract",
+            "work",
+            "education"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "procedure",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "процедура",
+          "context": "Используется для обозначения установленного способа выполнения действия.",
+          "example": "Follow the safety procedure carefully.",
+          "example_translation": "Внимательно следуйте процедуре безопасности.",
+          "status": "machine_unverified",
+          "topics": [
+            "work",
+            "science",
+            "health"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "proceed",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "продолжать",
+          "context": "Используется для указания на продолжение действия после паузы.",
+          "example": "Please proceed with your presentation.",
+          "example_translation": "Пожалуйста, продолжайте вашу презентацию.",
+          "status": "machine_unverified",
+          "topics": [
+            "communication",
+            "work"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "process 1",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "процесс",
+          "context": "Используется для обозначения последовательности действий или изменений.",
+          "example": "The manufacturing process takes three days.",
+          "example_translation": "Производственный процесс занимает три дня.",
+          "status": "machine_unverified",
+          "topics": [
+            "abstract",
+            "work",
+            "science"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "produce",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "производить",
+          "context": "Используется для обозначения создания или изготовления чего-либо.",
+          "example": "This factory produces cars.",
+          "example_translation": "Этот завод производит автомобили.",
+          "status": "machine_unverified",
+          "topics": [
+            "business",
+            "work"
+          ]
+        },
+        {
+          "language_code": "ru",
+          "value": "продукты (сельскохозяйственные)",
+          "context": "Используется для обозначения свежих фруктов и овощей.",
+          "example": "We bought some fresh produce at the market.",
+          "example_translation": "Мы купили свежие продукты на рынке.",
+          "status": "machine_unverified",
+          "topics": [
+            "food",
+            "shopping"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "producer",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "производитель",
+          "context": "Используется для обозначения компании или человека, который производит товары.",
+          "example": "The producer of this film is very famous.",
+          "example_translation": "Продюсер этого фильма очень известен.",
+          "status": "machine_unverified",
+          "topics": [
+            "business",
+            "work",
+            "media"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "product",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "продукт",
+          "context": "Используется для обозначения товара, произведённого для продажи.",
+          "example": "This product is very popular.",
+          "example_translation": "Этот продукт очень популярен.",
+          "status": "machine_unverified",
+          "topics": [
+            "business",
+            "shopping"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "production",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "производство",
+          "context": "Используется для обозначения процесса изготовления товаров.",
+          "example": "Production has increased this year.",
+          "example_translation": "В этом году производство увеличилось.",
+          "status": "machine_unverified",
+          "topics": [
+            "business",
+            "work"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "profession",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "профессия",
+          "context": "Используется для обозначения рода занятий, требующего специальной подготовки.",
+          "example": "Teaching is a noble profession.",
+          "example_translation": "Преподавание — благородная профессия.",
+          "status": "machine_unverified",
+          "topics": [
+            "work",
+            "education",
+            "people"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "professional",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "профессиональный",
+          "context": "Относится к человеку, обладающему высокой квалификацией в своей области, или к действиям, выполненным на высоком уровне.",
+          "example": "She is a professional photographer.",
+          "example_translation": "Она профессиональный фотограф.",
+          "status": "machine_unverified",
+          "topics": [
+            "work",
+            "people"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "professor",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "профессор",
+          "context": "Учёное звание или должность преподавателя в университете.",
+          "example": "The professor gave a lecture on history.",
+          "example_translation": "Профессор прочитал лекцию по истории.",
+          "status": "machine_unverified",
+          "topics": [
+            "education",
+            "people"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "profile",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "профиль",
+          "context": "Описание человека или организации, часто в анкете или онлайн.",
+          "example": "Please update your profile on the website.",
+          "example_translation": "Пожалуйста, обновите свой профиль на сайте.",
+          "status": "machine_unverified",
+          "topics": [
+            "internet",
+            "people"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "profit",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "прибыль",
+          "context": "Финансовая выгода, разница между доходом и затратами.",
+          "example": "The company made a large profit this year.",
+          "example_translation": "Компания получила большую прибыль в этом году.",
+          "status": "machine_unverified",
+          "topics": [
+            "business",
+            "money"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "progress",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "прогресс",
+          "context": "Движение вперёд, улучшение или развитие в какой-либо области.",
+          "example": "We are making good progress on the project.",
+          "example_translation": "Мы добиваемся хорошего прогресса в проекте.",
+          "status": "machine_unverified",
+          "topics": [
+            "abstract",
+            "work"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "project",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "проект",
+          "context": "План или работа, направленная на достижение конкретной цели, часто в работе или учёбе.",
+          "example": "They are working on a new construction project.",
+          "example_translation": "Они работают над новым строительным проектом.",
+          "status": "machine_unverified",
+          "topics": [
+            "work",
+            "education"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "promise",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "обещание",
+          "context": "Слова, которыми человек обязуется сделать что-то.",
+          "example": "He made a promise to help me.",
+          "example_translation": "Он дал обещание помочь мне.",
+          "status": "machine_unverified",
+          "topics": [
+            "communication",
+            "people"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "promote",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "продвигать",
+          "context": "Рекламировать или поддерживать что-либо, чтобы увеличить его популярность или продажи.",
+          "example": "The company is promoting its new product.",
+          "example_translation": "Компания продвигает свой новый продукт.",
+          "status": "machine_unverified",
+          "topics": [
+            "business",
+            "media"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "promotion",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "повышение",
+          "context": "Переход на более высокую должность или звание на работе.",
+          "example": "She got a promotion to manager.",
+          "example_translation": "Она получила повышение до менеджера.",
+          "status": "machine_unverified",
+          "topics": [
+            "work",
+            "people"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "prompt",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "быстрый",
+          "context": "Сделанный без задержки, своевременный.",
+          "example": "Thank you for your prompt reply.",
+          "example_translation": "Спасибо за ваш быстрый ответ.",
+          "status": "machine_unverified",
+          "topics": [
+            "time",
+            "communication"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "promptly",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "немедленно",
+          "context": "Без промедления, сразу же.",
+          "example": "She arrived promptly at nine o'clock.",
+          "example_translation": "Она прибыла ровно в девять часов.",
+          "status": "machine_unverified",
+          "topics": [
+            "time"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "pronounce",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "произносить",
+          "context": "Издавать звуки, соответствующие слову или букве.",
+          "example": "How do you pronounce this word?",
+          "example_translation": "Как произносится это слово?",
+          "status": "machine_unverified",
+          "topics": [
+            "communication",
+            "education"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "pronunciation",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "произношение",
+          "context": "Способ, которым слово произносится.",
+          "example": "Your pronunciation is very good.",
+          "example_translation": "У вас очень хорошее произношение.",
+          "status": "machine_unverified",
+          "topics": [
+            "communication",
+            "education"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "proof",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "доказательство",
+          "context": "Факты или информация, показывающие, что что-то истинно.",
+          "example": "Do you have proof of your identity?",
+          "example_translation": "У вас есть доказательство вашей личности?",
+          "status": "machine_unverified",
+          "topics": [
+            "abstract",
+            "law"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "proper",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "правильный",
+          "context": "Соответствующий правилам или ожиданиям, надлежащий.",
+          "example": "Make sure you use the proper tools.",
+          "example_translation": "Убедитесь, что вы используете правильные инструменты.",
+          "status": "machine_unverified",
+          "topics": [
+            "abstract"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "property",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "собственность",
+          "context": "Что-то, чем владеет человек или организация, особенно недвижимость.",
+          "example": "This house is private property.",
+          "example_translation": "Этот дом является частной собственностью.",
+          "status": "machine_unverified",
+          "topics": [
+            "law",
+            "home"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "proportion",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "пропорция",
+          "context": "Соотношение частей друг к другу или к целому.",
+          "example": "The proportion of women in the company is increasing.",
+          "example_translation": "Доля женщин в компании растёт.",
+          "status": "machine_unverified",
+          "topics": [
+            "numbers",
+            "abstract"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "proposal",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "предложение",
+          "context": "План или идея, предлагаемые для обсуждения или принятия.",
+          "example": "They submitted a proposal for the new project.",
+          "example_translation": "Они представили предложение по новому проекту.",
+          "status": "machine_unverified",
+          "topics": [
+            "work",
+            "communication"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "propose",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "предлагать",
+          "context": "Выдвигать идею или план для рассмотрения.",
+          "example": "I propose we start the meeting at 10 am.",
+          "example_translation": "Я предлагаю начать встречу в 10 утра.",
+          "status": "machine_unverified",
+          "topics": [
+            "communication",
+            "work"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "prospect",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "перспектива",
+          "context": "Возможность или вероятность чего-то в будущем.",
+          "example": "The job offers good career prospects.",
+          "example_translation": "Эта работа предлагает хорошие карьерные перспективы.",
+          "status": "machine_unverified",
+          "topics": [
+            "abstract",
+            "work"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "protect",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "защищать",
+          "context": "Используется, когда речь идет о предотвращении вреда или опасности.",
+          "example": "We need to protect the environment.",
+          "example_translation": "Нам нужно защищать окружающую среду.",
+          "status": "machine_unverified",
+          "topics": [
+            "society",
+            "nature"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "protection",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "защита",
+          "context": "Используется, когда речь идет о действии или состоянии защиты.",
+          "example": "The helmet provides protection for your head.",
+          "example_translation": "Шлем обеспечивает защиту вашей головы.",
+          "status": "machine_unverified",
+          "topics": [
+            "health",
+            "society"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "protest",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "протест",
+          "context": "Используется, когда речь идет о публичном выражении несогласия.",
+          "example": "They organized a protest against the new law.",
+          "example_translation": "Они организовали протест против нового закона.",
+          "status": "machine_unverified",
+          "topics": [
+            "society",
+            "politics"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "proud",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "гордый",
+          "context": "Используется, когда речь идет о чувстве удовлетворения от достижений.",
+          "example": "She is proud of her son's success.",
+          "example_translation": "Она гордится успехом своего сына.",
+          "status": "machine_unverified",
+          "topics": [
+            "emotions",
+            "people"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "proudly",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "гордо",
+          "context": "Используется, когда речь идет о действии, совершаемом с гордостью.",
+          "example": "He proudly showed his award.",
+          "example_translation": "Он гордо показал свою награду.",
+          "status": "machine_unverified",
+          "topics": [
+            "emotions",
+            "people"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "prove",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "доказывать",
+          "context": "Используется, когда речь идет о демонстрации истинности чего-либо.",
+          "example": "Can you prove that you are right?",
+          "example_translation": "Можешь доказать, что ты прав?",
+          "status": "machine_unverified",
+          "topics": [
+            "abstract",
+            "science"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "provide",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "предоставлять",
+          "context": "Используется, когда речь идет о даче чего-либо необходимого.",
+          "example": "The company provides health insurance.",
+          "example_translation": "Компания предоставляет медицинскую страховку.",
+          "status": "machine_unverified",
+          "topics": [
+            "work",
+            "business"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "provided",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "при условии",
+          "context": "Используется как союз, означающий 'если' или 'при условии, что'.",
+          "example": "You can go out provided you finish your homework.",
+          "example_translation": "Ты можешь выйти при условии, что сделаешь домашнее задание.",
+          "status": "machine_unverified",
+          "topics": [
+            "grammar"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "pt.",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "часть",
+          "context": "Сокращение от 'part', используется в письменных текстах для обозначения части.",
+          "example": "See pt. 2 for more details.",
+          "example_translation": "Смотрите часть 2 для получения дополнительной информации.",
+          "status": "machine_unverified",
+          "topics": [
+            "media",
+            "communication"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "public",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "общественный",
+          "context": "Используется, когда речь идет о чем-то, относящемся к людям в целом или доступном всем.",
+          "example": "This is a public park.",
+          "example_translation": "Это общественный парк.",
+          "status": "machine_unverified",
+          "topics": [
+            "society"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "publication",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "публикация",
+          "context": "Используется, когда речь идет о печатном или электронном издании.",
+          "example": "Her latest publication is about climate change.",
+          "example_translation": "Её последняя публикация о изменении климата.",
+          "status": "machine_unverified",
+          "topics": [
+            "media",
+            "science"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "publicity",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "публичность",
+          "context": "Используется, когда речь идет о внимании общественности или рекламе.",
+          "example": "The event received a lot of publicity.",
+          "example_translation": "Мероприятие получило большую публичность.",
+          "status": "machine_unverified",
+          "topics": [
+            "media",
+            "business"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "publish",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "публиковать",
+          "context": "Используется, когда речь идет о выпуске книги, статьи или другого материала для общественности.",
+          "example": "They plan to publish the report next month.",
+          "example_translation": "Они планируют опубликовать отчет в следующем месяце.",
+          "status": "machine_unverified",
+          "topics": [
+            "media",
+            "communication"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "publishing",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "издательское дело",
+          "context": "Используется, когда речь идет о профессии или индустрии выпуска книг и других материалов.",
+          "example": "She works in publishing.",
+          "example_translation": "Она работает в издательском деле.",
+          "status": "machine_unverified",
+          "topics": [
+            "media",
+            "work"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "pull",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "тянуть",
+          "context": "Используется, когда речь идет о перемещении объекта к себе или в определенном направлении.",
+          "example": "Pull the door to open it.",
+          "example_translation": "Потяните дверь, чтобы открыть её.",
+          "status": "machine_unverified",
+          "topics": [
+            "movement",
+            "body"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "punch",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "удар кулаком",
+          "context": "Используется, когда речь идет о нанесении удара кулаком.",
+          "example": "He punched the wall in anger.",
+          "example_translation": "Он ударил кулаком по стене в гневе.",
+          "status": "machine_unverified",
+          "topics": [
+            "body",
+            "emotions"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "punish",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "наказывать",
+          "context": "Используется, когда речь идет о применении наказания за проступок.",
+          "example": "Parents should not punish children harshly.",
+          "example_translation": "Родители не должны сурово наказывать детей.",
+          "status": "machine_unverified",
+          "topics": [
+            "law",
+            "society"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "punishment",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "наказание",
+          "context": "Используется, когда речь идет о санкции за нарушение правил или закона.",
+          "example": "The punishment for theft can be imprisonment.",
+          "example_translation": "Наказание за кражу может быть тюремным заключением.",
+          "status": "machine_unverified",
+          "topics": [
+            "law",
+            "society"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "purchase",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "покупка",
+          "context": "Используется, когда речь идет о приобретении товара или услуги за деньги.",
+          "example": "I made a purchase online.",
+          "example_translation": "Я совершил покупку онлайн.",
+          "status": "machine_unverified",
+          "topics": [
+            "shopping",
+            "money"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "pure",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "чистый",
+          "context": "Используется, когда речь идет о чем-то без примесей или в переносном смысле 'абсолютный'.",
+          "example": "This is pure gold.",
+          "example_translation": "Это чистое золото.",
+          "status": "machine_unverified",
+          "topics": [
+            "abstract",
+            "science"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "purely",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "исключительно",
+          "context": "Используется для подчеркивания, что что-то делается только по одной причине или способом.",
+          "example": "I did it purely out of curiosity.",
+          "example_translation": "Я сделал это исключительно из любопытства.",
+          "status": "machine_unverified",
+          "topics": [
+            "abstract",
+            "grammar"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "purple",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "фиолетовый",
+          "context": "Цвет, смесь синего и красного.",
+          "example": "She wore a beautiful purple dress.",
+          "example_translation": "На ней было красивое фиолетовое платье.",
+          "status": "machine_unverified",
+          "topics": [
+            "art",
+            "nature"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "purpose",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "цель",
+          "context": "Причина, по которой что-то делается или существует.",
+          "example": "What is the purpose of this meeting?",
+          "example_translation": "Какова цель этой встречи?",
+          "status": "machine_unverified",
+          "topics": [
+            "abstract",
+            "work"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "pursue",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "преследовать",
+          "context": "Следовать за кем-то или чем-то, чтобы достичь цели.",
+          "example": "The police pursued the thief.",
+          "example_translation": "Полиция преследовала вора.",
+          "status": "machine_unverified",
+          "topics": [
+            "movement",
+            "law"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "push",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "толкать",
+          "context": "Прикладывать силу, чтобы переместить что-то от себя.",
+          "example": "Push the door to open it.",
+          "example_translation": "Толкните дверь, чтобы открыть её.",
+          "status": "machine_unverified",
+          "topics": [
+            "movement",
+            "body"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "put",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "класть",
+          "context": "Помещать что-то в определённое место.",
+          "example": "Put the book on the table.",
+          "example_translation": "Положи книгу на стол.",
+          "status": "machine_unverified",
+          "topics": [
+            "movement",
+            "home"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "qualification",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "квалификация",
+          "context": "Официальное подтверждение навыков или знаний для работы.",
+          "example": "She has a teaching qualification.",
+          "example_translation": "У неё есть педагогическая квалификация.",
+          "status": "machine_unverified",
+          "topics": [
+            "education",
+            "work"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "qualified",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "квалифицированный",
+          "context": "Имеющий необходимые навыки или диплом для работы.",
+          "example": "He is a qualified engineer.",
+          "example_translation": "Он квалифицированный инженер.",
+          "status": "machine_unverified",
+          "topics": [
+            "education",
+            "work"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "qualify",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "получать квалификацию",
+          "context": "Проходить обучение или сдавать экзамены для получения права на работу.",
+          "example": "She qualified as a doctor last year.",
+          "example_translation": "Она получила квалификацию врача в прошлом году.",
+          "status": "machine_unverified",
+          "topics": [
+            "education",
+            "work"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "quality",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "качество",
+          "context": "Степень хорошести или стандарт чего-либо.",
+          "example": "This product is of high quality.",
+          "example_translation": "Этот продукт высокого качества.",
+          "status": "machine_unverified",
+          "topics": [
+            "abstract",
+            "business"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "quantity",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "количество",
+          "context": "Число или объём чего-либо.",
+          "example": "We need a large quantity of water.",
+          "example_translation": "Нам нужно большое количество воды.",
+          "status": "machine_unverified",
+          "topics": [
+            "numbers",
+            "measurement"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "quarter",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "четверть",
+          "context": "Одна из четырёх равных частей целого.",
+          "example": "A quarter of an hour is 15 minutes.",
+          "example_translation": "Четверть часа — это 15 минут.",
+          "status": "machine_unverified",
+          "topics": [
+            "numbers",
+            "time"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "queen",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "королева",
+          "context": "Женщина-монарх или жена короля.",
+          "example": "The queen visited the hospital.",
+          "example_translation": "Королева посетила больницу.",
+          "status": "machine_unverified",
+          "topics": [
+            "society",
+            "politics"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "question",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "вопрос",
+          "context": "Фраза, требующая ответа или информации.",
+          "example": "Do you have any questions?",
+          "example_translation": "У вас есть вопросы?",
+          "status": "machine_unverified",
+          "topics": [
+            "communication",
+            "education"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "quick",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "быстрый",
+          "context": "Происходящий с большой скоростью или за короткое время.",
+          "example": "She is a quick learner.",
+          "example_translation": "Она быстро учится.",
+          "status": "machine_unverified",
+          "topics": [
+            "abstract",
+            "time"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "quickly",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "быстро",
+          "context": "Наречие, указывающее на высокую скорость действия.",
+          "example": "He ran quickly to catch the bus.",
+          "example_translation": "Он быстро побежал, чтобы успеть на автобус.",
+          "status": "machine_unverified",
+          "topics": [
+            "time",
+            "movement"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "quiet",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "тихий",
+          "context": "С низким уровнем шума или без звука.",
+          "example": "Please be quiet in the library.",
+          "example_translation": "Пожалуйста, будьте тихими в библиотеке.",
+          "status": "machine_unverified",
+          "topics": [
+            "abstract",
+            "communication"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "quite",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "довольно",
+          "context": "Указывает на степень, но не полностью; используется для смягчения.",
+          "example": "The movie was quite good.",
+          "example_translation": "Фильм был довольно хорош.",
+          "status": "machine_unverified",
+          "topics": [
+            "grammar",
+            "abstract"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "quote",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "цитировать",
+          "context": "Повторять чьи-то слова дословно.",
+          "example": "She quoted a famous poet.",
+          "example_translation": "Она процитировала известного поэта.",
+          "status": "machine_unverified",
+          "topics": [
+            "communication",
+            "media"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "race",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "гонка",
+          "context": "Соревнование на скорость, например, бег или автогонки.",
+          "example": "He won the race.",
+          "example_translation": "Он выиграл гонку.",
+          "status": "machine_unverified",
+          "topics": [
+            "sports",
+            "transport"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "racing",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "гонки",
+          "context": "Соревнование на скорость, обычно на автомобилях, велосипедах или лошадях.",
+          "example": "He loves watching car racing on TV.",
+          "example_translation": "Он любит смотреть автомобильные гонки по телевизору.",
+          "status": "machine_unverified",
+          "topics": [
+            "sports",
+            "transport"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "radio",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "радио",
+          "context": "Устройство или система для приёма звуковых передач через радиоволны.",
+          "example": "I listen to the radio every morning.",
+          "example_translation": "Я слушаю радио каждое утро.",
+          "status": "machine_unverified",
+          "topics": [
+            "media",
+            "technology"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "rail",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "рельс",
+          "context": "Металлический брус, по которому движется поезд.",
+          "example": "The train runs on steel rails.",
+          "example_translation": "Поезд движется по стальным рельсам.",
+          "status": "machine_unverified",
+          "topics": [
+            "transport"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "railroad",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "железная дорога",
+          "context": "Путь из рельсов для поездов, а также система перевозок.",
+          "example": "The railroad connects the two cities.",
+          "example_translation": "Железная дорога соединяет два города.",
+          "status": "machine_unverified",
+          "topics": [
+            "transport"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "rain",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "дождь",
+          "context": "Атмосферные осадки в виде капель воды.",
+          "example": "It is raining heavily outside.",
+          "example_translation": "На улице идёт сильный дождь.",
+          "status": "machine_unverified",
+          "topics": [
+            "weather"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "raise",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "поднимать",
+          "context": "Перемещать что-то вверх или увеличивать уровень.",
+          "example": "Please raise your hand if you have a question.",
+          "example_translation": "Пожалуйста, поднимите руку, если у вас есть вопрос.",
+          "status": "machine_unverified",
+          "topics": [
+            "movement"
+          ]
+        },
+        {
+          "language_code": "ru",
+          "value": "повышать",
+          "context": "Увеличивать количество, уровень или цену.",
+          "example": "The company decided to raise salaries.",
+          "example_translation": "Компания решила повысить зарплаты.",
+          "status": "machine_unverified",
+          "topics": [
+            "business",
+            "money"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "range",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "диапазон",
+          "context": "Промежуток между минимальным и максимальным значением.",
+          "example": "The price range is from $10 to $50.",
+          "example_translation": "Ценовой диапазон составляет от 10 до 50 долларов.",
+          "status": "machine_unverified",
+          "topics": [
+            "numbers",
+            "measurement"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "rank",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "ранг",
+          "context": "Положение или уровень в иерархии, например, в армии или спорте.",
+          "example": "He achieved the rank of captain.",
+          "example_translation": "Он достиг звания капитана.",
+          "status": "machine_unverified",
+          "topics": [
+            "society",
+            "work"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "rapid",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "быстрый",
+          "context": "Происходящий с большой скоростью или за короткое время.",
+          "example": "There has been rapid growth in technology.",
+          "example_translation": "Наблюдается быстрый рост технологий.",
+          "status": "machine_unverified",
+          "topics": [
+            "abstract",
+            "time"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "rare",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "редкий",
+          "context": "Встречающийся нечасто или в небольшом количестве.",
+          "example": "This is a rare species of bird.",
+          "example_translation": "Это редкий вид птиц.",
+          "status": "machine_unverified",
+          "topics": [
+            "nature",
+            "abstract"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "rarely",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "редко",
+          "context": "Наречие, указывающее на низкую частоту действия.",
+          "example": "She rarely eats meat.",
+          "example_translation": "Она редко ест мясо.",
+          "status": "machine_unverified",
+          "topics": [
+            "time",
+            "grammar"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "rate",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "ставка",
+          "context": "Фиксированная цена или плата за услугу, например, процентная ставка.",
+          "example": "The interest rate is 5%.",
+          "example_translation": "Процентная ставка составляет 5%.",
+          "status": "machine_unverified",
+          "topics": [
+            "money",
+            "business"
+          ]
+        },
+        {
+          "language_code": "ru",
+          "value": "скорость",
+          "context": "Величина изменения чего-либо за единицу времени.",
+          "example": "The heart rate increased during exercise.",
+          "example_translation": "Частота сердечных сокращений увеличилась во время упражнений.",
+          "status": "machine_unverified",
+          "topics": [
+            "measurement",
+            "health"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "rather",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "скорее",
+          "context": "Используется для выражения предпочтения или уточнения.",
+          "example": "I would rather stay home than go out.",
+          "example_translation": "Я скорее останусь дома, чем пойду гулять.",
+          "status": "machine_unverified",
+          "topics": [
+            "grammar",
+            "abstract"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "raw",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "сырой",
+          "context": "Необработанный, не приготовленный (о еде) или необработанный (о данных).",
+          "example": "Sushi is made from raw fish.",
+          "example_translation": "Суши делают из сырой рыбы.",
+          "status": "machine_unverified",
+          "topics": [
+            "food"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "re-",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "пере-",
+          "context": "Приставка, означающая повторение действия или возврат к предыдущему состоянию.",
+          "example": "Please re-read the instructions.",
+          "example_translation": "Пожалуйста, перечитайте инструкции.",
+          "status": "machine_unverified",
+          "topics": [
+            "grammar"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "reach",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "достигать",
+          "context": "Добираться до места или добиваться цели.",
+          "example": "We finally reached the top of the mountain.",
+          "example_translation": "Мы наконец достигли вершины горы.",
+          "status": "machine_unverified",
+          "topics": [
+            "movement",
+            "abstract"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "react",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "реагировать",
+          "context": "Отвечать на что-то действием или эмоцией.",
+          "example": "How did she react to the news?",
+          "example_translation": "Как она отреагировала на новости?",
+          "status": "machine_unverified",
+          "topics": [
+            "emotions",
+            "communication"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "reaction",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "реакция",
+          "context": "Ответ на стимул или событие.",
+          "example": "His reaction was one of surprise.",
+          "example_translation": "Его реакция была удивлением.",
+          "status": "machine_unverified",
+          "topics": [
+            "emotions",
+            "science"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "read",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "читать",
+          "context": "Воспринимать написанный текст глазами и понимать его.",
+          "example": "I like to read books before bed.",
+          "example_translation": "Я люблю читать книги перед сном.",
+          "status": "machine_unverified",
+          "topics": [
+            "communication",
+            "education"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "reader",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "читатель",
+          "context": "Человек, который читает книги, статьи и т.д.",
+          "example": "The book has many readers around the world.",
+          "example_translation": "У этой книги много читателей по всему миру.",
+          "status": "machine_unverified",
+          "topics": [
+            "communication",
+            "media"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "reading",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "чтение",
+          "context": "Используется, когда речь о процессе чтения книг, текстов или других материалов.",
+          "example": "I enjoy reading books before bed.",
+          "example_translation": "Мне нравится читать книги перед сном.",
+          "status": "machine_unverified",
+          "topics": [
+            "education",
+            "communication"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "ready",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "готовый",
+          "context": "Используется, когда что-то или кто-то подготовлен к действию или событию.",
+          "example": "Are you ready for the exam?",
+          "example_translation": "Ты готов к экзамену?",
+          "status": "machine_unverified",
+          "topics": [
+            "abstract",
+            "education"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "real",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "настоящий",
+          "context": "Используется, чтобы подчеркнуть подлинность или существование в действительности.",
+          "example": "This is a real diamond.",
+          "example_translation": "Это настоящий бриллиант.",
+          "status": "machine_unverified",
+          "topics": [
+            "abstract"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "realistic",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "реалистичный",
+          "context": "Используется, когда что-то соответствует действительности или практично.",
+          "example": "We need a realistic plan.",
+          "example_translation": "Нам нужен реалистичный план.",
+          "status": "machine_unverified",
+          "topics": [
+            "abstract",
+            "work"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "reality",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "реальность",
+          "context": "Используется для обозначения действительного положения вещей, а не воображения.",
+          "example": "He had to face reality.",
+          "example_translation": "Ему пришлось столкнуться с реальностью.",
+          "status": "machine_unverified",
+          "topics": [
+            "abstract"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "realize",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "осознавать",
+          "context": "Используется, когда человек начинает понимать или замечать что-то важное.",
+          "example": "I suddenly realized I was wrong.",
+          "example_translation": "Я вдруг осознал, что был неправ.",
+          "status": "machine_unverified",
+          "topics": [
+            "abstract",
+            "emotions"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "really",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "действительно",
+          "context": "Используется для усиления утверждения или выражения искренности.",
+          "example": "I really like this song.",
+          "example_translation": "Мне действительно нравится эта песня.",
+          "status": "machine_unverified",
+          "topics": [
+            "grammar"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "rear",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "задний",
+          "context": "Используется для описания части, находящейся сзади, например, автомобиля или здания.",
+          "example": "The rear door is locked.",
+          "example_translation": "Задняя дверь заперта.",
+          "status": "machine_unverified",
+          "topics": [
+            "movement",
+            "transport"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "reason",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "причина",
+          "context": "Используется для объяснения, почему что-то произошло или делается.",
+          "example": "What is the reason for your decision?",
+          "example_translation": "Какова причина твоего решения?",
+          "status": "machine_unverified",
+          "topics": [
+            "abstract",
+            "communication"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "reasonable",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "разумный",
+          "context": "Используется для описания чего-то логичного, справедливого или приемлемого.",
+          "example": "The price is reasonable.",
+          "example_translation": "Цена разумная.",
+          "status": "machine_unverified",
+          "topics": [
+            "abstract",
+            "business"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "reasonably",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "разумно",
+          "context": "Используется для описания действия, выполненного логично или в разумной степени.",
+          "example": "She behaved reasonably under pressure.",
+          "example_translation": "Она вела себя разумно под давлением.",
+          "status": "machine_unverified",
+          "topics": [
+            "abstract"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "recall",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "вспоминать",
+          "context": "Используется, когда человек пытается вспомнить информацию из памяти.",
+          "example": "I can't recall his name.",
+          "example_translation": "Я не могу вспомнить его имя.",
+          "status": "machine_unverified",
+          "topics": [
+            "abstract",
+            "education"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "receipt",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "квитанция",
+          "context": "Используется для документа, подтверждающего оплату или получение товара.",
+          "example": "Keep the receipt in case you need to return it.",
+          "example_translation": "Сохраните квитанцию на случай, если понадобится вернуть товар.",
+          "status": "machine_unverified",
+          "topics": [
+            "shopping",
+            "business"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "receive",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "получать",
+          "context": "Используется, когда кто-то получает что-то, например, письмо, подарок или информацию.",
+          "example": "Did you receive my email?",
+          "example_translation": "Ты получил моё письмо?",
+          "status": "machine_unverified",
+          "topics": [
+            "communication",
+            "shopping"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "recent",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "недавний",
+          "context": "Используется для описания событий или изменений, произошедших в ближайшем прошлом.",
+          "example": "Have you seen the recent news?",
+          "example_translation": "Ты видел последние новости?",
+          "status": "machine_unverified",
+          "topics": [
+            "time"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "recently",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "недавно",
+          "context": "Используется для указания на то, что действие произошло в ближайшем прошлом.",
+          "example": "I recently started learning Spanish.",
+          "example_translation": "Я недавно начал учить испанский.",
+          "status": "machine_unverified",
+          "topics": [
+            "time"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "reception",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "приём",
+          "context": "Используется для официального мероприятия или стойки регистрации в отеле/офисе.",
+          "example": "The wedding reception will be at a hotel.",
+          "example_translation": "Свадебный приём будет в отеле.",
+          "status": "machine_unverified",
+          "topics": [
+            "society",
+            "travel"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "recognition",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "признание",
+          "context": "Используется, когда чьи-то заслуги или достижения получают одобрение или известность.",
+          "example": "She received recognition for her work.",
+          "example_translation": "Она получила признание за свою работу.",
+          "status": "machine_unverified",
+          "topics": [
+            "work",
+            "society"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "recognize",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "узнавать",
+          "context": "Используется, когда вы идентифицируете кого-то или что-то, что видели раньше.",
+          "example": "I didn't recognize him with a beard.",
+          "example_translation": "Я не узнал его с бородой.",
+          "status": "machine_unverified",
+          "topics": [
+            "people",
+            "abstract"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "recommend",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "рекомендовать",
+          "context": "Используется, когда советуете что-то как хорошее или подходящее.",
+          "example": "I recommend this restaurant.",
+          "example_translation": "Я рекомендую этот ресторан.",
+          "status": "machine_unverified",
+          "topics": [
+            "communication",
+            "shopping"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "recommendation",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "рекомендация",
+          "context": "Используется, когда советуют что-то или предлагают вариант.",
+          "example": "I followed his recommendation and bought the book.",
+          "example_translation": "Я последовал его рекомендации и купил книгу.",
+          "status": "machine_unverified",
+          "topics": [
+            "communication",
+            "work"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "record",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "запись",
+          "context": "Используется для сохранения информации, например, в файле или документе.",
+          "example": "Please record the meeting minutes.",
+          "example_translation": "Пожалуйста, запишите протокол встречи.",
+          "status": "machine_unverified",
+          "topics": [
+            "technology",
+            "work"
+          ]
+        },
+        {
+          "language_code": "ru",
+          "value": "рекорд",
+          "context": "Используется для обозначения лучшего результата, например, в спорте.",
+          "example": "She broke the world record in swimming.",
+          "example_translation": "Она побила мировой рекорд по плаванию.",
+          "status": "machine_unverified",
+          "topics": [
+            "sports"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "recording",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "запись",
+          "context": "Используется для аудио- или видеозаписи.",
+          "example": "I made a recording of the concert.",
+          "example_translation": "Я сделал запись концерта.",
+          "status": "machine_unverified",
+          "topics": [
+            "technology",
+            "media"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "recover",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "восстанавливаться",
+          "context": "Используется, когда речь о возвращении к нормальному состоянию после болезни или проблемы.",
+          "example": "He is recovering from surgery.",
+          "example_translation": "Он восстанавливается после операции.",
+          "status": "machine_unverified",
+          "topics": [
+            "health"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "recovery",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "восстановление",
+          "context": "Используется для процесса возвращения к нормальному состоянию после болезни, травмы или проблемы.",
+          "example": "Her recovery took several months.",
+          "example_translation": "Её восстановление заняло несколько месяцев.",
+          "status": "machine_unverified",
+          "topics": [
+            "health"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "red",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "красный",
+          "context": "Используется для обозначения цвета.",
+          "example": "She wore a red dress.",
+          "example_translation": "Она была в красном платье.",
+          "status": "machine_unverified",
+          "topics": [
+            "art"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "reduce",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "уменьшать",
+          "context": "Используется, когда речь о снижении количества, размера или интенсивности.",
+          "example": "We need to reduce costs.",
+          "example_translation": "Нам нужно уменьшить расходы.",
+          "status": "machine_unverified",
+          "topics": [
+            "business",
+            "money"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "reduction",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "снижение",
+          "context": "Используется для обозначения процесса уменьшения или его результата.",
+          "example": "There has been a reduction in pollution.",
+          "example_translation": "Произошло снижение загрязнения.",
+          "status": "machine_unverified",
+          "topics": [
+            "business",
+            "nature"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "refer",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "ссылаться",
+          "context": "Используется, когда упоминают кого-то или что-то как источник или пример.",
+          "example": "Please refer to the manual for instructions.",
+          "example_translation": "Пожалуйста, обратитесь к руководству за инструкциями.",
+          "status": "machine_unverified",
+          "topics": [
+            "communication",
+            "education"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "reference",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "ссылка",
+          "context": "Используется для указания на источник информации или упоминания.",
+          "example": "The article includes a reference to a study.",
+          "example_translation": "Статья содержит ссылку на исследование.",
+          "status": "machine_unverified",
+          "topics": [
+            "education",
+            "communication"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "reflect",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "отражать",
+          "context": "Используется, когда поверхность отображает свет или изображение, или когда что-то показывает характер или качество.",
+          "example": "The mirror reflects your image.",
+          "example_translation": "Зеркало отражает ваше изображение.",
+          "status": "machine_unverified",
+          "topics": [
+            "science",
+            "abstract"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "reform",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "реформа",
+          "context": "Используется для обозначения изменений, направленных на улучшение системы или организации.",
+          "example": "The government introduced education reforms.",
+          "example_translation": "Правительство ввело реформы образования.",
+          "status": "machine_unverified",
+          "topics": [
+            "politics",
+            "society"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "refrigerator",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "холодильник",
+          "context": "Используется для обозначения бытового прибора для хранения продуктов в холоде.",
+          "example": "Put the milk in the refrigerator.",
+          "example_translation": "Поставь молоко в холодильник.",
+          "status": "machine_unverified",
+          "topics": [
+            "home",
+            "food"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "refusal",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "отказ",
+          "context": "Используется, когда кто-то не соглашается на предложение или требование.",
+          "example": "His refusal to help surprised everyone.",
+          "example_translation": "Его отказ помочь удивил всех.",
+          "status": "machine_unverified",
+          "topics": [
+            "communication",
+            "people"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "refuse 1",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "отказываться",
+          "context": "Используется, когда кто-то не хочет делать что-то или принимать что-то.",
+          "example": "She refused to answer the question.",
+          "example_translation": "Она отказалась отвечать на вопрос.",
+          "status": "machine_unverified",
+          "topics": [
+            "communication",
+            "people"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "regard",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "отношение",
+          "context": "Используется для выражения уважения или внимания к кому-то или чему-то.",
+          "example": "He has great regard for his teacher.",
+          "example_translation": "Он с большим уважением относится к своему учителю.",
+          "status": "machine_unverified",
+          "topics": [
+            "people",
+            "emotions"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "regarding",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "относительно",
+          "context": "Используется для указания темы или предмета обсуждения.",
+          "example": "I have a question regarding the project.",
+          "example_translation": "У меня есть вопрос относительно проекта.",
+          "status": "machine_unverified",
+          "topics": [
+            "communication",
+            "work"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "region",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "регион",
+          "context": "Используется для обозначения определённой географической или административной области.",
+          "example": "This region is known for its wine.",
+          "example_translation": "Этот регион известен своим вином.",
+          "status": "machine_unverified",
+          "topics": [
+            "travel",
+            "nature"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "regional",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "региональный",
+          "context": "Используется для описания чего-то, относящегося к определённому региону.",
+          "example": "They offer regional specialties.",
+          "example_translation": "Они предлагают региональные специалитеты.",
+          "status": "machine_unverified",
+          "topics": [
+            "travel",
+            "society"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "register",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "регистрироваться",
+          "context": "Используется, когда вносят своё имя в официальный список или запись.",
+          "example": "You need to register for the course online.",
+          "example_translation": "Вам нужно зарегистрироваться на курс онлайн.",
+          "status": "machine_unverified",
+          "topics": [
+            "education",
+            "technology"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "regret",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "сожалеть",
+          "context": "Используется, когда речь о чувстве сожаления о прошлых действиях.",
+          "example": "I regret not studying harder.",
+          "example_translation": "Я сожалею, что не учился усерднее.",
+          "status": "machine_unverified",
+          "topics": [
+            "emotions",
+            "abstract"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "regular",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "регулярный",
+          "context": "Используется для описания чего-то, происходящего через равные промежутки времени.",
+          "example": "He is a regular customer at the cafe.",
+          "example_translation": "Он постоянный клиент кафе.",
+          "status": "machine_unverified",
+          "topics": [
+            "time",
+            "abstract"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "regularly",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "регулярно",
+          "context": "Используется для указания на повторяемость действия через равные промежутки времени.",
+          "example": "She exercises regularly.",
+          "example_translation": "Она регулярно занимается спортом.",
+          "status": "machine_unverified",
+          "topics": [
+            "time",
+            "health"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "regulation",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "правило",
+          "context": "Используется в контексте официальных правил или норм.",
+          "example": "The company must follow safety regulations.",
+          "example_translation": "Компания должна соблюдать правила безопасности.",
+          "status": "machine_unverified",
+          "topics": [
+            "law",
+            "work"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "reject",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "отклонять",
+          "context": "Используется, когда речь об отказе от предложения, идеи или человека.",
+          "example": "They rejected his application.",
+          "example_translation": "Они отклонили его заявление.",
+          "status": "machine_unverified",
+          "topics": [
+            "communication",
+            "work"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "relate",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "относиться",
+          "context": "Используется, когда речь о связи или отношении между вещами.",
+          "example": "This problem relates to our previous discussion.",
+          "example_translation": "Эта проблема относится к нашему предыдущему обсуждению.",
+          "status": "machine_unverified",
+          "topics": [
+            "abstract",
+            "communication"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "related",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "связанный",
+          "context": "Используется для указания на связь между вещами.",
+          "example": "These two events are related.",
+          "example_translation": "Эти два события связаны.",
+          "status": "machine_unverified",
+          "topics": [
+            "abstract"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "relation",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "отношение",
+          "context": "Используется для описания связи между людьми или вещами.",
+          "example": "The relation between diet and health is well known.",
+          "example_translation": "Связь между диетой и здоровьем хорошо известна.",
+          "status": "machine_unverified",
+          "topics": [
+            "abstract",
+            "people"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "relationship",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "отношения",
+          "context": "Используется для описания связи между людьми, особенно романтической или деловой.",
+          "example": "They have a good working relationship.",
+          "example_translation": "У них хорошие рабочие отношения.",
+          "status": "machine_unverified",
+          "topics": [
+            "people",
+            "work"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "relative",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "родственник",
+          "context": "Используется для обозначения члена семьи.",
+          "example": "She is visiting her relatives.",
+          "example_translation": "Она навещает своих родственников.",
+          "status": "machine_unverified",
+          "topics": [
+            "family",
+            "people"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "relatively",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "относительно",
+          "context": "Используется для сравнения с чем-то другим.",
+          "example": "The task is relatively easy.",
+          "example_translation": "Задача относительно лёгкая.",
+          "status": "machine_unverified",
+          "topics": [
+            "abstract",
+            "measurement"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "relax",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "расслабляться",
+          "context": "Используется, когда речь об отдыхе или уменьшении напряжения.",
+          "example": "I like to relax with a good book.",
+          "example_translation": "Я люблю расслабляться с хорошей книгой.",
+          "status": "machine_unverified",
+          "topics": [
+            "emotions",
+            "health"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "relaxed",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "расслабленный",
+          "context": "Используется для описания состояния спокойствия или отсутствия напряжения.",
+          "example": "He felt relaxed after the massage.",
+          "example_translation": "Он чувствовал себя расслабленным после массажа.",
+          "status": "machine_unverified",
+          "topics": [
+            "emotions",
+            "health"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "relaxing",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "расслабляющий",
+          "context": "Используется для описания чего-то, что вызывает расслабление.",
+          "example": "The music is very relaxing.",
+          "example_translation": "Эта музыка очень расслабляющая.",
+          "status": "machine_unverified",
+          "topics": [
+            "emotions",
+            "music"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "release",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "выпускать",
+          "context": "Используется, когда речь о выпуске продукта, информации или освобождении.",
+          "example": "The company will release a new product next month.",
+          "example_translation": "Компания выпустит новый продукт в следующем месяце.",
+          "status": "machine_unverified",
+          "topics": [
+            "business",
+            "technology"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "relevant",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "актуальный",
+          "context": "Используется для описания чего-то, что имеет отношение к делу.",
+          "example": "Please provide relevant information.",
+          "example_translation": "Пожалуйста, предоставьте актуальную информацию.",
+          "status": "machine_unverified",
+          "topics": [
+            "abstract",
+            "communication"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "relief",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "облегчение",
+          "context": "Используется, когда речь о чувстве уменьшения боли или беспокойства.",
+          "example": "It was a relief to hear the good news.",
+          "example_translation": "Было облегчением услышать хорошие новости.",
+          "status": "machine_unverified",
+          "topics": [
+            "emotions",
+            "health"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "religion",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "религия",
+          "context": "Используется для обозначения системы верований.",
+          "example": "Many people find comfort in religion.",
+          "example_translation": "Многие люди находят утешение в религии.",
+          "status": "machine_unverified",
+          "topics": [
+            "society",
+            "abstract"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "religious",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "религиозный",
+          "context": "Используется для описания человека или вещи, связанных с религией.",
+          "example": "She is a religious person.",
+          "example_translation": "Она религиозный человек.",
+          "status": "machine_unverified",
+          "topics": [
+            "society",
+            "people"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "rely",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "полагаться",
+          "context": "Используется, когда речь о доверии или зависимости от кого-то или чего-то.",
+          "example": "You can rely on me.",
+          "example_translation": "Ты можешь на меня положиться.",
+          "status": "machine_unverified",
+          "topics": [
+            "people",
+            "abstract"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "remain",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "оставаться",
+          "context": "Используется, когда кто-то или что-то продолжает находиться в том же месте или состоянии.",
+          "example": "Please remain seated until the bus stops.",
+          "example_translation": "Пожалуйста, оставайтесь на местах, пока автобус не остановится.",
+          "status": "machine_unverified",
+          "topics": [
+            "movement",
+            "abstract"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "remaining",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "оставшийся",
+          "context": "Используется для описания того, что ещё не использовано или не закончилось.",
+          "example": "The remaining food was given to the homeless.",
+          "example_translation": "Оставшуюся еду отдали бездомным.",
+          "status": "machine_unverified",
+          "topics": [
+            "abstract",
+            "numbers"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "remains",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "останки",
+          "context": "Используется в значении останков умершего человека или животных.",
+          "example": "Archaeologists discovered ancient human remains.",
+          "example_translation": "Археологи обнаружили древние человеческие останки.",
+          "status": "machine_unverified",
+          "topics": [
+            "science",
+            "body"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "remark",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "замечание",
+          "context": "Используется, когда кто-то делает устное или письменное высказывание.",
+          "example": "She made a clever remark about the weather.",
+          "example_translation": "Она сделала остроумное замечание о погоде.",
+          "status": "machine_unverified",
+          "topics": [
+            "communication",
+            "people"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "remarkable",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "замечательный",
+          "context": "Используется для описания чего-то необычного, достойного внимания.",
+          "example": "He has a remarkable talent for music.",
+          "example_translation": "У него замечательный талант к музыке.",
+          "status": "machine_unverified",
+          "topics": [
+            "abstract",
+            "emotions"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "remember",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "помнить",
+          "context": "Используется, когда речь идёт о сохранении информации в памяти.",
+          "example": "Do you remember her phone number?",
+          "example_translation": "Ты помнишь её номер телефона?",
+          "status": "machine_unverified",
+          "topics": [
+            "abstract",
+            "education"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "remind",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "напоминать",
+          "context": "Используется, когда кто-то помогает другому не забыть что-то.",
+          "example": "Please remind me to buy milk.",
+          "example_translation": "Пожалуйста, напомни мне купить молоко.",
+          "status": "machine_unverified",
+          "topics": [
+            "communication",
+            "people"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "remote",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "удалённый",
+          "context": "Используется для описания места, находящегося далеко от населённых пунктов.",
+          "example": "They live in a remote village in the mountains.",
+          "example_translation": "Они живут в удалённой деревне в горах.",
+          "status": "machine_unverified",
+          "topics": [
+            "travel",
+            "movement"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "removal",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "удаление",
+          "context": "Используется, когда что-то убирают или устраняют.",
+          "example": "The removal of the old tree took two hours.",
+          "example_translation": "Удаление старого дерева заняло два часа.",
+          "status": "machine_unverified",
+          "topics": [
+            "movement",
+            "home"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "remove",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "удалять",
+          "context": "Используется, когда что-то убирают с места или устраняют.",
+          "example": "Please remove your shoes before entering.",
+          "example_translation": "Пожалуйста, снимите обувь перед входом.",
+          "status": "machine_unverified",
+          "topics": [
+            "movement",
+            "home"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "rent",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "арендовать",
+          "context": "Используется, когда платят за временное пользование чем-то (квартира, машина).",
+          "example": "We decided to rent a car for the trip.",
+          "example_translation": "Мы решили арендовать машину для поездки.",
+          "status": "machine_unverified",
+          "topics": [
+            "money",
+            "travel"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "repair",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "ремонтировать",
+          "context": "Используется, когда чинят сломанные вещи.",
+          "example": "He can repair the broken chair.",
+          "example_translation": "Он может отремонтировать сломанный стул.",
+          "status": "machine_unverified",
+          "topics": [
+            "home",
+            "work"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "repeat",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "повторять",
+          "context": "Используется, когда делают или говорят что-то снова.",
+          "example": "Could you repeat the question?",
+          "example_translation": "Не могли бы вы повторить вопрос?",
+          "status": "machine_unverified",
+          "topics": [
+            "communication",
+            "education"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "repeated",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "повторный",
+          "context": "Используется для описания действия, которое происходит снова.",
+          "example": "He made repeated attempts to call her.",
+          "example_translation": "Он предпринял повторные попытки позвонить ей.",
+          "status": "machine_unverified",
+          "topics": [
+            "abstract",
+            "time"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "replace",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "заменять",
+          "context": "Используется, когда одно ставится на место другого.",
+          "example": "You should replace the old battery.",
+          "example_translation": "Тебе следует заменить старую батарею.",
+          "status": "machine_unverified",
+          "topics": [
+            "home",
+            "technology"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "reply",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "отвечать",
+          "context": "Используется, когда дают ответ на вопрос или сообщение.",
+          "example": "Please reply to my email as soon as possible.",
+          "example_translation": "Пожалуйста, ответь на моё письмо как можно скорее.",
+          "status": "machine_unverified",
+          "topics": [
+            "communication",
+            "work"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "report",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "отчёт",
+          "context": "Используется, когда предоставляют информацию о чём-то в письменной или устной форме.",
+          "example": "She wrote a report on the project.",
+          "example_translation": "Она написала отчёт о проекте.",
+          "status": "machine_unverified",
+          "topics": [
+            "work",
+            "communication"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "reporter",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "репортёр",
+          "context": "Используется для человека, который собирает и сообщает новости.",
+          "example": "The reporter interviewed the mayor.",
+          "example_translation": "Репортёр взял интервью у мэра.",
+          "status": "machine_unverified",
+          "topics": [
+            "media",
+            "work"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "represent",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "представлять",
+          "context": "Используется, когда кто-то действует от имени другого или символизирует что-то.",
+          "example": "She will represent our company at the conference.",
+          "example_translation": "Она будет представлять нашу компанию на конференции.",
+          "status": "machine_unverified",
+          "topics": [
+            "work",
+            "business"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "representative",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "представитель",
+          "context": "Используется для человека, который действует от имени группы или организации.",
+          "example": "He is a sales representative for a tech company.",
+          "example_translation": "Он торговый представитель технологической компании.",
+          "status": "machine_unverified",
+          "topics": [
+            "work",
+            "business"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "reproduce",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "воспроизводить",
+          "context": "Используется, когда речь о создании копии или повторении чего-либо.",
+          "example": "Can you reproduce this sound?",
+          "example_translation": "Ты можешь воспроизвести этот звук?",
+          "status": "machine_unverified",
+          "topics": [
+            "science",
+            "technology"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "reputation",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "репутация",
+          "context": "Используется, когда речь о мнении других о человеке или организации.",
+          "example": "She has a good reputation in the community.",
+          "example_translation": "У неё хорошая репутация в сообществе.",
+          "status": "machine_unverified",
+          "topics": [
+            "people",
+            "society"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "request",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "просьба",
+          "context": "Используется, когда кто-то вежливо просит о чём-либо.",
+          "example": "I have a request for you.",
+          "example_translation": "У меня к тебе просьба.",
+          "status": "machine_unverified",
+          "topics": [
+            "communication"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "require",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "требовать",
+          "context": "Используется, когда что-то необходимо или обязательно.",
+          "example": "This job requires a lot of patience.",
+          "example_translation": "Эта работа требует большого терпения.",
+          "status": "machine_unverified",
+          "topics": [
+            "work",
+            "education"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "requirement",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "требование",
+          "context": "Используется, когда речь об условии, которое необходимо выполнить.",
+          "example": "What are the requirements for this course?",
+          "example_translation": "Какие требования для этого курса?",
+          "status": "machine_unverified",
+          "topics": [
+            "education",
+            "work"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "rescue",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "спасать",
+          "context": "Используется, когда кого-то или что-то спасают от опасности.",
+          "example": "The firefighters rescued the cat from the tree.",
+          "example_translation": "Пожарные спасли кошку с дерева.",
+          "status": "machine_unverified",
+          "topics": [
+            "health",
+            "society"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "research",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "исследование",
+          "context": "Используется, когда речь о научном или систематическом изучении.",
+          "example": "She is doing research on climate change.",
+          "example_translation": "Она проводит исследование изменения климата.",
+          "status": "machine_unverified",
+          "topics": [
+            "science",
+            "education"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "reservation",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "бронь",
+          "context": "Используется, когда речь о предварительном заказе места или услуги.",
+          "example": "I made a reservation at the restaurant.",
+          "example_translation": "Я сделал бронь в ресторане.",
+          "status": "machine_unverified",
+          "topics": [
+            "travel",
+            "shopping"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "reserve",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "резервировать",
+          "context": "Используется, когда что-то оставляют для будущего использования.",
+          "example": "Please reserve a table for two.",
+          "example_translation": "Пожалуйста, зарезервируйте столик на двоих.",
+          "status": "machine_unverified",
+          "topics": [
+            "travel",
+            "shopping"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "resident",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "житель",
+          "context": "Используется, когда речь о человеке, проживающем в определённом месте.",
+          "example": "The residents of the building are very friendly.",
+          "example_translation": "Жители этого здания очень дружелюбны.",
+          "status": "machine_unverified",
+          "topics": [
+            "people",
+            "society"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "resist",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "сопротивляться",
+          "context": "Используется, когда кто-то противостоит чему-либо или отказывается подчиняться.",
+          "example": "He tried to resist the temptation.",
+          "example_translation": "Он пытался сопротивляться искушению.",
+          "status": "machine_unverified",
+          "topics": [
+            "abstract",
+            "emotions"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "resistance",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "сопротивление",
+          "context": "Используется, когда речь о противодействии или отпоре.",
+          "example": "The army met with strong resistance.",
+          "example_translation": "Армия встретила сильное сопротивление.",
+          "status": "machine_unverified",
+          "topics": [
+            "abstract",
+            "politics"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "resolve",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "решать",
+          "context": "Используется, когда речь о нахождении решения проблемы.",
+          "example": "We need to resolve this issue quickly.",
+          "example_translation": "Нам нужно быстро решить эту проблему.",
+          "status": "machine_unverified",
+          "topics": [
+            "abstract",
+            "work"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "resort",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "курорт",
+          "context": "Используется, когда речь о месте для отдыха и развлечений.",
+          "example": "We spent our vacation at a beach resort.",
+          "example_translation": "Мы провели отпуск на пляжном курорте.",
+          "status": "machine_unverified",
+          "topics": [
+            "travel",
+            "nature"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "resource",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "ресурс",
+          "context": "Используется, когда речь о запасах или средствах, которые можно использовать.",
+          "example": "Water is a valuable resource.",
+          "example_translation": "Вода — ценный ресурс.",
+          "status": "machine_unverified",
+          "topics": [
+            "nature",
+            "business"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "respect",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "уважение",
+          "context": "Используется, когда речь о положительном отношении к кому-либо или чему-либо.",
+          "example": "I have great respect for your work.",
+          "example_translation": "Я испытываю большое уважение к твоей работе.",
+          "status": "machine_unverified",
+          "topics": [
+            "people",
+            "emotions"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "respond",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "отвечать",
+          "context": "Используется, когда кто-то даёт ответ на вопрос или реакцию на ситуацию.",
+          "example": "Please respond to my email.",
+          "example_translation": "Пожалуйста, ответь на моё письмо.",
+          "status": "machine_unverified",
+          "topics": [
+            "communication"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "response",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "ответ",
+          "context": "Используется, когда речь о реакции или ответе на что-либо.",
+          "example": "I am waiting for a response from the company.",
+          "example_translation": "Я жду ответа от компании.",
+          "status": "machine_unverified",
+          "topics": [
+            "communication"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "responsibility",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "ответственность",
+          "context": "Используется, когда речь о долге или обязанности заботиться о чём-либо.",
+          "example": "It is your responsibility to finish the project.",
+          "example_translation": "Это твоя ответственность — завершить проект.",
+          "status": "machine_unverified",
+          "topics": [
+            "work",
+            "abstract"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "responsible",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "ответственный",
+          "context": "Используется, когда кто-то несёт ответственность за что-либо или является причиной.",
+          "example": "Who is responsible for this mess?",
+          "example_translation": "Кто ответственен за этот беспорядок?",
+          "status": "machine_unverified",
+          "topics": [
+            "work",
+            "people"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "rest",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "отдых",
+          "context": "Используется, когда речь о перерыве в работе или деятельности для восстановления сил.",
+          "example": "I need a rest after work.",
+          "example_translation": "Мне нужен отдых после работы.",
+          "status": "machine_unverified",
+          "topics": [
+            "health",
+            "time"
+          ]
+        },
+        {
+          "language_code": "ru",
+          "value": "остальное",
+          "context": "Используется, когда речь о том, что осталось после удаления или использования части.",
+          "example": "Eat the rest of the cake.",
+          "example_translation": "Съешь остаток торта.",
+          "status": "machine_unverified",
+          "topics": [
+            "abstract",
+            "food"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "restaurant",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "ресторан",
+          "context": "Используется для обозначения заведения, где подают еду и напитки.",
+          "example": "We had dinner at a nice restaurant.",
+          "example_translation": "Мы поужинали в хорошем ресторане.",
+          "status": "machine_unverified",
+          "topics": [
+            "food",
+            "travel"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "restore",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "восстанавливать",
+          "context": "Используется, когда речь о возвращении чего-либо в прежнее состояние или исправлении.",
+          "example": "They restored the old building.",
+          "example_translation": "Они восстановили старое здание.",
+          "status": "machine_unverified",
+          "topics": [
+            "art",
+            "home"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "restrict",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "ограничивать",
+          "context": "Используется, когда речь о наложении ограничений или уменьшении свободы действий.",
+          "example": "The new law restricts smoking in public places.",
+          "example_translation": "Новый закон ограничивает курение в общественных местах.",
+          "status": "machine_unverified",
+          "topics": [
+            "law",
+            "society"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "restricted",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "ограниченный",
+          "context": "Используется для описания чего-либо, что имеет ограничения или недоступно для всех.",
+          "example": "Access to the area is restricted.",
+          "example_translation": "Доступ в эту зону ограничен.",
+          "status": "machine_unverified",
+          "topics": [
+            "law",
+            "movement"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "restriction",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "ограничение",
+          "context": "Используется, когда речь о правиле или условии, которое ограничивает что-либо.",
+          "example": "There are restrictions on the use of water.",
+          "example_translation": "Существуют ограничения на использование воды.",
+          "status": "machine_unverified",
+          "topics": [
+            "law",
+            "society"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "result",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "результат",
+          "context": "Используется, когда речь о том, что произошло вследствие чего-либо.",
+          "example": "The result of the exam was excellent.",
+          "example_translation": "Результат экзамена был отличным.",
+          "status": "machine_unverified",
+          "topics": [
+            "abstract",
+            "education"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "retain",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "сохранять",
+          "context": "Используется, когда речь о сохранении чего-либо в том же состоянии или удержании.",
+          "example": "She retained her calm during the crisis.",
+          "example_translation": "Она сохранила спокойствие во время кризиса.",
+          "status": "machine_unverified",
+          "topics": [
+            "abstract",
+            "people"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "retire",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "выходить на пенсию",
+          "context": "Используется, когда речь о прекращении трудовой деятельности по возрасту.",
+          "example": "My father plans to retire next year.",
+          "example_translation": "Мой отец планирует выйти на пенсию в следующем году.",
+          "status": "machine_unverified",
+          "topics": [
+            "work",
+            "money"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "retired",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "пенсионер",
+          "context": "Используется для описания человека, который вышел на пенсию.",
+          "example": "He is a retired teacher.",
+          "example_translation": "Он пенсионер, бывший учитель.",
+          "status": "machine_unverified",
+          "topics": [
+            "work",
+            "people"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "retirement",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "пенсия",
+          "context": "Используется, когда речь о периоде жизни после выхода на пенсию или о пенсионных выплатах.",
+          "example": "They are enjoying their retirement.",
+          "example_translation": "Они наслаждаются своей пенсией.",
+          "status": "machine_unverified",
+          "topics": [
+            "work",
+            "money"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "return",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "возвращаться",
+          "context": "Используется, когда речь о возвращении в место или состояние.",
+          "example": "She will return home tomorrow.",
+          "example_translation": "Она вернётся домой завтра.",
+          "status": "machine_unverified",
+          "topics": [
+            "movement",
+            "travel"
+          ]
+        },
+        {
+          "language_code": "ru",
+          "value": "возврат",
+          "context": "Используется, когда речь о возврате товара или денег.",
+          "example": "I need to make a return of this item.",
+          "example_translation": "Мне нужно вернуть этот товар.",
+          "status": "machine_unverified",
+          "topics": [
+            "shopping",
+            "money"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "reveal",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "раскрывать",
+          "context": "Используется, когда речь о том, чтобы сделать что-то известным или показать.",
+          "example": "The investigation revealed new evidence.",
+          "example_translation": "Расследование раскрыло новые улики.",
+          "status": "machine_unverified",
+          "topics": [
+            "communication",
+            "law"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "reverse",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "обратный",
+          "context": "Используется для описания направления, противоположного обычному, или отмены действия.",
+          "example": "Put the car in reverse.",
+          "example_translation": "Включи задний ход.",
+          "status": "machine_unverified",
+          "topics": [
+            "transport",
+            "movement"
+          ]
+        },
+        {
+          "language_code": "ru",
+          "value": "отменять",
+          "context": "Используется, когда речь об изменении решения или результата на противоположный.",
+          "example": "The court reversed the decision.",
+          "example_translation": "Суд отменил решение.",
+          "status": "machine_unverified",
+          "topics": [
+            "law",
+            "abstract"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "review",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "обзор",
+          "context": "Используется, когда речь о критическом анализе или оценке чего-либо.",
+          "example": "I read a review of the movie.",
+          "example_translation": "Я прочитал обзор фильма.",
+          "status": "machine_unverified",
+          "topics": [
+            "media",
+            "communication"
+          ]
+        },
+        {
+          "language_code": "ru",
+          "value": "повторять",
+          "context": "Используется, когда речь о повторении изученного материала.",
+          "example": "Let's review the lesson.",
+          "example_translation": "Давайте повторим урок.",
+          "status": "machine_unverified",
+          "topics": [
+            "education"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "revise",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "пересматривать",
+          "context": "Используется, когда речь о внесении изменений или улучшений в текст, план и т.д.",
+          "example": "I need to revise my essay.",
+          "example_translation": "Мне нужно пересмотреть моё эссе.",
+          "status": "machine_unverified",
+          "topics": [
+            "education",
+            "communication"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "revision",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "пересмотр",
+          "context": "Используется, когда речь о процессе внесения изменений или повторении материала.",
+          "example": "The revision of the document took two hours.",
+          "example_translation": "Пересмотр документа занял два часа.",
+          "status": "machine_unverified",
+          "topics": [
+            "education",
+            "work"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "revolution",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "революция",
+          "context": "Используется, когда речь о коренном изменении в политической системе или в какой-либо области.",
+          "example": "The industrial revolution changed the world.",
+          "example_translation": "Промышленная революция изменила мир.",
+          "status": "machine_unverified",
+          "topics": [
+            "politics",
+            "society"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "reward",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "награда",
+          "context": "Используется, когда речь о вознаграждении за достижение или услугу.",
+          "example": "She received a reward for her bravery.",
+          "example_translation": "Она получила награду за свою храбрость.",
+          "status": "machine_unverified",
+          "topics": [
+            "people",
+            "work"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "rhythm",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "ритм",
+          "context": "Используется, когда речь о повторяющемся рисунке звуков или движений.",
+          "example": "The music has a fast rhythm.",
+          "example_translation": "У этой музыки быстрый ритм.",
+          "status": "machine_unverified",
+          "topics": [
+            "music",
+            "art"
+          ]
+        }
+      ]
     }
   ]
 }

@@ -34,41 +34,15 @@ const DEFAULT_MAX_RETRIES = 3;
 const DEFAULT_TEMPERATURE = 0.2;
 const DEFAULT_DEEPSEEK_MODEL = 'deepseek-chat';
 
-/**
- * @typedef {{
- *   word: string;
- *   normalized: string;
- *   part_of_speech: string | null;
- *   level: string | null;
- *   rank: number | null;
- *   sources: string[];
- *   translations: Array<unknown>;
- * }} VocabularyEntry
- */
-
-/**
- * @typedef {{
- *   language_code: string;
- *   value: string;
- *   context: string;
- *   example: string;
- *   example_translation: string;
- *   status: string;
- *   topics: string[];
- * }} TranslationRecord
- */
-
-/**
- * @typedef {{
- *   word: string;
- *   translations: TranslationRecord[];
- * }} TranslationPackEntry
- */
+const OPERATION_GENERATE = 'generate';
+const OPERATION_RECLASSIFY_TOPICS = 'reclassify-topics';
+const OPERATION_REGENERATE_CONTEXT = 'regenerate-context';
+const OPERATION_REGENERATE_EXAMPLES = 'regenerate-examples';
+const OPERATION_VERIFY_TRANSLATIONS = 'verify-translations';
 
 function parseArgs(argv) {
   const dryRun = argv.includes('--dry-run');
-
-  return {
+  const options = {
     provider: readStringFlag(argv, '--provider', null),
     dryRun,
     yes: argv.includes('--yes'),
@@ -78,7 +52,42 @@ function parseArgs(argv) {
     model: readStringFlag(argv, '--model', DEFAULT_DEEPSEEK_MODEL),
     maxRetries: readNumberFlag(argv, '--max-retries', DEFAULT_MAX_RETRIES),
     temperature: readFloatFlag(argv, '--temperature', DEFAULT_TEMPERATURE),
+    reclassifyTopics: argv.includes('--reclassify-topics'),
+    regenerateContext: argv.includes('--regenerate-context'),
+    regenerateExamples: argv.includes('--regenerate-examples'),
+    verifyTranslations: argv.includes('--verify-translations'),
+    onlyTopic: readStringFlag(argv, '--only-topic', null),
+    onlyWords: readCsvFlag(argv, '--only-words'),
+    onlyMissingTopics: argv.includes('--only-missing-topics'),
   };
+
+  options.operation = resolveOperation(options);
+  validateOptionCompatibility(options);
+  return options;
+}
+
+function resolveOperation(options) {
+  const enabledOperations = [
+    options.reclassifyTopics ? OPERATION_RECLASSIFY_TOPICS : null,
+    options.regenerateContext ? OPERATION_REGENERATE_CONTEXT : null,
+    options.regenerateExamples ? OPERATION_REGENERATE_EXAMPLES : null,
+    options.verifyTranslations ? OPERATION_VERIFY_TRANSLATIONS : null,
+  ].filter(Boolean);
+
+  if (enabledOperations.length > 1) {
+    throw new Error(`Only one selective mode may be enabled at a time: ${enabledOperations.join(', ')}`);
+  }
+
+  return enabledOperations[0] || OPERATION_GENERATE;
+}
+
+function validateOptionCompatibility(options) {
+  if (
+    options.operation !== OPERATION_RECLASSIFY_TOPICS &&
+    (options.onlyTopic !== null || options.onlyMissingTopics)
+  ) {
+    throw new Error('--only-topic and --only-missing-topics are supported only with --reclassify-topics');
+  }
 }
 
 function readStringFlag(argv, flag, fallbackValue) {
@@ -93,6 +102,24 @@ function readStringFlag(argv, flag, fallbackValue) {
   }
 
   return rawValue;
+}
+
+function readCsvFlag(argv, flag) {
+  const rawValue = readStringFlag(argv, flag, null);
+  if (rawValue === null) {
+    return null;
+  }
+
+  const values = rawValue
+    .split(',')
+    .map(value => value.trim())
+    .filter(Boolean);
+
+  if (values.length === 0) {
+    throw new Error(`Expected a comma-separated value list after ${flag}`);
+  }
+
+  return values;
 }
 
 function readOptionalNumberFlag(argv, flag, fallbackValue) {
@@ -138,6 +165,20 @@ function readJson(filePath) {
   return JSON.parse(fs.readFileSync(filePath, 'utf8'));
 }
 
+function assertSourceSeed(payload) {
+  if (!payload || typeof payload !== 'object' || Array.isArray(payload)) {
+    throw new Error('Source seed must be an object');
+  }
+
+  if (!payload.meta || typeof payload.meta !== 'object' || Array.isArray(payload.meta)) {
+    throw new Error('Source seed meta must be an object');
+  }
+
+  if (!Array.isArray(payload.entries)) {
+    throw new Error('Source seed entries must be an array');
+  }
+}
+
 function assertTranslationPack(payload) {
   if (!payload || typeof payload !== 'object' || Array.isArray(payload)) {
     throw new Error('Translation pack must be an object');
@@ -168,15 +209,142 @@ function createTopicIndex(topicSeed) {
   );
 }
 
+function assertKnownSelectedTopic(topicIndex, topicId) {
+  if (topicId !== null && !topicIndex.has(topicId)) {
+    throw new Error(`Unknown topic id for --only-topic: "${topicId}"`);
+  }
+}
+
 function createExistingTranslationIndex(translationPack) {
   return new Map(translationPack.translations.map(entry => [entry.word, entry]));
 }
 
-function createProgressState({seedPayload, translationPack, batchSize, limit, force}) {
+function applyLimit(items, limit) {
+  return limit === null ? items : items.slice(0, Math.max(0, Number(limit) || 0));
+}
+
+function createBatches(items, batchSize, getWord) {
+  const batches = [];
+
+  for (let index = 0; index < items.length; index += batchSize) {
+    const batchItems = items.slice(index, index + batchSize);
+    batches.push({
+      batchNumber: batches.length + 1,
+      startIndex: index,
+      endIndex: Math.min(index + batchSize, items.length),
+      size: batchItems.length,
+      words: batchItems.map(getWord),
+      items: batchItems,
+    });
+  }
+
+  return batches;
+}
+
+function createOnlyWordsSet(onlyWords) {
+  return onlyWords ? new Set(onlyWords) : null;
+}
+
+function hasTranslatedContent(entry) {
+  return (
+    entry &&
+    Array.isArray(entry.translations) &&
+    entry.translations.some(translation => {
+      const value = String(translation?.value || '').trim();
+      return Boolean(value);
+    })
+  );
+}
+
+function normalizeTopics(topics, topicIndex, label) {
+  if (!Array.isArray(topics)) {
+    throw new Error(`${label} topics must be an array`);
+  }
+
+  const normalizedTopics = topics.map(topicId => String(topicId || '').trim()).filter(Boolean);
+
+  if (normalizedTopics.length === 0) {
+    throw new Error(`${label} must include at least one topic`);
+  }
+  if (normalizedTopics.length > 3) {
+    throw new Error(`${label} must include at most 3 topics`);
+  }
+  if (new Set(normalizedTopics).size !== normalizedTopics.length) {
+    throw new Error(`${label} must not contain duplicate topics`);
+  }
+
+  for (const topicId of normalizedTopics) {
+    if (!topicIndex.has(topicId)) {
+      throw new Error(`${label} references unknown topic "${topicId}"`);
+    }
+  }
+
+  return normalizedTopics;
+}
+
+function normalizeTranslationRecord(translation, topicIndex, wordLabel) {
+  if (!translation || typeof translation !== 'object' || Array.isArray(translation)) {
+    throw new Error(`Translation for "${wordLabel}" must be an object`);
+  }
+
+  const languageCode = String(translation.language_code || '').trim();
+  const value = String(translation.value || '').trim();
+  const context = String(translation.context || '').trim();
+  const example = String(translation.example || '').trim();
+  const exampleTranslation = String(translation.example_translation || '').trim();
+  const status = String(translation.status || '').trim();
+  const topics = normalizeTopics(translation.topics, topicIndex, `Translation for "${wordLabel}"`);
+
+  if (languageCode !== 'ru') {
+    throw new Error(`Translation for "${wordLabel}" must use language_code "ru"`);
+  }
+  if (!value) {
+    throw new Error(`Translation for "${wordLabel}" is missing value`);
+  }
+  if (!context) {
+    throw new Error(`Translation for "${wordLabel}" is missing context`);
+  }
+  if (!example) {
+    throw new Error(`Translation for "${wordLabel}" is missing example`);
+  }
+  if (!exampleTranslation) {
+    throw new Error(`Translation for "${wordLabel}" is missing example_translation`);
+  }
+  if (status !== 'machine_unverified') {
+    throw new Error(`Translation for "${wordLabel}" must use status "machine_unverified"`);
+  }
+
+  return {
+    language_code: 'ru',
+    value,
+    context,
+    example,
+    example_translation: exampleTranslation,
+    status: 'machine_unverified',
+    topics,
+  };
+}
+
+function buildSelectionSummary(options) {
+  return {
+    onlyTopic: options.onlyTopic,
+    onlyWords: options.onlyWords,
+    onlyMissingTopics: options.onlyMissingTopics,
+    limit: options.limit,
+    batchSize: options.batchSize,
+  };
+}
+
+function createGenerationProgressState({seedPayload, translationPack, batchSize, limit, force, onlyWords}) {
   const existingTranslationIndex = createExistingTranslationIndex(translationPack);
+  const onlyWordsSet = createOnlyWordsSet(onlyWords);
   const eligibleEntries = seedPayload.entries.filter(entry => {
     const word = String(entry.word || '').trim();
     if (!word) {
+      return false;
+    }
+
+    if (onlyWordsSet && !onlyWordsSet.has(word)) {
       return false;
     }
 
@@ -186,27 +354,63 @@ function createProgressState({seedPayload, translationPack, batchSize, limit, fo
 
     return !existingTranslationIndex.has(word);
   });
-  const pendingEntries =
-    limit === null ? eligibleEntries : eligibleEntries.slice(0, Math.max(0, Number(limit) || 0));
-  const batches = [];
-
-  for (let index = 0; index < pendingEntries.length; index += batchSize) {
-    batches.push({
-      batchNumber: batches.length + 1,
-      startIndex: index,
-      endIndex: Math.min(index + batchSize, pendingEntries.length),
-      size: Math.min(batchSize, pendingEntries.length - index),
-      words: pendingEntries.slice(index, index + batchSize).map(entry => entry.word),
-    });
-  }
+  const pendingEntries = applyLimit(eligibleEntries, limit);
 
   return {
     totalEntries: seedPayload.entries.length,
     translatedEntries: translationPack.translations.length,
     eligibleEntries,
     pendingEntries,
-    batches,
+    batches: createBatches(pendingEntries, batchSize, entry => entry.word),
     existingTranslationIndex,
+  };
+}
+
+function entryMatchesTopicFilters(entry, options) {
+  if (options.onlyTopic !== null) {
+    const hasTopic = entry.translations.some(translation =>
+      Array.isArray(translation.topics) && translation.topics.includes(options.onlyTopic),
+    );
+    if (!hasTopic) {
+      return false;
+    }
+  }
+
+  if (options.onlyMissingTopics) {
+    const hasMissingTopics = entry.translations.some(
+      translation => !Array.isArray(translation.topics) || translation.topics.length === 0,
+    );
+    if (!hasMissingTopics) {
+      return false;
+    }
+  }
+
+  return true;
+}
+
+function createReclassificationProgressState({translationPack, batchSize, limit, options}) {
+  const onlyWordsSet = createOnlyWordsSet(options.onlyWords);
+  const eligibleEntries = translationPack.translations.filter(entry => {
+    const word = String(entry.word || '').trim();
+    if (!word) {
+      return false;
+    }
+    if (!hasTranslatedContent(entry)) {
+      return false;
+    }
+    if (onlyWordsSet && !onlyWordsSet.has(word)) {
+      return false;
+    }
+    return entryMatchesTopicFilters(entry, options);
+  });
+  const pendingEntries = applyLimit(eligibleEntries, limit);
+
+  return {
+    totalEntries: translationPack.translations.length,
+    translatedEntries: translationPack.translations.length,
+    eligibleEntries,
+    pendingEntries,
+    batches: createBatches(pendingEntries, batchSize, entry => entry.word),
   };
 }
 
@@ -231,10 +435,10 @@ function createDryRunTranslation(entry) {
   };
 }
 
-function createDryRunPreview({entries, topicIndex, translationPack}) {
+function createGenerationDryRunPreview({entries, translationPack}) {
   return {
     meta: translationPack.meta,
-    translations: entries.map(entry => createDryRunTranslation(entry, Array.from(topicIndex.keys()))),
+    translations: entries.map(entry => createDryRunTranslation(entry)),
   };
 }
 
@@ -251,6 +455,32 @@ function mergeGeneratedEntries(translationPack, generatedEntries) {
       left.word.localeCompare(right.word),
     ),
   };
+}
+
+function applyWordUpdates(translationPack, updatesByWord, updateEntry) {
+  return {
+    ...translationPack,
+    translations: translationPack.translations.map(entry => {
+      const word = String(entry.word || '').trim();
+      if (!updatesByWord.has(word)) {
+        return entry;
+      }
+
+      return updateEntry(entry, updatesByWord.get(word));
+    }),
+  };
+}
+
+function applyTopicClassifications(translationPack, classifications) {
+  const updatesByWord = new Map(classifications.map(classification => [classification.word, classification]));
+
+  return applyWordUpdates(translationPack, updatesByWord, (entry, classification) => ({
+    ...entry,
+    translations: entry.translations.map(translation => ({
+      ...translation,
+      topics: [...classification.topics],
+    })),
+  }));
 }
 
 function saveTranslationPackAtomic(filePath, translationPack) {
@@ -310,7 +540,7 @@ function createTopicPromptSection(topicIndex) {
     .join('\n');
 }
 
-function buildDeepSeekPrompt({batchWords, topicIndex}) {
+function buildDeepSeekGenerationPrompt({batchWords, topicIndex}) {
   const allowedTopics = Array.from(topicIndex.keys());
   const topicPromptSection = createTopicPromptSection(topicIndex);
   const systemPrompt = [
@@ -385,12 +615,75 @@ function buildDeepSeekPrompt({batchWords, topicIndex}) {
   };
 }
 
+function buildReclassificationPayloadEntry(entry) {
+  return {
+    word: entry.word,
+    translations: entry.translations.map(translation => ({
+      value: String(translation?.value || '').trim(),
+      context: String(translation?.context || '').trim(),
+      example: String(translation?.example || '').trim(),
+      current_topics: Array.isArray(translation?.topics) ? translation.topics : [],
+    })),
+  };
+}
+
+function buildDeepSeekReclassificationPrompt({batchEntries, topicIndex}) {
+  const allowedTopics = Array.from(topicIndex.keys());
+  const topicPromptSection = createTopicPromptSection(topicIndex);
+  const payloadPreview = batchEntries.map(buildReclassificationPayloadEntry);
+  const systemPrompt = [
+    'Return only valid json.',
+    'Do not include markdown.',
+    'Do not include prose.',
+    'You reclassify topic ids for an existing Russian vocabulary translation pack.',
+    'Do NOT regenerate translations.',
+    'Do NOT regenerate examples.',
+    'Do NOT regenerate contexts.',
+    'ONLY return updated topic ids.',
+    'The response json must match this example exactly in structure:',
+    '{',
+    '  "classifications": [',
+    '    {',
+    '      "word": "ability",',
+    '      "topics": ["abstract", "education"]',
+    '    }',
+    '  ]',
+    '}',
+  ].join('\n');
+
+  const userPrompt = [
+    'Reclassify topics for these existing translation entries:',
+    JSON.stringify(payloadPreview, null, 2),
+    '',
+    'Rules:',
+    '- Return ONLY valid JSON with top-level key "classifications".',
+    '- For each word return exactly one object with keys "word" and "topics".',
+    '- Do NOT regenerate translations.',
+    '- Do NOT regenerate examples.',
+    '- Do NOT regenerate contexts.',
+    '- ONLY return updated topic ids.',
+    '- topics must be a non-empty array with 1 to 3 topic ids.',
+    '- Use ONLY allowed topic ids from the topic seed.',
+    '- Never invent new topic ids.',
+    '- Prefer semantically accurate topics.',
+    '- Avoid generic overuse of "people" and "education".',
+    '- Use this list of allowed topic ids and descriptions:',
+    topicPromptSection,
+    '',
+    `Allowed topic ids json: ${JSON.stringify(allowedTopics)}`,
+  ].join('\n');
+
+  return {
+    systemPrompt,
+    userPrompt,
+  };
+}
+
 function calculateMaxTokens(batchWords) {
   return Math.max(1500, batchWords.length * 350);
 }
 
-async function callDeepSeekBatch({apiKey, model, temperature, batchWords, topicIndex}) {
-  const {systemPrompt, userPrompt} = buildDeepSeekPrompt({batchWords, topicIndex});
+async function callDeepSeekJson({apiKey, model, temperature, systemPrompt, userPrompt, maxTokens}) {
   const response = await fetch(DEEPSEEK_API_URL, {
     method: 'POST',
     headers: {
@@ -405,7 +698,7 @@ async function callDeepSeekBatch({apiKey, model, temperature, batchWords, topicI
       ],
       response_format: {type: 'json_object'},
       temperature,
-      max_tokens: calculateMaxTokens(batchWords),
+      max_tokens: maxTokens,
     }),
   });
 
@@ -441,61 +734,37 @@ async function callDeepSeekBatch({apiKey, model, temperature, batchWords, topicI
   }
 }
 
-function normalizeTranslationRecord(translation, topicIndex, wordLabel) {
-  if (!translation || typeof translation !== 'object' || Array.isArray(translation)) {
-    throw new Error(`Translation for "${wordLabel}" must be an object`);
-  }
+async function callDeepSeekGenerationBatch({apiKey, model, temperature, batchWords, topicIndex}) {
+  const {systemPrompt, userPrompt} = buildDeepSeekGenerationPrompt({batchWords, topicIndex});
+  return callDeepSeekJson({
+    apiKey,
+    model,
+    temperature,
+    systemPrompt,
+    userPrompt,
+    maxTokens: calculateMaxTokens(batchWords),
+  });
+}
 
-  const languageCode = String(translation.language_code || '').trim();
-  const value = String(translation.value || '').trim();
-  const context = String(translation.context || '').trim();
-  const example = String(translation.example || '').trim();
-  const exampleTranslation = String(translation.example_translation || '').trim();
-  const status = String(translation.status || '').trim();
-  const topics = Array.isArray(translation.topics)
-    ? translation.topics.map(topicId => String(topicId || '').trim()).filter(Boolean)
-    : null;
-
-  if (languageCode !== 'ru') {
-    throw new Error(`Translation for "${wordLabel}" must use language_code "ru"`);
-  }
-  if (!value) {
-    throw new Error(`Translation for "${wordLabel}" is missing value`);
-  }
-  if (!context) {
-    throw new Error(`Translation for "${wordLabel}" is missing context`);
-  }
-  if (!example) {
-    throw new Error(`Translation for "${wordLabel}" is missing example`);
-  }
-  if (!exampleTranslation) {
-    throw new Error(`Translation for "${wordLabel}" is missing example_translation`);
-  }
-  if (status !== 'machine_unverified') {
-    throw new Error(`Translation for "${wordLabel}" must use status "machine_unverified"`);
-  }
-  if (!topics || topics.length === 0) {
-    throw new Error(`Translation for "${wordLabel}" must include at least one topic`);
-  }
-  if (topics.length > 3) {
-    throw new Error(`Translation for "${wordLabel}" must include at most 3 topics`);
-  }
-
-  for (const topicId of topics) {
-    if (!topicIndex.has(topicId)) {
-      throw new Error(`Translation for "${wordLabel}" references unknown topic "${topicId}"`);
-    }
-  }
-
-  return {
-    language_code: 'ru',
-    value,
-    context,
-    example,
-    example_translation: exampleTranslation,
-    status: 'machine_unverified',
-    topics,
-  };
+async function callDeepSeekReclassificationBatch({
+  apiKey,
+  model,
+  temperature,
+  batchEntries,
+  topicIndex,
+}) {
+  const {systemPrompt, userPrompt} = buildDeepSeekReclassificationPrompt({
+    batchEntries,
+    topicIndex,
+  });
+  return callDeepSeekJson({
+    apiKey,
+    model,
+    temperature,
+    systemPrompt,
+    userPrompt,
+    maxTokens: Math.max(1200, batchEntries.length * 220),
+  });
 }
 
 function validateGeneratedBatch(payload, batchWords, topicIndex) {
@@ -552,12 +821,60 @@ function validateGeneratedBatch(payload, batchWords, topicIndex) {
   return normalizedEntries.sort((left, right) => left.word.localeCompare(right.word));
 }
 
+function validateTopicClassificationBatch(payload, batchEntries, topicIndex, translationIndex) {
+  if (!payload || typeof payload !== 'object' || Array.isArray(payload)) {
+    throw new Error('DeepSeek classification payload must be an object');
+  }
+
+  if (!Array.isArray(payload.classifications)) {
+    throw new Error('DeepSeek classification payload must include a classifications array');
+  }
+
+  const requestedWords = new Set(batchEntries.map(entry => entry.word));
+  const seenWords = new Set();
+  const normalizedClassifications = [];
+
+  for (const classification of payload.classifications) {
+    if (!classification || typeof classification !== 'object' || Array.isArray(classification)) {
+      throw new Error('Each classification must be an object');
+    }
+
+    const word = String(classification.word || '').trim();
+    if (!word) {
+      throw new Error('Classification entry is missing word');
+    }
+    if (!requestedWords.has(word)) {
+      throw new Error(`DeepSeek returned unexpected classification word "${word}"`);
+    }
+    if (seenWords.has(word)) {
+      throw new Error(`DeepSeek returned duplicate classification for "${word}"`);
+    }
+    if (!translationIndex.has(word)) {
+      throw new Error(`Classification word "${word}" does not exist in the translation pack`);
+    }
+
+    seenWords.add(word);
+    normalizedClassifications.push({
+      word,
+      topics: normalizeTopics(classification.topics, topicIndex, `Classification for "${word}"`),
+    });
+  }
+
+  for (const requestedWord of requestedWords) {
+    if (!seenWords.has(requestedWord)) {
+      throw new Error(`DeepSeek classification response is missing requested word "${requestedWord}"`);
+    }
+  }
+
+  return normalizedClassifications.sort((left, right) => left.word.localeCompare(right.word));
+}
+
 async function generateBatchWithRetries({options, batchWords, topicIndex, apiKey}) {
   let lastError = null;
 
   for (let attempt = 1; attempt <= options.maxRetries; attempt += 1) {
     try {
-      const payload = await callDeepSeekBatch({
+      const payload = await callDeepSeekGenerationBatch({
         apiKey,
         model: options.model,
         temperature: options.temperature,
@@ -578,6 +895,50 @@ async function generateBatchWithRetries({options, batchWords, topicIndex, apiKey
   );
 }
 
+async function reclassifyBatchWithRetries({
+  options,
+  batchEntries,
+  topicIndex,
+  translationIndex,
+  apiKey,
+}) {
+  let lastError = null;
+
+  for (let attempt = 1; attempt <= options.maxRetries; attempt += 1) {
+    try {
+      const payload = await callDeepSeekReclassificationBatch({
+        apiKey,
+        model: options.model,
+        temperature: options.temperature,
+        batchEntries,
+        topicIndex,
+      });
+      return validateTopicClassificationBatch(payload, batchEntries, topicIndex, translationIndex);
+    } catch (error) {
+      lastError = error;
+      console.error(
+        `Classification batch failed for [${batchEntries.map(entry => entry.word).join(', ')}] on attempt ${attempt}/${options.maxRetries}: ${error.message}`,
+      );
+    }
+  }
+
+  throw new Error(
+    `Failed to reclassify a valid batch after ${options.maxRetries} attempts for words: ${batchEntries.map(entry => entry.word).join(', ')}. Last error: ${lastError ? lastError.message : 'unknown error'}`,
+  );
+}
+
+function createReclassificationPreview(entry, classification) {
+  return {
+    word: entry.word,
+    translationCount: entry.translations.length,
+    before: entry.translations.map(translation => ({
+      value: String(translation?.value || '').trim(),
+      topics: Array.isArray(translation?.topics) ? translation.topics : [],
+    })),
+    after: classification.topics,
+  };
+}
+
 async function runDeepSeekGeneration({options, seedPayload, topicIndex, translationPack}) {
   if (!options.yes) {
     throw new Error('Real generation requires --provider deepseek --yes');
@@ -585,12 +946,13 @@ async function runDeepSeekGeneration({options, seedPayload, topicIndex, translat
 
   loadEnvFile(ENV_PATH);
   const apiKey = getRequiredEnv('DEEPSEEK_API_KEY');
-  const progressState = createProgressState({
+  const progressState = createGenerationProgressState({
     seedPayload,
     translationPack,
     batchSize: options.batchSize,
     limit: options.limit,
     force: options.force,
+    onlyWords: options.onlyWords,
   });
 
   if (progressState.pendingEntries.length === 0) {
@@ -598,6 +960,7 @@ async function runDeepSeekGeneration({options, seedPayload, topicIndex, translat
       JSON.stringify(
         {
           mode: 'deepseek',
+          operation: OPERATION_GENERATE,
           message: 'No words need generation for the current selection.',
           sourceSeedPath: SOURCE_SEED_PATH,
           topicSeedPath: TOPIC_SEED_PATH,
@@ -607,6 +970,7 @@ async function runDeepSeekGeneration({options, seedPayload, topicIndex, translat
           eligibleEntries: progressState.eligibleEntries.length,
           pendingEntries: 0,
           completedBatches: 0,
+          selection: buildSelectionSummary(options),
         },
         null,
         2,
@@ -634,6 +998,7 @@ async function runDeepSeekGeneration({options, seedPayload, topicIndex, translat
       JSON.stringify(
         {
           mode: 'deepseek',
+          operation: OPERATION_GENERATE,
           batchNumber: batch.batchNumber,
           batchSize: batch.size,
           batchWords: batch.words,
@@ -652,6 +1017,7 @@ async function runDeepSeekGeneration({options, seedPayload, topicIndex, translat
     JSON.stringify(
       {
         mode: 'deepseek',
+        operation: OPERATION_GENERATE,
         message: 'Generation completed successfully.',
         sourceSeedPath: SOURCE_SEED_PATH,
         topicSeedPath: TOPIC_SEED_PATH,
@@ -666,28 +1032,188 @@ async function runDeepSeekGeneration({options, seedPayload, topicIndex, translat
   );
 }
 
+async function runDeepSeekTopicReclassification({options, topicIndex, translationPack}) {
+  if (!options.dryRun && !options.yes) {
+    throw new Error('Real topic reclassification requires --provider deepseek --reclassify-topics --yes');
+  }
+
+  loadEnvFile(ENV_PATH);
+  const apiKey = getRequiredEnv('DEEPSEEK_API_KEY');
+  const translationIndex = createExistingTranslationIndex(translationPack);
+  const progressState = createReclassificationProgressState({
+    translationPack,
+    batchSize: options.batchSize,
+    limit: options.limit,
+    options,
+  });
+
+  if (progressState.pendingEntries.length === 0) {
+    console.log(
+      JSON.stringify(
+        {
+          mode: options.dryRun ? 'dry-run' : 'deepseek',
+          operation: OPERATION_RECLASSIFY_TOPICS,
+          message: 'No translated words matched the current reclassification selection.',
+          translationPackPath: TRANSLATION_PACK_PATH,
+          topicSeedPath: TOPIC_SEED_PATH,
+          translatedEntries: progressState.translatedEntries,
+          eligibleEntries: progressState.eligibleEntries.length,
+          pendingEntries: 0,
+          selection: buildSelectionSummary(options),
+        },
+        null,
+        2,
+      ),
+    );
+    return;
+  }
+
+  let currentPack = translationPack;
+  let completedWordCount = 0;
+  const preview = [];
+
+  for (const batch of progressState.batches) {
+    const classifications = await reclassifyBatchWithRetries({
+      options,
+      batchEntries: batch.items,
+      topicIndex,
+      translationIndex,
+      apiKey,
+    });
+
+    if (options.dryRun) {
+      for (const classification of classifications) {
+        const currentEntry = translationIndex.get(classification.word);
+        preview.push(createReclassificationPreview(currentEntry, classification));
+      }
+    } else {
+      currentPack = applyTopicClassifications(currentPack, classifications);
+      saveTranslationPackAtomic(TRANSLATION_PACK_PATH, currentPack);
+    }
+
+    completedWordCount += classifications.length;
+
+    console.log(
+      JSON.stringify(
+        {
+          mode: options.dryRun ? 'dry-run' : 'deepseek',
+          operation: OPERATION_RECLASSIFY_TOPICS,
+          batchNumber: batch.batchNumber,
+          batchSize: batch.size,
+          batchWords: batch.words,
+          completedWords: completedWordCount,
+          totalScheduledWords: progressState.pendingEntries.length,
+          savedTo: options.dryRun ? null : TRANSLATION_PACK_PATH,
+        },
+        null,
+        2,
+      ),
+    );
+  }
+
+  console.log(
+    JSON.stringify(
+      {
+        mode: options.dryRun ? 'dry-run' : 'deepseek',
+        operation: OPERATION_RECLASSIFY_TOPICS,
+        message: options.dryRun
+          ? 'Topic reclassification preview completed.'
+          : 'Topic reclassification completed successfully.',
+        topicSeedPath: TOPIC_SEED_PATH,
+        translationPackPath: TRANSLATION_PACK_PATH,
+        reclassifiedWords: completedWordCount,
+        dryRun: options.dryRun,
+        atomicSave: {
+          enabled: !options.dryRun,
+          tempPathPattern: `${TRANSLATION_PACK_PATH}.tmp`,
+        },
+        selection: buildSelectionSummary(options),
+        preview,
+        nextStep: 'Run node scripts/audit-core-english-3000.js',
+      },
+      null,
+      2,
+    ),
+  );
+}
+
+function createPrepareOnlyResponse({options, progressState}) {
+  return {
+    mode: options.dryRun ? 'dry-run' : 'prepare-only',
+    operation: options.operation,
+    message: `Provider workflow is not implemented for operation "${options.operation}" in this run. No files were modified.`,
+    sourceSeedPath: SOURCE_SEED_PATH,
+    topicSeedPath: TOPIC_SEED_PATH,
+    translationPackPath: TRANSLATION_PACK_PATH,
+    totalEntries: progressState.totalEntries,
+    translatedEntries: progressState.translatedEntries,
+    eligibleEntries: progressState.eligibleEntries.length,
+    pendingEntries: progressState.pendingEntries.length,
+    nextBatch: progressState.batches[0] || null,
+    supportedProviders: ['deepseek'],
+    selection: buildSelectionSummary(options),
+  };
+}
+
 async function main() {
   const options = parseArgs(process.argv.slice(2));
   const seedPayload = readJson(SOURCE_SEED_PATH);
   const topicSeed = readJson(TOPIC_SEED_PATH);
   const translationPack = readJson(TRANSLATION_PACK_PATH);
 
+  assertSourceSeed(seedPayload);
   assertTranslationPack(translationPack);
 
   const topicIndex = createTopicIndex(topicSeed);
-  const progressState = createProgressState({
+  assertKnownSelectedTopic(topicIndex, options.onlyTopic);
+
+  if (options.operation === OPERATION_RECLASSIFY_TOPICS) {
+    if (options.provider === 'deepseek') {
+      await runDeepSeekTopicReclassification({
+        options,
+        topicIndex,
+        translationPack,
+      });
+      return;
+    }
+
+    const progressState = createReclassificationProgressState({
+      translationPack,
+      batchSize: options.batchSize,
+      limit: options.limit,
+      options,
+    });
+
+    console.log(JSON.stringify(createPrepareOnlyResponse({options, progressState}), null, 2));
+    return;
+  }
+
+  if (options.operation !== OPERATION_GENERATE) {
+    const selectiveProgressState = {
+      totalEntries: translationPack.translations.length,
+      translatedEntries: translationPack.translations.length,
+      eligibleEntries: [],
+      pendingEntries: [],
+      batches: [],
+    };
+
+    console.log(JSON.stringify(createPrepareOnlyResponse({options, progressState: selectiveProgressState}), null, 2));
+    return;
+  }
+
+  const progressState = createGenerationProgressState({
     seedPayload,
     translationPack,
     batchSize: options.batchSize,
     limit: options.limit,
     force: options.force,
+    onlyWords: options.onlyWords,
   });
 
   if (options.dryRun) {
     const previewEntries = selectEntriesForDryRun(progressState, options.limit || DEFAULT_DRY_RUN_LIMIT);
-    const previewPayload = createDryRunPreview({
+    const previewPayload = createGenerationDryRunPreview({
       entries: previewEntries,
-      topicIndex,
       translationPack,
     });
 
@@ -695,6 +1221,7 @@ async function main() {
       JSON.stringify(
         {
           mode: 'dry-run',
+          operation: OPERATION_GENERATE,
           provider: options.provider,
           sourceSeedPath: SOURCE_SEED_PATH,
           topicSeedPath: TOPIC_SEED_PATH,
@@ -705,6 +1232,7 @@ async function main() {
           pendingEntries: progressState.pendingEntries.length,
           nextBatch: progressState.batches[0] || null,
           availableTopicIds: Array.from(topicIndex.keys()),
+          selection: buildSelectionSummary(options),
           preview: previewPayload,
         },
         null,
@@ -724,33 +1252,7 @@ async function main() {
     return;
   }
 
-  const nextBatch = progressState.batches[0] || null;
-  const unchangedPack = mergeGeneratedEntries(translationPack, []);
-
-  if (JSON.stringify(unchangedPack) !== JSON.stringify(translationPack)) {
-    saveTranslationPackAtomic(TRANSLATION_PACK_PATH, unchangedPack);
-  }
-
-  console.log(
-    JSON.stringify(
-      {
-        mode: 'prepare-only',
-        message:
-          'Translation generation provider is not implemented for this run. No translation entries were generated.',
-        sourceSeedPath: SOURCE_SEED_PATH,
-        topicSeedPath: TOPIC_SEED_PATH,
-        translationPackPath: TRANSLATION_PACK_PATH,
-        totalEntries: progressState.totalEntries,
-        translatedEntries: translationPack.translations.length,
-        eligibleEntries: progressState.eligibleEntries.length,
-        pendingEntries: progressState.pendingEntries.length,
-        nextBatch,
-        supportedProviders: ['deepseek'],
-      },
-      null,
-      2,
-    ),
-  );
+  console.log(JSON.stringify(createPrepareOnlyResponse({options, progressState}), null, 2));
 }
 
 main().catch(error => {
