@@ -28,6 +28,7 @@ const topicPayload = fs.existsSync(topicSeedPath)
   : null;
 const errors = [];
 const topicIds = new Set();
+const topicFieldSignature = 'description,id,name';
 
 function validateTranslation(translation, label) {
   if (!translation || typeof translation !== 'object' || Array.isArray(translation)) {
@@ -82,12 +83,35 @@ if (topicPayload !== null) {
         continue;
       }
 
-      if (!topic.id || !String(topic.id).trim()) {
+      const topicKeys = Object.keys(topic).sort().join(',');
+      if (topicKeys !== topicFieldSignature) {
+        errors.push(
+          `topic "${String(topic.id || '').trim() || '<unknown>'}" must contain exactly id, name, description`,
+        );
+      }
+
+      const topicId = String(topic.id || '').trim();
+      const topicName = String(topic.name || '').trim();
+      const topicDescription = String(topic.description || '').trim();
+
+      if (!topicId) {
         errors.push('topic missing id');
         continue;
       }
 
-      topicIds.add(String(topic.id));
+      if (topicIds.has(topicId)) {
+        errors.push(`duplicate topic id "${topicId}"`);
+      } else {
+        topicIds.add(topicId);
+      }
+
+      if (!topicName) {
+        errors.push(`topic "${topicId}" missing name`);
+      }
+
+      if (!topicDescription) {
+        errors.push(`topic "${topicId}" missing description`);
+      }
     }
   }
 }

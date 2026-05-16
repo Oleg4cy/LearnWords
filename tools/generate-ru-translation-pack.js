@@ -35,10 +35,37 @@ const DEFAULT_TEMPERATURE = 0.2;
 const DEFAULT_DEEPSEEK_MODEL = 'deepseek-chat';
 
 const OPERATION_GENERATE = 'generate';
+const OPERATION_SUGGEST_TOPICS = 'suggest-topics';
 const OPERATION_RECLASSIFY_TOPICS = 'reclassify-topics';
 const OPERATION_REGENERATE_CONTEXT = 'regenerate-context';
 const OPERATION_REGENERATE_EXAMPLES = 'regenerate-examples';
 const OPERATION_VERIFY_TRANSLATIONS = 'verify-translations';
+const TOPIC_SUGGESTION_PRESETS = new Map([
+  [
+    'clothing',
+    {
+      name: 'Clothing & Accessories',
+      description:
+        'Clothes, shoes, accessories, garments, dressing, and wearable personal items.',
+    },
+  ],
+  [
+    'entertainment',
+    {
+      name: 'Entertainment & Leisure',
+      description:
+        'Theater, cinema, games, hobbies, leisure activities, performances, shows, and fun.',
+    },
+  ],
+]);
+
+class UnknownTopicsError extends Error {
+  constructor({message, unknownTopics}) {
+    super(message);
+    this.name = 'UnknownTopicsError';
+    this.unknownTopics = unknownTopics;
+  }
+}
 
 function parseArgs(argv) {
   const dryRun = argv.includes('--dry-run');
@@ -52,6 +79,8 @@ function parseArgs(argv) {
     model: readStringFlag(argv, '--model', DEFAULT_DEEPSEEK_MODEL),
     maxRetries: readNumberFlag(argv, '--max-retries', DEFAULT_MAX_RETRIES),
     temperature: readFloatFlag(argv, '--temperature', DEFAULT_TEMPERATURE),
+    suggestTopics: argv.includes('--suggest-topics'),
+    appendSuggestedTopics: argv.includes('--append-suggested-topics'),
     reclassifyTopics: argv.includes('--reclassify-topics'),
     regenerateContext: argv.includes('--regenerate-context'),
     regenerateExamples: argv.includes('--regenerate-examples'),
@@ -68,6 +97,7 @@ function parseArgs(argv) {
 
 function resolveOperation(options) {
   const enabledOperations = [
+    options.suggestTopics ? OPERATION_SUGGEST_TOPICS : null,
     options.reclassifyTopics ? OPERATION_RECLASSIFY_TOPICS : null,
     options.regenerateContext ? OPERATION_REGENERATE_CONTEXT : null,
     options.regenerateExamples ? OPERATION_REGENERATE_EXAMPLES : null,
@@ -82,6 +112,9 @@ function resolveOperation(options) {
 }
 
 function validateOptionCompatibility(options) {
+  if (options.appendSuggestedTopics && !options.suggestTopics) {
+    throw new Error('--append-suggested-topics requires --suggest-topics');
+  }
   if (
     options.operation !== OPERATION_RECLASSIFY_TOPICS &&
     (options.onlyTopic !== null || options.onlyMissingTopics)
@@ -193,14 +226,51 @@ function assertTranslationPack(payload) {
   }
 }
 
-function createTopicIndex(topicSeed) {
+function assertTopicSeed(topicSeed) {
   if (!topicSeed || typeof topicSeed !== 'object' || Array.isArray(topicSeed)) {
     throw new Error('Topic seed must be an object');
   }
-
+  if (!topicSeed.meta || typeof topicSeed.meta !== 'object' || Array.isArray(topicSeed.meta)) {
+    throw new Error('Topic seed meta must be an object');
+  }
   if (!Array.isArray(topicSeed.topics)) {
     throw new Error('Topic seed topics must be an array');
   }
+
+  const seenIds = new Set();
+  for (const topic of topicSeed.topics) {
+    if (!topic || typeof topic !== 'object' || Array.isArray(topic)) {
+      throw new Error('Each topic must be an object');
+    }
+
+    const keys = Object.keys(topic).sort();
+    if (keys.join(',') !== 'description,id,name') {
+      throw new Error(`Topic "${String(topic.id || '').trim() || '<unknown>'}" must contain exactly id, name, description`);
+    }
+
+    const id = String(topic.id || '').trim();
+    const name = String(topic.name || '').trim();
+    const description = String(topic.description || '').trim();
+
+    if (!id) {
+      throw new Error('Topic missing id');
+    }
+    if (seenIds.has(id)) {
+      throw new Error(`Duplicate topic id "${id}"`);
+    }
+    if (!name) {
+      throw new Error(`Topic "${id}" is missing name`);
+    }
+    if (!description) {
+      throw new Error(`Topic "${id}" is missing description`);
+    }
+
+    seenIds.add(id);
+  }
+}
+
+function createTopicIndex(topicSeed) {
+  assertTopicSeed(topicSeed);
 
   return new Map(
     topicSeed.topics
@@ -256,7 +326,9 @@ function hasTranslatedContent(entry) {
   );
 }
 
-function normalizeTopics(topics, topicIndex, label) {
+function normalizeTopics(topics, topicIndex, label, options = {}) {
+  const {allowUnknownTopics = false} = options;
+
   if (!Array.isArray(topics)) {
     throw new Error(`${label} topics must be an array`);
   }
@@ -273,16 +345,184 @@ function normalizeTopics(topics, topicIndex, label) {
     throw new Error(`${label} must not contain duplicate topics`);
   }
 
-  for (const topicId of normalizedTopics) {
-    if (!topicIndex.has(topicId)) {
-      throw new Error(`${label} references unknown topic "${topicId}"`);
-    }
+  const unknownTopicIds = normalizedTopics.filter(topicId => !topicIndex.has(topicId));
+  if (!allowUnknownTopics && unknownTopicIds.length > 0) {
+    throw new UnknownTopicsError({
+      message: `${label} references unknown topic "${unknownTopicIds[0]}"`,
+      unknownTopics: unknownTopicIds.map(topicId => ({
+        id: topicId,
+        words: [],
+      })),
+    });
   }
 
   return normalizedTopics;
 }
 
-function normalizeTranslationRecord(translation, topicIndex, wordLabel) {
+function collectUnknownTopicsFromEntries(entries, topicIndex) {
+  const unknownTopics = new Map();
+
+  for (const entry of entries) {
+    if (!entry || typeof entry !== 'object' || Array.isArray(entry)) {
+      continue;
+    }
+
+    const word = String(entry.word || '').trim();
+    const translations = Array.isArray(entry.translations) ? entry.translations : [];
+
+    for (const translation of translations) {
+      const topics = Array.isArray(translation?.topics)
+        ? translation.topics.map(topicId => String(topicId || '').trim()).filter(Boolean)
+        : [];
+
+      for (const topicId of topics) {
+        if (topicIndex.has(topicId)) {
+          continue;
+        }
+
+        if (!unknownTopics.has(topicId)) {
+          unknownTopics.set(topicId, new Set());
+        }
+
+        if (word) {
+          unknownTopics.get(topicId).add(word);
+        }
+      }
+    }
+  }
+
+  return Array.from(unknownTopics.entries())
+    .sort((left, right) => left[0].localeCompare(right[0]))
+    .map(([id, words]) => ({
+      id,
+      words: Array.from(words).sort((left, right) => left.localeCompare(right)),
+    }));
+}
+
+function ensureNoUnknownTopicsInBatch(entries, topicIndex) {
+  const unknownTopics = collectUnknownTopicsFromEntries(entries, topicIndex);
+  if (unknownTopics.length === 0) {
+    return;
+  }
+
+  throw new UnknownTopicsError({
+    message: formatUnknownTopicsErrorMessage(unknownTopics),
+    unknownTopics,
+  });
+}
+
+function formatUnknownTopicsErrorMessage(unknownTopics) {
+  const lines = [
+    'Translation batch contains unknown topics.',
+    '',
+    'Unknown topics:',
+  ];
+
+  for (const topic of unknownTopics) {
+    lines.push(`- ${topic.id}`);
+    lines.push('  words:');
+    for (const word of topic.words) {
+      lines.push(`    - ${word}`);
+    }
+    lines.push('');
+  }
+
+  lines.push('Run:');
+  lines.push('--suggest-topics');
+  lines.push('to review or append new topic definitions.');
+
+  return lines.join('\n');
+}
+
+function createTopicDisplayName(topicId) {
+  const preset = TOPIC_SUGGESTION_PRESETS.get(topicId);
+  if (preset) {
+    return preset.name;
+  }
+
+  const tokens = String(topicId || '')
+    .trim()
+    .split(/[-_]+/u)
+    .filter(Boolean);
+
+  if (tokens.length === 0) {
+    return 'Topic';
+  }
+
+  const replacements = new Map([
+    ['ai', 'AI'],
+    ['tv', 'TV'],
+    ['pc', 'PC'],
+    ['it', 'IT'],
+    ['hr', 'HR'],
+    ['usa', 'USA'],
+    ['uk', 'UK'],
+    ['ph', 'Public Health'],
+  ]);
+
+  return tokens
+    .map(token => {
+      const lowerToken = token.toLowerCase();
+      if (replacements.has(lowerToken)) {
+        return replacements.get(lowerToken);
+      }
+      return lowerToken.charAt(0).toUpperCase() + lowerToken.slice(1);
+    })
+    .join(' ');
+}
+
+function createTopicDescription(topicId, topicWords) {
+  const preset = TOPIC_SUGGESTION_PRESETS.get(topicId);
+  if (preset) {
+    return preset.description;
+  }
+
+  const sampleWords = topicWords.slice(0, 6);
+  const displayName = createTopicDisplayName(topicId);
+  const samplePart =
+    sampleWords.length > 0 ? ` Common triggers include ${sampleWords.join(', ')}.` : '';
+
+  return `${displayName} vocabulary and closely related concepts that belong to this semantic area rather than a broader generic topic.${samplePart}`;
+}
+
+function buildSuggestedTopics(unknownTopics, topicIndex) {
+  return unknownTopics
+    .filter(topic => !topicIndex.has(topic.id))
+    .map(topic => ({
+      id: topic.id,
+      name: createTopicDisplayName(topic.id),
+      description: createTopicDescription(topic.id, topic.words),
+    }))
+    .sort((left, right) => left.id.localeCompare(right.id));
+}
+
+function saveTopicSeedAtomic(filePath, topicSeed) {
+  assertTopicSeed(topicSeed);
+  const tempPath = `${filePath}.tmp`;
+  fs.writeFileSync(tempPath, `${JSON.stringify(topicSeed, null, 2)}\n`, 'utf8');
+  fs.renameSync(tempPath, filePath);
+}
+
+function appendSuggestedTopicsToSeed(topicSeed, suggestedTopics) {
+  const existingIds = new Set(topicSeed.topics.map(topic => topic.id));
+  const topicsToAppend = suggestedTopics.filter(topic => !existingIds.has(topic.id));
+
+  const nextTopicSeed = {
+    ...topicSeed,
+    topics: [...topicSeed.topics, ...topicsToAppend].sort((left, right) =>
+      left.id.localeCompare(right.id),
+    ),
+  };
+
+  assertTopicSeed(nextTopicSeed);
+
+  return {
+    nextTopicSeed,
+    appendedTopics: topicsToAppend,
+  };
+}
+
+function normalizeTranslationRecord(translation, topicIndex, wordLabel, options = {}) {
   if (!translation || typeof translation !== 'object' || Array.isArray(translation)) {
     throw new Error(`Translation for "${wordLabel}" must be an object`);
   }
@@ -293,7 +533,12 @@ function normalizeTranslationRecord(translation, topicIndex, wordLabel) {
   const example = String(translation.example || '').trim();
   const exampleTranslation = String(translation.example_translation || '').trim();
   const status = String(translation.status || '').trim();
-  const topics = normalizeTopics(translation.topics, topicIndex, `Translation for "${wordLabel}"`);
+  const topics = normalizeTopics(
+    translation.topics,
+    topicIndex,
+    `Translation for "${wordLabel}"`,
+    options,
+  );
 
   if (languageCode !== 'ru') {
     throw new Error(`Translation for "${wordLabel}" must use language_code "ru"`);
@@ -540,11 +785,13 @@ function createTopicPromptSection(topicIndex) {
     .join('\n');
 }
 
-function buildDeepSeekGenerationPrompt({batchWords, topicIndex}) {
+function buildDeepSeekGenerationPrompt({batchWords, topicIndex, allowCandidateTopics = false}) {
   const allowedTopics = Array.from(topicIndex.keys());
   const topicPromptSection = createTopicPromptSection(topicIndex);
   const systemPrompt = [
-    'Never invent new topic ids.',
+    allowCandidateTopics
+      ? 'If the existing topic seed is semantically insufficient, you may return a new lowercase topic id.'
+      : 'Never invent new topic ids.',
     'If a concept looks like crime, police, court, punishment, justice, or legal rules, use "law"; do not return "crime".',
     'Return only valid json.',
     'Do not include markdown.',
@@ -588,8 +835,10 @@ function buildDeepSeekGenerationPrompt({batchWords, topicIndex}) {
     '- Prefer the most common meaning for beginner/intermediate English learners.',
     '- If a word has several very common meanings, include up to 2 translations.',
     '- topics must contain 1 to 3 topic ids.',
-    '- Use ONLY topic ids from the allowed list.',
-    '- Never invent new topic ids.',
+    allowCandidateTopics
+      ? '- Prefer existing topic ids, but if no existing topic fits well enough, you may propose a new lowercase topic id using letters, numbers, and hyphens.'
+      : '- Use ONLY topic ids from the allowed list.',
+    allowCandidateTopics ? '- Keep any new topic id semantically narrow and reusable.' : '- Never invent new topic ids.',
     '- Prefer the most semantically accurate topics.',
     '- Do not overuse generic topics like people or education.',
     '- Grammar or function words should use grammar.',
@@ -597,7 +846,9 @@ function buildDeepSeekGenerationPrompt({batchWords, topicIndex}) {
     '- Abstract ideas should use abstract.',
     '- Measurements and quantities should use numbers or measurement.',
     '- Movement, direction, and location concepts should use movement, or transport when the meaning is specifically about vehicles, traffic, or transport systems.',
-    '- Use only allowed topic ids from this list:',
+    allowCandidateTopics
+      ? '- Existing topic ids and descriptions for reuse:'
+      : '- Use only allowed topic ids from this list:',
     topicPromptSection,
     '',
     'Topic examples:',
@@ -608,7 +859,7 @@ function buildDeepSeekGenerationPrompt({batchWords, topicIndex}) {
     '- "accept" -> ["communication", "people"]',
     '- "accident" -> ["transport", "health"]',
     '',
-    `Allowed topic ids json: ${JSON.stringify(allowedTopics)}`,
+    `Existing topic ids json: ${JSON.stringify(allowedTopics)}`,
   ].join('\n');
 
   return {
@@ -739,7 +990,26 @@ async function callDeepSeekJson({apiKey, model, temperature, systemPrompt, userP
 }
 
 async function callDeepSeekGenerationBatch({apiKey, model, temperature, batchWords, topicIndex}) {
-  const {systemPrompt, userPrompt} = buildDeepSeekGenerationPrompt({batchWords, topicIndex});
+  const {systemPrompt, userPrompt} = buildDeepSeekGenerationPrompt({
+    batchWords,
+    topicIndex,
+  });
+  return callDeepSeekJson({
+    apiKey,
+    model,
+    temperature,
+    systemPrompt,
+    userPrompt,
+    maxTokens: calculateMaxTokens(batchWords),
+  });
+}
+
+async function callDeepSeekSuggestionBatch({apiKey, model, temperature, batchWords, topicIndex}) {
+  const {systemPrompt, userPrompt} = buildDeepSeekGenerationPrompt({
+    batchWords,
+    topicIndex,
+    allowCandidateTopics: true,
+  });
   return callDeepSeekJson({
     apiKey,
     model,
@@ -811,8 +1081,119 @@ function validateGeneratedBatch(payload, batchWords, topicIndex) {
     normalizedEntries.push({
       word,
       translations: entry.translations.map(translation =>
-        normalizeTranslationRecord(translation, topicIndex, word),
+        normalizeTranslationRecord(translation, topicIndex, word, {
+          allowUnknownTopics: true,
+        }),
       ),
+    });
+  }
+
+  for (const requestedWord of requestedWords) {
+    if (!seenWords.has(requestedWord)) {
+      throw new Error(`DeepSeek response is missing requested word "${requestedWord}"`);
+    }
+  }
+
+  const sortedEntries = normalizedEntries.sort((left, right) => left.word.localeCompare(right.word));
+  ensureNoUnknownTopicsInBatch(sortedEntries, topicIndex);
+  return sortedEntries;
+}
+
+function validateSuggestionBatch(payload, batchWords) {
+  if (!payload || typeof payload !== 'object' || Array.isArray(payload)) {
+    throw new Error('DeepSeek batch payload must be an object');
+  }
+
+  if (!Array.isArray(payload.translations)) {
+    throw new Error('DeepSeek batch payload must include a translations array');
+  }
+
+  const requestedWords = new Set(batchWords);
+  const seenWords = new Set();
+  const normalizedEntries = [];
+
+  for (const entry of payload.translations) {
+    if (!entry || typeof entry !== 'object' || Array.isArray(entry)) {
+      throw new Error('Each generated batch entry must be an object');
+    }
+
+    const word = String(entry.word || '').trim();
+    if (!word) {
+      throw new Error('Generated batch entry is missing word');
+    }
+    if (!requestedWords.has(word)) {
+      throw new Error(`DeepSeek returned unexpected word "${word}"`);
+    }
+    if (seenWords.has(word)) {
+      throw new Error(`DeepSeek returned duplicate word "${word}" in one batch`);
+    }
+    seenWords.add(word);
+
+    if (!Array.isArray(entry.translations) || entry.translations.length === 0) {
+      throw new Error(`Generated word "${word}" must include a non-empty translations array`);
+    }
+    if (entry.translations.length > 2) {
+      throw new Error(`Generated word "${word}" must include at most 2 translations`);
+    }
+
+    normalizedEntries.push({
+      word,
+      translations: entry.translations.map(translation => {
+        if (!translation || typeof translation !== 'object' || Array.isArray(translation)) {
+          throw new Error(`Translation for "${word}" must be an object`);
+        }
+
+        const languageCode = String(translation.language_code || '').trim();
+        const value = String(translation.value || '').trim();
+        const context = String(translation.context || '').trim();
+        const example = String(translation.example || '').trim();
+        const exampleTranslation = String(translation.example_translation || '').trim();
+        const status = String(translation.status || '').trim();
+        const topics = Array.isArray(translation.topics)
+          ? translation.topics.map(topicId => String(topicId || '').trim()).filter(Boolean)
+          : null;
+
+        if (languageCode !== 'ru') {
+          throw new Error(`Translation for "${word}" must use language_code "ru"`);
+        }
+        if (!value) {
+          throw new Error(`Translation for "${word}" is missing value`);
+        }
+        if (!context) {
+          throw new Error(`Translation for "${word}" is missing context`);
+        }
+        if (!example) {
+          throw new Error(`Translation for "${word}" is missing example`);
+        }
+        if (!exampleTranslation) {
+          throw new Error(`Translation for "${word}" is missing example_translation`);
+        }
+        if (status !== 'machine_unverified') {
+          throw new Error(`Translation for "${word}" must use status "machine_unverified"`);
+        }
+        if (!topics) {
+          throw new Error(`Translation for "${word}" topics must be an array`);
+        }
+        if (topics.length === 0) {
+          throw new Error(`Translation for "${word}" must include at least one topic`);
+        }
+        if (topics.length > 3) {
+          throw new Error(`Translation for "${word}" must include at most 3 topics`);
+        }
+        if (new Set(topics).size !== topics.length) {
+          throw new Error(`Translation for "${word}" must not contain duplicate topics`);
+        }
+
+        return {
+          language_code: 'ru',
+          value,
+          context,
+          example,
+          example_translation: exampleTranslation,
+          status: 'machine_unverified',
+          topics,
+        };
+      }),
     });
   }
 
@@ -888,6 +1269,9 @@ async function generateBatchWithRetries({options, batchWords, topicIndex, apiKey
       return validateGeneratedBatch(payload, batchWords, topicIndex);
     } catch (error) {
       lastError = error;
+      if (error instanceof UnknownTopicsError) {
+        throw error;
+      }
       console.error(
         `Batch failed for [${batchWords.join(', ')}] on attempt ${attempt}/${options.maxRetries}: ${error.message}`,
       );
@@ -896,6 +1280,32 @@ async function generateBatchWithRetries({options, batchWords, topicIndex, apiKey
 
   throw new Error(
     `Failed to generate a valid batch after ${options.maxRetries} attempts for words: ${batchWords.join(', ')}. Last error: ${lastError ? lastError.message : 'unknown error'}`,
+  );
+}
+
+async function suggestTopicsBatchWithRetries({options, batchWords, topicIndex, apiKey}) {
+  let lastError = null;
+
+  for (let attempt = 1; attempt <= options.maxRetries; attempt += 1) {
+    try {
+      const payload = await callDeepSeekSuggestionBatch({
+        apiKey,
+        model: options.model,
+        temperature: options.temperature,
+        batchWords,
+        topicIndex,
+      });
+      return validateSuggestionBatch(payload, batchWords);
+    } catch (error) {
+      lastError = error;
+      console.error(
+        `Suggestion batch failed for [${batchWords.join(', ')}] on attempt ${attempt}/${options.maxRetries}: ${error.message}`,
+      );
+    }
+  }
+
+  throw new Error(
+    `Failed to suggest topics after ${options.maxRetries} attempts for words: ${batchWords.join(', ')}. Last error: ${lastError ? lastError.message : 'unknown error'}`,
   );
 }
 
@@ -1036,6 +1446,143 @@ async function runDeepSeekGeneration({options, seedPayload, topicIndex, translat
   );
 }
 
+async function runDeepSeekTopicSuggestion({options, seedPayload, topicSeed, topicIndex, translationPack}) {
+  if (!options.yes) {
+    throw new Error('Topic suggestion requires --provider deepseek --suggest-topics --yes');
+  }
+
+  loadEnvFile(ENV_PATH);
+  const apiKey = getRequiredEnv('DEEPSEEK_API_KEY');
+  const progressState = createGenerationProgressState({
+    seedPayload,
+    translationPack,
+    batchSize: options.batchSize,
+    limit: options.limit,
+    force: options.force,
+    onlyWords: options.onlyWords,
+  });
+
+  if (progressState.pendingEntries.length === 0) {
+    console.log(
+      JSON.stringify(
+        {
+          mode: 'deepseek',
+          operation: OPERATION_SUGGEST_TOPICS,
+          message: 'No words matched the current suggestion selection.',
+          sourceSeedPath: SOURCE_SEED_PATH,
+          topicSeedPath: TOPIC_SEED_PATH,
+          translationPackPath: TRANSLATION_PACK_PATH,
+          eligibleEntries: progressState.eligibleEntries.length,
+          pendingEntries: 0,
+          selection: buildSelectionSummary(options),
+        },
+        null,
+        2,
+      ),
+    );
+    return;
+  }
+
+  const collectedUnknownTopics = new Map();
+  let inspectedWords = 0;
+
+  for (const batch of progressState.batches) {
+    const generatedEntries = await suggestTopicsBatchWithRetries({
+      options,
+      batchWords: batch.words,
+      topicIndex,
+      apiKey,
+    });
+    const batchUnknownTopics = collectUnknownTopicsFromEntries(generatedEntries, topicIndex);
+
+    for (const topic of batchUnknownTopics) {
+      if (!collectedUnknownTopics.has(topic.id)) {
+        collectedUnknownTopics.set(topic.id, new Set());
+      }
+
+      for (const word of topic.words) {
+        collectedUnknownTopics.get(topic.id).add(word);
+      }
+    }
+
+    inspectedWords += generatedEntries.length;
+
+    console.log(
+      JSON.stringify(
+        {
+          mode: 'deepseek',
+          operation: OPERATION_SUGGEST_TOPICS,
+          batchNumber: batch.batchNumber,
+          batchSize: batch.size,
+          batchWords: batch.words,
+          inspectedWords,
+          totalScheduledWords: progressState.pendingEntries.length,
+          unknownTopicsInBatch: batchUnknownTopics.map(topic => topic.id),
+          savedTo: null,
+        },
+        null,
+        2,
+      ),
+    );
+  }
+
+  const unknownTopics = Array.from(collectedUnknownTopics.entries())
+    .sort((left, right) => left[0].localeCompare(right[0]))
+    .map(([id, words]) => ({
+      id,
+      words: Array.from(words).sort((left, right) => left.localeCompare(right)),
+    }));
+  const suggestedTopics = buildSuggestedTopics(unknownTopics, topicIndex);
+
+  let appendedTopics = [];
+  let savedTo = null;
+  if (options.appendSuggestedTopics && suggestedTopics.length > 0) {
+    const appendResult = appendSuggestedTopicsToSeed(topicSeed, suggestedTopics);
+    appendedTopics = appendResult.appendedTopics;
+    if (appendedTopics.length > 0) {
+      saveTopicSeedAtomic(TOPIC_SEED_PATH, appendResult.nextTopicSeed);
+      savedTo = TOPIC_SEED_PATH;
+    }
+  }
+
+  console.log(
+    JSON.stringify(
+      {
+        mode: 'deepseek',
+        operation: OPERATION_SUGGEST_TOPICS,
+        message:
+          suggestedTopics.length === 0
+            ? 'No new topics were suggested for the current selection.'
+            : options.appendSuggestedTopics
+              ? 'Topic suggestion completed and new topics were appended when needed.'
+              : 'Topic suggestion completed. Review suggested topics before rerunning generation.',
+        sourceSeedPath: SOURCE_SEED_PATH,
+        topicSeedPath: TOPIC_SEED_PATH,
+        translationPackPath: TRANSLATION_PACK_PATH,
+        inspectedWords,
+        unknownTopics,
+        suggestedTopics,
+        appendedTopics,
+        appendedTopicCount: appendedTopics.length,
+        savedTo,
+        atomicSave: {
+          enabled: Boolean(savedTo),
+          tempPathPattern: savedTo ? `${savedTo}.tmp` : null,
+        },
+        selection: buildSelectionSummary(options),
+        nextStep:
+          suggestedTopics.length === 0
+            ? 'Rerun generation normally if you want translated entries.'
+            : options.appendSuggestedTopics
+              ? 'Rerun generation after auditing the updated topic seed.'
+              : 'Rerun with --append-suggested-topics to save new topic definitions.',
+      },
+      null,
+      2,
+    ),
+  );
+}
+
 async function runDeepSeekTopicReclassification({options, topicIndex, translationPack}) {
   if (!options.dryRun && !options.yes) {
     throw new Error('Real topic reclassification requires --provider deepseek --reclassify-topics --yes');
@@ -1166,10 +1713,36 @@ async function main() {
   const translationPack = readJson(TRANSLATION_PACK_PATH);
 
   assertSourceSeed(seedPayload);
+  assertTopicSeed(topicSeed);
   assertTranslationPack(translationPack);
 
   const topicIndex = createTopicIndex(topicSeed);
   assertKnownSelectedTopic(topicIndex, options.onlyTopic);
+
+  if (options.operation === OPERATION_SUGGEST_TOPICS) {
+    if (options.provider === 'deepseek') {
+      await runDeepSeekTopicSuggestion({
+        options,
+        seedPayload,
+        topicSeed,
+        topicIndex,
+        translationPack,
+      });
+      return;
+    }
+
+    const progressState = createGenerationProgressState({
+      seedPayload,
+      translationPack,
+      batchSize: options.batchSize,
+      limit: options.limit,
+      force: options.force,
+      onlyWords: options.onlyWords,
+    });
+
+    console.log(JSON.stringify(createPrepareOnlyResponse({options, progressState}), null, 2));
+    return;
+  }
 
   if (options.operation === OPERATION_RECLASSIFY_TOPICS) {
     if (options.provider === 'deepseek') {
@@ -1263,4 +1836,3 @@ main().catch(error => {
   console.error(error.message);
   process.exit(1);
 });
-
