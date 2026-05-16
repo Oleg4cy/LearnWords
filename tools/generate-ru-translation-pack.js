@@ -5,6 +5,7 @@ const path = require('path');
 
 const ROOT_DIR = path.join(__dirname, '..');
 const ENV_PATH = path.join(ROOT_DIR, '.env');
+const REPORTS_DIR = path.join(ROOT_DIR, 'reports');
 const SOURCE_SEED_PATH = path.join(
   ROOT_DIR,
   'src',
@@ -26,6 +27,10 @@ const TRANSLATION_PACK_PATH = path.join(
   'translations',
   'core-english-3000.ru.seed.json',
 );
+const REPAIR_REPORT_PATH = path.join(
+  REPORTS_DIR,
+  'core-english-3000.ru.repair-report.json',
+);
 const DEEPSEEK_API_URL = 'https://api.deepseek.com/chat/completions';
 
 const DEFAULT_DRY_RUN_LIMIT = 3;
@@ -37,6 +42,7 @@ const DEFAULT_DEEPSEEK_MODEL = 'deepseek-chat';
 const OPERATION_GENERATE = 'generate';
 const OPERATION_SUGGEST_TOPICS = 'suggest-topics';
 const OPERATION_RECLASSIFY_TOPICS = 'reclassify-topics';
+const OPERATION_REPAIR_TRANSLATIONS = 'repair-translations';
 const OPERATION_REGENERATE_CONTEXT = 'regenerate-context';
 const OPERATION_REGENERATE_EXAMPLES = 'regenerate-examples';
 const OPERATION_VERIFY_TRANSLATIONS = 'verify-translations';
@@ -67,6 +73,14 @@ class UnknownTopicsError extends Error {
   }
 }
 
+class DeepSeekRequestError extends Error {
+  constructor({message, status}) {
+    super(message);
+    this.name = 'DeepSeekRequestError';
+    this.status = status;
+  }
+}
+
 function parseArgs(argv) {
   const dryRun = argv.includes('--dry-run');
   const options = {
@@ -82,6 +96,7 @@ function parseArgs(argv) {
     suggestTopics: argv.includes('--suggest-topics'),
     appendSuggestedTopics: argv.includes('--append-suggested-topics'),
     reclassifyTopics: argv.includes('--reclassify-topics'),
+    repairTranslations: argv.includes('--repair-translations'),
     regenerateContext: argv.includes('--regenerate-context'),
     regenerateExamples: argv.includes('--regenerate-examples'),
     verifyTranslations: argv.includes('--verify-translations'),
@@ -99,6 +114,7 @@ function resolveOperation(options) {
   const enabledOperations = [
     options.suggestTopics ? OPERATION_SUGGEST_TOPICS : null,
     options.reclassifyTopics ? OPERATION_RECLASSIFY_TOPICS : null,
+    options.repairTranslations ? OPERATION_REPAIR_TRANSLATIONS : null,
     options.regenerateContext ? OPERATION_REGENERATE_CONTEXT : null,
     options.regenerateExamples ? OPERATION_REGENERATE_EXAMPLES : null,
     options.verifyTranslations ? OPERATION_VERIFY_TRANSLATIONS : null,
@@ -702,6 +718,21 @@ function mergeGeneratedEntries(translationPack, generatedEntries) {
   };
 }
 
+function replaceEntriesByWord(translationPack, replacementEntries) {
+  const existingTranslationIndex = createExistingTranslationIndex(translationPack);
+
+  for (const entry of replacementEntries) {
+    existingTranslationIndex.set(entry.word, entry);
+  }
+
+  return {
+    ...translationPack,
+    translations: Array.from(existingTranslationIndex.values()).sort((left, right) =>
+      left.word.localeCompare(right.word),
+    ),
+  };
+}
+
 function applyWordUpdates(translationPack, updatesByWord, updateEntry) {
   return {
     ...translationPack,
@@ -729,8 +760,16 @@ function applyTopicClassifications(translationPack, classifications) {
 }
 
 function saveTranslationPackAtomic(filePath, translationPack) {
+  fs.mkdirSync(path.dirname(filePath), {recursive: true});
   const tempPath = `${filePath}.tmp`;
   fs.writeFileSync(tempPath, `${JSON.stringify(translationPack, null, 2)}\n`, 'utf8');
+  fs.renameSync(tempPath, filePath);
+}
+
+function saveJsonAtomic(filePath, payload) {
+  fs.mkdirSync(path.dirname(filePath), {recursive: true});
+  const tempPath = `${filePath}.tmp`;
+  fs.writeFileSync(tempPath, `${JSON.stringify(payload, null, 2)}\n`, 'utf8');
   fs.renameSync(tempPath, filePath);
 }
 
@@ -934,6 +973,97 @@ function buildDeepSeekReclassificationPrompt({batchEntries, topicIndex}) {
   };
 }
 
+function buildRepairPayloadEntry(word, existingEntry) {
+  return {
+    word,
+    existing_entry: existingEntry || null,
+  };
+}
+
+function buildDeepSeekRepairPrompt({batchWords, translationIndex, topicIndex}) {
+  const allowedTopics = Array.from(topicIndex.keys());
+  const topicPromptSection = createTopicPromptSection(topicIndex);
+  const payloadPreview = batchWords.map(word =>
+    buildRepairPayloadEntry(word, translationIndex.get(word) || null),
+  );
+  const systemPrompt = [
+    'Return only valid json.',
+    'Do not include markdown.',
+    'Do not include prose outside json fields.',
+    'Never invent new topic ids.',
+    'You repair and enrich an existing Russian translation pack for an English vocabulary-learning app.',
+    'You must return exactly one repair result for every requested word.',
+    'The top-level key must be "repairs".',
+    'Allowed actions: keep, add, replace, enrich, review.',
+    'For keep, preserve the existing entry as-is.',
+    'For review, do not propose an automatic modification unless a full replacement entry is truly necessary for reference.',
+    'For add, replace, or enrich, include one full valid entry.',
+    'The response json must match this structure:',
+    '{',
+    '  "repairs": [',
+    '    {',
+    '      "word": "ability",',
+    '      "action": "keep",',
+    '      "reason": "Existing translation, context, example, and topics are acceptable.",',
+    '      "entry": {',
+    '        "word": "ability",',
+    '        "translations": [',
+    '          {',
+    '            "language_code": "ru",',
+    '            "value": "способность",',
+    '            "context": "Используется, когда речь о возможности или умении что-то делать.",',
+    '            "example": "She has the ability to learn quickly.",',
+    '            "example_translation": "Она способна быстро учиться.",',
+    '            "status": "machine_unverified",',
+    '            "topics": ["abstract", "education"]',
+    '          }',
+    '        ]',
+    '      }',
+    '    }',
+    '  ]',
+    '}',
+  ].join('\n');
+
+  const userPrompt = [
+    'Repair or confirm these English words:',
+    JSON.stringify(payloadPreview, null, 2),
+    '',
+    'Rules:',
+    '- Return ONLY valid JSON.',
+    '- Top-level key must be "repairs".',
+    '- Return exactly one result for every requested word.',
+    '- Do not return extra words.',
+    '- Use actions only: keep, add, replace, enrich, review.',
+    '- If the word is missing in existing_entry, action should normally be add unless uncertain.',
+    '- If the existing entry is already good, use keep.',
+    '- If translation, context, example, example_translation, or topics are weak/wrong/incomplete, use replace or enrich.',
+    '- If uncertain, use review.',
+    '- For add, replace, or enrich, include a full valid entry with 1 or 2 translations.',
+    '- language_code must be "ru".',
+    '- value, context, example, example_translation, and status must be non-empty strings.',
+    '- status must be "machine_unverified".',
+    '- example must be in English and include the target word naturally.',
+    '- example_translation must be in Russian and match the example.',
+    '- context must be in Russian and explain when this translation is used.',
+    '- Use 1 to 3 topics per translation.',
+    '- Use ONLY topic ids from the allowed list.',
+    '- Never invent new topic ids.',
+    '- If no topic fits perfectly, choose the closest existing topic.',
+    '- Use up to 2 translations only if the word has two very common meanings.',
+    '- Prefer natural, common Russian suitable for beginner/intermediate learners.',
+    '- Do not overcomplicate rare meanings.',
+    '- Allowed topic ids and descriptions:',
+    topicPromptSection,
+    '',
+    `Allowed topic ids json: ${JSON.stringify(allowedTopics)}`,
+  ].join('\n');
+
+  return {
+    systemPrompt,
+    userPrompt,
+  };
+}
+
 function calculateMaxTokens(batchWords) {
   return Math.max(1500, batchWords.length * 350);
 }
@@ -971,7 +1101,10 @@ async function callDeepSeekJson({apiKey, model, temperature, systemPrompt, userP
       parsedBody && parsedBody.error && parsedBody.error.message
         ? parsedBody.error.message
         : rawBody || `HTTP ${response.status}`;
-    throw new Error(`DeepSeek API request failed (${response.status}): ${errorMessage}`);
+    throw new DeepSeekRequestError({
+      message: `DeepSeek API request failed (${response.status}): ${errorMessage}`,
+      status: response.status,
+    });
   }
 
   const content = parsedBody?.choices?.[0]?.message?.content;
@@ -987,6 +1120,29 @@ async function callDeepSeekJson({apiKey, model, temperature, systemPrompt, userP
   } catch (error) {
     throw new Error(`DeepSeek returned invalid JSON content: ${error.message}`);
   }
+}
+
+async function callDeepSeekRepairBatch({
+  apiKey,
+  model,
+  temperature,
+  batchWords,
+  translationIndex,
+  topicIndex,
+}) {
+  const {systemPrompt, userPrompt} = buildDeepSeekRepairPrompt({
+    batchWords,
+    translationIndex,
+    topicIndex,
+  });
+  return callDeepSeekJson({
+    apiKey,
+    model,
+    temperature,
+    systemPrompt,
+    userPrompt,
+    maxTokens: Math.max(1800, batchWords.length * 500),
+  });
 }
 
 async function callDeepSeekGenerationBatch({apiKey, model, temperature, batchWords, topicIndex}) {
@@ -1254,6 +1410,108 @@ function validateTopicClassificationBatch(payload, batchEntries, topicIndex, tra
   return normalizedClassifications.sort((left, right) => left.word.localeCompare(right.word));
 }
 
+function normalizeTranslationEntry(entry, topicIndex, expectedWord, options = {}) {
+  if (!entry || typeof entry !== 'object' || Array.isArray(entry)) {
+    throw new Error(`Entry for "${expectedWord}" must be an object`);
+  }
+
+  const word = String(entry.word || '').trim();
+  if (word !== expectedWord) {
+    throw new Error(`Entry word mismatch for "${expectedWord}"`);
+  }
+
+  if (!Array.isArray(entry.translations) || entry.translations.length === 0) {
+    throw new Error(`Entry for "${expectedWord}" must include a non-empty translations array`);
+  }
+
+  if (entry.translations.length > 2) {
+    throw new Error(`Entry for "${expectedWord}" must include at most 2 translations`);
+  }
+
+  return {
+    word,
+    translations: entry.translations.map(translation =>
+      normalizeTranslationRecord(translation, topicIndex, expectedWord, options),
+    ),
+  };
+}
+
+function validateRepairBatch(payload, batchWords, topicIndex, translationIndex) {
+  if (!payload || typeof payload !== 'object' || Array.isArray(payload)) {
+    throw new Error('DeepSeek repair payload must be an object');
+  }
+
+  if (!Array.isArray(payload.repairs)) {
+    throw new Error('DeepSeek repair payload must include a repairs array');
+  }
+
+  const allowedActions = new Set(['keep', 'add', 'replace', 'enrich', 'review']);
+  const requestedWords = new Set(batchWords);
+  const seenWords = new Set();
+  const normalizedRepairs = [];
+
+  for (const repair of payload.repairs) {
+    if (!repair || typeof repair !== 'object' || Array.isArray(repair)) {
+      throw new Error('Each repair result must be an object');
+    }
+
+    const word = String(repair.word || '').trim();
+    const action = String(repair.action || '').trim();
+    const reason = String(repair.reason || '').trim();
+
+    if (!word) {
+      throw new Error('Repair result is missing word');
+    }
+    if (!requestedWords.has(word)) {
+      throw new Error(`DeepSeek returned unexpected repair word "${word}"`);
+    }
+    if (seenWords.has(word)) {
+      throw new Error(`DeepSeek returned duplicate repair word "${word}"`);
+    }
+    if (!allowedActions.has(action)) {
+      throw new Error(`Repair action for "${word}" must be one of: keep, add, replace, enrich, review`);
+    }
+    if (!reason) {
+      throw new Error(`Repair result for "${word}" must include a non-empty reason`);
+    }
+
+    const hasExistingEntry = translationIndex.has(word);
+    if (action === 'add' && hasExistingEntry) {
+      throw new Error(`Repair result for "${word}" cannot use action "add" because the entry already exists`);
+    }
+    if ((action === 'replace' || action === 'enrich') && !hasExistingEntry) {
+      throw new Error(`Repair result for "${word}" cannot use action "${action}" because the entry is missing`);
+    }
+
+    let normalizedEntry = null;
+    if (action === 'add' || action === 'replace' || action === 'enrich') {
+      normalizedEntry = normalizeTranslationEntry(repair.entry, topicIndex, word);
+    } else if (repair.entry !== undefined && repair.entry !== null) {
+      normalizedEntry = normalizeTranslationEntry(repair.entry, topicIndex, word);
+    }
+
+    seenWords.add(word);
+    normalizedRepairs.push({
+      word,
+      action,
+      reason,
+      entry: normalizedEntry,
+    });
+  }
+
+  for (const requestedWord of requestedWords) {
+    if (!seenWords.has(requestedWord)) {
+      throw new Error(`DeepSeek repair response is missing requested word "${requestedWord}"`);
+    }
+  }
+
+  return normalizedRepairs.sort((left, right) => left.word.localeCompare(right.word));
+}
+
+function isFailFastDeepSeekError(error) {
+  return error instanceof DeepSeekRequestError && [401, 402, 403].includes(error.status);
+}
+
 async function generateBatchWithRetries({options, batchWords, topicIndex, apiKey}) {
   let lastError = null;
 
@@ -1341,6 +1599,42 @@ async function reclassifyBatchWithRetries({
   );
 }
 
+async function repairBatchWithRetries({
+  options,
+  batchWords,
+  topicIndex,
+  translationIndex,
+  apiKey,
+}) {
+  let lastError = null;
+
+  for (let attempt = 1; attempt <= options.maxRetries; attempt += 1) {
+    try {
+      const payload = await callDeepSeekRepairBatch({
+        apiKey,
+        model: options.model,
+        temperature: options.temperature,
+        batchWords,
+        translationIndex,
+        topicIndex,
+      });
+      return validateRepairBatch(payload, batchWords, topicIndex, translationIndex);
+    } catch (error) {
+      lastError = error;
+      if (error instanceof UnknownTopicsError || isFailFastDeepSeekError(error)) {
+        throw error;
+      }
+      console.error(
+        `Repair batch failed for [${batchWords.join(', ')}] on attempt ${attempt}/${options.maxRetries}: ${error.message}`,
+      );
+    }
+  }
+
+  throw new Error(
+    `Failed to repair a valid batch after ${options.maxRetries} attempts for words: ${batchWords.join(', ')}. Last error: ${lastError ? lastError.message : 'unknown error'}`,
+  );
+}
+
 function createReclassificationPreview(entry, classification) {
   return {
     word: entry.word,
@@ -1350,6 +1644,98 @@ function createReclassificationPreview(entry, classification) {
       topics: Array.isArray(translation?.topics) ? translation.topics : [],
     })),
     after: classification.topics,
+  };
+}
+
+function createRepairProgressState({seedPayload, translationPack, batchSize, limit, onlyWords}) {
+  const translationIndex = createExistingTranslationIndex(translationPack);
+  const onlyWordsSet = createOnlyWordsSet(onlyWords);
+  const eligibleEntries = seedPayload.entries.filter(entry => {
+    const word = String(entry.word || '').trim();
+    if (!word) {
+      return false;
+    }
+
+    if (onlyWordsSet && !onlyWordsSet.has(word)) {
+      return false;
+    }
+
+    return true;
+  });
+  const pendingEntries = applyLimit(eligibleEntries, limit);
+
+  return {
+    totalEntries: seedPayload.entries.length,
+    translatedEntries: translationPack.translations.length,
+    eligibleEntries,
+    pendingEntries,
+    batches: createBatches(pendingEntries, batchSize, entry => entry.word),
+    translationIndex,
+  };
+}
+
+function createRepairReport({options}) {
+  return {
+    meta: {
+      generated_at: new Date().toISOString(),
+      mode: OPERATION_REPAIR_TRANSLATIONS,
+      model: options.model,
+      batch_size: options.batchSize,
+    },
+    summary: {
+      checked: 0,
+      kept: 0,
+      added: 0,
+      replaced: 0,
+      enriched: 0,
+      review: 0,
+      applied: 0,
+    },
+    results: [],
+  };
+}
+
+function updateRepairReport(report, repairs) {
+  report.meta.generated_at = new Date().toISOString();
+
+  for (const repair of repairs) {
+    report.summary.checked += 1;
+    if (repair.action === 'keep') {
+      report.summary.kept += 1;
+    } else if (repair.action === 'add') {
+      report.summary.added += 1;
+    } else if (repair.action === 'replace') {
+      report.summary.replaced += 1;
+    } else if (repair.action === 'enrich') {
+      report.summary.enriched += 1;
+    } else if (repair.action === 'review') {
+      report.summary.review += 1;
+    }
+
+    if (repair.applied) {
+      report.summary.applied += 1;
+    }
+
+    report.results.push({
+      word: repair.word,
+      action: repair.action,
+      reason: repair.reason,
+      applied: repair.applied,
+    });
+  }
+}
+
+function createRepairPreview(repair, currentEntry) {
+  return {
+    word: repair.word,
+    action: repair.action,
+    reason: repair.reason,
+    applied: false,
+    current_entry: currentEntry || null,
+    proposed_entry:
+      repair.action === 'add' || repair.action === 'replace' || repair.action === 'enrich'
+        ? repair.entry
+        : null,
   };
 }
 
@@ -1688,6 +2074,137 @@ async function runDeepSeekTopicReclassification({options, topicIndex, translatio
   );
 }
 
+async function runDeepSeekTranslationRepair({options, seedPayload, topicIndex, translationPack}) {
+  if (!options.dryRun && !options.yes) {
+    throw new Error('Real translation repair requires --provider deepseek --repair-translations --yes');
+  }
+
+  loadEnvFile(ENV_PATH);
+  const apiKey = getRequiredEnv('DEEPSEEK_API_KEY');
+  const progressState = createRepairProgressState({
+    seedPayload,
+    translationPack,
+    batchSize: options.batchSize,
+    limit: options.limit,
+    onlyWords: options.onlyWords,
+  });
+
+  if (progressState.pendingEntries.length === 0) {
+    console.log(
+      JSON.stringify(
+        {
+          mode: options.dryRun ? 'dry-run' : 'deepseek',
+          operation: OPERATION_REPAIR_TRANSLATIONS,
+          message: 'No base-seed words matched the current repair selection.',
+          sourceSeedPath: SOURCE_SEED_PATH,
+          topicSeedPath: TOPIC_SEED_PATH,
+          translationPackPath: TRANSLATION_PACK_PATH,
+          repairReportPath: options.dryRun ? null : REPAIR_REPORT_PATH,
+          totalEntries: progressState.totalEntries,
+          translatedEntries: progressState.translatedEntries,
+          eligibleEntries: progressState.eligibleEntries.length,
+          pendingEntries: 0,
+          selection: buildSelectionSummary(options),
+        },
+        null,
+        2,
+      ),
+    );
+    return;
+  }
+
+  let currentPack = translationPack;
+  let translationIndex = progressState.translationIndex;
+  let completedWordCount = 0;
+  const preview = [];
+  const report = options.dryRun ? null : createRepairReport({options});
+
+  for (const batch of progressState.batches) {
+    const repairs = await repairBatchWithRetries({
+      options,
+      batchWords: batch.words,
+      topicIndex,
+      translationIndex,
+      apiKey,
+    });
+
+    const applicableRepairs = repairs.filter(
+      repair => repair.action === 'add' || repair.action === 'replace' || repair.action === 'enrich',
+    );
+    const appliedEntries = applicableRepairs.map(repair => repair.entry);
+
+    if (options.dryRun) {
+      for (const repair of repairs) {
+        preview.push(createRepairPreview(repair, translationIndex.get(repair.word) || null));
+      }
+    } else {
+      if (appliedEntries.length > 0) {
+        currentPack = replaceEntriesByWord(currentPack, appliedEntries);
+        saveTranslationPackAtomic(TRANSLATION_PACK_PATH, currentPack);
+        translationIndex = createExistingTranslationIndex(currentPack);
+      }
+
+      updateRepairReport(
+        report,
+        repairs.map(repair => ({
+          ...repair,
+          applied: repair.action === 'add' || repair.action === 'replace' || repair.action === 'enrich',
+        })),
+      );
+      saveJsonAtomic(REPAIR_REPORT_PATH, report);
+    }
+
+    completedWordCount += repairs.length;
+
+    console.log(
+      JSON.stringify(
+        {
+          mode: options.dryRun ? 'dry-run' : 'deepseek',
+          operation: OPERATION_REPAIR_TRANSLATIONS,
+          batchNumber: batch.batchNumber,
+          batchSize: batch.size,
+          batchWords: batch.words,
+          completedWords: completedWordCount,
+          totalScheduledWords: progressState.pendingEntries.length,
+          appliedInBatch: applicableRepairs.length,
+          savedTo: options.dryRun ? null : TRANSLATION_PACK_PATH,
+          reportSavedTo: options.dryRun ? null : REPAIR_REPORT_PATH,
+        },
+        null,
+        2,
+      ),
+    );
+  }
+
+  console.log(
+    JSON.stringify(
+      {
+        mode: options.dryRun ? 'dry-run' : 'deepseek',
+        operation: OPERATION_REPAIR_TRANSLATIONS,
+        message: options.dryRun
+          ? 'Translation repair preview completed.'
+          : 'Translation repair completed successfully.',
+        sourceSeedPath: SOURCE_SEED_PATH,
+        topicSeedPath: TOPIC_SEED_PATH,
+        translationPackPath: TRANSLATION_PACK_PATH,
+        repairReportPath: options.dryRun ? null : REPAIR_REPORT_PATH,
+        checkedWords: completedWordCount,
+        dryRun: options.dryRun,
+        atomicSave: {
+          translationPack: !options.dryRun ? `${TRANSLATION_PACK_PATH}.tmp` : null,
+          repairReport: !options.dryRun ? `${REPAIR_REPORT_PATH}.tmp` : null,
+        },
+        selection: buildSelectionSummary(options),
+        preview,
+        report,
+        nextStep: 'Run node scripts/audit-core-english-3000.js',
+      },
+      null,
+      2,
+    ),
+  );
+}
+
 function createPrepareOnlyResponse({options, progressState}) {
   return {
     mode: options.dryRun ? 'dry-run' : 'prepare-only',
@@ -1759,6 +2276,29 @@ async function main() {
       batchSize: options.batchSize,
       limit: options.limit,
       options,
+    });
+
+    console.log(JSON.stringify(createPrepareOnlyResponse({options, progressState}), null, 2));
+    return;
+  }
+
+  if (options.operation === OPERATION_REPAIR_TRANSLATIONS) {
+    if (options.provider === 'deepseek') {
+      await runDeepSeekTranslationRepair({
+        options,
+        seedPayload,
+        topicIndex,
+        translationPack,
+      });
+      return;
+    }
+
+    const progressState = createRepairProgressState({
+      seedPayload,
+      translationPack,
+      batchSize: options.batchSize,
+      limit: options.limit,
+      onlyWords: options.onlyWords,
     });
 
     console.log(JSON.stringify(createPrepareOnlyResponse({options, progressState}), null, 2));

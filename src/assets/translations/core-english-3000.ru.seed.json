@@ -49217,6 +49217,1804 @@
           ]
         }
       ]
+    },
+    {
+      "word": "tent",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "палатка",
+          "context": "Используется для временного жилья, например, в походе или на пляже.",
+          "example": "We slept in a tent during the camping trip.",
+          "example_translation": "Мы спали в палатке во время похода.",
+          "status": "machine_unverified",
+          "topics": [
+            "travel",
+            "home"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "term",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "термин",
+          "context": "Используется для обозначения специального слова или выражения в какой-либо области.",
+          "example": "This is a medical term.",
+          "example_translation": "Это медицинский термин.",
+          "status": "machine_unverified",
+          "topics": [
+            "education",
+            "communication"
+          ]
+        },
+        {
+          "language_code": "ru",
+          "value": "срок",
+          "context": "Используется для обозначения периода времени, например, в контракте или учебном заведении.",
+          "example": "The contract has a one-year term.",
+          "example_translation": "Контракт имеет срок один год.",
+          "status": "machine_unverified",
+          "topics": [
+            "time",
+            "business"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "terrible",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "ужасный",
+          "context": "Используется для описания чего-то очень плохого или неприятного.",
+          "example": "The weather was terrible yesterday.",
+          "example_translation": "Вчера была ужасная погода.",
+          "status": "machine_unverified",
+          "topics": [
+            "emotions",
+            "weather"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "terribly",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "ужасно",
+          "context": "Используется как наречие для усиления негативного значения или для обозначения очень сильной степени.",
+          "example": "I am terribly sorry.",
+          "example_translation": "Мне ужасно жаль.",
+          "status": "machine_unverified",
+          "topics": [
+            "emotions",
+            "abstract"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "territory",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "территория",
+          "context": "Используется для обозначения географической области, принадлежащей кому-либо.",
+          "example": "This is our territory.",
+          "example_translation": "Это наша территория.",
+          "status": "machine_unverified",
+          "topics": [
+            "politics",
+            "nature"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "terror",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "ужас",
+          "context": "Используется для обозначения сильного страха или состояния ужаса.",
+          "example": "She screamed in terror.",
+          "example_translation": "Она закричала от ужаса.",
+          "status": "machine_unverified",
+          "topics": [
+            "emotions",
+            "law"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "terrorism",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "терроризм",
+          "context": "Используется для обозначения насильственных действий, направленных на запугивание населения.",
+          "example": "The government is fighting terrorism.",
+          "example_translation": "Правительство борется с терроризмом.",
+          "status": "machine_unverified",
+          "topics": [
+            "law",
+            "politics"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "terrorist",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "террорист",
+          "context": "Используется для обозначения человека, совершающего акты террора.",
+          "example": "The terrorist was arrested.",
+          "example_translation": "Террорист был арестован.",
+          "status": "machine_unverified",
+          "topics": [
+            "law",
+            "people"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "test",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "тест",
+          "context": "Используется для проверки знаний или навыков, например, в школе или на работе.",
+          "example": "We have a math test tomorrow.",
+          "example_translation": "У нас завтра тест по математике.",
+          "status": "machine_unverified",
+          "topics": [
+            "education",
+            "science"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "text",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "текст",
+          "context": "Используется для обозначения письменного материала, например, в книге или сообщении.",
+          "example": "Please read the text carefully.",
+          "example_translation": "Пожалуйста, внимательно прочитайте текст.",
+          "status": "machine_unverified",
+          "topics": [
+            "communication",
+            "education"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "than",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "чем",
+          "context": "Используется в сравнительных конструкциях для указания на различие.",
+          "example": "She is taller than me.",
+          "example_translation": "Она выше, чем я.",
+          "status": "machine_unverified",
+          "topics": [
+            "grammar"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "thank",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "благодарить",
+          "context": "Используется для выражения признательности.",
+          "example": "I want to thank you for your help.",
+          "example_translation": "Я хочу поблагодарить вас за помощь.",
+          "status": "machine_unverified",
+          "topics": [
+            "communication",
+            "people"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "thank you",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "спасибо",
+          "context": "Используется как вежливое выражение благодарности.",
+          "example": "Thank you for the gift.",
+          "example_translation": "Спасибо за подарок.",
+          "status": "machine_unverified",
+          "topics": [
+            "communication",
+            "people"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "thanks",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "спасибо",
+          "context": "Неформальное выражение благодарности.",
+          "example": "Thanks for coming.",
+          "example_translation": "Спасибо, что пришли.",
+          "status": "machine_unverified",
+          "topics": [
+            "communication",
+            "people"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "that",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "тот",
+          "context": "Используется для указания на конкретный предмет или лицо, находящееся на расстоянии.",
+          "example": "That book is mine.",
+          "example_translation": "Та книга моя.",
+          "status": "machine_unverified",
+          "topics": [
+            "grammar"
+          ]
+        },
+        {
+          "language_code": "ru",
+          "value": "что",
+          "context": "Используется как союз для введения придаточного предложения.",
+          "example": "I know that you are right.",
+          "example_translation": "Я знаю, что ты прав.",
+          "status": "machine_unverified",
+          "topics": [
+            "grammar"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "the",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "определённый артикль",
+          "context": "Используется для указания на конкретный предмет, уже известный собеседнику. В русском языке часто не переводится.",
+          "example": "The sun is bright.",
+          "example_translation": "Солнце яркое.",
+          "status": "machine_unverified",
+          "topics": [
+            "grammar"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "theater",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "театр",
+          "context": "Используется для обозначения места, где показывают спектакли.",
+          "example": "We went to the theater last night.",
+          "example_translation": "Вчера вечером мы ходили в театр.",
+          "status": "machine_unverified",
+          "topics": [
+            "entertainment",
+            "art"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "their",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "их",
+          "context": "Притяжательное местоимение, указывающее на принадлежность группе людей.",
+          "example": "Their house is big.",
+          "example_translation": "Их дом большой.",
+          "status": "machine_unverified",
+          "topics": [
+            "grammar"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "theirs",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "их",
+          "context": "Притяжательное местоимение, заменяющее существительное, указывающее на принадлежность группе людей.",
+          "example": "This car is theirs.",
+          "example_translation": "Эта машина их.",
+          "status": "machine_unverified",
+          "topics": [
+            "grammar"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "them",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "их",
+          "context": "Личное местоимение в объектном падеже, используется для обозначения группы людей или предметов.",
+          "example": "I saw them yesterday.",
+          "example_translation": "Я видел их вчера.",
+          "status": "machine_unverified",
+          "topics": [
+            "grammar"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "theme",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "тема",
+          "context": "Основная идея или предмет обсуждения, произведения.",
+          "example": "The theme of the book is love.",
+          "example_translation": "Тема книги — любовь.",
+          "status": "machine_unverified",
+          "topics": [
+            "abstract",
+            "communication"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "themselves",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "себя",
+          "context": "Возвратное местоимение для множественного числа или уважительного обращения.",
+          "example": "They hurt themselves.",
+          "example_translation": "Они поранили себя.",
+          "status": "machine_unverified",
+          "topics": [
+            "grammar"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "then",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "затем",
+          "context": "Указывает на последовательность действий во времени.",
+          "example": "First we eat, then we go.",
+          "example_translation": "Сначала мы едим, затем идём.",
+          "status": "machine_unverified",
+          "topics": [
+            "time",
+            "grammar"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "theory",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "теория",
+          "context": "Система идей, объясняющая что-либо.",
+          "example": "Einstein's theory of relativity.",
+          "example_translation": "Теория относительности Эйнштейна.",
+          "status": "machine_unverified",
+          "topics": [
+            "science",
+            "abstract"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "there",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "там",
+          "context": "Указывает на место или наличие.",
+          "example": "The book is there.",
+          "example_translation": "Книга там.",
+          "status": "machine_unverified",
+          "topics": [
+            "movement",
+            "grammar"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "therefore",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "следовательно",
+          "context": "Вводит вывод или следствие.",
+          "example": "He was late; therefore, he missed the bus.",
+          "example_translation": "Он опоздал; следовательно, пропустил автобус.",
+          "status": "machine_unverified",
+          "topics": [
+            "grammar",
+            "abstract"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "they",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "они",
+          "context": "Личное местоимение третьего лица множественного числа.",
+          "example": "They are coming.",
+          "example_translation": "Они идут.",
+          "status": "machine_unverified",
+          "topics": [
+            "grammar"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "thick",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "толстый",
+          "context": "О предмете с большим расстоянием между противоположными сторонами.",
+          "example": "The wall is thick.",
+          "example_translation": "Стена толстая.",
+          "status": "machine_unverified",
+          "topics": [
+            "measurement"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "thickly",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "толсто",
+          "context": "Наречие, указывающее на большую толщину или плотность.",
+          "example": "Spread the butter thickly.",
+          "example_translation": "Намажьте масло толстым слоем.",
+          "status": "machine_unverified",
+          "topics": [
+            "measurement"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "thickness",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "толщина",
+          "context": "Расстояние между двумя поверхностями предмета.",
+          "example": "The thickness of the board is 2 cm.",
+          "example_translation": "Толщина доски — 2 см.",
+          "status": "machine_unverified",
+          "topics": [
+            "measurement"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "thief",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "вор",
+          "context": "Человек, который крадёт.",
+          "example": "The thief stole my wallet.",
+          "example_translation": "Вор украл мой кошелёк.",
+          "status": "machine_unverified",
+          "topics": [
+            "law",
+            "people"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "thin",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "тонкий",
+          "context": "О предмете с малым расстоянием между сторонами или о человеке с малым весом.",
+          "example": "She is thin.",
+          "example_translation": "Она худая.",
+          "status": "machine_unverified",
+          "topics": [
+            "measurement",
+            "body"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "thing",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "вещь",
+          "context": "Объект, предмет, явление.",
+          "example": "What is that thing?",
+          "example_translation": "Что это за вещь?",
+          "status": "machine_unverified",
+          "topics": [
+            "abstract"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "think",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "думать",
+          "context": "Использовать ум для формирования мыслей или мнений.",
+          "example": "I think it's a good idea.",
+          "example_translation": "Я думаю, это хорошая идея.",
+          "status": "machine_unverified",
+          "topics": [
+            "abstract",
+            "communication"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "thinking",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "мышление",
+          "context": "Процесс обдумывания или размышления.",
+          "example": "Positive thinking helps.",
+          "example_translation": "Позитивное мышление помогает.",
+          "status": "machine_unverified",
+          "topics": [
+            "abstract",
+            "education"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "thirsty",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "испытывающий жажду",
+          "context": "Желание пить.",
+          "example": "I am thirsty.",
+          "example_translation": "Я хочу пить.",
+          "status": "machine_unverified",
+          "topics": [
+            "body",
+            "food"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "this",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "этот",
+          "context": "Указательное местоимение для близкого предмета или лица.",
+          "example": "This is my book.",
+          "example_translation": "Это моя книга.",
+          "status": "machine_unverified",
+          "topics": [
+            "grammar"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "thorough",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "тщательный",
+          "context": "Выполненный с большим вниманием к деталям.",
+          "example": "She did a thorough job.",
+          "example_translation": "Она выполнила тщательную работу.",
+          "status": "machine_unverified",
+          "topics": [
+            "abstract",
+            "work"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "thoroughly",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "тщательно",
+          "context": "Наречие, означающее полное и детальное выполнение.",
+          "example": "Clean the room thoroughly.",
+          "example_translation": "Уберите комнату тщательно.",
+          "status": "machine_unverified",
+          "topics": [
+            "abstract",
+            "work"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "though",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "хотя",
+          "context": "Вводит уступительное придаточное предложение.",
+          "example": "Though it rained, we went out.",
+          "example_translation": "Хотя шёл дождь, мы вышли.",
+          "status": "machine_unverified",
+          "topics": [
+            "grammar"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "thought",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "мысль",
+          "context": "Используется для обозначения идеи или размышления.",
+          "example": "I had a thought about the problem.",
+          "example_translation": "У меня возникла мысль о проблеме.",
+          "status": "machine_unverified",
+          "topics": [
+            "abstract",
+            "communication"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "thread",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "нить",
+          "context": "Используется для тонкой пряжи или последовательности сообщений.",
+          "example": "She sewed the button with a thread.",
+          "example_translation": "Она пришила пуговицу ниткой.",
+          "status": "machine_unverified",
+          "topics": [
+            "home",
+            "technology"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "threat",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "угроза",
+          "context": "Используется для выражения опасности или намерения причинить вред.",
+          "example": "The storm is a threat to the city.",
+          "example_translation": "Шторм представляет угрозу для города.",
+          "status": "machine_unverified",
+          "topics": [
+            "safety",
+            "law"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "threaten",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "угрожать",
+          "context": "Используется, когда кто-то выражает намерение причинить вред.",
+          "example": "He threatened to call the police.",
+          "example_translation": "Он угрожал вызвать полицию.",
+          "status": "machine_unverified",
+          "topics": [
+            "safety",
+            "law"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "threatening",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "угрожающий",
+          "context": "Используется для описания чего-то, что вызывает чувство опасности.",
+          "example": "His tone was threatening.",
+          "example_translation": "Его тон был угрожающим.",
+          "status": "machine_unverified",
+          "topics": [
+            "safety",
+            "emotions"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "throat",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "горло",
+          "context": "Используется для обозначения части тела.",
+          "example": "My throat is sore.",
+          "example_translation": "У меня болит горло.",
+          "status": "machine_unverified",
+          "topics": [
+            "body",
+            "health"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "through",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "через",
+          "context": "Используется для указания движения сквозь что-то или с помощью чего-то.",
+          "example": "We walked through the forest.",
+          "example_translation": "Мы прошли через лес.",
+          "status": "machine_unverified",
+          "topics": [
+            "movement"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "throughout",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "на протяжении",
+          "context": "Используется для указания времени или места от начала до конца.",
+          "example": "It rained throughout the day.",
+          "example_translation": "Дождь шёл на протяжении всего дня.",
+          "status": "machine_unverified",
+          "topics": [
+            "time",
+            "movement"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "throw",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "бросать",
+          "context": "Используется для действия метания предмета рукой.",
+          "example": "He threw the ball to me.",
+          "example_translation": "Он бросил мне мяч.",
+          "status": "machine_unverified",
+          "topics": [
+            "sports",
+            "movement"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "thumb",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "большой палец",
+          "context": "Используется для обозначения пальца руки.",
+          "example": "He hurt his thumb.",
+          "example_translation": "Он поранил большой палец.",
+          "status": "machine_unverified",
+          "topics": [
+            "body"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "Thursday",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "четверг",
+          "context": "Используется для обозначения дня недели.",
+          "example": "The meeting is on Thursday.",
+          "example_translation": "Встреча в четверг.",
+          "status": "machine_unverified",
+          "topics": [
+            "time"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "thus",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "таким образом",
+          "context": "Используется для указания результата или способа.",
+          "example": "He was late, thus missing the bus.",
+          "example_translation": "Он опоздал, таким образом пропустив автобус.",
+          "status": "machine_unverified",
+          "topics": [
+            "grammar",
+            "abstract"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "ticket",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "билет",
+          "context": "Используется для проезда или входа куда-либо.",
+          "example": "I bought a ticket for the concert.",
+          "example_translation": "Я купил билет на концерт.",
+          "status": "machine_unverified",
+          "topics": [
+            "travel",
+            "entertainment"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "tie",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "галстук",
+          "context": "Используется для аксессуара одежды.",
+          "example": "He wore a red tie.",
+          "example_translation": "Он носил красный галстук.",
+          "status": "machine_unverified",
+          "topics": [
+            "people",
+            "work"
+          ]
+        },
+        {
+          "language_code": "ru",
+          "value": "завязывать",
+          "context": "Используется для действия связывания.",
+          "example": "Tie your shoelaces.",
+          "example_translation": "Завяжи шнурки.",
+          "status": "machine_unverified",
+          "topics": [
+            "body",
+            "home"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "tight",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "тугой",
+          "context": "Используется для описания чего-то плотно прилегающего или натянутого.",
+          "example": "The lid is too tight.",
+          "example_translation": "Крышка слишком тугая.",
+          "status": "machine_unverified",
+          "topics": [
+            "measurement",
+            "home"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "tightly",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "плотно",
+          "context": "Используется для описания действия с сильным натяжением или сжатием.",
+          "example": "Hold the rope tightly.",
+          "example_translation": "Держи верёвку плотно.",
+          "status": "machine_unverified",
+          "topics": [
+            "movement",
+            "measurement"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "till",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "до",
+          "context": "Используется для указания временного предела.",
+          "example": "Wait till tomorrow.",
+          "example_translation": "Подожди до завтра.",
+          "status": "machine_unverified",
+          "topics": [
+            "time",
+            "grammar"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "time",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "время",
+          "context": "Используется для обозначения часов, момента или периода.",
+          "example": "What time is it?",
+          "example_translation": "Который час?",
+          "status": "machine_unverified",
+          "topics": [
+            "time",
+            "abstract"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "timetable",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "расписание",
+          "context": "Используется для графика занятий или движения транспорта.",
+          "example": "Check the train timetable.",
+          "example_translation": "Проверь расписание поездов.",
+          "status": "machine_unverified",
+          "topics": [
+            "transport",
+            "education"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "tin",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "банка",
+          "context": "Используется для металлической ёмкости для консервов.",
+          "example": "Open a tin of beans.",
+          "example_translation": "Открой банку фасоли.",
+          "status": "machine_unverified",
+          "topics": [
+            "food",
+            "home"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "tiny",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "крошечный",
+          "context": "Используется для описания очень маленького размера.",
+          "example": "She has a tiny dog.",
+          "example_translation": "У неё крошечная собака.",
+          "status": "machine_unverified",
+          "topics": [
+            "measurement"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "tip",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "кончик",
+          "context": "Используется для обозначения острого или закруглённого конца чего-либо.",
+          "example": "The tip of the pencil is sharp.",
+          "example_translation": "Кончик карандаша острый.",
+          "status": "machine_unverified",
+          "topics": [
+            "body",
+            "measurement"
+          ]
+        },
+        {
+          "language_code": "ru",
+          "value": "чаевые",
+          "context": "Используется, когда речь о деньгах, которые дают за услугу.",
+          "example": "He left a generous tip for the waiter.",
+          "example_translation": "Он оставил щедрые чаевые официанту.",
+          "status": "machine_unverified",
+          "topics": [
+            "money",
+            "shopping"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "tire",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "шина",
+          "context": "Используется для обозначения резинового покрытия колеса.",
+          "example": "I need to change the tire on my car.",
+          "example_translation": "Мне нужно заменить шину на моей машине.",
+          "status": "machine_unverified",
+          "topics": [
+            "transport"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "tired",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "уставший",
+          "context": "Используется для описания состояния усталости после работы или активности.",
+          "example": "I am very tired after work.",
+          "example_translation": "Я очень устал после работы.",
+          "status": "machine_unverified",
+          "topics": [
+            "body",
+            "emotions"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "tiring",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "утомительный",
+          "context": "Используется для описания чего-то, что вызывает усталость.",
+          "example": "The hike was very tiring.",
+          "example_translation": "Поход был очень утомительным.",
+          "status": "machine_unverified",
+          "topics": [
+            "body",
+            "emotions"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "title",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "название",
+          "context": "Используется для обозначения имени книги, фильма, песни и т.д.",
+          "example": "What is the title of the book?",
+          "example_translation": "Какое название у книги?",
+          "status": "machine_unverified",
+          "topics": [
+            "media",
+            "art"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "to",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "в",
+          "context": "Используется для указания направления или цели движения.",
+          "example": "I am going to the store.",
+          "example_translation": "Я иду в магазин.",
+          "status": "machine_unverified",
+          "topics": [
+            "grammar",
+            "movement"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "today",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "сегодня",
+          "context": "Используется для обозначения текущего дня.",
+          "example": "Today is Monday.",
+          "example_translation": "Сегодня понедельник.",
+          "status": "machine_unverified",
+          "topics": [
+            "time"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "toe",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "палец ноги",
+          "context": "Используется для обозначения пальцев на ноге.",
+          "example": "I stubbed my toe on the table.",
+          "example_translation": "Я ударился пальцем ноги о стол.",
+          "status": "machine_unverified",
+          "topics": [
+            "body"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "together",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "вместе",
+          "context": "Используется для указания на совместное действие или нахождение.",
+          "example": "We work together.",
+          "example_translation": "Мы работаем вместе.",
+          "status": "machine_unverified",
+          "topics": [
+            "people",
+            "society"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "toilet",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "туалет",
+          "context": "Используется для обозначения санузла или унитаза.",
+          "example": "Where is the toilet?",
+          "example_translation": "Где туалет?",
+          "status": "machine_unverified",
+          "topics": [
+            "home"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "tomato",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "помидор",
+          "context": "Используется для обозначения овоща (фактически фрукта) красного цвета.",
+          "example": "I like to eat tomatoes in salad.",
+          "example_translation": "Я люблю есть помидоры в салате.",
+          "status": "machine_unverified",
+          "topics": [
+            "food"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "tomorrow",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "завтра",
+          "context": "Используется для обозначения следующего дня.",
+          "example": "See you tomorrow.",
+          "example_translation": "Увидимся завтра.",
+          "status": "machine_unverified",
+          "topics": [
+            "time"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "ton",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "тонна",
+          "context": "Используется для обозначения единицы веса, равной 1000 кг.",
+          "example": "The truck carries a ton of sand.",
+          "example_translation": "Грузовик везёт тонну песка.",
+          "status": "machine_unverified",
+          "topics": [
+            "measurement",
+            "numbers"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "tone",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "тон",
+          "context": "Используется для обозначения звуковой высоты или качества голоса.",
+          "example": "She spoke in a soft tone.",
+          "example_translation": "Она говорила мягким тоном.",
+          "status": "machine_unverified",
+          "topics": [
+            "music",
+            "communication"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "tongue",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "язык",
+          "context": "Используется для обозначения органа во рту или языка как средства общения.",
+          "example": "He bit his tongue.",
+          "example_translation": "Он прикусил язык.",
+          "status": "machine_unverified",
+          "topics": [
+            "body",
+            "communication"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "tonight",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "сегодня вечером",
+          "context": "Используется для обозначения вечера текущего дня.",
+          "example": "What are you doing tonight?",
+          "example_translation": "Что ты делаешь сегодня вечером?",
+          "status": "machine_unverified",
+          "topics": [
+            "time"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "too",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "тоже",
+          "context": "Используется для добавления информации, аналогично 'также'.",
+          "example": "I want to go too.",
+          "example_translation": "Я тоже хочу пойти.",
+          "status": "machine_unverified",
+          "topics": [
+            "grammar"
+          ]
+        },
+        {
+          "language_code": "ru",
+          "value": "слишком",
+          "context": "Используется для указания на чрезмерность.",
+          "example": "It is too hot.",
+          "example_translation": "Слишком жарко.",
+          "status": "machine_unverified",
+          "topics": [
+            "grammar",
+            "measurement"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "tool",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "инструмент",
+          "context": "Используется для обозначения приспособления для выполнения работы.",
+          "example": "A hammer is a useful tool.",
+          "example_translation": "Молоток — полезный инструмент.",
+          "status": "machine_unverified",
+          "topics": [
+            "technology",
+            "work"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "tooth",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "зуб",
+          "context": "Используется для обозначения костного образования во рту для жевания.",
+          "example": "Brush your teeth every day.",
+          "example_translation": "Чисти зубы каждый день.",
+          "status": "machine_unverified",
+          "topics": [
+            "body",
+            "health"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "top",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "верх",
+          "context": "Используется для обозначения самой высокой части или положения.",
+          "example": "The top of the mountain is covered with snow.",
+          "example_translation": "Вершина горы покрыта снегом.",
+          "status": "machine_unverified",
+          "topics": [
+            "movement",
+            "measurement"
+          ]
+        },
+        {
+          "language_code": "ru",
+          "value": "лучший",
+          "context": "Используется для обозначения наивысшего качества или ранга.",
+          "example": "She is one of the top students in her class.",
+          "example_translation": "Она одна из лучших учениц в своем классе.",
+          "status": "machine_unverified",
+          "topics": [
+            "education",
+            "people"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "topic",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "тема",
+          "context": "Используется для обозначения предмета обсуждения или изучения.",
+          "example": "The main topic of the meeting was the new project.",
+          "example_translation": "Основной темой встречи был новый проект.",
+          "status": "machine_unverified",
+          "topics": [
+            "communication",
+            "education"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "total",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "общий",
+          "context": "Используется для обозначения суммы или итога.",
+          "example": "The total cost of the trip was $500.",
+          "example_translation": "Общая стоимость поездки составила 500 долларов.",
+          "status": "machine_unverified",
+          "topics": [
+            "numbers",
+            "money"
+          ]
+        },
+        {
+          "language_code": "ru",
+          "value": "полный",
+          "context": "Используется для усиления значения, означает 'абсолютный'.",
+          "example": "It was a total disaster.",
+          "example_translation": "Это была полная катастрофа.",
+          "status": "machine_unverified",
+          "topics": [
+            "abstract"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "totally",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "полностью",
+          "context": "Используется для усиления глагола или прилагательного.",
+          "example": "I totally agree with you.",
+          "example_translation": "Я полностью с вами согласен.",
+          "status": "machine_unverified",
+          "topics": [
+            "communication",
+            "abstract"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "touch",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "трогать",
+          "context": "Используется для физического контакта рукой.",
+          "example": "Don't touch the hot stove.",
+          "example_translation": "Не трогай горячую плиту.",
+          "status": "machine_unverified",
+          "topics": [
+            "body"
+          ]
+        },
+        {
+          "language_code": "ru",
+          "value": "связываться",
+          "context": "Используется в значении установления контакта с кем-либо.",
+          "example": "I will touch base with you next week.",
+          "example_translation": "Я свяжусь с вами на следующей неделе.",
+          "status": "machine_unverified",
+          "topics": [
+            "communication"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "tough",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "трудный",
+          "context": "Используется для описания сложной ситуации или задачи.",
+          "example": "It was a tough exam.",
+          "example_translation": "Это был трудный экзамен.",
+          "status": "machine_unverified",
+          "topics": [
+            "education",
+            "abstract"
+          ]
+        },
+        {
+          "language_code": "ru",
+          "value": "прочный",
+          "context": "Используется для описания материала, который сложно повредить.",
+          "example": "This material is very tough.",
+          "example_translation": "Этот материал очень прочный.",
+          "status": "machine_unverified",
+          "topics": [
+            "measurement"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "tour",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "экскурсия",
+          "context": "Используется для обозначения организованной поездки с осмотром достопримечательностей.",
+          "example": "We went on a tour of the city.",
+          "example_translation": "Мы отправились на экскурсию по городу.",
+          "status": "machine_unverified",
+          "topics": [
+            "travel",
+            "entertainment"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "tourist",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "турист",
+          "context": "Используется для обозначения человека, путешествующего для отдыха.",
+          "example": "The city is full of tourists in summer.",
+          "example_translation": "Летом город полон туристов.",
+          "status": "machine_unverified",
+          "topics": [
+            "travel",
+            "people"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "toward",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "к",
+          "context": "Используется для указания направления движения.",
+          "example": "She walked toward the door.",
+          "example_translation": "Она пошла к двери.",
+          "status": "machine_unverified",
+          "topics": [
+            "movement"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "towel",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "полотенце",
+          "context": "Используется для обозначения ткани для вытирания.",
+          "example": "Please hand me a towel.",
+          "example_translation": "Пожалуйста, передай мне полотенце.",
+          "status": "machine_unverified",
+          "topics": [
+            "home"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "tower",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "башня",
+          "context": "Используется для обозначения высокого строения.",
+          "example": "The Eiffel Tower is a famous landmark.",
+          "example_translation": "Эйфелева башня — известная достопримечательность.",
+          "status": "machine_unverified",
+          "topics": [
+            "travel",
+            "art"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "town",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "город",
+          "context": "Используется для обозначения небольшого населенного пункта.",
+          "example": "I live in a small town.",
+          "example_translation": "Я живу в небольшом городе.",
+          "status": "machine_unverified",
+          "topics": [
+            "society",
+            "travel"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "toy",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "игрушка",
+          "context": "Используется для обозначения предмета для игры.",
+          "example": "The child is playing with a toy car.",
+          "example_translation": "Ребенок играет с игрушечной машинкой.",
+          "status": "machine_unverified",
+          "topics": [
+            "entertainment",
+            "home"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "trace",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "след",
+          "context": "Используется для обозначения остаточного признака или отпечатка.",
+          "example": "There was no trace of the missing cat.",
+          "example_translation": "Не было никаких следов пропавшей кошки.",
+          "status": "machine_unverified",
+          "topics": [
+            "abstract",
+            "movement"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "track",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "трек",
+          "context": "Используется для обозначения дорожки или пути, особенно для бега или поездов.",
+          "example": "The train runs on this track.",
+          "example_translation": "Поезд ходит по этому пути.",
+          "status": "machine_unverified",
+          "topics": [
+            "transport",
+            "sports"
+          ]
+        },
+        {
+          "language_code": "ru",
+          "value": "отслеживать",
+          "context": "Используется в значении следить за движением или прогрессом.",
+          "example": "We need to track the package.",
+          "example_translation": "Нам нужно отследить посылку.",
+          "status": "machine_unverified",
+          "topics": [
+            "technology",
+            "communication"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "trade",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "торговля",
+          "context": "Используется для обозначения обмена товарами или услугами.",
+          "example": "International trade is important for the economy.",
+          "example_translation": "Международная торговля важна для экономики.",
+          "status": "machine_unverified",
+          "topics": [
+            "business",
+            "money"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "tradition",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "традиция",
+          "context": "Используется для обозначения обычая, передаваемого из поколения в поколение.",
+          "example": "It is a tradition to exchange gifts at Christmas.",
+          "example_translation": "Традиция обмениваться подарками на Рождество.",
+          "status": "machine_unverified",
+          "topics": [
+            "society",
+            "family"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "traditional",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "традиционный",
+          "context": "Используется для описания чего-то, основанного на традиции.",
+          "example": "They wore traditional costumes for the festival.",
+          "example_translation": "Они надели традиционные костюмы для фестиваля.",
+          "status": "machine_unverified",
+          "topics": [
+            "society",
+            "art"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "traffic",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "движение",
+          "context": "Используется для обозначения транспортного потока на дорогах.",
+          "example": "There is heavy traffic on the highway.",
+          "example_translation": "На шоссе интенсивное движение.",
+          "status": "machine_unverified",
+          "topics": [
+            "transport"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "train",
+      "translations": [
+        {
+          "language_code": "ru",
+          "value": "поезд",
+          "context": "Используется для обозначения железнодорожного транспортного средства.",
+          "example": "We took the train to Moscow.",
+          "example_translation": "Мы поехали на поезде в Москву.",
+          "status": "machine_unverified",
+          "topics": [
+            "transport",
+            "travel"
+          ]
+        },
+        {
+          "language_code": "ru",
+          "value": "тренировать",
+          "context": "Используется для обозначения процесса обучения навыкам или физической подготовки.",
+          "example": "He trains every day for the competition.",
+          "example_translation": "Он тренируется каждый день для соревнования.",
+          "status": "machine_unverified",
+          "topics": [
+            "sports",
+            "education"
+          ]
+        }
+      ]
     }
   ]
 }

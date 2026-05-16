@@ -4,24 +4,29 @@
   },
   "topics": [
     {
-      "id": "grammar",
-      "name": "Grammar & Function Words",
-      "description": "Articles, prepositions, auxiliaries, pronouns, conjunctions, particles, determiners, and other function words that mainly express grammar rather than a concrete subject area."
-    },
-    {
       "id": "abstract",
       "name": "Abstract Ideas",
       "description": "General abstract concepts such as ability, reason, idea, cause, effect, state, quality, or condition when the word is not tied to a more specific domain."
     },
     {
-      "id": "people",
-      "name": "People",
-      "description": "Persons, social roles, identity, age groups, relationships between people, and human-centered vocabulary that is not more specifically about family, emotions, or communication."
+      "id": "animals",
+      "name": "Animals",
+      "description": "Animals, insects, pets, wildlife, and animal-related vocabulary."
     },
     {
-      "id": "emotions",
-      "name": "Emotions & Feelings",
-      "description": "Feelings, moods, attitudes, emotional reactions, and words used to describe mental or emotional states."
+      "id": "art",
+      "name": "Art & Creative Work",
+      "description": "Visual art, design, creativity, performance, and general artistic production outside music."
+    },
+    {
+      "id": "body",
+      "name": "Body & Physical Actions",
+      "description": "Body parts, senses, physical processes, and words directly tied to the human body or bodily function."
+    },
+    {
+      "id": "business",
+      "name": "Business & Commerce",
+      "description": "Companies, management, trade, deals, customers, services, markets, and commercial activity beyond everyday shopping."
     },
     {
       "id": "communication",
@@ -34,54 +39,19 @@
       "description": "Learning, teaching, school, study, knowledge acquisition, training, and academic contexts."
     },
     {
-      "id": "work",
-      "name": "Work & Jobs",
-      "description": "Employment, professions, workplaces, tasks, career activity, office contexts, and general job-related vocabulary."
+      "id": "emotions",
+      "name": "Emotions & Feelings",
+      "description": "Feelings, moods, attitudes, emotional reactions, and words used to describe mental or emotional states."
     },
     {
-      "id": "business",
-      "name": "Business & Commerce",
-      "description": "Companies, management, trade, deals, customers, services, markets, and commercial activity beyond everyday shopping."
+      "id": "entertainment",
+      "name": "Entertainment & Leisure",
+      "description": "Theater, cinema, games, hobbies, leisure activities, performances, shows, and fun."
     },
     {
-      "id": "money",
-      "name": "Money & Finance",
-      "description": "Money, prices, payment, cost, banking, financial value, and economic vocabulary."
-    },
-    {
-      "id": "shopping",
-      "name": "Shopping & Buying",
-      "description": "Stores, buying, selling, products, orders, consumer choices, and everyday retail situations."
-    },
-    {
-      "id": "technology",
-      "name": "Technology & Devices",
-      "description": "Machines, tools, devices, computing hardware, software, engineering technology, and technical equipment."
-    },
-    {
-      "id": "internet",
-      "name": "Internet & Online Life",
-      "description": "Websites, online communication, digital platforms, email, social media, downloading, uploading, and internet-specific vocabulary."
-    },
-    {
-      "id": "science",
-      "name": "Science & Research",
-      "description": "Scientific concepts, research, experiments, evidence, analysis, and academic science contexts."
-    },
-    {
-      "id": "health",
-      "name": "Health & Medicine",
-      "description": "Illness, treatment, medical care, fitness, condition, recovery, and healthcare-related vocabulary."
-    },
-    {
-      "id": "body",
-      "name": "Body & Physical Actions",
-      "description": "Body parts, senses, physical processes, and words directly tied to the human body or bodily function."
-    },
-    {
-      "id": "home",
-      "name": "Home & Household",
-      "description": "Homes, rooms, furniture, household objects, domestic routines, and everyday living spaces."
+      "id": "environment",
+      "name": "Environment",
+      "description": "Environment vocabulary and closely related concepts that belong to this semantic area rather than a broader generic topic. Common triggers include waste."
     },
     {
       "id": "family",
@@ -94,54 +64,24 @@
       "description": "Food, meals, ingredients, cooking methods, drinks, taste, and kitchen vocabulary."
     },
     {
-      "id": "travel",
-      "name": "Travel & Trips",
-      "description": "Journeys, tourism, routes, destinations, travel planning, accommodation, and being away from home."
+      "id": "grammar",
+      "name": "Grammar & Function Words",
+      "description": "Articles, prepositions, auxiliaries, pronouns, conjunctions, particles, determiners, and other function words that mainly express grammar rather than a concrete subject area."
     },
     {
-      "id": "transport",
-      "name": "Transport & Vehicles",
-      "description": "Cars, buses, trains, planes, roads, traffic, driving, transport systems, and movement by vehicle."
+      "id": "health",
+      "name": "Health & Medicine",
+      "description": "Illness, treatment, medical care, fitness, condition, recovery, and healthcare-related vocabulary."
     },
     {
-      "id": "nature",
-      "name": "Nature & Environment",
-      "description": "Land, plants, landscapes, natural places, ecology, and the physical environment outside built spaces."
+      "id": "home",
+      "name": "Home & Household",
+      "description": "Homes, rooms, furniture, household objects, domestic routines, and everyday living spaces."
     },
     {
-      "id": "animals",
-      "name": "Animals",
-      "description": "Animals, insects, pets, wildlife, and animal-related vocabulary."
-    },
-    {
-      "id": "weather",
-      "name": "Weather & Climate",
-      "description": "Rain, wind, sun, temperature, seasons, forecasts, and climate conditions."
-    },
-    {
-      "id": "time",
-      "name": "Time & Dates",
-      "description": "Clock time, dates, frequency, duration, sequence, schedules, and expressions about when something happens."
-    },
-    {
-      "id": "numbers",
-      "name": "Numbers & Counting",
-      "description": "Numbers, quantities, order, counting, amounts, and basic numeric expressions."
-    },
-    {
-      "id": "measurement",
-      "name": "Measurement & Size",
-      "description": "Length, weight, volume, scale, degree, units, dimensions, and ways of measuring things."
-    },
-    {
-      "id": "movement",
-      "name": "Movement & Position",
-      "description": "Direction, location, position, motion, entering, leaving, rising, falling, and spatial relations not limited to vehicles."
-    },
-    {
-      "id": "society",
-      "name": "Society & Community",
-      "description": "Public life, community, social systems, culture, institutions, and group-level human activity."
+      "id": "internet",
+      "name": "Internet & Online Life",
+      "description": "Websites, online communication, digital platforms, email, social media, downloading, uploading, and internet-specific vocabulary."
     },
     {
       "id": "law",
@@ -149,9 +89,9 @@
       "description": "Rules, rights, police, courts, legal processes, crime, punishment, and justice vocabulary."
     },
     {
-      "id": "politics",
-      "name": "Politics & Government",
-      "description": "Government, elections, policy, political systems, public authority, and state-level decision making."
+      "id": "measurement",
+      "name": "Measurement & Size",
+      "description": "Length, weight, volume, scale, degree, units, dimensions, and ways of measuring things."
     },
     {
       "id": "media",
@@ -159,9 +99,14 @@
       "description": "News, journalism, television, radio, books, publishing, and mass communication channels."
     },
     {
-      "id": "art",
-      "name": "Art & Creative Work",
-      "description": "Visual art, design, creativity, performance, and general artistic production outside music."
+      "id": "money",
+      "name": "Money & Finance",
+      "description": "Money, prices, payment, cost, banking, financial value, and economic vocabulary."
+    },
+    {
+      "id": "movement",
+      "name": "Movement & Position",
+      "description": "Direction, location, position, motion, entering, leaving, rising, falling, and spatial relations not limited to vehicles."
     },
     {
       "id": "music",
@@ -169,9 +114,79 @@
       "description": "Songs, instruments, rhythm, singing, listening to music, and music performance vocabulary."
     },
     {
+      "id": "nature",
+      "name": "Nature & Environment",
+      "description": "Land, plants, landscapes, natural places, ecology, and the physical environment outside built spaces."
+    },
+    {
+      "id": "numbers",
+      "name": "Numbers & Counting",
+      "description": "Numbers, quantities, order, counting, amounts, and basic numeric expressions."
+    },
+    {
+      "id": "people",
+      "name": "People",
+      "description": "Persons, social roles, identity, age groups, relationships between people, and human-centered vocabulary that is not more specifically about family, emotions, or communication."
+    },
+    {
+      "id": "politics",
+      "name": "Politics & Government",
+      "description": "Government, elections, policy, political systems, public authority, and state-level decision making."
+    },
+    {
+      "id": "safety",
+      "name": "Safety",
+      "description": "Safety vocabulary and closely related concepts that belong to this semantic area rather than a broader generic topic. Common triggers include warn."
+    },
+    {
+      "id": "science",
+      "name": "Science & Research",
+      "description": "Scientific concepts, research, experiments, evidence, analysis, and academic science contexts."
+    },
+    {
+      "id": "shopping",
+      "name": "Shopping & Buying",
+      "description": "Stores, buying, selling, products, orders, consumer choices, and everyday retail situations."
+    },
+    {
+      "id": "society",
+      "name": "Society & Community",
+      "description": "Public life, community, social systems, culture, institutions, and group-level human activity."
+    },
+    {
       "id": "sports",
       "name": "Sports & Exercise",
       "description": "Games, competition, training, exercise, physical sport activity, and athletics vocabulary."
+    },
+    {
+      "id": "technology",
+      "name": "Technology & Devices",
+      "description": "Machines, tools, devices, computing hardware, software, engineering technology, and technical equipment."
+    },
+    {
+      "id": "time",
+      "name": "Time & Dates",
+      "description": "Clock time, dates, frequency, duration, sequence, schedules, and expressions about when something happens."
+    },
+    {
+      "id": "transport",
+      "name": "Transport & Vehicles",
+      "description": "Cars, buses, trains, planes, roads, traffic, driving, transport systems, and movement by vehicle."
+    },
+    {
+      "id": "travel",
+      "name": "Travel & Trips",
+      "description": "Journeys, tourism, routes, destinations, travel planning, accommodation, and being away from home."
+    },
+    {
+      "id": "weather",
+      "name": "Weather & Climate",
+      "description": "Rain, wind, sun, temperature, seasons, forecasts, and climate conditions."
+    },
+    {
+      "id": "work",
+      "name": "Work & Jobs",
+      "description": "Employment, professions, workplaces, tasks, career activity, office contexts, and general job-related vocabulary."
     }
   ]
 }
