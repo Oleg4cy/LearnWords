@@ -1,0 +1,103 @@
+{
+  "meta": {
+    "generated_at": "2026-05-17T11:42:20.637Z",
+    "mode": "repair-translations",
+    "model": "deepseek-chat",
+    "batch_size": 10,
+    "allow_low_confidence": false,
+    "repair_field_mode": "full"
+  },
+  "summary": {
+    "checked": 10,
+    "kept": 10,
+    "added": 0,
+    "replaced": 0,
+    "enriched": 0,
+    "review": 0,
+    "applied": 0,
+    "low_confidence": 0,
+    "partial_repairs": 0
+  },
+  "results": [
+    {
+      "word": "a",
+      "action": "keep",
+      "confidence": 0.9,
+      "reason": "Existing translation, context, example, and topics are acceptable.",
+      "applied": false,
+      "changed_fields": []
+    },
+    {
+      "word": "a.m.",
+      "action": "keep",
+      "confidence": 0.9,
+      "reason": "Existing translation, context, example, and topics are acceptable.",
+      "applied": false,
+      "changed_fields": []
+    },
+    {
+      "word": "abandon",
+      "action": "keep",
+      "confidence": 0.9,
+      "reason": "Existing translation, context, example, and topics are acceptable.",
+      "applied": false,
+      "changed_fields": []
+    },
+    {
+      "word": "abandoned",
+      "action": "keep",
+      "confidence": 0.9,
+      "reason": "Existing translation, context, example, and topics are acceptable.",
+      "applied": false,
+      "changed_fields": []
+    },
+    {
+      "word": "ability",
+      "action": "keep",
+      "confidence": 0.9,
+      "reason": "Existing translation, context, example, and topics are acceptable.",
+      "applied": false,
+      "changed_fields": []
+    },
+    {
+      "word": "able",
+      "action": "keep",
+      "confidence": 0.9,
+      "reason": "Existing translation, context, example, and topics are acceptable.",
+      "applied": false,
+      "changed_fields": []
+    },
+    {
+      "word": "about",
+      "action": "keep",
+      "confidence": 0.9,
+      "reason": "Existing translation, context, example, and topics are acceptable.",
+      "applied": false,
+      "changed_fields": []
+    },
+    {
+      "word": "above",
+      "action": "keep",
+      "confidence": 0.9,
+      "reason": "Existing translation, context, example, and topics are acceptable.",
+      "applied": false,
+      "changed_fields": []
+    },
+    {
+      "word": "abroad",
+      "action": "keep",
+      "confidence": 0.9,
+      "reason": "Existing translation, context, example, and topics are acceptable.",
+      "applied": false,
+      "changed_fields": []
+    },
+    {
+      "word": "absence",
+      "action": "keep",
+      "confidence": 0.9,
+      "reason": "Existing translation, context, example, and topics are acceptable.",
+      "applied": false,
+      "changed_fields": []
+    }
+  ]
+}
