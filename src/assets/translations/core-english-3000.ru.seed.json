@@ -1613,6 +1613,18 @@
             "home",
             "technology"
           ]
+        },
+        {
+          "language_code": "ru",
+          "value": "сигнализация",
+          "context": "Устройство, предупреждающее об опасности или вторжении.",
+          "example": "The car alarm went off.",
+          "example_translation": "Сработала автомобильная сигнализация.",
+          "status": "machine_unverified",
+          "topics": [
+            "safety",
+            "technology"
+          ]
         }
       ]
     },
@@ -1678,6 +1690,18 @@
           "topics": [
             "health",
             "people"
+          ]
+        },
+        {
+          "language_code": "ru",
+          "value": "алкогольный",
+          "context": "Содержащий алкоголь или относящийся к алкоголю.",
+          "example": "Alcoholic beverages are not allowed here.",
+          "example_translation": "Алкогольные напитки здесь запрещены.",
+          "status": "machine_unverified",
+          "topics": [
+            "food",
+            "health"
           ]
         }
       ]
@@ -2157,6 +2181,19 @@
           "example_translation": "Она была развлечена шуткой.",
           "status": "machine_unverified",
           "topics": [
+            "emotions",
+            "people"
+          ]
+        },
+        {
+          "language_code": "ru",
+          "value": "веселиться",
+          "context": "Испытывать радость или забаву.",
+          "example": "The children were amused by the clown.",
+          "example_translation": "Дети веселились, глядя на клоуна.",
+          "status": "machine_unverified",
+          "topics": [
+            "emotions",
             "people"
           ]
         }
@@ -2779,6 +2816,17 @@
             "people",
             "work"
           ]
+        },
+        {
+          "language_code": "ru",
+          "value": "апелляция",
+          "context": "Официальная просьба пересмотреть решение суда.",
+          "example": "They filed an appeal against the verdict.",
+          "example_translation": "Они подали апелляцию на приговор.",
+          "status": "machine_unverified",
+          "topics": [
+            "law"
+          ]
         }
       ]
     },
@@ -2843,6 +2891,18 @@
           "topics": [
             "work",
             "education"
+          ]
+        },
+        {
+          "language_code": "ru",
+          "value": "приложение",
+          "context": "Программа для компьютера или мобильного устройства.",
+          "example": "I downloaded a new application for editing photos.",
+          "example_translation": "Я скачал новое приложение для редактирования фотографий.",
+          "status": "machine_unverified",
+          "topics": [
+            "technology",
+            "internet"
           ]
         }
       ]
@@ -4167,14 +4227,14 @@
       "translations": [
         {
           "language_code": "ru",
-          "value": "ребёнок",
-          "context": "Маленький человек, особенно младенец.",
+          "value": "младенец",
+          "context": "Маленький ребёнок, особенно в возрасте до года.",
           "example": "The baby is sleeping.",
-          "example_translation": "Ребёнок спит.",
+          "example_translation": "Младенец спит.",
           "status": "machine_unverified",
           "topics": [
             "people",
-            "home"
+            "family"
           ]
         }
       ]
@@ -4219,6 +4279,18 @@
           "status": "machine_unverified",
           "topics": [
             "technology",
+            "art"
+          ]
+        },
+        {
+          "language_code": "ru",
+          "value": "происхождение",
+          "context": "Образование, опыт и семейное прошлое человека.",
+          "example": "She comes from a musical background.",
+          "example_translation": "Она из музыкальной семьи.",
+          "status": "machine_unverified",
+          "topics": [
+            "people",
             "education"
           ]
         }
@@ -4370,8 +4442,8 @@
           "example_translation": "Мяч на поле.",
           "status": "machine_unverified",
           "topics": [
-            "people",
-            "education"
+            "sports",
+            "entertainment"
           ]
         }
       ]
@@ -4404,8 +4476,20 @@
           "example_translation": "Группа сыграла отличную песню.",
           "status": "machine_unverified",
           "topics": [
-            "people",
-            "education"
+            "music",
+            "people"
+          ]
+        },
+        {
+          "language_code": "ru",
+          "value": "лента",
+          "context": "Узкая полоска материала, используемая для связывания или украшения.",
+          "example": "She wore a red band in her hair.",
+          "example_translation": "Она носила красную ленту в волосах.",
+          "status": "machine_unverified",
+          "topics": [
+            "home",
+            "body"
           ]
         }
       ]
@@ -4490,6 +4574,18 @@
           "topics": [
             "shopping"
           ]
+        },
+        {
+          "language_code": "ru",
+          "value": "торговаться",
+          "context": "Обсуждать цену, чтобы снизить её.",
+          "example": "They bargained over the price of the rug.",
+          "example_translation": "Они торговались из-за цены ковра.",
+          "status": "machine_unverified",
+          "topics": [
+            "shopping",
+            "money"
+          ]
         }
       ]
     },
@@ -4523,6 +4619,18 @@
           "topics": [
             "home",
             "education"
+          ]
+        },
+        {
+          "language_code": "ru",
+          "value": "база",
+          "context": "Военный объект или место дислокации.",
+          "example": "The army has a base near the city.",
+          "example_translation": "У армии есть база рядом с городом.",
+          "status": "machine_unverified",
+          "topics": [
+            "safety",
+            "work"
           ]
         }
       ]
