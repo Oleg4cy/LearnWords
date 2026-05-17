@@ -352,6 +352,10 @@ function createExistingTranslationIndex(translationPack) {
   return new Map(translationPack.translations.map(entry => [entry.word, entry]));
 }
 
+function createSeedEntryIndex(seedPayload) {
+  return new Map(seedPayload.entries.map(entry => [entry.word, entry]));
+}
+
 function applyLimit(items, limit) {
   return limit === null ? items : items.slice(0, Math.max(0, Number(limit) || 0));
 }
@@ -861,6 +865,89 @@ function createGenerationProgressState({seedPayload, translationPack, batchSize,
   };
 }
 
+function createSuggestionProgressState({seedPayload, translationPack, batchSize, limit, force, onlyWords}) {
+  const onlyWordsSet = createOnlyWordsSet(onlyWords);
+
+  if (!onlyWordsSet) {
+    const generationProgress = createGenerationProgressState({
+      seedPayload,
+      translationPack,
+      batchSize,
+      limit,
+      force,
+      onlyWords,
+    });
+
+    return {
+      ...generationProgress,
+      eligibleEntries: generationProgress.eligibleEntries.map(entry => ({
+        word: entry.word,
+        source: 'base-seed',
+        sourceEntry: entry,
+      })),
+      pendingEntries: generationProgress.pendingEntries.map(entry => ({
+        word: entry.word,
+        source: 'base-seed',
+        sourceEntry: entry,
+      })),
+      batches: createBatches(
+        generationProgress.pendingEntries.map(entry => ({
+          word: entry.word,
+          source: 'base-seed',
+          sourceEntry: entry,
+        })),
+        batchSize,
+        entry => entry.word,
+      ),
+      foundSources: [],
+      missingOnlyWords: [],
+    };
+  }
+
+  const translationIndex = createExistingTranslationIndex(translationPack);
+  const seedIndex = createSeedEntryIndex(seedPayload);
+  const resolvedEntries = [];
+  const foundSources = new Set();
+  const missingOnlyWords = [];
+  const explicitWords = Array.from(onlyWordsSet);
+
+  for (const word of explicitWords) {
+    if (translationIndex.has(word)) {
+      foundSources.add('translation-pack');
+      resolvedEntries.push({
+        word,
+        source: 'translation-pack',
+        sourceEntry: translationIndex.get(word),
+      });
+      continue;
+    }
+
+    if (seedIndex.has(word)) {
+      foundSources.add('base-seed');
+      resolvedEntries.push({
+        word,
+        source: 'base-seed',
+        sourceEntry: seedIndex.get(word),
+      });
+      continue;
+    }
+
+    missingOnlyWords.push(word);
+  }
+
+  const pendingEntries = applyLimit(resolvedEntries, limit);
+
+  return {
+    totalEntries: seedPayload.entries.length,
+    translatedEntries: translationPack.translations.length,
+    eligibleEntries: resolvedEntries,
+    pendingEntries,
+    batches: createBatches(pendingEntries, batchSize, entry => entry.word),
+    foundSources: Array.from(foundSources).sort((left, right) => left.localeCompare(right)),
+    missingOnlyWords,
+  };
+}
+
 function entryMatchesTopicFilters(entry, options) {
   if (options.onlyTopic !== null) {
     const hasTopic = entry.translations.some(translation =>
@@ -1214,6 +1301,55 @@ function buildRepairPayloadEntry(word, existingEntry) {
   };
 }
 
+function buildSuggestionPayloadEntry(entrySelection) {
+  return {
+    word: entrySelection.word,
+    source: entrySelection.source,
+    source_entry: entrySelection.sourceEntry || null,
+  };
+}
+
+function buildDeepSeekSuggestionPrompt({batchEntries, topicIndex}) {
+  const allowedTopics = Array.from(topicIndex.keys());
+  const topicPromptSection = createTopicPromptSection(topicIndex);
+  const payloadPreview = batchEntries.map(buildSuggestionPayloadEntry);
+  const systemPrompt = [
+    'Return only valid json.',
+    'Do not include markdown.',
+    'Do not include prose.',
+    'If the existing topic seed is semantically insufficient, you may return a new lowercase topic id.',
+    'You suggest topic ids for English vocabulary entries in a Russian vocabulary-learning app.',
+    'Use the provided source entry when available.',
+    'The top-level key must be "translations".',
+  ].join('\n');
+
+  const userPrompt = [
+    'Suggest topics for these entries:',
+    JSON.stringify(payloadPreview, null, 2),
+    '',
+    'Rules:',
+    '- Return only valid json with top-level key "translations".',
+    '- For each word return one translation entry object with 1 or 2 translations.',
+    '- Preserve source semantics. Prefer topics implied by the provided source_entry when present.',
+    '- language_code must be "ru".',
+    '- value, context, example, example_translation, and status must be non-empty strings.',
+    '- status must be "machine_unverified".',
+    '- topics must contain 1 to 3 topic ids.',
+    '- Prefer existing topic ids, but if no existing topic fits well enough, you may propose a new lowercase topic id using letters, numbers, and hyphens.',
+    '- Keep any new topic id semantically narrow and reusable.',
+    '- Prefer semantically accurate topics over generic ones like people or education.',
+    '- Existing topic ids and descriptions for reuse:',
+    topicPromptSection,
+    '',
+    `Existing topic ids json: ${JSON.stringify(allowedTopics)}`,
+  ].join('\n');
+
+  return {
+    systemPrompt,
+    userPrompt,
+  };
+}
+
 function buildDeepSeekRepairPrompt({batchWords, translationIndex, topicIndex, options}) {
   const allowedTopics = Array.from(topicIndex.keys());
   const topicPromptSection = createTopicPromptSection(topicIndex);
@@ -1392,11 +1528,10 @@ async function callDeepSeekGenerationBatch({apiKey, model, temperature, batchWor
   });
 }
 
-async function callDeepSeekSuggestionBatch({apiKey, model, temperature, batchWords, topicIndex}) {
-  const {systemPrompt, userPrompt} = buildDeepSeekGenerationPrompt({
-    batchWords,
+async function callDeepSeekSuggestionBatch({apiKey, model, temperature, batchEntries, topicIndex}) {
+  const {systemPrompt, userPrompt} = buildDeepSeekSuggestionPrompt({
+    batchEntries,
     topicIndex,
-    allowCandidateTopics: true,
   });
   return callDeepSeekJson({
     apiKey,
@@ -1404,7 +1539,7 @@ async function callDeepSeekSuggestionBatch({apiKey, model, temperature, batchWor
     temperature,
     systemPrompt,
     userPrompt,
-    maxTokens: calculateMaxTokens(batchWords),
+    maxTokens: calculateMaxTokens(batchEntries.map(entry => entry.word)),
   });
 }
 
@@ -1778,8 +1913,9 @@ async function generateBatchWithRetries({options, batchWords, topicIndex, apiKey
   );
 }
 
-async function suggestTopicsBatchWithRetries({options, batchWords, topicIndex, apiKey}) {
+async function suggestTopicsBatchWithRetries({options, batchEntries, topicIndex, apiKey}) {
   let lastError = null;
+  const batchWords = batchEntries.map(entry => entry.word);
 
   for (let attempt = 1; attempt <= options.maxRetries; attempt += 1) {
     try {
@@ -1787,7 +1923,7 @@ async function suggestTopicsBatchWithRetries({options, batchWords, topicIndex, a
         apiKey,
         model: options.model,
         temperature: options.temperature,
-        batchWords,
+        batchEntries,
         topicIndex,
       });
       return validateSuggestionBatch(payload, batchWords);
@@ -2287,13 +2423,13 @@ async function runDeepSeekGeneration({options, seedPayload, topicIndex, translat
 }
 
 async function runDeepSeekTopicSuggestion({options, seedPayload, topicSeed, topicIndex, translationPack}) {
-  if (!options.yes) {
-    throw new Error('Topic suggestion requires --provider deepseek --suggest-topics --yes');
+  if (!options.dryRun && !options.yes) {
+    throw new Error('Real topic suggestion requires --provider deepseek --suggest-topics --yes');
   }
 
   loadEnvFile(ENV_PATH);
   const apiKey = getRequiredEnv('DEEPSEEK_API_KEY');
-  const progressState = createGenerationProgressState({
+  const progressState = createSuggestionProgressState({
     seedPayload,
     translationPack,
     batchSize: options.batchSize,
@@ -2314,6 +2450,8 @@ async function runDeepSeekTopicSuggestion({options, seedPayload, topicSeed, topi
           translationPackPath: TRANSLATION_PACK_PATH,
           eligibleEntries: progressState.eligibleEntries.length,
           pendingEntries: 0,
+          foundSources: progressState.foundSources,
+          missingOnlyWords: progressState.missingOnlyWords,
           selection: buildSelectionSummary(options),
         },
         null,
@@ -2329,7 +2467,7 @@ async function runDeepSeekTopicSuggestion({options, seedPayload, topicSeed, topi
   for (const batch of progressState.batches) {
     const generatedEntries = await suggestTopicsBatchWithRetries({
       options,
-      batchWords: batch.words,
+      batchEntries: batch.items,
       topicIndex,
       apiKey,
     });
@@ -2402,7 +2540,12 @@ async function runDeepSeekTopicSuggestion({options, seedPayload, topicSeed, topi
         inspectedWords,
         unknownTopics,
         suggestedTopics,
+        foundSources:
+          progressState.foundSources.length === 1
+            ? progressState.foundSources[0]
+            : progressState.foundSources,
         appendedTopics,
+        missingOnlyWords: progressState.missingOnlyWords,
         appendedTopicCount: appendedTopics.length,
         savedTo,
         atomicSave: {
@@ -2714,7 +2857,7 @@ async function main() {
       return;
     }
 
-    const progressState = createGenerationProgressState({
+    const progressState = createSuggestionProgressState({
       seedPayload,
       translationPack,
       batchSize: options.batchSize,
