@@ -1,42 +1,31 @@
 {
   "meta": {
-    "generated_at": "2026-05-18T08:29:04.203Z",
+    "generated_at": "2026-05-18T09:54:49.045Z",
     "mode": "repair",
     "model": "deepseek-chat",
     "batch_size": 1,
     "allow_low_confidence": false,
-    "repair_field_mode": "full",
-    "auto_appended_topics": [
-      {
-        "id": "religion",
-        "name": "Religion",
-        "description": "Religion vocabulary and closely related concepts that belong to this semantic area rather than a broader generic topic. Common triggers include hell."
-      }
-    ],
-    "topic_seed_path": "/home/fn/learnWords/src/assets/topics/core-english-3000.topics.seed.json"
+    "repair_field_mode": "full"
   },
   "summary": {
     "checked": 1,
-    "kept": 0,
+    "kept": 1,
     "added": 0,
-    "replaced": 1,
+    "replaced": 0,
     "enriched": 0,
     "review": 0,
-    "applied": 1,
+    "applied": 0,
     "low_confidence": 0,
     "partial_repairs": 0
   },
   "results": [
     {
-      "word": "hell",
-      "action": "replace",
-      "confidence": 0.85,
-      "reason": "Existing translation is acceptable but context and topics need improvement. 'Hell' as a place of torment is not about 'people'; it's more abstract or religious. Also, the example uses 'hell' as a metaphor for a bad situation, which is common but the context should cover both literal and figurative uses. I will update context, example, and topics.",
-      "applied": true,
-      "changed_fields": [
-        "context",
-        "topics"
-      ]
+      "word": "youth",
+      "action": "keep",
+      "confidence": 0.95,
+      "reason": "Existing translations, contexts, examples, and topics are accurate and sufficient.",
+      "applied": false,
+      "changed_fields": []
     }
   ]
 }
