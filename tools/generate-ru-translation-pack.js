@@ -42,7 +42,7 @@ const DEFAULT_DEEPSEEK_MODEL = 'deepseek-chat';
 const OPERATION_GENERATE = 'generate';
 const OPERATION_SUGGEST_TOPICS = 'suggest-topics';
 const OPERATION_RECLASSIFY_TOPICS = 'reclassify-topics';
-const OPERATION_REPAIR_TRANSLATIONS = 'repair-translations';
+const OPERATION_REPAIR_TRANSLATIONS = 'repair';
 const OPERATION_REGENERATE_CONTEXT = 'regenerate-context';
 const OPERATION_REGENERATE_EXAMPLES = 'regenerate-examples';
 const OPERATION_VERIFY_TRANSLATIONS = 'verify-translations';
@@ -84,6 +84,7 @@ class DeepSeekRequestError extends Error {
 function parseArgs(argv) {
   const dryRun = argv.includes('--dry-run');
   const options = {
+    help: argv.includes('--help') || argv.includes('-h'),
     provider: readStringFlag(argv, '--provider', null),
     dryRun,
     yes: argv.includes('--yes'),
@@ -96,7 +97,7 @@ function parseArgs(argv) {
     suggestTopics: argv.includes('--suggest-topics'),
     appendSuggestedTopics: argv.includes('--append-suggested-topics'),
     reclassifyTopics: argv.includes('--reclassify-topics'),
-    repairTranslations: argv.includes('--repair-translations'),
+    repairTranslations: argv.includes('--repair') || argv.includes('--repair-translations'),
     repairTopics: argv.includes('--repair-topics'),
     repairContext: argv.includes('--repair-context'),
     repairExamples: argv.includes('--repair-examples'),
@@ -116,6 +117,43 @@ function parseArgs(argv) {
   options.operation = resolveOperation(options);
   validateOptionCompatibility(options);
   return options;
+}
+
+function formatHelp() {
+  return [
+    'Usage: node tools/generate-ru-translation-pack.js [options]',
+    '',
+    'Operations:',
+    '  Default behavior without a selective mode is generation.',
+    '  --suggest-topics            Suggest missing topic definitions',
+    '  --reclassify-topics         Reclassify topics for existing translations',
+    '  --repair                    Repair existing translations',
+    '  --repair-translations       Alias for --repair',
+    '',
+    'Common options:',
+    '  --provider <name>           Provider to use (supported: deepseek)',
+    '  --dry-run                   Preview work without writing files',
+    '  --yes                       Confirm real provider-backed execution',
+    '  --batch-size <n>            Batch size',
+    '  --limit <n>                 Limit processed entries',
+    '  --only-words <csv>          Restrict processing to specific words',
+    '  --help, -h                  Show this help',
+    '',
+    'Repair modifiers:',
+    '  --repair-topics             Repair only topics',
+    '  --repair-context            Repair only context',
+    '  --repair-examples           Repair only examples',
+    '  --repair-translations-only  Repair only translations',
+    '  --allow-low-confidence      Apply low-confidence repairs',
+    '  --only-review               Restrict to report entries marked for review',
+    '  --only-low-confidence       Restrict to low-confidence report entries',
+    '  --min-confidence <0..1>     Restrict by minimum report confidence',
+    '',
+    'Examples:',
+    '  node tools/generate-ru-translation-pack.js --provider deepseek --dry-run',
+    '  node tools/generate-ru-translation-pack.js --provider deepseek --repair --dry-run',
+    '  node tools/generate-ru-translation-pack.js --provider deepseek --suggest-topics --yes',
+  ].join('\n');
 }
 
 function resolveOperation(options) {
@@ -2795,6 +2833,10 @@ async function runDeepSeekTranslationRepair({
         topicSeedPath: TOPIC_SEED_PATH,
         translationPackPath: TRANSLATION_PACK_PATH,
         repairReportPath: options.dryRun ? null : REPAIR_REPORT_PATH,
+        totalEntries: progressState.totalEntries,
+        translatedEntries: progressState.translatedEntries,
+        eligibleEntries: progressState.eligibleEntries.length,
+        pendingEntries: progressState.pendingEntries.length,
         checkedWords: completedWordCount,
         dryRun: options.dryRun,
         atomicSave: {
@@ -2833,6 +2875,11 @@ function createPrepareOnlyResponse({options, progressState}) {
 
 async function main() {
   const options = parseArgs(process.argv.slice(2));
+  if (options.help) {
+    console.log(formatHelp());
+    return;
+  }
+
   const seedPayload = readJson(SOURCE_SEED_PATH);
   const topicSeed = readJson(TOPIC_SEED_PATH);
   const translationPack = readJson(TRANSLATION_PACK_PATH);
