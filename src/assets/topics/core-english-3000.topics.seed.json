@@ -134,6 +134,11 @@
       "description": "Government, elections, policy, political systems, public authority, and state-level decision making."
     },
     {
+      "id": "religion",
+      "name": "Religion",
+      "description": "Religion vocabulary and closely related concepts that belong to this semantic area rather than a broader generic topic. Common triggers include hell."
+    },
+    {
       "id": "safety",
       "name": "Safety",
       "description": "Safety vocabulary and closely related concepts that belong to this semantic area rather than a broader generic topic. Common triggers include warn."

@@ -96,6 +96,7 @@ function parseArgs(argv) {
     temperature: readFloatFlag(argv, '--temperature', DEFAULT_TEMPERATURE),
     suggestTopics: argv.includes('--suggest-topics'),
     appendSuggestedTopics: argv.includes('--append-suggested-topics'),
+    autoAppendTopics: argv.includes('--auto-append-topics'),
     reclassifyTopics: argv.includes('--reclassify-topics'),
     repairTranslations: argv.includes('--repair') || argv.includes('--repair-translations'),
     repairTopics: argv.includes('--repair-topics'),
@@ -137,6 +138,7 @@ function formatHelp() {
     '  --batch-size <n>            Batch size',
     '  --limit <n>                 Limit processed entries',
     '  --only-words <csv>          Restrict processing to specific words',
+    '  --auto-append-topics        Auto-append unknown topics during repair',
     '  --help, -h                  Show this help',
     '',
     'Repair modifiers:',
@@ -176,6 +178,9 @@ function resolveOperation(options) {
 function validateOptionCompatibility(options) {
   if (options.appendSuggestedTopics && !options.suggestTopics) {
     throw new Error('--append-suggested-topics requires --suggest-topics');
+  }
+  if (options.autoAppendTopics && options.operation !== OPERATION_REPAIR_TRANSLATIONS) {
+    throw new Error('--auto-append-topics is supported only with --repair-translations');
   }
   if (
     options.operation !== OPERATION_RECLASSIFY_TOPICS &&
@@ -605,6 +610,56 @@ function buildSuggestedTopics(unknownTopics, topicIndex) {
       description: createTopicDescription(topic.id, topic.words),
     }))
     .sort((left, right) => left.id.localeCompare(right.id));
+}
+
+function collectUnknownTopicsFromRepairPayload(payload, topicIndex) {
+  if (!payload || typeof payload !== 'object' || Array.isArray(payload)) {
+    return [];
+  }
+
+  const repairs = Array.isArray(payload.repairs) ? payload.repairs : [];
+  const entries = repairs
+    .map(repair => {
+      if (!repair || typeof repair !== 'object' || Array.isArray(repair)) {
+        return null;
+      }
+
+      const word = String(repair.word || '').trim();
+      const entry = repair.entry;
+      if (!entry || typeof entry !== 'object' || Array.isArray(entry)) {
+        return null;
+      }
+
+      return {
+        ...entry,
+        word: word || String(entry.word || '').trim(),
+      };
+    })
+    .filter(Boolean);
+
+  return collectUnknownTopicsFromEntries(entries, topicIndex);
+}
+
+function autoAppendTopicsForRepair({unknownTopics, topicIndex, options}) {
+  const topicSeed = readJson(TOPIC_SEED_PATH);
+  assertTopicSeed(topicSeed);
+
+  const suggestedTopics = buildSuggestedTopics(unknownTopics, topicIndex);
+  const appendResult = appendSuggestedTopicsToSeed(topicSeed, suggestedTopics);
+  const nextTopicSeed = appendResult.nextTopicSeed;
+  const appendedTopics = appendResult.appendedTopics;
+
+  assertTopicSeed(nextTopicSeed);
+
+  if (!options.dryRun && appendedTopics.length > 0) {
+    saveTopicSeedAtomic(TOPIC_SEED_PATH, nextTopicSeed);
+  }
+
+  return {
+    topicIndex: createTopicIndex(nextTopicSeed),
+    appendedTopics,
+    topicSeedPath: TOPIC_SEED_PATH,
+  };
 }
 
 function saveTopicSeedAtomic(filePath, topicSeed) {
@@ -2020,8 +2075,9 @@ async function repairBatchWithRetries({
   let lastError = null;
 
   for (let attempt = 1; attempt <= options.maxRetries; attempt += 1) {
+    let payload = null;
     try {
-      const payload = await callDeepSeekRepairBatch({
+      payload = await callDeepSeekRepairBatch({
         apiKey,
         model: options.model,
         temperature: options.temperature,
@@ -2030,9 +2086,45 @@ async function repairBatchWithRetries({
         topicIndex,
         options,
       });
-      return validateRepairBatch(payload, batchWords, topicIndex, translationIndex);
+      const repairs = validateRepairBatch(payload, batchWords, topicIndex, translationIndex);
+      return {
+        repairs,
+        topicIndex,
+        autoAppendedTopics: [],
+      };
     } catch (error) {
       lastError = error;
+      if (error instanceof UnknownTopicsError && options.autoAppendTopics) {
+        const unknownTopics = collectUnknownTopicsFromRepairPayload(payload, topicIndex);
+        if (unknownTopics.length === 0) {
+          throw error;
+        }
+
+        const autoAppendResult = autoAppendTopicsForRepair({
+          unknownTopics,
+          topicIndex,
+          options,
+        });
+
+        try {
+          const repairs = validateRepairBatch(
+            payload,
+            batchWords,
+            autoAppendResult.topicIndex,
+            translationIndex,
+          );
+          return {
+            repairs,
+            topicIndex: autoAppendResult.topicIndex,
+            autoAppendedTopics: autoAppendResult.appendedTopics,
+            topicSeedPath: autoAppendResult.topicSeedPath,
+          };
+        } catch (revalidationError) {
+          throw new Error(
+            `Repair payload still failed after auto-appending topics for words [${batchWords.join(', ')}]: ${revalidationError.message}`,
+          );
+        }
+      }
       if (error instanceof UnknownTopicsError || isFailFastDeepSeekError(error)) {
         throw error;
       }
@@ -2757,20 +2849,30 @@ async function runDeepSeekTranslationRepair({
 
   let currentPack = translationPack;
   let translationIndex = progressState.translationIndex;
+  let currentTopicIndex = topicIndex;
   let completedWordCount = 0;
   const preview = [];
   const dryRunSummary = createRepairDryRunSummary();
   const report = options.dryRun ? null : createRepairReport({options});
+  const autoAppendedTopics = [];
 
   for (const batch of progressState.batches) {
-    const rawRepairs = await repairBatchWithRetries({
+    const repairBatchResult = await repairBatchWithRetries({
       options,
       batchWords: batch.words,
-      topicIndex,
+      topicIndex: currentTopicIndex,
       translationIndex,
       apiKey,
     });
-    const repairs = finalizeRepairBatch(rawRepairs, translationIndex, options);
+    currentTopicIndex = repairBatchResult.topicIndex;
+
+    for (const topic of repairBatchResult.autoAppendedTopics || []) {
+      if (!autoAppendedTopics.some(existingTopic => existingTopic.id === topic.id)) {
+        autoAppendedTopics.push(topic);
+      }
+    }
+
+    const repairs = finalizeRepairBatch(repairBatchResult.repairs, translationIndex, options);
 
     const applicableRepairs = repairs.filter(
       repair => repair.action === 'add' || repair.action === 'replace' || repair.action === 'enrich',
@@ -2795,6 +2897,10 @@ async function runDeepSeekTranslationRepair({
           ...repair,
         })),
       );
+      if (autoAppendedTopics.length > 0) {
+        report.meta.auto_appended_topics = autoAppendedTopics;
+        report.meta.topic_seed_path = TOPIC_SEED_PATH;
+      }
       saveJsonAtomic(REPAIR_REPORT_PATH, report);
     }
 
@@ -2812,6 +2918,8 @@ async function runDeepSeekTranslationRepair({
           totalScheduledWords: progressState.pendingEntries.length,
           appliedInBatch: applicableRepairs.length,
           lowConfidenceInBatch: repairs.filter(repair => repair.confidence < 0.5).length,
+          autoAppendedTopics: repairBatchResult.autoAppendedTopics || [],
+          topicSeedPath: repairBatchResult.autoAppendedTopics?.length ? TOPIC_SEED_PATH : null,
           savedTo: options.dryRun ? null : TRANSLATION_PACK_PATH,
           reportSavedTo: options.dryRun ? null : REPAIR_REPORT_PATH,
         },
@@ -2844,6 +2952,7 @@ async function runDeepSeekTranslationRepair({
           repairReport: !options.dryRun ? `${REPAIR_REPORT_PATH}.tmp` : null,
         },
         selection: buildSelectionSummary(options),
+        autoAppendedTopics,
         preview,
         summary: options.dryRun ? dryRunSummary : report.summary,
         report,

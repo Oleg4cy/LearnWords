@@ -1281,13 +1281,13 @@
       "translations": [
         {
           "language_code": "ru",
-          "value": "день",
-          "context": "Время суток после полудня до вечера.",
+          "value": "днём",
+          "context": "Время суток от полудня до вечера.",
           "example": "I have a meeting in the afternoon.",
           "example_translation": "У меня встреча днём.",
           "status": "machine_unverified",
           "topics": [
-            "home",
+            "time",
             "work"
           ]
         }
@@ -1338,8 +1338,20 @@
           "example_translation": "Он прислонился к стене.",
           "status": "machine_unverified",
           "topics": [
-            "home",
+            "movement",
             "people"
+          ]
+        },
+        {
+          "language_code": "ru",
+          "value": "против",
+          "context": "В значении 'в оппозиции к чему-либо'.",
+          "example": "She voted against the proposal.",
+          "example_translation": "Она проголосовала против предложения.",
+          "status": "machine_unverified",
+          "topics": [
+            "politics",
+            "communication"
           ]
         }
       ]
@@ -2187,10 +2199,10 @@
         },
         {
           "language_code": "ru",
-          "value": "веселиться",
-          "context": "Испытывать радость или забаву.",
+          "value": "позабавленный",
+          "context": "Испытывающий лёгкое веселье или забаву.",
           "example": "The children were amused by the clown.",
-          "example_translation": "Дети веселились, глядя на клоуна.",
+          "example_translation": "Дети были позабавлены клоуном.",
           "status": "machine_unverified",
           "topics": [
             "emotions",
@@ -2843,6 +2855,17 @@
           "topics": [
             "people"
           ]
+        },
+        {
+          "language_code": "ru",
+          "value": "казаться",
+          "context": "Иметь определённый вид или впечатление.",
+          "example": "He appears to be tired.",
+          "example_translation": "Он кажется уставшим.",
+          "status": "machine_unverified",
+          "topics": [
+            "people"
+          ]
         }
       ]
     },
@@ -2858,6 +2881,18 @@
           "status": "machine_unverified",
           "topics": [
             "people"
+          ]
+        },
+        {
+          "language_code": "ru",
+          "value": "появление",
+          "context": "Действие или факт появления, прибытия или возникновения.",
+          "example": "His sudden appearance surprised everyone.",
+          "example_translation": "Его внезапное появление удивило всех.",
+          "status": "machine_unverified",
+          "topics": [
+            "people",
+            "movement"
           ]
         }
       ]
@@ -2920,6 +2955,18 @@
           "topics": [
             "work",
             "education"
+          ]
+        },
+        {
+          "language_code": "ru",
+          "value": "применять",
+          "context": "Использовать что-то на практике.",
+          "example": "Apply the cream to the affected area.",
+          "example_translation": "Нанесите крем на поражённый участок.",
+          "status": "machine_unverified",
+          "topics": [
+            "health",
+            "body"
           ]
         }
       ]
@@ -4200,7 +4247,7 @@
           "example_translation": "Сегодня ужасная погода.",
           "status": "machine_unverified",
           "topics": [
-            "nature",
+            "emotions",
             "people"
           ]
         }
@@ -4428,6 +4475,18 @@
             "health",
             "home"
           ]
+        },
+        {
+          "language_code": "ru",
+          "value": "остаток",
+          "context": "Сумма денег на счёте или разница между доходами и расходами.",
+          "example": "Please check your account balance.",
+          "example_translation": "Пожалуйста, проверьте остаток на вашем счёте.",
+          "status": "machine_unverified",
+          "topics": [
+            "money",
+            "work"
+          ]
         }
       ]
     },
@@ -4524,6 +4583,18 @@
             "work",
             "shopping"
           ]
+        },
+        {
+          "language_code": "ru",
+          "value": "берег",
+          "context": "Край реки, озера или моря.",
+          "example": "We walked along the river bank.",
+          "example_translation": "Мы гуляли по берегу реки.",
+          "status": "machine_unverified",
+          "topics": [
+            "nature",
+            "travel"
+          ]
         }
       ]
     },
@@ -4540,6 +4611,18 @@
           "topics": [
             "people",
             "food"
+          ]
+        },
+        {
+          "language_code": "ru",
+          "value": "кусок",
+          "context": "Прямоугольный кусок твёрдого материала, например мыла или шоколада.",
+          "example": "She ate a bar of chocolate.",
+          "example_translation": "Она съела кусок шоколада.",
+          "status": "machine_unverified",
+          "topics": [
+            "food",
+            "home"
           ]
         }
       ]
@@ -4600,8 +4683,20 @@
           "example_translation": "Язык может быть барьером.",
           "status": "machine_unverified",
           "topics": [
-            "people",
+            "communication",
             "education"
+          ]
+        },
+        {
+          "language_code": "ru",
+          "value": "шлагбаум",
+          "context": "Физическое препятствие, например, на дороге или воротах.",
+          "example": "The barrier at the entrance lifted automatically.",
+          "example_translation": "Шлагбаум на въезде поднялся автоматически.",
+          "status": "machine_unverified",
+          "topics": [
+            "transport",
+            "safety"
           ]
         }
       ]
@@ -4646,8 +4741,7 @@
           "example_translation": "Бейсбол популярен в США.",
           "status": "machine_unverified",
           "topics": [
-            "people",
-            "education"
+            "sports"
           ]
         }
       ]
@@ -4713,8 +4807,7 @@
           "example_translation": "Он играет в баскетбол каждые выходные.",
           "status": "machine_unverified",
           "topics": [
-            "people",
-            "education"
+            "sports"
           ]
         }
       ]
@@ -4780,8 +4873,8 @@
           "example_translation": "Битва длилась часами.",
           "status": "machine_unverified",
           "topics": [
-            "people",
-            "education"
+            "society",
+            "politics"
           ]
         }
       ]
@@ -5841,6 +5934,18 @@
           "topics": [
             "nature"
           ]
+        },
+        {
+          "language_code": "ru",
+          "value": "удар",
+          "context": "Сильный удар рукой или предметом.",
+          "example": "He received a blow to the head.",
+          "example_translation": "Он получил удар по голове.",
+          "status": "machine_unverified",
+          "topics": [
+            "body",
+            "people"
+          ]
         }
       ]
     },
@@ -6034,6 +6139,17 @@
             "shopping",
             "home"
           ]
+        },
+        {
+          "language_code": "ru",
+          "value": "загрузка",
+          "context": "Процесс запуска компьютера или загрузки операционной системы.",
+          "example": "The computer takes a long time to boot.",
+          "example_translation": "Компьютер долго загружается.",
+          "status": "machine_unverified",
+          "topics": [
+            "technology"
+          ]
         }
       ]
     },
@@ -6067,6 +6183,18 @@
           "topics": [
             "home",
             "work"
+          ]
+        },
+        {
+          "language_code": "ru",
+          "value": "надоедать",
+          "context": "Вызывать скуку или утомлять.",
+          "example": "The lecture bored me.",
+          "example_translation": "Лекция мне надоела.",
+          "status": "machine_unverified",
+          "topics": [
+            "emotions",
+            "education"
           ]
         }
       ]
@@ -6235,6 +6363,17 @@
           "status": "machine_unverified",
           "topics": [
             "work"
+          ]
+        },
+        {
+          "language_code": "ru",
+          "value": "направляющийся",
+          "context": "Используется для указания направления движения.",
+          "example": "The train is bound for Moscow.",
+          "example_translation": "Поезд направляется в Москву.",
+          "status": "machine_unverified",
+          "topics": [
+            "transport"
           ]
         }
       ]
@@ -6851,6 +6990,17 @@
             "shopping",
             "people"
           ]
+        },
+        {
+          "language_code": "ru",
+          "value": "группа",
+          "context": "Неформальное обозначение группы людей или вещей.",
+          "example": "A bunch of kids were playing in the park.",
+          "example_translation": "Группа детей играла в парке.",
+          "status": "machine_unverified",
+          "topics": [
+            "people"
+          ]
         }
       ]
     },
@@ -7385,6 +7535,18 @@
             "travel",
             "education"
           ]
+        },
+        {
+          "language_code": "ru",
+          "value": "капитал",
+          "context": "Используется для обозначения финансовых ресурсов, денег и активов, используемых в бизнесе.",
+          "example": "They invested capital in the new project.",
+          "example_translation": "Они вложили капитал в новый проект.",
+          "status": "machine_unverified",
+          "topics": [
+            "business",
+            "money"
+          ]
         }
       ]
     },
@@ -7561,7 +7723,7 @@
           "value": "нести",
           "context": "Держать что-то в руках и перемещать с места на место.",
           "example": "Can you carry this bag for me?",
-          "example_translation": "Ты можешь понести эту сумку за меня?",
+          "example_translation": "Ты можешь нести эту сумку за меня?",
           "status": "machine_unverified",
           "topics": [
             "home",
@@ -8116,10 +8278,11 @@
           "value": "камера",
           "context": "Комната или закрытое пространство, часто в официальном контексте.",
           "example": "The judge entered the chamber.",
-          "example_translation": "Судья вошёл в камеру.",
+          "example_translation": "Судья вошёл в зал суда.",
           "status": "machine_unverified",
           "topics": [
-            "work"
+            "work",
+            "law"
           ]
         }
       ]
@@ -8634,6 +8797,17 @@
             "food",
             "technology"
           ]
+        },
+        {
+          "language_code": "ru",
+          "value": "фишка",
+          "context": "Используется для обозначения маленького кусочка или жетона, например, в играх.",
+          "example": "He lost his poker chip.",
+          "example_translation": "Он потерял свою покерную фишку.",
+          "status": "machine_unverified",
+          "topics": [
+            "entertainment"
+          ]
         }
       ]
     },
@@ -8715,7 +8889,8 @@
           "example_translation": "Они ходят в церковь каждое воскресенье.",
           "status": "machine_unverified",
           "topics": [
-            "people"
+            "people",
+            "society"
           ]
         }
       ]
@@ -9656,8 +9831,8 @@
           "example_translation": "Я люблю смотреть комедийные фильмы.",
           "status": "machine_unverified",
           "topics": [
-            "people",
-            "education"
+            "entertainment",
+            "people"
           ]
         }
       ]
@@ -9844,6 +10019,18 @@
             "people",
             "education"
           ]
+        },
+        {
+          "language_code": "ru",
+          "value": "распространённый",
+          "context": "Что-то, что часто встречается или является обычным.",
+          "example": "This is a common mistake among learners.",
+          "example_translation": "Это распространённая ошибка среди учащихся.",
+          "status": "machine_unverified",
+          "topics": [
+            "education",
+            "abstract"
+          ]
         }
       ]
     },
@@ -9927,6 +10114,18 @@
           "topics": [
             "work",
             "people"
+          ]
+        },
+        {
+          "language_code": "ru",
+          "value": "общество",
+          "context": "Присутствие других людей; компания как общение.",
+          "example": "I enjoy her company.",
+          "example_translation": "Мне нравится её общество.",
+          "status": "machine_unverified",
+          "topics": [
+            "people",
+            "emotions"
           ]
         }
       ]
@@ -10045,6 +10244,18 @@
           "topics": [
             "work",
             "education"
+          ]
+        },
+        {
+          "language_code": "ru",
+          "value": "полный",
+          "context": "Используется для описания чего-то, содержащего все необходимые части.",
+          "example": "I have a complete set of tools.",
+          "example_translation": "У меня есть полный набор инструментов.",
+          "status": "machine_unverified",
+          "topics": [
+            "abstract",
+            "work"
           ]
         }
       ]
@@ -10530,7 +10741,7 @@
         {
           "language_code": "ru",
           "value": "поздравление",
-          "context": "Используется, когда выражают радость по поводу чьего-либо успеха или достижения.",
+          "context": "Используется, когда выражают радость по поводу чьего-либо успеха или достижения. Чаще употребляется во множественном числе: поздравления.",
           "example": "Congratulations on your promotion!",
           "example_translation": "Поздравляю с повышением!",
           "status": "machine_unverified",
@@ -11020,7 +11231,7 @@
           "language_code": "ru",
           "value": "непрерывный",
           "context": "Используется для описания чего-то, что идет без перерыва.",
-          "example": "The machine runs continuous.",
+          "example": "The machine runs continuously.",
           "example_translation": "Машина работает непрерывно.",
           "status": "machine_unverified",
           "topics": [
@@ -11175,7 +11386,19 @@
           "status": "machine_unverified",
           "topics": [
             "people",
-            "work"
+            "entertainment"
+          ]
+        },
+        {
+          "language_code": "ru",
+          "value": "соглашение",
+          "context": "Официальное соглашение между сторонами, часто международное.",
+          "example": "The countries signed a convention on climate change.",
+          "example_translation": "Страны подписали соглашение по изменению климата.",
+          "status": "machine_unverified",
+          "topics": [
+            "politics",
+            "law"
           ]
         }
       ]
@@ -11225,6 +11448,18 @@
           "status": "machine_unverified",
           "topics": [
             "technology"
+          ]
+        },
+        {
+          "language_code": "ru",
+          "value": "обращать",
+          "context": "Заставлять кого-то принять новую религию или убеждения.",
+          "example": "Missionaries tried to convert the local population.",
+          "example_translation": "Миссионеры пытались обратить местное население.",
+          "status": "machine_unverified",
+          "topics": [
+            "people",
+            "society"
           ]
         }
       ]
@@ -11301,12 +11536,24 @@
         {
           "language_code": "ru",
           "value": "прохладный",
-          "context": "Умеренно холодный; также используется как сленг для выражения одобрения.",
+          "context": "Умеренно холодный.",
           "example": "The weather is cool today.",
           "example_translation": "Сегодня прохладная погода.",
           "status": "machine_unverified",
           "topics": [
-            "nature"
+            "weather"
+          ]
+        },
+        {
+          "language_code": "ru",
+          "value": "крутой",
+          "context": "Сленг для выражения одобрения или восхищения.",
+          "example": "That's a cool car!",
+          "example_translation": "Это крутая машина!",
+          "status": "machine_unverified",
+          "topics": [
+            "people",
+            "entertainment"
           ]
         }
       ]
@@ -11545,6 +11792,18 @@
             "shopping",
             "food"
           ]
+        },
+        {
+          "language_code": "ru",
+          "value": "противодействовать",
+          "context": "Действовать в ответ, чтобы ослабить или предотвратить что-то.",
+          "example": "We need to counter the effects of the virus.",
+          "example_translation": "Нам нужно противодействовать последствиям вируса.",
+          "status": "machine_unverified",
+          "topics": [
+            "abstract",
+            "health"
+          ]
         }
       ]
     },
@@ -11646,6 +11905,17 @@
           "topics": [
             "education"
           ]
+        },
+        {
+          "language_code": "ru",
+          "value": "блюдо",
+          "context": "Одна из частей еды, подаваемая во время приёма пищи.",
+          "example": "The main course was roast chicken.",
+          "example_translation": "Основным блюдом была жареная курица.",
+          "status": "machine_unverified",
+          "topics": [
+            "food"
+          ]
         }
       ]
     },
@@ -11696,6 +11966,18 @@
           "topics": [
             "home",
             "food"
+          ]
+        },
+        {
+          "language_code": "ru",
+          "value": "обложка",
+          "context": "Внешняя часть книги, журнала или тетради.",
+          "example": "The book has a red cover.",
+          "example_translation": "У книги красная обложка.",
+          "status": "machine_unverified",
+          "topics": [
+            "media",
+            "education"
           ]
         }
       ]
@@ -11770,10 +12052,10 @@
       "translations": [
         {
           "language_code": "ru",
-          "value": "треснутый",
+          "value": "треснувший",
           "context": "Используется, когда предмет имеет трещину.",
           "example": "The mirror is cracked.",
-          "example_translation": "Зеркало треснуто.",
+          "example_translation": "Зеркало треснувшее.",
           "status": "machine_unverified",
           "topics": [
             "home"
@@ -11925,6 +12207,18 @@
           "status": "machine_unverified",
           "topics": [
             "shopping",
+            "work"
+          ]
+        },
+        {
+          "language_code": "ru",
+          "value": "заслуга",
+          "context": "Используется, когда речь о признании достижений.",
+          "example": "She deserves credit for her hard work.",
+          "example_translation": "Она заслуживает признания за свою усердную работу.",
+          "status": "machine_unverified",
+          "topics": [
+            "people",
             "work"
           ]
         }
@@ -12175,6 +12469,17 @@
           "topics": [
             "people"
           ]
+        },
+        {
+          "language_code": "ru",
+          "value": "макушка",
+          "context": "Верхняя часть головы или зуба.",
+          "example": "He had a bald spot on his crown.",
+          "example_translation": "У него была лысина на макушке.",
+          "status": "machine_unverified",
+          "topics": [
+            "body"
+          ]
         }
       ]
     },
@@ -12224,6 +12529,18 @@
           "status": "machine_unverified",
           "topics": [
             "home"
+          ]
+        },
+        {
+          "language_code": "ru",
+          "value": "влюблённость",
+          "context": "Сильное романтическое увлечение, обычно кратковременное.",
+          "example": "She had a crush on her classmate.",
+          "example_translation": "У неё была влюблённость в одноклассника.",
+          "status": "machine_unverified",
+          "topics": [
+            "emotions",
+            "people"
           ]
         }
       ]
@@ -12343,6 +12660,17 @@
           "topics": [
             "health"
           ]
+        },
+        {
+          "language_code": "ru",
+          "value": "лечить",
+          "context": "Процесс излечения болезни или устранения проблемы.",
+          "example": "This medicine can cure the infection.",
+          "example_translation": "Это лекарство может вылечить инфекцию.",
+          "status": "machine_unverified",
+          "topics": [
+            "health"
+          ]
         }
       ]
     },
@@ -12372,6 +12700,18 @@
           "context": "Используется, когда речь о форме волос или предмета, изогнутого спиралью.",
           "example": "She has natural curls in her hair.",
           "example_translation": "У неё естественные завитки в волосах.",
+          "status": "machine_unverified",
+          "topics": [
+            "people",
+            "home"
+          ]
+        },
+        {
+          "language_code": "ru",
+          "value": "завивать(ся)",
+          "context": "Действие по созданию завитков или принятию изогнутой формы.",
+          "example": "Her hair curls naturally.",
+          "example_translation": "Её волосы вьются от природы.",
           "status": "machine_unverified",
           "topics": [
             "people",
@@ -13073,6 +13413,17 @@
             "health",
             "nature"
           ]
+        },
+        {
+          "language_code": "ru",
+          "value": "разлагаться",
+          "context": "Используется для описания процесса разложения или ухудшения состояния.",
+          "example": "The fallen leaves began to decay.",
+          "example_translation": "Опавшие листья начали разлагаться.",
+          "status": "machine_unverified",
+          "topics": [
+            "nature"
+          ]
         }
       ]
     },
@@ -13172,6 +13523,18 @@
           "status": "machine_unverified",
           "topics": [
             "nature",
+            "work"
+          ]
+        },
+        {
+          "language_code": "ru",
+          "value": "спад",
+          "context": "Используется для обозначения периода уменьшения или ухудшения.",
+          "example": "The company experienced a decline in profits.",
+          "example_translation": "Компания пережила спад прибыли.",
+          "status": "machine_unverified",
+          "topics": [
+            "business",
             "work"
           ]
         }
@@ -13409,6 +13772,18 @@
           "status": "machine_unverified",
           "topics": [
             "education"
+          ]
+        },
+        {
+          "language_code": "ru",
+          "value": "градус",
+          "context": "Единица измерения температуры или угла.",
+          "example": "The temperature rose by ten degrees.",
+          "example_translation": "Температура поднялась на десять градусов.",
+          "status": "machine_unverified",
+          "topics": [
+            "measurement",
+            "weather"
           ]
         }
       ]
@@ -13711,13 +14086,25 @@
         {
           "language_code": "ru",
           "value": "вклад",
-          "context": "Используется для обозначения денег, положенных в банк, или залога.",
+          "context": "Деньги, положенные в банк.",
           "example": "She made a deposit of $500.",
           "example_translation": "Она сделала вклад в размере 500 долларов.",
           "status": "machine_unverified",
           "topics": [
-            "shopping",
+            "money",
             "work"
+          ]
+        },
+        {
+          "language_code": "ru",
+          "value": "залог",
+          "context": "Сумма денег, оставляемая в качестве гарантии.",
+          "example": "You need to pay a deposit for the apartment.",
+          "example_translation": "Вам нужно внести залог за квартиру.",
+          "status": "machine_unverified",
+          "topics": [
+            "shopping",
+            "home"
           ]
         }
       ]
@@ -14088,6 +14475,18 @@
           "status": "machine_unverified",
           "topics": [
             "education"
+          ]
+        },
+        {
+          "language_code": "ru",
+          "value": "простой",
+          "context": "Несложный, не представляющий трудности.",
+          "example": "This is an easy task.",
+          "example_translation": "Это простая задача.",
+          "status": "machine_unverified",
+          "topics": [
+            "education",
+            "work"
           ]
         }
       ]
@@ -14948,6 +15347,17 @@
           "topics": [
             "technology"
           ]
+        },
+        {
+          "language_code": "ru",
+          "value": "делать возможным",
+          "context": "Используется, когда что-то позволяет чему-то произойти или существовать.",
+          "example": "The new law will enable faster processing.",
+          "example_translation": "Новый закон сделает возможным более быстрое рассмотрение.",
+          "status": "machine_unverified",
+          "topics": [
+            "abstract"
+          ]
         }
       ]
     },
@@ -15794,6 +16204,18 @@
             "work",
             "shopping"
           ]
+        },
+        {
+          "language_code": "ru",
+          "value": "оценивать",
+          "context": "Приблизительно определять стоимость, количество или размер.",
+          "example": "We need to estimate the cost of the project.",
+          "example_translation": "Нам нужно оценить стоимость проекта.",
+          "status": "machine_unverified",
+          "topics": [
+            "work",
+            "business"
+          ]
         }
       ]
     },
@@ -15996,7 +16418,7 @@
           "example_translation": "Полиция нашла доказательства на месте преступления.",
           "status": "machine_unverified",
           "topics": [
-            "people"
+            "science"
           ]
         }
       ]
@@ -16362,6 +16784,17 @@
           "topics": [
             "people"
           ]
+        },
+        {
+          "language_code": "ru",
+          "value": "извинять",
+          "context": "Прощать или оправдывать кого-то.",
+          "example": "Excuse me for being late.",
+          "example_translation": "Извините меня за опоздание.",
+          "status": "machine_unverified",
+          "topics": [
+            "communication"
+          ]
         }
       ]
     },
@@ -16394,6 +16827,17 @@
           "topics": [
             "health"
           ]
+        },
+        {
+          "language_code": "ru",
+          "value": "упражнение",
+          "context": "Задание для тренировки навыков, например, в учёбе.",
+          "example": "The teacher gave us a grammar exercise.",
+          "example_translation": "Учитель дал нам грамматическое упражнение.",
+          "status": "machine_unverified",
+          "topics": [
+            "education"
+          ]
         }
       ]
     },
@@ -16410,6 +16854,17 @@
           "topics": [
             "education",
             "travel"
+          ]
+        },
+        {
+          "language_code": "ru",
+          "value": "выставлять",
+          "context": "Показывать что-то публично.",
+          "example": "The artist will exhibit his paintings.",
+          "example_translation": "Художник выставит свои картины.",
+          "status": "machine_unverified",
+          "topics": [
+            "art"
           ]
         }
       ]
@@ -17029,6 +17484,18 @@
             "work",
             "education"
           ]
+        },
+        {
+          "language_code": "ru",
+          "value": "удобство",
+          "context": "Легкость выполнения чего-либо; возможность.",
+          "example": "The new software offers great facility of use.",
+          "example_translation": "Новое программное обеспечение предлагает большое удобство использования.",
+          "status": "machine_unverified",
+          "topics": [
+            "technology",
+            "work"
+          ]
         }
       ]
     },
@@ -17097,6 +17564,18 @@
             "education",
             "work"
           ]
+        },
+        {
+          "language_code": "ru",
+          "value": "не сдать",
+          "context": "Не пройти испытание или экзамен.",
+          "example": "She failed her driving test.",
+          "example_translation": "Она не сдала экзамен по вождению.",
+          "status": "machine_unverified",
+          "topics": [
+            "education",
+            "transport"
+          ]
         }
       ]
     },
@@ -17131,6 +17610,18 @@
             "health",
             "home"
           ]
+        },
+        {
+          "language_code": "ru",
+          "value": "потерять сознание",
+          "context": "Внезапно упасть в обморок.",
+          "example": "She fainted from the heat.",
+          "example_translation": "Она потеряла сознание от жары.",
+          "status": "machine_unverified",
+          "topics": [
+            "health",
+            "body"
+          ]
         }
       ]
     },
@@ -17147,6 +17638,18 @@
           "topics": [
             "people",
             "work"
+          ]
+        },
+        {
+          "language_code": "ru",
+          "value": "ярмарка",
+          "context": "Мероприятие с развлечениями и торговлей.",
+          "example": "We went to the county fair.",
+          "example_translation": "Мы пошли на окружную ярмарку.",
+          "status": "machine_unverified",
+          "topics": [
+            "entertainment",
+            "shopping"
           ]
         }
       ]
@@ -17907,6 +18410,18 @@
           "topics": [
             "people"
           ]
+        },
+        {
+          "language_code": "ru",
+          "value": "борьба",
+          "context": "Используется для обозначения борьбы или конфликта как существительного.",
+          "example": "The fight for freedom continues.",
+          "example_translation": "Борьба за свободу продолжается.",
+          "status": "machine_unverified",
+          "topics": [
+            "abstract",
+            "society"
+          ]
         }
       ]
     },
@@ -18104,6 +18619,18 @@
           "status": "machine_unverified",
           "topics": [
             "people"
+          ]
+        },
+        {
+          "language_code": "ru",
+          "value": "штраф",
+          "context": "Используется для обозначения денежного наказания за нарушение.",
+          "example": "He had to pay a fine for speeding.",
+          "example_translation": "Ему пришлось заплатить штраф за превышение скорости.",
+          "status": "machine_unverified",
+          "topics": [
+            "law",
+            "money"
           ]
         }
       ]
@@ -18631,6 +19158,18 @@
             "nature",
             "travel"
           ]
+        },
+        {
+          "language_code": "ru",
+          "value": "полет",
+          "context": "Используется как существительное, обозначающее процесс перемещения по воздуху.",
+          "example": "Flying is my favorite part of the trip.",
+          "example_translation": "Полет — моя любимая часть поездки.",
+          "status": "machine_unverified",
+          "topics": [
+            "travel",
+            "transport"
+          ]
         }
       ]
     },
@@ -18705,6 +19244,17 @@
           "context": "Используется для описания традиционной культуры, музыки или искусства.",
           "example": "Folk music is very popular in this region.",
           "example_translation": "Народная музыка очень популярна в этом регионе.",
+          "status": "machine_unverified",
+          "topics": [
+            "people"
+          ]
+        },
+        {
+          "language_code": "ru",
+          "value": "люди",
+          "context": "Используется в неформальной речи для обозначения группы людей.",
+          "example": "Some folk just don't understand.",
+          "example_translation": "Некоторые люди просто не понимают.",
           "status": "machine_unverified",
           "topics": [
             "people"
@@ -18791,6 +19341,7 @@
           "example_translation": "Футбол — самый популярный вид спорта в мире.",
           "status": "machine_unverified",
           "topics": [
+            "sports",
             "people"
           ]
         }
@@ -19251,10 +19802,10 @@
       "translations": [
         {
           "language_code": "ru",
-          "value": "свеже-",
+          "value": "только что",
           "context": "Указывает на недавнее действие, часто с причастием.",
           "example": "The bread is freshly baked.",
-          "example_translation": "Хлеб свежеиспеченный.",
+          "example_translation": "Хлеб только что испечён.",
           "status": "machine_unverified",
           "topics": [
             "food"
@@ -19670,6 +20221,18 @@
             "education",
             "work"
           ]
+        },
+        {
+          "language_code": "ru",
+          "value": "дальше",
+          "context": "Используется как наречие, указывающее на большее расстояние или продолжение действия.",
+          "example": "Let's walk further down the road.",
+          "example_translation": "Давайте пройдём дальше по дороге.",
+          "status": "machine_unverified",
+          "topics": [
+            "movement",
+            "travel"
+          ]
         }
       ]
     },
@@ -19738,6 +20301,18 @@
           "topics": [
             "work",
             "education"
+          ]
+        },
+        {
+          "language_code": "ru",
+          "value": "набирать",
+          "context": "Используется в контексте увеличения веса или массы.",
+          "example": "He gained weight over the holidays.",
+          "example_translation": "Он набрал вес за праздники.",
+          "status": "machine_unverified",
+          "topics": [
+            "health",
+            "body"
           ]
         }
       ]
@@ -19978,6 +20553,18 @@
           "topics": [
             "travel",
             "technology"
+          ]
+        },
+        {
+          "language_code": "ru",
+          "value": "снаряжение",
+          "context": "Оборудование или экипировка для определённой деятельности.",
+          "example": "We need camping gear for the trip.",
+          "example_translation": "Нам нужно походное снаряжение для поездки.",
+          "status": "machine_unverified",
+          "topics": [
+            "travel",
+            "sports"
           ]
         }
       ]
@@ -20734,6 +21321,18 @@
             "home",
             "people"
           ]
+        },
+        {
+          "language_code": "ru",
+          "value": "величественный",
+          "context": "Описание чего-то величественного или роскошного.",
+          "example": "The palace was grand.",
+          "example_translation": "Дворец был величественным.",
+          "status": "machine_unverified",
+          "topics": [
+            "home",
+            "art"
+          ]
         }
       ]
     },
@@ -21362,6 +21961,17 @@
           "topics": [
             "health"
           ]
+        },
+        {
+          "language_code": "ru",
+          "value": "слушание",
+          "context": "Судебное заседание или официальное рассмотрение дела.",
+          "example": "The court hearing is tomorrow.",
+          "example_translation": "Судебное слушание завтра.",
+          "status": "machine_unverified",
+          "topics": [
+            "law"
+          ]
         }
       ]
     },
@@ -21427,6 +22037,17 @@
           "status": "machine_unverified",
           "topics": [
             "people"
+          ]
+        },
+        {
+          "language_code": "ru",
+          "value": "рай",
+          "context": "Идеальное место или состояние счастья.",
+          "example": "This place is heaven on earth.",
+          "example_translation": "Это место — рай на земле.",
+          "status": "machine_unverified",
+          "topics": [
+            "emotions"
           ]
         }
       ]
@@ -21501,12 +22122,13 @@
         {
           "language_code": "ru",
           "value": "ад",
-          "context": "Место мучений после смерти или ругательство.",
+          "context": "Место мучений после смерти или сильное страдание; также используется как ругательство для выражения недовольства.",
           "example": "This traffic is hell.",
           "example_translation": "Эта пробка — настоящий ад.",
           "status": "machine_unverified",
           "topics": [
-            "people"
+            "abstract",
+            "religion"
           ]
         }
       ]
