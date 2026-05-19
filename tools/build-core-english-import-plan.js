@@ -175,15 +175,8 @@ function buildImportPlan({sourceSeed, translationPack, topicSeed, groupSize}) {
     parent_id: null,
     word_count: baseEntries.length,
   };
-  const dictionaryGroup = {
-    id: 'core-english-3000',
-    name: 'Core English 3000',
-    type: 'dictionary',
-    parent_id: languageGroup.id,
-    word_count: baseEntries.length,
-  };
 
-  const groups = [languageGroup, dictionaryGroup];
+  const groups = [languageGroup];
   const topicBuckets = new Map();
   const assignments = [];
   const assignmentWords = new Set();
@@ -226,7 +219,7 @@ function buildImportPlan({sourceSeed, translationPack, topicSeed, groupSize}) {
       id: topicGroupId,
       name: topic.name,
       type: 'topic',
-      parent_id: dictionaryGroup.id,
+      parent_id: languageGroup.id,
       word_count: sortedWords.length,
     };
 
@@ -276,7 +269,6 @@ function buildImportPlan({sourceSeed, translationPack, topicSeed, groupSize}) {
 
     assignment.group_ids = [
       languageGroup.id,
-      dictionaryGroup.id,
       studyPlacement.topicGroupId,
       studyPlacement.studyGroupId,
     ];

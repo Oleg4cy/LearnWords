@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { NavigationProp, useFocusEffect } from '@react-navigation/native';
+import { NavigationProp, RouteProp, useFocusEffect, useRoute } from '@react-navigation/native';
 import { StackNavigationProp } from '@react-navigation/stack';
 import { Header } from '../../modules/Header';
 import { GroupForm } from '../../modules/GroupForm';
@@ -25,10 +25,18 @@ interface IWordsGroupsScreenProps {
 	navigation: StackNavigationProp<any>,
 }
 
+type RootStackParamList = {
+  WordsGroups: {
+    groupID?: number | null;
+    groupName?: string;
+  };
+};
+
 export function WordsGroups({ navigation }: IWordsGroupsScreenProps): JSX.Element {
+  const route = useRoute<RouteProp<RootStackParamList, 'WordsGroups'>>();
+  const currentGroupID = route.params?.groupID ?? null;
+  const currentGroupName = route.params?.groupName ?? 'Группы слов';
   const [groups, setGroups] = useState<TGroup[]>([]);
-	const [dictionaryCount, setDictionaryCount] = useState<number>(0);
-	const [withoutGroupsCount, setWithoutGroupsCount] = useState<number>(0);
 	const [isGroupFormVisible, setGroupFormVisible] = useState<boolean>(false);
 	const [selectedGroupIDs, setSelectedGroupIDs] = useState<number[]>([]);
 	const [isDeleteAlertVisible, setDeleteAlertVisible] = useState<boolean>(false);
@@ -37,36 +45,24 @@ export function WordsGroups({ navigation }: IWordsGroupsScreenProps): JSX.Elemen
 	const [switchData, activateSwitchData] = useState<boolean>(false);
 
   const getGroups = async () => {
-    const allArr: TGroup[] = await SWords.getGroups();
+    const allArr: TGroup[] = await SWords.getGroups({parentID: currentGroupID});
 		setGroups(allArr);
-	}
-
-	const getAllCount = async () => {
-		const count: number = await SWords.getDictionaryCount();
-		setDictionaryCount(count);
-	}
-
-	const getWordsWithoutGroups = async () => {
-		const count: number = await SWords.getWithoutGroupsCount();
-		setWithoutGroupsCount(count);
 	}
 
 	useEffect(() => {
 		getData();
-	}, [switchData]);
+	}, [currentGroupID, switchData]);
 
 	useFocusEffect(
 		React.useCallback(() => {
 			getData();
 			return () => {};
-		}, [])
+		}, [currentGroupID])
 	);
 
 	const getData = async () => {
 		try {
 			await getGroups();
-			await getAllCount();
-			await getWordsWithoutGroups();
 		} catch (error: any) {
 			console.log(error);
 		}
@@ -84,34 +80,37 @@ export function WordsGroups({ navigation }: IWordsGroupsScreenProps): JSX.Elemen
 		});
 	}
 
-	const openGroup = (id?: number, name?: string) => {
-		const listMode = id === 0
-			? 'all'
-			: id
-				? 'group'
-				: 'withoutGroup';
+	const openGroup = (group: TGroup) => {
+		if (!group.id) {
+      return;
+    }
 
-		navigation.push(
-			'WordsList',
-			{
-				groupID: id ?? null,
-				listMode,
-				groupName: name,
-			}
-		);
+    if ((group.child_count ?? 0) > 0) {
+      navigation.push('WordsGroups', {
+        groupID: group.id,
+        groupName: group.name,
+      });
+      return;
+    }
+
+		navigation.push('WordsList', {
+      groupID: group.id,
+      listMode: 'group',
+      groupName: group.name,
+    });
 	}
 
-	const handleRowPress = (id?: number, name?: string) => {
+	const handleRowPress = (group: TGroup) => {
 		if (isLongPressRef.current) {
 			isLongPressRef.current = false;
 			return;
 		}
-		if (isSelectionMode && id) {
-			toggleGroupSelection(id);
+		if (isSelectionMode && group.id) {
+			toggleGroupSelection(group.id);
 			return;
 		}
 		if (isSelectionMode) return;
-		openGroup(id, name);
+		openGroup(group);
 	}
 
 	const removeSelectedGroups = async (deleteWords: boolean) => {
@@ -141,9 +140,11 @@ export function WordsGroups({ navigation }: IWordsGroupsScreenProps): JSX.Elemen
 		},
 	];
 
-	const rowTemplate = (name: string, count: number, id?: number) => {
+	const rowTemplate = (group: TGroup) => {
+    const {name, count = 0, id} = group;
 		const isSelectable = Boolean(id);
 		const isSelected = Boolean(id && selectedGroupIDs.includes(id));
+    const opensChildren = (group.child_count ?? 0) > 0;
 
 		return (
 			<TouchableOpacity
@@ -152,7 +153,7 @@ export function WordsGroups({ navigation }: IWordsGroupsScreenProps): JSX.Elemen
 					styles.rowContainer,
 					isSelected && styles.rowContainerSelected,
 				]}
-				onPress={() => handleRowPress(id, name)}
+				onPress={() => handleRowPress(group)}
 				onLongPress={() => {
 					isLongPressRef.current = true;
 					if (isSelectable) {
@@ -166,7 +167,7 @@ export function WordsGroups({ navigation }: IWordsGroupsScreenProps): JSX.Elemen
 				</View>
 				{isSelected
 					? <Text style={styles.selectedMark}>✓</Text>
-					: <Text style={styles.rowCount}>{count}</Text>
+					: <Text style={styles.rowCount}>{opensChildren ? '›' : count}</Text>
 				}
 			</TouchableOpacity>
 		);
@@ -198,9 +199,8 @@ export function WordsGroups({ navigation }: IWordsGroupsScreenProps): JSX.Elemen
 					</View>
 				)}
 				<ScrollView contentContainerStyle={[styles.scrollViewContent, containerStyles]}>
-					{groups.map((group: TGroup) => rowTemplate(group.name, group.count ?? 0, group.id))}
-					{rowTemplate('Все слова', dictionaryCount, 0)}
-					{rowTemplate('Слова без групп', withoutGroupsCount)}
+          <Text style={styles.title}>{currentGroupName}</Text>
+					{groups.map((group: TGroup) => rowTemplate(group))}
 				</ScrollView>
 			</SafeAreaView >
 			<GroupForm
@@ -230,6 +230,13 @@ const styles = StyleSheet.create({
 		paddingTop: 10,
 		paddingBottom: 24,
 	},
+
+  title: {
+    marginBottom: 14,
+    color: theme.colors.text,
+    fontSize: 20,
+    fontWeight: '700',
+  },
 
 	rowContainer: {
 		width: '100%',

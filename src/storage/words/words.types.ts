@@ -1,7 +1,9 @@
 export type TGroup = {
 	name: string,
 	id?: number,
+	external_id?: string,
 	parent_id?: number | null,
+	child_count?: number,
 	kind?: string,
 	description?: string,
 	context?: string,
@@ -11,6 +13,7 @@ export type TGroup = {
 export type TContext = {
 	value: string;
 	example?: string;
+	example_translation?: string;
 };
 
 export type TTranslate = {

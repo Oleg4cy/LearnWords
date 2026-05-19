@@ -16,6 +16,87 @@ type TStartDB = {
   words: TWord[];
 };
 
+type TGetGroupsOptions = {
+  wordID?: number | null;
+  parentID?: number | null;
+};
+
+type TImportPlanGroup = {
+  id: string;
+  name: string;
+  type: string;
+  parent_id: string | null;
+  word_count: number;
+};
+
+type TImportPlanAssignment = {
+  word: string;
+  primary_topic: string;
+  topic_ids: string[];
+  group_ids: string[];
+};
+
+type TImportPlan = {
+  meta: {
+    dictionary_id: string;
+    language: string;
+    translation_language: string;
+    group_size: number;
+    source_seed: string;
+    translation_pack: string;
+    topic_seed: string;
+    version: number;
+  };
+  summary: {
+    total_words: number;
+    total_topics: number;
+    total_topic_groups: number;
+    total_study_groups: number;
+    unassigned_words: number;
+  };
+  groups: TImportPlanGroup[];
+  assignments: TImportPlanAssignment[];
+};
+
+type TImportTranslationSeedEntry = {
+  word: string;
+  translations: Array<{
+    language_code: string;
+    value: string;
+    status: string;
+    context?: string;
+    example?: string;
+    example_translation?: string;
+    topics?: string[];
+  }>;
+};
+
+type TImportTranslationSeed = {
+  meta: {
+    language_code: string;
+    source: string;
+    version: number;
+  };
+  translations: TImportTranslationSeedEntry[];
+};
+
+type TImportTopicSeed = {
+  meta: {
+    version: number;
+  };
+  topics: Array<{
+    id: string;
+    name: string;
+    description: string;
+  }>;
+};
+
+const coreEnglish3000ImportPlan = require('../../assets/importPlans/core-english-3000.ru.import-plan.json') as TImportPlan;
+const coreEnglish3000TranslationSeed = require('../../assets/translations/core-english-3000.ru.seed.json') as TImportTranslationSeed;
+const coreEnglish3000TopicSeed = require('../../assets/topics/core-english-3000.topics.seed.json') as TImportTopicSeed;
+
+const CORE_ENGLISH_IMPORT_SOURCE = 'core-english-3000.ru.import-plan';
+
 const SYSTEM_GROUPS: Array<Pick<TGroup, 'name' | 'kind'>> = [
   {name: 'Sources', kind: 'system'},
   {name: 'Levels', kind: 'system'},
@@ -58,6 +139,7 @@ export default class SWords implements ISwords {
         'name TEXT',
         'context TEXT',
         'description TEXT NULL',
+        'external_id TEXT NULL',
         'parent_id INTEGER NULL',
         'kind TEXT NOT NULL DEFAULT \'custom\'',
         'FOREIGN KEY (parent_id) REFERENCES groups(id) ON DELETE CASCADE',
@@ -90,7 +172,7 @@ export default class SWords implements ISwords {
   private async init() {
     const instanceDB = await SDB.getInstance();
     this.db = await instanceDB.getDBConnection();
-    this.checkInstalled();
+    await this.checkInstalled();
     this.isInitialized = true;
   }
 
@@ -98,6 +180,9 @@ export default class SWords implements ISwords {
     if (!SWords.instance) {
       SWords.instance = new SWords();
       await SWords.instance.init();
+    }
+    if ((SWords.instance as SWords).db) {
+      return SWords.instance;
     }
     let timeout = 0;
     while (!SWords.instance.isInitialized && timeout < 100) {
@@ -116,11 +201,13 @@ export default class SWords implements ISwords {
       if (!(await this.isSchemaActual())) {
         await this.reset();
         await SWords.execute(`INSERT INTO settings (installed) VALUES (1);`);
+        await this.ensureCoreEnglishImport();
         return 1;
       }
       const results: ResultSet = await SWords.execute(`SELECT * FROM settings`);
       const result = results.rows.item(0);
       if (result && result.installed === 1) {
+        await this.ensureCoreEnglishImport();
         return 1;
       } else {
         await this.reset();
@@ -142,6 +229,7 @@ export default class SWords implements ISwords {
     return (
       wordGroupColumns.includes('translate_id') &&
       groupColumns.includes('context') &&
+      groupColumns.includes('external_id') &&
       groupColumns.includes('parent_id') &&
       groupColumns.includes('kind') &&
       translationColumns.includes('language_code') &&
@@ -163,6 +251,12 @@ export default class SWords implements ISwords {
     if (!groupColumns.includes('kind')) {
       await this.db?.executeSql(
         `ALTER TABLE groups ADD COLUMN kind TEXT NOT NULL DEFAULT 'custom';`,
+      );
+    }
+
+    if (!groupColumns.includes('external_id')) {
+      await this.db?.executeSql(
+        `ALTER TABLE groups ADD COLUMN external_id TEXT NULL;`,
       );
     }
 
@@ -572,7 +666,9 @@ export default class SWords implements ISwords {
       VALUES (?, ?, ?, ?, ?, ?)
     `;
     const { context, value } = translate;
-    const filtered = (context || []).filter((ctx: TContext) => ctx.value !== '');
+    const filtered = (context || []).filter(
+      (ctx: TContext) => ctx.value !== '' || !!ctx.example || !!ctx.example_translation,
+    );
     const contextJson: string = JSON.stringify(filtered);
     const params = [
       insertedWordId,
@@ -602,7 +698,9 @@ export default class SWords implements ISwords {
       SET translate = ?, context = ?, language_code = ?, status = ?, source = ?
       WHERE id = ?
     `;
-    const filtered = (translateData.context || []).filter((ctx: TContext) => ctx.value !== '');
+    const filtered = (translateData.context || []).filter(
+      (ctx: TContext) => ctx.value !== '' || !!ctx.example || !!ctx.example_translation,
+    );
     const contextJson: string = JSON.stringify(filtered);
     const params = [
       translateData.value,
@@ -740,18 +838,40 @@ export default class SWords implements ISwords {
     return Array.from({ length: count }, () => '?').join(', ');
   }
 
-  static async getGroups(wordID: number | null = null): Promise<TGroup[]> {
+  static async getGroups(options: TGetGroupsOptions = {}): Promise<TGroup[]> {
+    const {wordID, parentID} = options;
+    const whereClauses: string[] = [];
+    const params: Array<number> = [];
+
+    if (typeof wordID === 'number') {
+      whereClauses.push('words.id = ?');
+      params.push(wordID);
+    }
+
+    if (parentID === null) {
+      whereClauses.push('groups.parent_id IS NULL');
+    } else if (typeof parentID === 'number') {
+      whereClauses.push('groups.parent_id = ?');
+      params.push(parentID);
+    }
+
+    const whereSql = whereClauses.length > 0
+      ? `WHERE ${whereClauses.join(' AND ')}`
+      : '';
+
     const sql = `
       SELECT
         groups.*,
-        COUNT(DISTINCT words.id) AS count
+        COUNT(DISTINCT words.id) AS count,
+        COUNT(DISTINCT child_groups.id) AS child_count
       FROM groups
       LEFT JOIN word_group ON groups.id = word_group.group_id
       LEFT JOIN words ON word_group.word_id = words.id
-      ${wordID ? 'WHERE words.id = (?)' : ''}
+      LEFT JOIN groups AS child_groups ON child_groups.parent_id = groups.id
+      ${whereSql}
       GROUP BY groups.id
+      ORDER BY groups.name COLLATE NOCASE ASC
     ;`;
-    const params = wordID ? [wordID] : [];
 
     try {
       const results: ResultSet = await SWords.execute(sql, params);
@@ -837,14 +957,16 @@ export default class SWords implements ISwords {
     }
   }
 
-  private async reset() {
+  private async reset(options: {seedLegacyData?: boolean} = {}) {
     try {
       for (const table of this.tables) {
         await this.dropTable(table);
         await this.checkTable(table);
       }
-      const result: TStartDB = await this.getFromJSON();
-      await this.seedStartDB(result);
+      if (options.seedLegacyData !== false) {
+        const result: TStartDB = await this.getFromJSON();
+        await this.seedStartDB(result);
+      }
     } catch (error) {
       console.log(error);
       throw error;
@@ -881,7 +1003,7 @@ export default class SWords implements ISwords {
                 }
 
                 const filtered = (translate.context || []).filter(
-                  (ctx: TContext) => ctx.value !== '',
+                  (ctx: TContext) => ctx.value !== '' || !!ctx.example || !!ctx.example_translation,
                 );
                 const contextJson = JSON.stringify(filtered);
                 const translationKey = `${wordID}:${translate.value}:${contextJson}`;
@@ -966,5 +1088,310 @@ export default class SWords implements ISwords {
         throw new Error(`Failed to create system group "${group.name}"`);
       }
     }
+  }
+
+  private async ensureCoreEnglishImport(): Promise<void> {
+    const assignmentByWord = new Map<string, TImportPlanAssignment>();
+    for (const assignment of coreEnglish3000ImportPlan.assignments) {
+      assignmentByWord.set(assignment.word, assignment);
+    }
+
+    const translationByWord = new Map<string, TImportTranslationSeedEntry>();
+    for (const entry of coreEnglish3000TranslationSeed.translations) {
+      translationByWord.set(entry.word, entry);
+    }
+
+    if (assignmentByWord.size !== coreEnglish3000ImportPlan.summary.total_words) {
+      throw new Error('Core English import plan assignments count does not match summary');
+    }
+
+    if (translationByWord.size !== coreEnglish3000ImportPlan.summary.total_words) {
+      throw new Error('Core English translation seed count does not match import plan summary');
+    }
+
+    const groupIDByExternalID = await this.ensureImportedGroups();
+    const wordsByValue = await this.getWordIDByValue();
+    const translationsByKey = await this.getTranslationRowByKey();
+
+    for (const [wordValue, assignment] of assignmentByWord.entries()) {
+      const translationEntry = translationByWord.get(wordValue);
+      if (!translationEntry) {
+        throw new Error(`Missing translation seed entry for "${wordValue}"`);
+      }
+
+      const wordID = await this.ensureImportedWord(wordValue, wordsByValue);
+      for (const translation of translationEntry.translations) {
+        if (!translation.value) {
+          continue;
+        }
+
+        const languageCode = translation.language_code || coreEnglish3000TranslationSeed.meta.language_code;
+        const context = this.createImportContext(translation);
+        const contextJson = JSON.stringify(context);
+        const translationKey = this.createTranslationKey(
+          wordID,
+          languageCode,
+          translation.value,
+          contextJson,
+        );
+
+        let translationRow = translationsByKey.get(translationKey);
+        if (!translationRow) {
+          const insertResult = await SWords.execute(
+            `
+              INSERT INTO word_translate
+              (word_id, translate, context, language_code, status, source)
+              VALUES (?, ?, ?, ?, ?, ?)
+            `,
+            [
+              wordID,
+              translation.value,
+              contextJson,
+              languageCode,
+              translation.status || 'seed',
+              CORE_ENGLISH_IMPORT_SOURCE,
+            ],
+          );
+
+          translationRow = {
+            id: insertResult.insertId,
+            source: CORE_ENGLISH_IMPORT_SOURCE,
+          };
+          translationsByKey.set(translationKey, translationRow);
+        } else if (translationRow.source === CORE_ENGLISH_IMPORT_SOURCE || translationRow.source === 'seed' || !translationRow.source) {
+          await SWords.execute(
+            `
+              UPDATE word_translate
+              SET status = ?, source = ?
+              WHERE id = ?
+            `,
+            [
+              translation.status || 'seed',
+              CORE_ENGLISH_IMPORT_SOURCE,
+              translationRow.id,
+            ],
+          );
+          translationRow.source = CORE_ENGLISH_IMPORT_SOURCE;
+        }
+
+        for (const groupExternalID of assignment.group_ids) {
+          const groupID = groupIDByExternalID.get(groupExternalID);
+          if (!groupID) {
+            throw new Error(`Missing DB group for import group "${groupExternalID}"`);
+          }
+
+          await SWords.execute(
+            `
+              INSERT OR IGNORE INTO word_group (group_id, word_id, translate_id, translate, context)
+              VALUES (?, ?, ?, ?, ?)
+            `,
+            [groupID, wordID, translationRow.id, translation.value, contextJson],
+          );
+        }
+      }
+    }
+  }
+
+  private async ensureImportedGroups(): Promise<Map<string, number>> {
+    const existingGroups = await SWords.execute(
+      `
+        SELECT id, name, context, description, parent_id, kind, external_id
+        FROM groups
+      `,
+    );
+    const groupsByExternalID = new Map<string, TGroup & {id: number}>();
+
+    for (let i = 0; i < existingGroups.rows.length; i++) {
+      const group = existingGroups.rows.item(i) as TGroup & {id: number};
+      if (group.external_id) {
+        groupsByExternalID.set(group.external_id, group);
+      }
+    }
+
+    const topicDescriptionByGroupExternalID = new Map<string, string>();
+    for (const topic of coreEnglish3000TopicSeed.topics) {
+      topicDescriptionByGroupExternalID.set(`topic-${topic.id}`, topic.description);
+    }
+
+    const groupIDByExternalID = new Map<string, number>();
+    const groupNameByExternalID = new Map<string, string>();
+
+    for (const group of coreEnglish3000ImportPlan.groups) {
+      let parentID: number | null = null;
+      if (group.parent_id) {
+        parentID = groupIDByExternalID.get(group.parent_id) ?? null;
+        if (!parentID) {
+          throw new Error(`Parent group "${group.parent_id}" was not created before "${group.id}"`);
+        }
+      }
+
+      const description = group.type === 'topic'
+        ? topicDescriptionByGroupExternalID.get(group.id) ?? null
+        : null;
+      const context = group.type === 'study' && group.parent_id
+        ? groupNameByExternalID.get(group.parent_id) ?? null
+        : null;
+      let currentGroup = groupsByExternalID.get(group.id);
+
+      if (!currentGroup) {
+        const insertResult = await SWords.execute(
+          `
+            INSERT INTO groups (name, description, context, external_id, parent_id, kind)
+            VALUES (?, ?, ?, ?, ?, ?)
+          `,
+          [group.name, description, context, group.id, parentID, group.type],
+        );
+        currentGroup = {
+          id: insertResult.insertId,
+          name: group.name,
+          description: description ?? undefined,
+          context: context ?? undefined,
+          external_id: group.id,
+          parent_id: parentID,
+          kind: group.type,
+        };
+      } else {
+        await SWords.execute(
+          `
+            UPDATE groups
+            SET name = ?, description = ?, context = ?, external_id = ?, parent_id = ?, kind = ?
+            WHERE id = ?
+          `,
+          [group.name, description, context, group.id, parentID, group.type, currentGroup.id],
+        );
+        currentGroup = {
+          ...currentGroup,
+          name: group.name,
+          description: description ?? undefined,
+          context: context ?? undefined,
+          external_id: group.id,
+          parent_id: parentID,
+          kind: group.type,
+        };
+      }
+
+      groupsByExternalID.set(group.id, currentGroup);
+      groupIDByExternalID.set(group.id, currentGroup.id);
+      groupNameByExternalID.set(group.id, group.name);
+    }
+
+    const validImportedGroupIDs = new Set(
+      coreEnglish3000ImportPlan.groups.map((group) => group.id),
+    );
+    const staleImportedGroupIDs: number[] = [];
+
+    for (const [externalID, group] of groupsByExternalID.entries()) {
+      const isCoreEnglishImportedGroup = externalID === 'english'
+        || externalID === coreEnglish3000ImportPlan.meta.dictionary_id
+        || externalID.startsWith('topic-');
+
+      if (isCoreEnglishImportedGroup && !validImportedGroupIDs.has(externalID)) {
+        staleImportedGroupIDs.push(group.id);
+      }
+    }
+
+    if (staleImportedGroupIDs.length > 0) {
+      const placeholders = SWords.createPlaceholders(staleImportedGroupIDs.length);
+      await SWords.execute(
+        `DELETE FROM word_group WHERE group_id IN (${placeholders})`,
+        staleImportedGroupIDs,
+      );
+      await SWords.execute(
+        `DELETE FROM groups WHERE id IN (${placeholders})`,
+        staleImportedGroupIDs,
+      );
+    }
+
+    return groupIDByExternalID;
+  }
+
+  private async getWordIDByValue(): Promise<Map<string, number>> {
+    const results = await SWords.execute(`SELECT id, word FROM words`);
+    const wordsByValue = new Map<string, number>();
+
+    for (let i = 0; i < results.rows.length; i++) {
+      const row = results.rows.item(i) as {id: number; word: string};
+      wordsByValue.set(row.word, row.id);
+    }
+
+    return wordsByValue;
+  }
+
+  private async ensureImportedWord(wordValue: string, wordsByValue: Map<string, number>): Promise<number> {
+    const existingWordID = wordsByValue.get(wordValue);
+    if (existingWordID) {
+      return existingWordID;
+    }
+
+    const insertResult = await SWords.execute(
+      `INSERT INTO words (word) VALUES (?)`,
+      [wordValue],
+    );
+    wordsByValue.set(wordValue, insertResult.insertId);
+    return insertResult.insertId;
+  }
+
+  private async getTranslationRowByKey(): Promise<Map<string, {id: number; source?: string}>> {
+    const results = await SWords.execute(
+      `
+        SELECT id, word_id, translate, context, language_code, source
+        FROM word_translate
+      `,
+    );
+    const translationsByKey = new Map<string, {id: number; source?: string}>();
+
+    for (let i = 0; i < results.rows.length; i++) {
+      const row = results.rows.item(i) as {
+        id: number;
+        word_id: number;
+        translate: string;
+        context: string | null;
+        language_code: string;
+        source?: string;
+      };
+      const contextJson = row.context ?? '[]';
+      translationsByKey.set(
+        this.createTranslationKey(row.word_id, row.language_code, row.translate, contextJson),
+        {id: row.id, source: row.source},
+      );
+    }
+
+    return translationsByKey;
+  }
+
+  private createImportContext(translation: TImportTranslationSeedEntry['translations'][number]): TContext[] {
+    if (!translation.context && !translation.example && !translation.example_translation) {
+      return [];
+    }
+
+    return [{
+      value: translation.context ?? '',
+      example: translation.example,
+      example_translation: translation.example_translation,
+    }];
+  }
+
+  private createTranslationKey(
+    wordID: number,
+    languageCode: string,
+    translateValue: string,
+    contextJson: string,
+  ): string {
+    return [wordID, languageCode, translateValue, contextJson].join('::');
+  }
+
+  static async resetForDevelopment(confirmation: string): Promise<void> {
+    if (!__DEV__) {
+      throw new Error('Development DB reset is available only in development builds');
+    }
+
+    if (confirmation !== 'RESET_LEARNWORDS_DEV_DB') {
+      throw new Error('Development DB reset requires the exact confirmation token');
+    }
+
+    const instance = await SWords.getInstance() as SWords;
+    await instance.reset({seedLegacyData: false});
+    await SWords.execute(`INSERT INTO settings (installed) VALUES (1);`);
+    await instance.ensureCoreEnglishImport();
   }
 }

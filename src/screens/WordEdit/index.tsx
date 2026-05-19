@@ -96,7 +96,7 @@ export function WordEdit({ navigation }: IWordEditScreenProps): JSX.Element {
     if (word) {
       setInputWord(word.word);
       setInputsGroup(word.translate);
-      const wordGroups = await SWords.getGroups(wordID);
+      const wordGroups = await SWords.getGroups({wordID});
       setSelectedGroupID(wordGroups[0]?.id ?? null);
     }
   };
@@ -631,4 +631,3 @@ const styles = StyleSheet.create({
     marginVertical: 8,
   },
 });
-
